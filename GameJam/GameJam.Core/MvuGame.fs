@@ -69,7 +69,7 @@ module Game =
             
             Messages <- Messages @ Event.ProcessAllEvent ()
 
-            this.DebugTextSystem.Print(sprintf "%f" State.PlatformModel.Timer, new Int2(50,50))
+            this.DebugTextSystem.Print(sprintf "%i\n\n%f" State.PlayerModel.Counter State.PlatformModel.Timer, new Int2(50,50))
             this.GameUpdate Messages State gametime
             view State gametime
 

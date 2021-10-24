@@ -15,7 +15,7 @@ module Messages =
         | Jump
         | Grounded
         | Airborne
-        | Collision
+        | Collision of Entity
         
     type PlatformMsg = 
         | Countdown

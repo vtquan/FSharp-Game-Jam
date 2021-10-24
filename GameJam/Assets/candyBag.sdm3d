@@ -1,0 +1,35 @@
+!Model
+Id: 3a6c5199-0af9-465b-b67f-48c346f82dfe
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../Resources/KayKit Halloween/Models/fbx/candyBag.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    58ad91e2ada41d28ddb020c9e56196eb:
+        Name: Beige
+        MaterialInstance:
+            Material: 06b470dc-e76d-4893-a35c-93d75e671dd0:Beige
+    7cc86e80035d8b0bcc72c39329e79cb7:
+        Name: Blue
+        MaterialInstance:
+            Material: 2d8d391b-7ee9-4052-aeab-3f9c9e938a22:Blue
+    a79ada09b756ebc454c6615ffb76fd1c:
+        Name: White
+        MaterialInstance:
+            Material: 9b7fa12d-042f-4cdd-a540-f89918256c6d:White
+    5123dcf9cc58a2577b9197e9b05df6bb:
+        Name: Purple
+        MaterialInstance:
+            Material: 38c5baf9-9ed8-4a55-a613-8171d1472d82:Purple
+    b7591bd99f4e6a7d63cd263b2978838f:
+        Name: Yellow
+        MaterialInstance:
+            Material: 43234119-527c-4a9e-b56e-604282bb4e5e:Yellow
+    2a6f46343e0231d03d4c56c0c4a12f2d:
+        Name: Orange
+        MaterialInstance:
+            Material: 711fa9de-af49-43ac-8e88-2abc9e76bcd3:Orange
+Modifiers: {}
+~SourceHashes:
+    fb5e9b304851bd52b6abb3dbfb558cdd~../Resources/KayKit Halloween/Models/fbx/candyBag.fbx: 6fc3cbb0e87a398c6151abf9868133aa

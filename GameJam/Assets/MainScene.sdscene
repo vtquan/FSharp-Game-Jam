@@ -86,6 +86,7 @@ Hierarchy:
         - ref!! 9bbb4b7a-562e-4a34-84b4-1fa2b701125e
         - ref!! b5588a34-0b44-43ac-9489-721a524c15f8
         - ref!! 2485a486-9f7c-4c84-8531-9cdae8ec556c
+        - ref!! 9d774bfc-23f2-4605-a28c-4b0ef0aa0328
     Parts:
         -   Entity:
                 Id: 003ea996-d3d5-46e1-8f7c-e934945032b4
@@ -1378,7 +1379,7 @@ Hierarchy:
                         Id: c4959f20-536d-41de-a3df-ff661934ae6c
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
-                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                                Value: {R: 0.6784314, G: 0.23990197, B: 0.18431373}
                             Shadow:
                                 Enabled: true
                                 Filter: !LightShadowMapFilterTypePcf
@@ -2426,21 +2427,21 @@ Hierarchy:
                         Id: c0d34512-97d0-4ee4-8295-e28dad432562
                         Position: {X: 0.0, Y: 4.7683716E-07, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
                         Children: {}
                     0fa4902c57c2de428808e383912863ea: !ModelComponent
                         Id: 2c90a40f-c257-42de-8808-e383912863ea
-                        Model: eb1dbff9-88a8-4b4d-a41a-ad84f5270426:Models/mannequinModel
+                        Model: 56bb9e30-0907-43fd-bfcb-ada31e3c26df:Models/PumpkinThing
                         Materials: {}
                     978eabfaac453f4d9375495d32bc299f: !GameJam.Player.AnimationController,GameJam.Game
                         Id: faab8e97-45ac-4d3f-9375-495d32bc299f
                         AnimationComponent: ref!! c0b24758-fcad-47f3-a100-f94d96c5d325
-                        AnimationIdle: 19a8f71c-8c6b-40a4-a9af-b7fc1413f195:Animations/Idle
-                        AnimationWalk: 521d3010-b650-41ba-997a-59ad23919f60:Animations/Walk
-                        AnimationRun: 1923cf67-edbc-4c01-9f03-4f1e94cfa31b:Animations/Run
-                        AnimationJumpStart: 7bf9c676-c41d-48f9-9061-afd209ce9ca4:Animations/Jump_Start
-                        AnimationJumpMid: c14cc0e7-f67b-45c4-8a48-e9268e744ed0:Animations/Jump_Loop
-                        AnimationJumpEnd: 49978f8e-87b8-4df6-8032-d2cca4f72478:Animations/Jump_End
+                        AnimationIdle: f6a5c934-008c-422b-aefa-bea759846f28:Animations/Pumpkin_Idle
+                        AnimationWalk: 03363397-08fd-4102-86e9-32e4f6e1e34e:Animations/Pumpkin_Walking
+                        AnimationRun: 018ddaf1-b191-4962-aa9f-f78629cefcdb:Animations/Pumpkin_Running
+                        AnimationJumpStart: 4b6a8342-e573-45b5-b253-9fc35de3a49d:Animations/Pumpkin_JumpStart
+                        AnimationJumpMid: ac164a15-7c84-4415-a495-6c7516d42b8b:Animations/Pumpkin_JumpLoop
+                        AnimationJumpEnd: 755ac387-2d3c-4a20-962b-766c914bca03:Animations/Pumpkin_JumpEnd
                         WalkThreshold: 0.25
                         TimeFactor: 1.0
                     5847b2c0adfcf347a100f94d96c5d325: !AnimationComponent
@@ -2959,9 +2960,9 @@ Hierarchy:
                         Gravity: {X: 0.0, Y: -40.0, Z: 0.0}
                         ColliderShapes:
                             56a5239435c0e54188f913fd5d2f5dee: !CapsuleColliderShapeDesc
-                                Length: 1.2
+                                Length: 0.4
                                 Radius: 0.4
-                                LocalOffset: {X: 0.0, Y: 0.95, Z: 0.0}
+                                LocalOffset: {X: 0.0, Y: 0.5, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     f722a19496166946a5d26eaf23d2ae03: !GameJam.Player.PlayerController,GameJam.Game
                         Id: 94a122f7-1696-4669-a5d2-6eaf23d2ae03
@@ -5045,6 +5046,41 @@ Hierarchy:
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: de5b4e19-7f5a-4b9e-9c63-f9dd94b7a2c1
         -   Entity:
+                Id: 9d774bfc-23f2-4605-a28c-4b0ef0aa0328
+                Name: Collectible
+                Components:
+                    0e2a562cad657c0a965f90f5d41d2bd9: !TransformComponent
+                        Id: efbc9bfd-1e65-47d8-a060-370c0445bf39
+                        Position: {X: -11.618283, Y: 1.5016296, Z: 4.6219473}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9e6123a33fdfa32776c165a7b1acf15c: !ModelComponent
+                        Id: dd2707ab-7a6d-468a-ad76-d27697c14918
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:candyBag
+                        IsShadowCaster: false
+                        Materials: {}
+                    3d6e4bfa0d348fc53eacdc1f479d97fd: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: 24c91d69-09d7-4856-85aa-95b33152e72b
+                    352f57cb3280c41381fad38d6d9e09b2: !StaticColliderComponent
+                        Id: 8a0da960-8c16-44d7-9d68-7d9db0004b0e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            6f2d8cf507589a88ed00406b603e8c47: !SphereColliderShapeDesc
+                                Is2D: false
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    d519346d315c5ac418ca04473cbe0b4b: !AnimationComponent
+                        Id: 6c6bd48d-2b43-48ad-a467-c04a14f0b0a7
+                        Animations:
+                            95ee2f434d3e8ed3fc82e4563cc2929c~Idle: null
+        -   Entity:
                 Id: 9ed41fde-ea3d-47fd-a38e-e12909bf42fd
                 Name: GridBase10x10
                 Components:
@@ -6892,7 +6928,7 @@ Hierarchy:
                         Intensity: 1.5
                     f6397b90285248a39a30d9f6245a9f87: !BackgroundComponent
                         Id: 9f228b57-0a04-437b-a78c-3f3a93f80d26
-                        Texture: d216b7d8-6b52-496f-998b-18508c6b7127:Skybox Texture
+                        Texture: b3e60051-2361-44ac-a763-79950cbce9f1:twilight_skybox_texture_hdr
                         Intensity: 3.0
         -   Folder: Complex
             Entity:

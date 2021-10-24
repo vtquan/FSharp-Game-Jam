@@ -1,0 +1,20 @@
+!Skeleton
+Id: ff297bfa-0484-4b01-baf7-fa98ce9cdc38
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file D:/Projects/Blender/PumpkinThing/PumpkinThing.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    b55c5ec61564ac85309ed11095bc78b5: {Name: RootNode, Depth: 0}
+    c8f3d1eee7f15a78de7f4446122238eb: {Name: Cylinder, Depth: 1}
+    7c851262bcfc0d68e4ce24bd3b23f18f: {Name: Armature, Depth: 1}
+    00753cca140d4e7b5f459647be6efe4e: {Name: Body, Depth: 2}
+    9993b819e1913240563bf5c3d1aada09: {Name: Top, Depth: 3}
+    0565d70131dacf0f9de695c8c101b4f8: {Name: Stem, Depth: 4}
+    2af828c337a7b0505cdc219a39f2683d: {Name: Stem_end, Depth: 5}
+    e3e5681aa81ac843eecda7ccdfc56315: {Name: Feet.R, Depth: 3}
+    5ef1f0311a645e2ef59ec3ac392f7ef7: {Name: Feet.R_end, Depth: 4}
+    188ab2414ffed405ec4ec58e7edabbd0: {Name: Feet.L, Depth: 3}
+    de5f7971c7e6771e19ec9a49003ba6a0: {Name: Feet.L_end, Depth: 4}
+~SourceHashes:
+    b04990bd9dc5c79a3226278836e70991~D:/Projects/Blender/PumpkinThing/PumpkinThing.fbx: a3d3d5c508eab02445316ad8ff23b6d7

@@ -12,8 +12,8 @@ open Stride.Input
 open System
 
 module Platform =
-    let private speed = 2f
-    let private duration = 10f
+    let private speed = 3f
+    let private duration = 5f
     let private deadZone = 0.25f
     let private jumpReactionThreshold = 0.3f
 
@@ -39,7 +39,7 @@ module Platform =
 
     
     let mapPlatformAttach (attachedPlatform : Entity) (currentPlatform : MovingPlatform)  =
-        match currentPlatform.Entity.Name = attachedPlatform.Name with
+        match currentPlatform.Entity = attachedPlatform with
         | true -> { currentPlatform with PlayerAttached = true }
         | false -> currentPlatform
         

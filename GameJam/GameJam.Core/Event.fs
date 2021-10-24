@@ -19,7 +19,7 @@ module Event =
     // Could be expand for larger project by creating function of each scene
     let private ProcessGameEvent ((message, entity) : string * Entity) : GameMsg = 
         match message with
-        | "Collision" -> PlayerMsg(Collision)
+        | "Collect" -> PlayerMsg(Collision(entity))
         | "Left" -> PlayerMsg(MoveLeft)
         | "Right" -> PlayerMsg(MoveRight)
         | "Up" -> PlayerMsg(MoveUp)

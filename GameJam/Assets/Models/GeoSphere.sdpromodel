@@ -1,0 +1,11 @@
+!ProceduralModelAsset
+Id: 8576efe6-22e8-4a4f-b4a3-e5153f6b13c2
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: !GeoSphereProceduralModel
+    Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+    UvScale: {X: 1.0, Y: 1.0}
+    LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+    NumberOfTextureCoordinates: 10
+    MaterialInstance:
+        Material: 1209e1d9-0c73-45c6-8e69-4d26ac9c7c4b:Materials/LambertMT

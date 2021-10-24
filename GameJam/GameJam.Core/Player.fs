@@ -40,7 +40,8 @@ module Player =
 
     let update msg model (deltaTime : float32) =
         match msg with
-        | Collision -> 
+        | Collision(e) -> 
+            e.Scene <- null
             { model with Counter = model.Counter + 1 }, Empty
             
         | MoveLeft -> 

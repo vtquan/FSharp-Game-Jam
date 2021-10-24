@@ -1,0 +1,37 @@
+!PrefabAsset
+Id: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+    Parts:
+        -   Entity:
+                Id: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: c3700e38-a8a5-4cae-85c5-795f68850b3a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: 3388cbed-0f10-47cd-92ee-4a6448a47ca8
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 7752caa6-a115-4ffb-8f54-e7f412cc1df6
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}

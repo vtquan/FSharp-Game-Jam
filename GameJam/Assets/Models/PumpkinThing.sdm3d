@@ -1,0 +1,23 @@
+!Model
+Id: 56bb9e30-0907-43fd-bfcb-ada31e3c26df
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file D:/Projects/Blender/PumpkinThing/PumpkinThing.fbx
+Skeleton: ff297bfa-0484-4b01-baf7-fa98ce9cdc38:Models/PumpkinThing Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    b0c031f7eb5ce45990d454af30a2ada4:
+        Name: Beige
+        MaterialInstance:
+            Material: f93b80fb-19bf-4425-ba35-f6297197fda7:Models/Beige
+    e202692f81cbb582bedc07d75d3d81a5:
+        Name: Orange
+        MaterialInstance:
+            Material: 3e9267bd-62a1-4949-9ea2-169db84c366d:Models/Orange
+    82204e1def50d8ccc8ce7c4c8cd781f6:
+        Name: Black
+        MaterialInstance:
+            Material: 6a2df261-d029-4a26-89fb-0b62b5a8ea76:Models/Black
+Modifiers: {}
+~SourceHashes:
+    3425ef860478c451ba6e9ed6e6ec61a2~D:/Projects/Blender/PumpkinThing/PumpkinThing.fbx: a3d3d5c508eab02445316ad8ff23b6d7
