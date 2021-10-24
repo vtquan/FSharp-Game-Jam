@@ -29,11 +29,11 @@ module Game =
         let init () =
             { PlayerModel = Player.empty (); PlatformModel = Platform.empty (); CurrentScene = GamePlay}, []
 
-        let view state =
+        let view (state : GameModel) (gameTime : GameTime) =
             match state.CurrentScene with
             | GamePlay -> 
                 Player.view state.PlayerModel
-                Platform.view state.PlatformModel
+                Platform.view state.PlatformModel (float32 gameTime.Elapsed.TotalSeconds)
             | _ -> ()
             
         let mutable State, Messages = init ()
@@ -71,7 +71,7 @@ module Game =
 
             this.DebugTextSystem.Print(sprintf "%f" State.PlatformModel.Timer, new Int2(50,50))
             this.GameUpdate Messages State gametime
-            view State
+            view State gametime
 
 
             Messages <- NextMessages

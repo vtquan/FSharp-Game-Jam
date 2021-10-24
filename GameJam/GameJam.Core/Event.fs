@@ -28,7 +28,6 @@ module Event =
         | "Grounded" -> PlayerMsg(Grounded)
         | "Airborne" -> PlayerMsg(Airborne)
         | "NoMovement" -> PlayerMsg(NoMovement)
-        | "Vertical" -> PlatformMsg(Vertical(entity))
         | "AttachPlayer" -> PlatformMsg(AttachPlayer(entity))
         | "DetachPlayer" -> PlatformMsg(DetachPlayer(entity))
         | "Camera"| "Camera2"| "Camera3"| "Camera4" -> Empty    //for example all these message can be process by ProcessCameraEvent message

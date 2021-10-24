@@ -21,7 +21,7 @@ namespace GameJam
         public override void Update()
         {
             // Do stuff every new frame
-            Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Vertical", Entity));
+            //Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Vertical", Entity));
         }
     }
 }

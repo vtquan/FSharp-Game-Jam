@@ -85,6 +85,7 @@ Hierarchy:
         - ref!! 76771248-c30c-4247-a20e-69306cfdb1cd
         - ref!! 9bbb4b7a-562e-4a34-84b4-1fa2b701125e
         - ref!! b5588a34-0b44-43ac-9489-721a524c15f8
+        - ref!! 2485a486-9f7c-4c84-8531-9cdae8ec556c
     Parts:
         -   Entity:
                 Id: 003ea996-d3d5-46e1-8f7c-e934945032b4
@@ -1231,6 +1232,58 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             60662553bdfa37429f6fafb13c6d383f: ref!! 6f87adbf-f397-4858-9aa1-2aaeea185c49
+        -   Folder: null
+            Entity:
+                Id: 2485a486-9f7c-4c84-8531-9cdae8ec556c
+                Name: MovingPlatform3
+                Components:
+                    aae304e8aac0b50e08bd99ae72ace13c: !TransformComponent
+                        Id: bd6a3ce1-2528-4672-8fcc-fc715369cb1b
+                        Position: {X: -0.7497115, Y: 4.9035597, Z: -2.275632}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 5.0, Y: 1.0, Z: 5.0}
+                        Children: {}
+                    d23ec770609078ab9159404811de3faa: !ModelComponent
+                        Id: 619fa0b7-c456-49b4-8419-383c5aff04de
+                        Model: f848c356-1efd-4930-a108-802f342efe97:Models/Floor1x0x1
+                        Materials: {}
+                    68667c408ecab5c0cd0ce0ba08437330: !StaticColliderComponent
+                        Id: b7311c02-3b7d-4705-a2c0-44e212dd78e1
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            b44e4ebc0f3ba5af277533b49eb0185b: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 0.05, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: -0.01, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    24b3a1050c7c763461edb37bb9840066: !GameJam.MovingPlatformController,GameJam.Game
+                        Id: 19520b7b-3db6-4733-a380-001dfc85b7d5
+                    7762c1f9e9c54d27d2792edb13c03322: !GameJam.AttachPlayer,GameJam.Game
+                        Id: eb223d01-2bea-469c-a7eb-94421ef97177
+                    a1954f67c80e3b1532efe2882fd20a57: !StaticColliderComponent
+                        Id: fa99b979-147c-4781-8572-2287b4cca1b9
+                        CollisionGroup: CharacterFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            6d51b0d0401ae344f0067cbceb00556a: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.85, Y: 0.3, Z: 0.85}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: 24bdd238-1ed3-4323-b9a9-30461f37d67b
                 Name: Table2x2x2
@@ -4771,7 +4824,7 @@ Hierarchy:
                 Components:
                     aae304e8aac0b50e08bd99ae72ace13c: !TransformComponent
                         Id: a7f6e391-0764-44af-8b0b-b150392b0851
-                        Position: {X: 0.0, Y: 1.2833995, Z: 0.0}
+                        Position: {X: -4.1453557, Y: 1.2833995, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 5.0, Y: 1.0, Z: 5.0}
                         Children: {}
@@ -5505,11 +5558,11 @@ Hierarchy:
         -   Folder: null
             Entity:
                 Id: b5588a34-0b44-43ac-9489-721a524c15f8
-                Name: MovingPlatform
+                Name: MovingPlatform2
                 Components:
                     aae304e8aac0b50e08bd99ae72ace13c: !TransformComponent
                         Id: b619e25a-a067-4333-b836-47bd42fededf
-                        Position: {X: 6.9865746, Y: 3.671721, Z: 0.0}
+                        Position: {X: 3.6668375, Y: 3.249517, Z: 4.3515964}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 5.0, Y: 1.0, Z: 5.0}
                         Children: {}

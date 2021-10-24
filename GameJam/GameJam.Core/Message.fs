@@ -18,10 +18,8 @@ module Messages =
         | Collision
         
     type PlatformMsg = 
-        | Vertical of Entity
-        | Clear of Entity
-        | Rise of Entity
-        | Lower of Entity
+        | Countdown
+        | Countup
         | AttachPlayer of Entity
         | DetachPlayer of Entity
 
