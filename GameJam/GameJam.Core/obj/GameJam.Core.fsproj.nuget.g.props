@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\viq\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.11.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\viq\.nuget\packages\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)stride.core\4.1.0.1459-beta\buildTransitive\Stride.Core.props" Condition="Exists('$(NuGetPackageRoot)stride.core\4.1.0.1459-beta\buildTransitive\Stride.Core.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgStride_Core Condition=" '$(PkgStride_Core)' == '' ">C:\Users\viq\.nuget\packages\stride.core\4.1.0.1459-beta</PkgStride_Core>
+    <PkgStride_Engine Condition=" '$(PkgStride_Engine)' == '' ">C:\Users\viq\.nuget\packages\stride.engine\4.1.0.1459-beta</PkgStride_Engine>
+    <PkgStride_UI Condition=" '$(PkgStride_UI)' == '' ">C:\Users\viq\.nuget\packages\stride.ui\4.1.0.1459-beta</PkgStride_UI>
+    <PkgStride_Physics Condition=" '$(PkgStride_Physics)' == '' ">C:\Users\viq\.nuget\packages\stride.physics\4.1.0.1459-beta</PkgStride_Physics>
+    <PkgStride_Particles Condition=" '$(PkgStride_Particles)' == '' ">C:\Users\viq\.nuget\packages\stride.particles\4.1.0.1459-beta</PkgStride_Particles>
+    <PkgStride_Core_Assets_CompilerApp Condition=" '$(PkgStride_Core_Assets_CompilerApp)' == '' ">C:\Users\viq\.nuget\packages\stride.core.assets.compilerapp\4.1.0.1459-beta</PkgStride_Core_Assets_CompilerApp>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\viq\.nuget\packages\fsharp.core\5.0.0</PkgFSharp_Core>
+  </PropertyGroup>
+</Project>
