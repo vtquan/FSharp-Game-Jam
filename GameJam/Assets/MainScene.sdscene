@@ -87,6 +87,7 @@ Hierarchy:
         - ref!! b5588a34-0b44-43ac-9489-721a524c15f8
         - ref!! 2485a486-9f7c-4c84-8531-9cdae8ec556c
         - ref!! 9d774bfc-23f2-4605-a28c-4b0ef0aa0328
+        - ref!! c83c3ba8-d390-449b-a68c-7eaf56c922d2
     Parts:
         -   Entity:
                 Id: 003ea996-d3d5-46e1-8f7c-e934945032b4
@@ -2061,6 +2062,41 @@ Hierarchy:
                 BasePartAsset: 4f27e0ab-44d4-4274-a421-f8cb479fd6d0:BlocksPrefabs/GridBase10x10
                 BasePartId: b045349c-565e-4488-9130-a795b0e3b229
                 InstanceId: cf29671f-6508-4eea-8eb1-22f39d4bc302
+        -   Entity:
+                Id: 3dc73d0e-8279-45f3-86f5-2f6ba4cc38f8
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: d5110a6d-aea6-4845-a12f-c4a2a659c920
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: b9bfba6f-fee8-435b-9624-3466e345ab3b
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 5e8da598-f996-4b85-a758-15f9bad8db8e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: 30f773ec-0f91-44ae-bd19-db6365c55fcf
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: 326c5f49-054a-4b5d-b28b-5a99c290b22c
         -   Folder: Complex
             Entity:
                 Id: 3eee0685-c355-49d3-9a4d-5de8c1442f08
@@ -6564,6 +6600,17 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: 6ad2b798-1639-487b-9234-116a9ad37272
+        -   Entity:
+                Id: c83c3ba8-d390-449b-a68c-7eaf56c922d2
+                Name: Collectible
+                Components:
+                    bbdd324fb11a3ffa664a7e0dc97c44a3: !TransformComponent
+                        Id: 778b9c50-59a4-40aa-9235-d1eb058f50ee
+                        Position: {X: -16.551514, Y: 3.1770217, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            282521df27df10ac62e298393591df03: ref!! d5110a6d-aea6-4845-a12f-c4a2a659c920
         -   Entity:
                 Id: cc32de44-35ae-4301-8b59-e50ed534bdd4
                 Name: Wall0x2x5 (2)
