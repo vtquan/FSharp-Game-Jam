@@ -32,20 +32,20 @@ module Platform =
         
     let init (sceneSystem : SceneSystem) =
         let player = sceneSystem.SceneInstance.RootScene.Entities.FirstOrDefault(fun x -> x.Name = "PlayerCharacter")    
-        let platforms = sceneSystem.SceneInstance.RootScene.Entities.Where(fun x -> x.Name.Contains("MovingPlatform"))    
+        let platforms = sceneSystem.SceneInstance.RootScene.Entities.Where(fun x -> x.Name.Contains("Platform"))    
         let movingPlatforms = Seq.map (fun x -> { Entity = x; PlayerAttached = false }) platforms
 
         { Timer = 0f; Direction = Forward; Platforms = List.ofSeq movingPlatforms; Player = player }, PlatformMsg(Countup)
 
     
     let mapPlatformAttach (attachedPlatform : Entity) (currentPlatform : MovingPlatform)  =
-        match currentPlatform.Entity = attachedPlatform with
+        match currentPlatform.Entity.GetChild(0) = attachedPlatform with    //Platform is a prefab so the the collision trigger belong to the child entity
         | true -> { currentPlatform with PlayerAttached = true }
         | false -> currentPlatform
         
             
     let mapPlatformDetach (attachedPlatform : Entity) (currentPlatform : MovingPlatform)  =
-        match currentPlatform.Entity = attachedPlatform with
+        match currentPlatform.Entity.GetChild(0) = attachedPlatform with    //Platform is a prefab so the the collision trigger belong to the child entity
         | true -> { currentPlatform with PlayerAttached = false }
         | false -> currentPlatform
 
@@ -79,11 +79,28 @@ module Platform =
     let view (model : Model) (deltaTime : float32) =
         let movingPlatformIter (movingPlatform : MovingPlatform) =
             //movingPlatform.Entity.Transform.Position <- Vector3.Lerp(movingPlatform.Entity.Transform.Position, movingPlatform.Entity.Transform.Position + movingPlatform.Velocity)
-            
-            let newVelocity = if model.Direction = Forward then new Vector3(speed * deltaTime, 0f, 0f) else new Vector3(-speed * deltaTime, 0f, 0f)
+
+            let deltaSpeed = 
+                match model.Direction with
+                | Forward -> speed * deltaTime
+                | Reverse -> -speed * deltaTime
+
+            // Find starting direction for each platforms
+            let newVelocity = 
+                match movingPlatform.Entity.Name.Substring(0,4) with 
+                | "PosX" -> Vector3(deltaSpeed, 0f, 0f) 
+                | "NegX" -> Vector3(-deltaSpeed, 0f, 0f) 
+                | "PosY" -> Vector3(0f, deltaSpeed, 0f) 
+                | "NegY" -> Vector3(0f, -deltaSpeed, 0f) 
+                | "PosZ" -> Vector3(0f, 0f, deltaSpeed) 
+                | "NegZ" -> Vector3(0f, 0f, -deltaSpeed) 
+                | _ -> Vector3(speed * deltaSpeed, 0f, 0f) 
+
+            //let newVelocity = if model.Direction = Forward then new Vector3(speed * deltaTime, 0f, 0f) else new Vector3(-speed * deltaTime, 0f, 0f)
+
             movingPlatform.Entity.Transform.Position <- movingPlatform.Entity.Transform.Position + newVelocity           
             movingPlatform.Entity.Transform.UpdateWorldMatrix()
-            let physicComponents = movingPlatform.Entity.GetAll<PhysicsComponent>()
+            let physicComponents = movingPlatform.Entity.GetChild(0).GetAll<PhysicsComponent>() //Platform is a prefab so the the collision box belong to the child entity
             for pc in physicComponents do
                 pc.UpdatePhysicsTransformation()
 

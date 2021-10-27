@@ -1,0 +1,15 @@
+!Model
+Id: 140e25cf-01f9-484e-842f-2748207a7a6f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Model/pathCobbled.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    41c5e52c6ac3b330ddeb096adca3955d:
+        Name: Stone
+        MaterialInstance:
+            Material: f63dd385-da79-477b-9e8b-afd9b0f4e163:Models/Stone
+Modifiers: {}
+~SourceHashes:
+    1afdf2135a85db6ddf6c4eeb07a01683~../../Resources/Model/pathCobbled.fbx: 677fd63c4d17a8a2df8db571076fc938

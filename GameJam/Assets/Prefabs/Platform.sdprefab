@@ -1,0 +1,74 @@
+!PrefabAsset
+Id: 1c2644bc-162c-4a24-9301-411287f686cc
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 1f028fbd-2786-418a-ac54-2849fe99e275
+    Parts:
+        -   Entity:
+                Id: 1accebac-5acf-4fbd-bdbd-0798f1ed479b
+                Name: Cobblestone
+                Components:
+                    f71e3f9144c41813720e5dee8bab7b82: !TransformComponent
+                        Id: e7d3f347-679b-4c76-810a-d797add5958e
+                        Position: {X: 0.0, Y: 0.013502032, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.5, Y: 0.25, Z: 0.5}
+                        Children: {}
+                    14e2f8cbd8112a1a063795e601f40502: !ModelComponent
+                        Id: 734421fa-e3ea-47a2-a9af-6849c099f602
+                        Model: 140e25cf-01f9-484e-842f-2748207a7a6f:Models/pathCobbled
+                        Materials: {}
+        -   Entity:
+                Id: 1f028fbd-2786-418a-ac54-2849fe99e275
+                Name: PlatformModel
+                Components:
+                    54d6b71ec8fcbddd4b1735cbe94f9bcd: !TransformComponent
+                        Id: 13a4dfa3-f6a3-4da2-ad03-84e381f4f605
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 7.0, Y: 15.0, Z: 7.0}
+                        Children:
+                            b42e4c5dbe113680dc8af7ef3e658964: ref!! e7d3f347-679b-4c76-810a-d797add5958e
+                    21cd90ea1121daabca158f4f3cd50a7e: !ModelComponent
+                        Id: 9e7e929d-e441-4543-914e-b9107775d7a4
+                        Model: f848c356-1efd-4930-a108-802f342efe97:Models/Floor1x0x1
+                        Materials:
+                            09cfe7480312f3a25741d03e9a3180da~0: fd079f98-39ec-40a1-9ff2-078c7a8f2860:Materials/Material
+                    93aecfb757796aec9d9f899c91e81470: !StaticColliderComponent
+                        Id: 00908f83-a81c-4ff6-ae1e-ad6279db39c9
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4d0dc65723010a40854bfab5018f5cfe: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.1, Y: 0.05, Z: 1.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    a3bb214e8ee8cdc4637af5de07887741: !StaticColliderComponent
+                        Id: d0c02e7b-5323-4e31-a31d-fab7c634e160
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3bbfe6c308e462e91a9b5fe7a59be665: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 0.1, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ef7e112114af5963b8814471036c7808: !GameJam.MovingPlatformController,GameJam.Game
+                        Id: ba14bd7b-7ff1-493c-84c2-35cd5cd46978
+                    afeec27d3193453ad4cee8961e186815: !GameJam.AttachPlayer,GameJam.Game
+                        Id: 64ed2ce9-c638-49f2-b1e1-0ce8c1d84bb3
