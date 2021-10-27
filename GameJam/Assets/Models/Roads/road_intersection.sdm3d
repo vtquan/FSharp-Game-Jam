@@ -1,0 +1,27 @@
+!Model
+Id: 974c9cd0-be4c-4b8e-8023-8ad67ad12fb9
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Roads/road_intersection.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    ca3f5b72cf158bd3022c053a39d29083:
+        Name: asphalt
+        MaterialInstance:
+            Material: 1c81cd6f-de9b-48a3-8fd3-0d571686046e:Models/Roads/asphalt
+    068c7777002f2918e37508d2a78099ce:
+        Name: pavement
+        MaterialInstance:
+            Material: f90d3782-c3f4-442c-8391-ce3c4feb8ff2:Models/Roads/pavement
+    e476c0987d4a5a2deeaedc999a6bae7a:
+        Name: asphaltEdge
+        MaterialInstance:
+            Material: 756d6973-26b5-45a0-b7e4-a5b27565a7e0:Models/Roads/asphaltEdge
+    e90178f4f89a77a143703cabb2f7179e:
+        Name: line
+        MaterialInstance:
+            Material: 7f6ddf5e-f239-438f-8662-8cca5a59f069:Models/Roads/line
+Modifiers: {}
+~SourceHashes:
+    16d03a724746ea9046ae63e0a7b90f86~../../../Resources/Model/Roads/road_intersection.glb: d42cb53598724bd2a333d595846c0663

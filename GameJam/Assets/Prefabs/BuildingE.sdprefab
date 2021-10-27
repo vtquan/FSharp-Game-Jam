@@ -1,0 +1,38 @@
+!PrefabAsset
+Id: eee167f9-41c2-48e6-8a95-307be4069627
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 64d67ea6-4a40-4f52-800e-69cb116a495f
+    Parts:
+        -   Entity:
+                Id: 64d67ea6-4a40-4f52-800e-69cb116a495f
+                Name: Entity
+                Components:
+                    f81bc976d2d9245fee3ddcc571964d0c: !TransformComponent
+                        Id: 7b811a90-1f4d-4cb3-88ac-f985561eca8e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    656d78bb48826c27d0ba483fa398a187: !ModelComponent
+                        Id: 970809c9-8733-47e9-b743-be4b5ae3a2d8
+                        Model: 64cdbd2d-29b8-472e-88e1-d828fd907e8a:Models/Buildings/large_buildingE
+                        Materials: {}
+                    1d2396a7332dcb8b51590e452f02a457: !StaticColliderComponent
+                        Id: a66ef7b1-d42d-4b5c-b497-5141068e1663
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            95e601cb989960190df0c41b6a6d64fd: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.2, Y: 2.0, Z: 1.35}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

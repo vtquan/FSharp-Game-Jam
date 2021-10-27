@@ -1,0 +1,27 @@
+!Model
+Id: 72d3f401-51b4-49dc-900b-a744c295c1a1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Roads/road_bridge.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    aa926abce448ce5e0db4cfbc16ecba41:
+        Name: line
+        MaterialInstance:
+            Material: 7f6ddf5e-f239-438f-8662-8cca5a59f069:Models/Roads/line
+    d920c8748f22809f965ef64caa4d818d:
+        Name: asphalt
+        MaterialInstance:
+            Material: 1c81cd6f-de9b-48a3-8fd3-0d571686046e:Models/Roads/asphalt
+    2a19d098c23a29e24dbd6ba84b3e3158:
+        Name: pavement
+        MaterialInstance:
+            Material: f90d3782-c3f4-442c-8391-ce3c4feb8ff2:Models/Roads/pavement
+    5bcb66b00cf941bbf3dd6f7297b05e95:
+        Name: asphaltEdge
+        MaterialInstance:
+            Material: 756d6973-26b5-45a0-b7e4-a5b27565a7e0:Models/Roads/asphaltEdge
+Modifiers: {}
+~SourceHashes:
+    3619e491b0fe8fdba2e80c2184e6260a~../../../Resources/Model/Roads/road_bridge.glb: 22a368f019ebca83726a8b318e61d710

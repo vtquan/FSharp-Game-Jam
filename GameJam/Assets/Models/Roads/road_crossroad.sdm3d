@@ -1,0 +1,27 @@
+!Model
+Id: c421fc62-d3f3-4230-aa79-98d9c6b69246
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Roads/road_crossroad.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    ef1b2a4613b152d3c8cf53465be7c83f:
+        Name: asphalt
+        MaterialInstance:
+            Material: 1c81cd6f-de9b-48a3-8fd3-0d571686046e:Models/Roads/asphalt
+    222c5f2fb3b006c06d35aa225dfaf5b7:
+        Name: asphaltEdge
+        MaterialInstance:
+            Material: 756d6973-26b5-45a0-b7e4-a5b27565a7e0:Models/Roads/asphaltEdge
+    88e4bfdeeaf0320c5ced1de653fe15a9:
+        Name: pavement
+        MaterialInstance:
+            Material: f90d3782-c3f4-442c-8391-ce3c4feb8ff2:Models/Roads/pavement
+    8bb23107f74241ebe2c7cf0a110fae9d:
+        Name: line
+        MaterialInstance:
+            Material: 7f6ddf5e-f239-438f-8662-8cca5a59f069:Models/Roads/line
+Modifiers: {}
+~SourceHashes:
+    e47dedbf1e63f6106d644d1fda79f387~../../../Resources/Model/Roads/road_crossroad.glb: 9bb5b55ca893405144ee35b242bb91d1

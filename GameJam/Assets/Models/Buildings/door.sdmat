@@ -1,11 +1,11 @@
 !MaterialAsset
-Id: 1209e1d9-0c73-45c6-8e69-4d26ac9c7c4b
+Id: ab9e8678-21a0-40d1-8c43-81fa5a57ead7
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
 Attributes:
     Diffuse: !MaterialDiffuseMapFeature
         DiffuseMap: !ComputeColor
-            Value: {R: 0.17808595, G: 0.5, B: 0.115624994, A: 1.0}
+            Value: {R: 0.3882353, G: 0.4, B: 0.44705883, A: 1.0}
     DiffuseModel: !MaterialDiffuseLambertModelFeature {}
     Overrides:
         UVScale: {X: 1.0, Y: 1.0}

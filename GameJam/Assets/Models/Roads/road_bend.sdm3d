@@ -1,0 +1,27 @@
+!Model
+Id: 3ad28d0a-5418-4278-9c3d-cb9090f45bf3
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Roads/road_bend.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    77d4fa80600b81923cc7c8d5d9c89c85:
+        Name: pavement
+        MaterialInstance:
+            Material: f90d3782-c3f4-442c-8391-ce3c4feb8ff2:Models/Roads/pavement
+    495e1549bc2ea2cabbe5577eaed2fc85:
+        Name: asphalt
+        MaterialInstance:
+            Material: 1c81cd6f-de9b-48a3-8fd3-0d571686046e:Models/Roads/asphalt
+    db540f6495caac992280123cee234fe6:
+        Name: asphaltEdge
+        MaterialInstance:
+            Material: 756d6973-26b5-45a0-b7e4-a5b27565a7e0:Models/Roads/asphaltEdge
+    54283e4c2054235ccb604dc02a560b34:
+        Name: line
+        MaterialInstance:
+            Material: 7f6ddf5e-f239-438f-8662-8cca5a59f069:Models/Roads/line
+Modifiers: {}
+~SourceHashes:
+    decb1dd7ec0444f4d8b9c3ad73630717~../../../Resources/Model/Roads/road_bend.glb: b536993d94c2904975745b9ed00bce01

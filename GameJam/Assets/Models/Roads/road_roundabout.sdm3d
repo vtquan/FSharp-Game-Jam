@@ -1,0 +1,27 @@
+!Model
+Id: 3b40e559-bfe5-4fa1-9297-5def66d4941d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Roads/road_roundabout.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    b774877a202f31a24d56a8e36c308fc1:
+        Name: pavement
+        MaterialInstance:
+            Material: f90d3782-c3f4-442c-8391-ce3c4feb8ff2:Models/Roads/pavement
+    c76e012c4c2d1409ec92b34e6e5a7999:
+        Name: asphalt
+        MaterialInstance:
+            Material: 1c81cd6f-de9b-48a3-8fd3-0d571686046e:Models/Roads/asphalt
+    3db33f725c7faf7ec935b732b6802dd7:
+        Name: line
+        MaterialInstance:
+            Material: 7f6ddf5e-f239-438f-8662-8cca5a59f069:Models/Roads/line
+    94e5fc248837fa076c98c5ec510a4f63:
+        Name: asphaltEdge
+        MaterialInstance:
+            Material: 756d6973-26b5-45a0-b7e4-a5b27565a7e0:Models/Roads/asphaltEdge
+Modifiers: {}
+~SourceHashes:
+    976b81dee88401426460d48a69d38be3~../../../Resources/Model/Roads/road_roundabout.glb: 71b3391ca6f704eed910fea5b2b46a4b

@@ -1,0 +1,27 @@
+!Model
+Id: 6cf44ca6-b129-467c-bc9f-35fd2fcb2731
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Buildings/large_buildingA.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    23dbcad0f8db0b36712592503891a34e:
+        Name: border
+        MaterialInstance:
+            Material: 58138cab-c72d-4c6b-b78f-eec8356bdd10:Models/Buildings/border
+    7d9100ebdf7b6a964f35d9e7d7d33572:
+        Name: _defaultMat
+        MaterialInstance:
+            Material: 54be4694-96e0-476c-8095-1deff676cf36:Models/Buildings/_defaultMat
+    7f5d0d357fb43afe5b1bdcdabc9ac2f0:
+        Name: window
+        MaterialInstance:
+            Material: 7c00874e-31bc-4dfb-919d-ba0a6ba3ce5f:Models/Buildings/window
+    12acb5dbf9d26119fccc0b4bead27890:
+        Name: door
+        MaterialInstance:
+            Material: ab9e8678-21a0-40d1-8c43-81fa5a57ead7:Models/Buildings/door
+Modifiers: {}
+~SourceHashes:
+    4983617204f0226df854cfa35c1e5de1~../../../Resources/Model/Buildings/large_buildingA.glb: 8795a6a77564b3fd794c763d78c96cae

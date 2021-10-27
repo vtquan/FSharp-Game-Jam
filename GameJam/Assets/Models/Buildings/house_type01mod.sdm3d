@@ -1,0 +1,31 @@
+!Model
+Id: 1dd84c03-c43d-4c95-80e2-87992ef8bdb2
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Buildings/house_type01mod.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    e69a02a647e2459b70e03a0d8328911b:
+        Name: border.001
+        MaterialInstance:
+            Material: 58138cab-c72d-4c6b-b78f-eec8356bdd10:Models/Buildings/border
+    70fde7f178a2beba6196cf7beff2f879:
+        Name: window.001
+        MaterialInstance:
+            Material: f1203b3b-d8c8-4fab-badc-4b063bccc62b:Models/Buildings/window.001
+    97e97734eea8d91d11ef85f4e3362b6a:
+        Name: door.001
+        MaterialInstance:
+            Material: ab9e8678-21a0-40d1-8c43-81fa5a57ead7:Models/Buildings/door
+    257b606e0b194ea7aaedae8b282aaa7e:
+        Name: _defaultMat.001
+        MaterialInstance:
+            Material: 94f98125-f2e9-4efc-a27f-163086be5100:Models/Buildings/_defaultMat.001
+    c57ec28248d59d36e490a9c6ae9849b4:
+        Name: roof.001
+        MaterialInstance:
+            Material: 1f3ea917-d91f-4942-af89-a58911019bd0:Models/Buildings/roof
+Modifiers: {}
+~SourceHashes:
+    2f30c00be7d83b60e205ea2b3ace897e~../../../Resources/Model/Buildings/house_type01mod.fbx: ad48b7418b764603dadb3432a8057b4e

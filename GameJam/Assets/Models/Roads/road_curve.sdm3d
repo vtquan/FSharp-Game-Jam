@@ -1,0 +1,27 @@
+!Model
+Id: dca577b8-15eb-458b-8e3d-533618c7cfde
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Roads/road_curve.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    4805cbad24305ccd112adc64da743bc4:
+        Name: pavement
+        MaterialInstance:
+            Material: f90d3782-c3f4-442c-8391-ce3c4feb8ff2:Models/Roads/pavement
+    57218bc81d1f84151aefc00e89629557:
+        Name: asphaltEdge
+        MaterialInstance:
+            Material: 756d6973-26b5-45a0-b7e4-a5b27565a7e0:Models/Roads/asphaltEdge
+    4240bc224e519cf073f509b09ec6612c:
+        Name: asphalt
+        MaterialInstance:
+            Material: 1c81cd6f-de9b-48a3-8fd3-0d571686046e:Models/Roads/asphalt
+    1ea4d9ac2b792c64fa81a71a0de188bb:
+        Name: line
+        MaterialInstance:
+            Material: 7f6ddf5e-f239-438f-8662-8cca5a59f069:Models/Roads/line
+Modifiers: {}
+~SourceHashes:
+    c0c02bdeb7594a13b6b81141621dd354~../../../Resources/Model/Roads/road_curve.glb: dd868d5d3e398c3065a6199d6927155a

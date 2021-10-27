@@ -1,0 +1,27 @@
+!Model
+Id: 57ca13b2-9bf8-4a8a-964e-0b5486ef48e3
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Roads/road_side.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    af3c97656296dd9afe386d7b8b488659:
+        Name: pavement
+        MaterialInstance:
+            Material: f90d3782-c3f4-442c-8391-ce3c4feb8ff2:Models/Roads/pavement
+    b7591f96f8b88d5ae276daca3652d46a:
+        Name: asphalt
+        MaterialInstance:
+            Material: 1c81cd6f-de9b-48a3-8fd3-0d571686046e:Models/Roads/asphalt
+    7081cd3941b82e36bd8ee22613cecdda:
+        Name: asphaltEdge
+        MaterialInstance:
+            Material: 756d6973-26b5-45a0-b7e4-a5b27565a7e0:Models/Roads/asphaltEdge
+    57f2200a345fc41592acd1d9a5dcc8ab:
+        Name: line
+        MaterialInstance:
+            Material: 7f6ddf5e-f239-438f-8662-8cca5a59f069:Models/Roads/line
+Modifiers: {}
+~SourceHashes:
+    32f60400af2944f24bfecb1758682743~../../../Resources/Model/Roads/road_side.glb: 1021c28c89fa66a2c0da5961742e9559
