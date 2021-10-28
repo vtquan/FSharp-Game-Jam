@@ -1,0 +1,243 @@
+!UIPageAsset
+Id: 75cfb6d9-2d81-46f6-a91a-c411660d93df
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! dca9c9a6-5aa6-4216-b9ca-ebfce2f95fa4
+    Parts:
+        -   UIElement: !TextBlock
+                Id: 14f89f4d-21dd-4874-9347-c66f31d14695
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 250.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 00:34:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: 1ecc3ff2-99b3-4399-a3b0-600b772b639f
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 375.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 01:44:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: 357babd7-a452-49e2-b058-77c3f4e39eee
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 450.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 02:05:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: 3acdcb98-caf1-48ce-a301-6cbdc8d5cd5d
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 350.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 01:34:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: 50d3f1c4-f5bc-4901-994e-85e2a0730cf2
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 225.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 00:24:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: 614f9882-1aae-42ca-bca3-ce27b1f384a4
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 400.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 01:38:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Border
+                Id: 65fc6843-2a46-478e-bc09-297926579e8a
+                DependencyProperties: {}
+                BackgroundColor: {R: 100, G: 27, B: 27, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Padding: {}
+                BorderColor: {R: 63, G: 9, B: 9, A: 255}
+                BorderThickness: {}
+        -   UIElement: !TextBlock
+                Id: 8e456f1e-12a4-4c75-842f-358e8bccfd3c
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 500.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 02:18:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Grid
+                Id: 91d25264-1ef4-4662-aa94-71f1546051d8
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Times
+                Children:
+                    6b51efe54feb0293d613e474cfe73d5b: !TextBlock ref!! fbc1a30e-5ae2-486b-bcc8-369bca4986aa
+                    d55096854cf7170e410394ede51b8a55: !TextBlock ref!! 50d3f1c4-f5bc-4901-994e-85e2a0730cf2
+                    c56e6f3f0734e8f70d5757a13f945d4b: !TextBlock ref!! 14f89f4d-21dd-4874-9347-c66f31d14695
+                    c00d42970d2390754185511304f688ff: !TextBlock ref!! b46c133a-c09b-466c-b30d-3cbcdc4cbefa
+                    f4eaa6a95005aca6434edbb12c4ee2af: !TextBlock ref!! beb2540c-49cc-4f33-ba0b-f27c9da3f361
+                    fba067c883a5bb22784da21355cad2c8: !TextBlock ref!! d58aa843-1256-43d7-ae19-5f2ca04d590c
+                    646ca6836e3be520539402d1d29908cf: !TextBlock ref!! 3acdcb98-caf1-48ce-a301-6cbdc8d5cd5d
+                    ae58ac07ada565d224c4b1900fb5fdb1: !TextBlock ref!! 1ecc3ff2-99b3-4399-a3b0-600b772b639f
+                    7f0ce16bd58a9888fa5e73a4986c337f: !TextBlock ref!! 614f9882-1aae-42ca-bca3-ce27b1f384a4
+                    fdd86540b108298287fd931ebf731f19: !TextBlock ref!! a67e8d01-a0a9-4cec-a72f-cb4f328786f0
+                    23a35fadb7d46c7bfe653e2d699c9896: !TextBlock ref!! 357babd7-a452-49e2-b058-77c3f4e39eee
+                    e2ce2474b7c1cf76d30d3af6e4be957e: !TextBlock ref!! ffdb35d4-0316-4a57-95d7-161442c3ef49
+                    0f1153c119d1320832dfa22ca6786050: !TextBlock ref!! 8e456f1e-12a4-4c75-842f-358e8bccfd3c
+                RowDefinitions: {}
+                ColumnDefinitions: {}
+                LayerDefinitions: {}
+        -   UIElement: !TextBlock
+                Id: a67e8d01-a0a9-4cec-a72f-cb4f328786f0
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 425.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 01:51:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: b46c133a-c09b-466c-b30d-3cbcdc4cbefa
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 275.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 00:57:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: beb2540c-49cc-4f33-ba0b-f27c9da3f361
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 300.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 01:17:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: d58aa843-1256-43d7-ae19-5f2ca04d590c
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 325.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 01:23:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Grid
+                Id: dca9c9a6-5aa6-4216-b9ca-ebfce2f95fa4
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    54998e500b5c254989c841aff25c8eb3: !Border ref!! 65fc6843-2a46-478e-bc09-297926579e8a
+                    985572e38f7a02abf79b92166e4ac6ca: !Grid ref!! 91d25264-1ef4-4662-aa94-71f1546051d8
+                RowDefinitions: {}
+                ColumnDefinitions: {}
+                LayerDefinitions: {}
+        -   UIElement: !TextBlock
+                Id: fbc1a30e-5ae2-486b-bcc8-369bca4986aa
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 200.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 00:17:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: ffdb35d4-0316-4a57-95d7-161442c3ef49
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 475.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: 02:11:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}

@@ -1029,7 +1029,7 @@ Hierarchy:
                         Children: {}
                     14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
                         Id: b9bfba6f-fee8-435b-9624-3466e345ab3b
-                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:candyBag
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
                         Materials: {}
                     ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
                         Id: 5e8da598-f996-4b85-a758-15f9bad8db8e
@@ -2750,7 +2750,7 @@ Hierarchy:
                         Children: {}
                     9e6123a33fdfa32776c165a7b1acf15c: !ModelComponent
                         Id: dd2707ab-7a6d-468a-ad76-d27697c14918
-                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:candyBag
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
                         IsShadowCaster: false
                         Materials: {}
                     3d6e4bfa0d348fc53eacdc1f479d97fd: !GameJam.CollectibleCollision,GameJam.Game

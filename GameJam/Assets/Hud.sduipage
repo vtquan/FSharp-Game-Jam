@@ -8,14 +8,33 @@ Hierarchy:
     RootParts:
         - !Grid ref!! 6e26ca3f-91d5-414b-8b9d-ed1092120248
     Parts:
+        -   UIElement: !Border
+                Id: 32a38fa0-e09a-45fb-a30e-d1ae37e72c5d
+                DependencyProperties: {}
+                BackgroundColor: {R: 165, G: 49, B: 49, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 75.0, Top: 75.0}
+                MinimumWidth: 300.0
+                MinimumHeight: 50.0
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Padding: {}
+                BorderColor: {R: 0, G: 0, B: 0, A: 255}
+                BorderThickness: {}
         -   UIElement: !Grid
                 Id: 6e26ca3f-91d5-414b-8b9d-ed1092120248
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
                 Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
                 Name: Elements
                 Children:
-                    82e6754c4917d440498aff69fc3e42aa: !TextBlock ref!! 722abf63-807c-4596-ace9-1f2d38e7ecd3
+                    1abf44181b12b4860c689403a098ed9c: !TextBlock ref!! 722abf63-807c-4596-ace9-1f2d38e7ecd3
+                    d5d5e95fc06b683df474ec0585ea8087: !Border ref!! 32a38fa0-e09a-45fb-a30e-d1ae37e72c5d
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}
@@ -34,4 +53,4 @@ Hierarchy:
                 Text: 10/14
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
-                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextColor: {R: 255, G: 255, B: 255, A: 255}

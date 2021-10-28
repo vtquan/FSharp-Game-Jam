@@ -31,5 +31,5 @@ module UI =
     
     let view (model : Model) (deltaTime : float32) =
         let bonusCounter = model.Page.RootElement.FindVisualChildOfType<TextBlock>("CollectionCounter");
-        bonusCounter.Text <- model.Counter.ToString();
+        bonusCounter.Text <- sprintf "%i/14" model.Counter
         ()

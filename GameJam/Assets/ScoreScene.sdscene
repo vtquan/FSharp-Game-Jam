@@ -1,0 +1,25 @@
+!SceneAsset
+Id: f4c5e5f8-18b9-4172-92fd-5f2b439b3959
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 4379869f-bf1c-4213-9663-9ed326640622
+    Parts:
+        -   Entity:
+                Id: 4379869f-bf1c-4213-9663-9ed326640622
+                Name: UI
+                Components:
+                    9ceaf97b86d7e323f48436a2351ef026: !TransformComponent
+                        Id: cc9d165a-d9bb-4e7c-a4b7-35772dadd503
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5f09bb3b49990d533350969945630c08: !UIComponent
+                        Id: 037fc7f1-dae4-4f6f-b60a-e612bc08c155
+                        Page: 75cfb6d9-2d81-46f6-a91a-c411660d93df:ScoreUI
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}

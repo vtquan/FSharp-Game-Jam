@@ -52,19 +52,15 @@ module Platform =
     let update msg (model : Model) (deltaTime : float32) =
         match msg with        
         | Countup when model.Timer > duration -> 
-            let newVelocity = new Vector3(speed * deltaTime, 0f, 0f)
             { model with Timer = model.Timer - deltaTime; Direction = Reverse }, PlatformMsg(Countdown)
             
         | Countup -> 
-            let newVelocity = new Vector3(speed * deltaTime, 0f, 0f)
             { model with Timer = model.Timer + deltaTime }, PlatformMsg(Countup)
             
         | Countdown when model.Timer < 0f -> 
-            let newVelocity = new Vector3(-speed * deltaTime, 0f, 0f)
             { model with Timer = model.Timer + deltaTime; Direction = Forward }, PlatformMsg(Countup)
             
         | Countdown -> 
-            let newVelocity = new Vector3(-speed * deltaTime, 0f, 0f)
             { model with Timer = model.Timer - deltaTime }, PlatformMsg(Countdown)
             
         | AttachPlayer(e) ->

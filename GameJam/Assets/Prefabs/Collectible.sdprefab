@@ -18,7 +18,7 @@ Hierarchy:
                         Children: {}
                     14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
                         Id: 3388cbed-0f10-47cd-92ee-4a6448a47ca8
-                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:candyBag
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
                         Materials: {}
                     ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
                         Id: 7752caa6-a115-4ffb-8f54-e7f412cc1df6
