@@ -20,6 +20,7 @@ module Game =
         {
             PlayerModel : Player.Model
             PlatformModel : Platform.Model
+            UiModel : UI.Model
             CurrentScene : CurrentScene
         }
 
@@ -27,13 +28,14 @@ module Game =
         inherit Game()
 
         let init () =
-            { PlayerModel = Player.empty (); PlatformModel = Platform.empty (); CurrentScene = GamePlay}, []
+            { PlayerModel = Player.empty (); PlatformModel = Platform.empty (); UiModel = UI.empty (); CurrentScene = GamePlay}, []
 
         let view (state : GameModel) (gameTime : GameTime) =
             match state.CurrentScene with
             | GamePlay -> 
                 Player.view state.PlayerModel
                 Platform.view state.PlatformModel (float32 gameTime.Elapsed.TotalSeconds)
+                UI.view state.UiModel (float32 gameTime.Elapsed.TotalSeconds)
             | _ -> ()
             
         let mutable State, Messages = init ()
@@ -42,8 +44,9 @@ module Game =
         override this.BeginRun () =      
             let (newPlayerModel,playerMessage) = Player.init (this.SceneSystem) (this.Input)
             let (newPlatformodel,platformMessage) = Platform.init (this.SceneSystem)
-            State <- { State with PlayerModel = newPlayerModel; PlatformModel = newPlatformodel }
-            Messages <- Messages @ [playerMessage;platformMessage]
+            let (newUiModel,UiMessage) = UI.init (this.SceneSystem)
+            State <- { State with PlayerModel = newPlayerModel; PlatformModel = newPlatformodel; UiModel = newUiModel }
+            Messages <- Messages @ [playerMessage; platformMessage; UiMessage]
             ()
 
         member private this.GameUpdate (cmds : GameMsg list) (state : GameModel) (gameTime : GameTime) =
@@ -55,6 +58,9 @@ module Game =
                 | PlatformMsg(m) -> 
                     let newModel, newMsg = Platform.update m state.PlatformModel (float32 gameTime.Elapsed.TotalSeconds)
                     { state with PlatformModel = newModel }, msgs @ [newMsg]
+                | UiMsg(m) -> 
+                    let newModel, newMsg = UI.update m state.UiModel (float32 gameTime.Elapsed.TotalSeconds)
+                    { state with UiModel = newModel }, msgs @ [newMsg]
                 | Start -> state, msgs
                 | Restart -> state, msgs
                 | Empty -> state, msgs

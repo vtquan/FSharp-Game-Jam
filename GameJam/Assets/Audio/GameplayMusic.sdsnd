@@ -1,0 +1,7 @@
+!Sound
+Id: 9687679a-07a8-4f2b-82a0-d8b0ec802697
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Audio/30 - I Can't Take This....wav
+StreamFromDisk: true
+Spatialized: false

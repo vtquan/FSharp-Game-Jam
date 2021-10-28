@@ -1,0 +1,37 @@
+!UIPageAsset
+Id: 05d87aab-477e-4133-84c9-1338ede5ba95
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! 6e26ca3f-91d5-414b-8b9d-ed1092120248
+    Parts:
+        -   UIElement: !Grid
+                Id: 6e26ca3f-91d5-414b-8b9d-ed1092120248
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                Name: Elements
+                Children:
+                    82e6754c4917d440498aff69fc3e42aa: !TextBlock ref!! 722abf63-807c-4596-ace9-1f2d38e7ecd3
+                RowDefinitions: {}
+                ColumnDefinitions: {}
+                LayerDefinitions: {}
+        -   UIElement: !TextBlock
+                Id: 722abf63-807c-4596-ace9-1f2d38e7ecd3
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                Margin: {Left: 100.0, Top: 100.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 400.0
+                DefaultHeight: 400.0
+                Name: CollectionCounter
+                Text: 10/14
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}

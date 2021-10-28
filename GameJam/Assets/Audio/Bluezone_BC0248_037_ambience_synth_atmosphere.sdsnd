@@ -1,0 +1,9 @@
+!Sound
+Id: bcf59f33-215b-49fc-b0f0-53d222c1835d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Audio/Bluezone_BC0248_037_ambience_synth_atmosphere.wav
+SampleRate: 96000
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: true

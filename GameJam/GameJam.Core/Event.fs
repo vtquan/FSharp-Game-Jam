@@ -17,21 +17,22 @@ module Event =
 
 
     // Could be expand for larger project by creating function of each scene
-    let private ProcessGameEvent ((message, entity) : string * Entity) : GameMsg = 
+    let private ProcessGameEvent ((message, entity) : string * Entity) : GameMsg list = 
         match message with
-        | "Collect" -> PlayerMsg(Collision(entity))
-        | "Left" -> PlayerMsg(MoveLeft)
-        | "Right" -> PlayerMsg(MoveRight)
-        | "Up" -> PlayerMsg(MoveUp)
-        | "Down" -> PlayerMsg(MoveDown)
-        | "Jump" -> PlayerMsg(Jump)
-        | "Grounded" -> PlayerMsg(Grounded)
-        | "Airborne" -> PlayerMsg(Airborne)
-        | "NoMovement" -> PlayerMsg(NoMovement)
-        | "AttachPlayer" -> PlatformMsg(AttachPlayer(entity))
-        | "DetachPlayer" -> PlatformMsg(DetachPlayer(entity))
-        | "Camera"| "Camera2"| "Camera3"| "Camera4" -> Empty    //for example all these message can be process by ProcessCameraEvent message
-        | _ -> Empty
+        //| "Collect" -> PlayerMsg(Collision(entity))
+        | "Collect" -> [PlayerMsg(Collision(entity));UiMsg(Increment)]
+        | "Left" -> [PlayerMsg(MoveLeft)]
+        | "Right" -> [PlayerMsg(MoveRight)]
+        | "Up" -> [PlayerMsg(MoveUp)]
+        | "Down" -> [PlayerMsg(MoveDown)]
+        | "Jump" -> [PlayerMsg(Jump)]
+        | "Grounded" -> [PlayerMsg(Grounded)]
+        | "Airborne" -> [PlayerMsg(Airborne)]
+        | "NoMovement" -> [PlayerMsg(NoMovement)]
+        | "AttachPlayer" -> [PlatformMsg(AttachPlayer(entity))]
+        | "DetachPlayer" -> [PlatformMsg(DetachPlayer(entity))]
+        | "Camera"| "Camera2"| "Camera3"| "Camera4" -> []    //for example all these message can be process by ProcessCameraEvent message
+        | _ -> []
 
     let ProcessAllGameEvent (eventReceiver : EventReceiver<string * Entity>) : GameMsg list =
         let numEvent, events = TryReceiveAllEvent eventReceiver
@@ -42,8 +43,8 @@ module Event =
                 seq {
                     for e in events do
                         match ProcessGameEvent e with
-                        | Empty -> ()
-                        | m -> yield m
+                        | [] -> ()
+                        | m -> yield! m
                 }
             List.ofSeq msgSeq
 

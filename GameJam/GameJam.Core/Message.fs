@@ -22,10 +22,14 @@ module Messages =
         | Countup
         | AttachPlayer of Entity
         | DetachPlayer of Entity
+        
+    type UiMsg = 
+        | Increment
 
     type GameMsg =
         | PlayerMsg of PlayerMsg
         | PlatformMsg of PlatformMsg
+        | UiMsg of UiMsg
         | Start
         | Restart 
         | Empty
