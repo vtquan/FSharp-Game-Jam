@@ -185,6 +185,26 @@ Hierarchy:
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Button
+                Id: c8945613-a752-4952-9c90-84fe681118f6
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Content: !TextBlock ref!! f1cffd07-124a-43ec-8269-8feb5998ab8d
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
         -   UIElement: !TextBlock
                 Id: d58aa843-1256-43d7-ae19-5f2ca04d590c
                 DependencyProperties: {}
@@ -210,9 +230,21 @@ Hierarchy:
                 Children:
                     54998e500b5c254989c841aff25c8eb3: !Border ref!! 65fc6843-2a46-478e-bc09-297926579e8a
                     985572e38f7a02abf79b92166e4ac6ca: !Grid ref!! 91d25264-1ef4-4662-aa94-71f1546051d8
+                    f6687b0616c07b0af882cd0c1dc83e4d: !Button ref!! c8945613-a752-4952-9c90-84fe681118f6
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}
+        -   UIElement: !TextBlock
+                Id: f1cffd07-124a-43ec-8269-8feb5998ab8d
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                Text: Restart
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !TextBlock
                 Id: fbc1a30e-5ae2-486b-bcc8-369bca4986aa
                 DependencyProperties: {}

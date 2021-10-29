@@ -8,7 +8,7 @@ open Messages
 module Event =
     let private ProcessGameEvent ((message, entity) : string * Entity) : GameMsg list = 
         match message with
-        | "Collect" -> [PlayerMsg(Collision(entity));UiMsg(Increment)]
+        | "Collect" -> [PlayerMsg(Collision(entity)); GoalMsg(Activate); UiMsg(Increment); Collect]
         | "Left" -> [PlayerMsg(MoveLeft)]
         | "Right" -> [PlayerMsg(MoveRight)]
         | "Up" -> [PlayerMsg(MoveUp)]
@@ -19,6 +19,7 @@ module Event =
         | "NoMovement" -> [PlayerMsg(NoMovement)]
         | "AttachPlayer" -> [PlatformMsg(AttachPlayer(entity))]
         | "DetachPlayer" -> [PlatformMsg(DetachPlayer(entity))]
+        | "Goal" -> [Goal]
         | "Start" -> [Start]
         | _ -> []
         

@@ -1,0 +1,23 @@
+!Model
+Id: 383371c2-22d4-47dc-8393-390f42c3c5c9
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/candleBundle.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    263bf720bdfa0846a859731395f30b79:
+        Name: White
+        MaterialInstance:
+            Material: 3a292bca-dae4-4bab-85d7-6a346ae1b9f4:Models/Decors/White
+    4073958787345bac19e74f4c2e1ffdd2:
+        Name: Black
+        MaterialInstance:
+            Material: f38cf079-1f4b-4a22-840c-cf2827b07754:Models/Decors/Black
+    e44acb7352017ca700e210981195319e:
+        Name: Yellow
+        MaterialInstance:
+            Material: 1a73ae7e-8c2c-4388-ad4f-8c7c213faec6:Models/Decors/Yellow
+Modifiers: {}
+~SourceHashes:
+    126d50c8d3db74d3ab4fb049c6bd6cb1~../../../Resources/Model/Decors/candleBundle.fbx: a0045281aab603b52ac2658a6f3ac254

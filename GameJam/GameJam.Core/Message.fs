@@ -22,6 +22,10 @@ module Messages =
         | Countup
         | AttachPlayer of Entity
         | DetachPlayer of Entity
+
+    type GoalMsg = 
+        | Activate
+        | Rotate
         
     type UiMsg = 
         | Increment
@@ -29,7 +33,10 @@ module Messages =
     type GameMsg =
         | PlayerMsg of PlayerMsg
         | PlatformMsg of PlatformMsg
+        | GoalMsg of GoalMsg
         | UiMsg of UiMsg
+        | Collect
         | Start
         | Restart 
+        | Goal
         | Empty

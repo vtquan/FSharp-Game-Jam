@@ -1,0 +1,131 @@
+!PrefabAsset
+Id: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 4a997223-5e76-4a2a-98d5-544d4f0131b1
+        - ref!! fe9722cf-d822-4890-bc5f-d517021e7095
+    Parts:
+        -   Entity:
+                Id: 200d8b92-1181-466f-87b8-44d999bdd669
+                Name: Orbiter
+                Components:
+                    955ee40439dd7fe70e4429e7e1963ca8: !TransformComponent
+                        Id: dc33594d-a7e2-4e57-9561-e966d025b708
+                        Position: {X: 0.0, Y: 1.0, Z: -4.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c212e526d0698478a4feee01ae4b0ad6: !ModelComponent
+                        Id: 10c80fe3-49a6-4b87-9f0e-6918d91a9cc1
+                        Model: 1acc32c3-af18-48f1-b0be-8302b31d961a:Models/GeoSphere_2
+                        Materials: {}
+        -   Entity:
+                Id: 256ecf1f-902b-4288-b314-7d30c3071560
+                Name: Orbiter
+                Components:
+                    955ee40439dd7fe70e4429e7e1963ca8: !TransformComponent
+                        Id: bf94002a-cf0a-4c82-8d49-8dbeed800a71
+                        Position: {X: -4.0, Y: 1.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c212e526d0698478a4feee01ae4b0ad6: !ModelComponent
+                        Id: ceffc547-7e5b-4eec-981a-abd33a422346
+                        Model: 1acc32c3-af18-48f1-b0be-8302b31d961a:Models/GeoSphere_2
+                        Materials: {}
+        -   Entity:
+                Id: 4a997223-5e76-4a2a-98d5-544d4f0131b1
+                Name: Goal
+                Components:
+                    8e42323a99d9dffc2722507ca371e633: !TransformComponent
+                        Id: 493bdafe-0d6c-4994-8c49-b150e16b272e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    85013c98396cbaeed9211c0208e633db: !ModelComponent
+                        Id: f316d9e4-c0ee-4da1-8cff-8c2fef17225a
+                        Model: 83286573-59e7-443d-90cb-a5a73d0ca941:Models/Decors/shrine
+                        Materials: {}
+                    a943a23624d0a91c2975f2ff7d35f1fd: !StaticColliderComponent
+                        Id: b1940604-318f-42bf-9c44-f9d759651b46
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4a599f00bcdb6734cc99073a416a54f3: !CylinderColliderShapeDesc
+                                Height: 0.5
+                                LocalOffset: {X: 0.0, Y: 1.8, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            608b4cd68c9f395e3a27608b24b19db0: !CylinderColliderShapeDesc
+                                LocalOffset: {X: 0.0, Y: 0.3, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: 603c208e-3d4b-4c57-89d1-3168f3133d12
+                Name: Orbiter
+                Components:
+                    955ee40439dd7fe70e4429e7e1963ca8: !TransformComponent
+                        Id: c3553fcd-456a-47fa-a894-e0d8971679c5
+                        Position: {X: 0.0, Y: 1.0, Z: 4.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c212e526d0698478a4feee01ae4b0ad6: !ModelComponent
+                        Id: 91e73d50-5b15-4c0f-af4f-6b42df73910e
+                        Model: 1acc32c3-af18-48f1-b0be-8302b31d961a:Models/GeoSphere_2
+                        Materials: {}
+        -   Entity:
+                Id: bc48fa99-1f8f-41dd-8310-2dccbe5c36c5
+                Name: Orbiter
+                Components:
+                    955ee40439dd7fe70e4429e7e1963ca8: !TransformComponent
+                        Id: 03b883ba-1173-4b00-a6d4-fc8ce62552ae
+                        Position: {X: 4.0, Y: 1.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c212e526d0698478a4feee01ae4b0ad6: !ModelComponent
+                        Id: 8771e967-dc89-48aa-897f-dd5c13837440
+                        Model: 1acc32c3-af18-48f1-b0be-8302b31d961a:Models/GeoSphere_2
+                        Materials: {}
+        -   Entity:
+                Id: fe9722cf-d822-4890-bc5f-d517021e7095
+                Name: Core
+                Components:
+                    955ee40439dd7fe70e4429e7e1963ca8: !TransformComponent
+                        Id: a8e0ba2e-e596-47cc-8316-80869a0a9286
+                        Position: {X: 0.0, Y: 4.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Children:
+                            b2f2d7815878a1471c6917725a496abc: ref!! 03b883ba-1173-4b00-a6d4-fc8ce62552ae
+                            60cd7e5b97214b96cf9ed13f49097592: ref!! c3553fcd-456a-47fa-a894-e0d8971679c5
+                            75fcd3c00a967a57cfc23eba3cc15e7e: ref!! dc33594d-a7e2-4e57-9561-e966d025b708
+                            62ebaea66fe422986d85e8731ad4e21b: ref!! bf94002a-cf0a-4c82-8d49-8dbeed800a71
+                    c212e526d0698478a4feee01ae4b0ad6: !ModelComponent
+                        Id: bba27a90-4b4e-4435-ad4b-317b180d4c10
+                        Model: 383371c2-22d4-47dc-8393-390f42c3c5c9:Models/Decors/candleBundle
+                        Materials: {}
+                    78fce25fda39199f5bed5f42d302fa58: !StaticColliderComponent
+                        Id: f442b56c-0c78-4dae-a7cb-a8f8518fcb65
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            5ba954e0212c511e5e0f33a30670e00f: !SphereColliderShapeDesc
+                                Is2D: false
+                                LocalOffset: {X: 0.0, Y: 0.5, Z: 0.0}
+                    c7a6bf97efae09bfacb9b4df07fc678f: !GameJam.GoalCollision,GameJam.Game
+                        Id: a12775be-7e41-4ce2-b5ff-9b3512029eb6

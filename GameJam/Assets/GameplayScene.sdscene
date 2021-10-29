@@ -25,6 +25,7 @@ Hierarchy:
         - ref!! 4de78ee7-df4e-4eb1-ae7e-45316a801c59
         - ref!! 16bef75b-e8cc-41f0-abfd-c37d28ebfd57
         - ref!! 174784cf-2251-4708-9961-61adcbfee06e
+        - ref!! 93544b3d-88b3-44ea-a57f-b0cc8e5c09fb
     Parts:
         -   Folder: null
             Entity:
@@ -412,6 +413,24 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! ec7f16d4-04d6-45ef-b31d-fbb893a716cf
+        -   Entity:
+                Id: 10e720af-5481-4a29-9da1-f5293d4869c0
+                Name: Orbiter
+                Components:
+                    955ee40439dd7fe70e4429e7e1963ca8: !TransformComponent
+                        Id: 160286c8-83a1-4bcd-8038-45807c7e9850
+                        Position: {X: 0.0, Y: 1.0, Z: 4.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c212e526d0698478a4feee01ae4b0ad6: !ModelComponent
+                        Id: 6a84920d-8f3f-4482-93c9-06edd9498d07
+                        Model: 1acc32c3-af18-48f1-b0be-8302b31d961a:Models/GeoSphere_2
+                        Materials: {}
+            Base:
+                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Prefab
+                BasePartId: 603c208e-3d4b-4c57-89d1-3168f3133d12
+                InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
         -   Folder: null
             Entity:
                 Id: 11ccb3f3-0766-4396-b955-3e1a9eed9111
@@ -2901,6 +2920,18 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 4e6d9a19-474a-4ddb-89d4-bc59c9c25fb8
+        -   Entity:
+                Id: 93544b3d-88b3-44ea-a57f-b0cc8e5c09fb
+                Name: Goal
+                Components:
+                    8e958a6dc565ac1d5ef2ae673523c66c: !TransformComponent
+                        Id: b8b8eedd-1157-4a68-9d92-9a575d9c44b9
+                        Position: {X: -8.344177, Y: 0.0, Z: 34.940575}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            adf716f07497c241dc985e3fd3bd8de0: ref!! 373df3a5-ed7c-41b8-931f-bf53a8326714
+                            8cd7c384ff63b1be298e3e64a025ec3e: ref!! 0f183e69-79db-4394-956c-d0a9edd1e24e
         -   Folder: null
             Entity:
                 Id: 93ef1e0b-6398-48c3-9748-aa69a3606df1
@@ -3086,6 +3117,44 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! ef9a3e5e-e4ee-40bd-8bbc-c557fd953e5c
+        -   Entity:
+                Id: a1e6f2ed-e38d-4e77-b564-a7a3b43ef5c6
+                Name: Core
+                Components:
+                    955ee40439dd7fe70e4429e7e1963ca8: !TransformComponent
+                        Id: 0f183e69-79db-4394-956c-d0a9edd1e24e
+                        Position: {X: 0.0, Y: 4.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Children:
+                            94a3f8b10426c27693158eff67a01b09: ref!! cead36e6-8a69-413b-b550-2b998822dfc0
+                            3df98063ba68a987b82e460e321853b7: ref!! 160286c8-83a1-4bcd-8038-45807c7e9850
+                            b46b9433b3a6c57730ea528a8187c502: ref!! 09279457-7902-4bc2-b642-ecdc09fb5c45
+                            8d81041ca343cdc252af49f8766d7251: ref!! 9bb431bb-e65e-4793-891b-88e774cb130a
+                    c212e526d0698478a4feee01ae4b0ad6: !ModelComponent
+                        Id: 0656b5be-ae78-45d3-9543-1570f6817d35
+                        Model: 383371c2-22d4-47dc-8393-390f42c3c5c9:Models/Decors/candleBundle
+                        Materials: {}
+                    78fce25fda39199f5bed5f42d302fa58: !StaticColliderComponent
+                        Id: ed8dada8-57a6-47db-bfe7-bdfb031e74e2
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            5ba954e0212c511e5e0f33a30670e00f: !SphereColliderShapeDesc
+                                Is2D: false
+                                LocalOffset: {X: 0.0, Y: 0.5, Z: 0.0}
+                    c7a6bf97efae09bfacb9b4df07fc678f: !GameJam.GoalCollision,GameJam.Game
+                        Id: ec798b4c-bb3a-401c-8f73-ece612551296
+            Base:
+                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
+                BasePartId: fe9722cf-d822-4890-bc5f-d517021e7095
+                InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
         -   Folder: Platform
             Entity:
                 Id: a28dd34e-a1cc-4188-99bd-b8341c715f89
@@ -3314,6 +3383,24 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 79a6e7ca-9c02-4057-9ab1-e4b779cd332d
+        -   Entity:
+                Id: ae75b301-176c-4889-bef0-94de6d215466
+                Name: Orbiter
+                Components:
+                    955ee40439dd7fe70e4429e7e1963ca8: !TransformComponent
+                        Id: 9bb431bb-e65e-4793-891b-88e774cb130a
+                        Position: {X: -4.0, Y: 1.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c212e526d0698478a4feee01ae4b0ad6: !ModelComponent
+                        Id: 85ff63c3-f4d5-4c02-9e76-5f7e2402bda0
+                        Model: 1acc32c3-af18-48f1-b0be-8302b31d961a:Models/GeoSphere_2
+                        Materials: {}
+            Base:
+                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Prefab
+                BasePartId: 256ecf1f-902b-4288-b314-7d30c3071560
+                InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
         -   Folder: null
             Entity:
                 Id: b11e4bd4-d5d5-4dc8-b236-8312723e4e72
@@ -4406,6 +4493,24 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! ccf65878-2afa-4589-9270-98d3a17ba949
+        -   Entity:
+                Id: ec9aca46-2aa5-40d5-9b1b-66b691f0861b
+                Name: Orbiter
+                Components:
+                    955ee40439dd7fe70e4429e7e1963ca8: !TransformComponent
+                        Id: 09279457-7902-4bc2-b642-ecdc09fb5c45
+                        Position: {X: 0.0, Y: 1.0, Z: -4.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c212e526d0698478a4feee01ae4b0ad6: !ModelComponent
+                        Id: 11e92409-ded4-46c5-b829-6b2076a5837e
+                        Model: 1acc32c3-af18-48f1-b0be-8302b31d961a:Models/GeoSphere_2
+                        Materials: {}
+            Base:
+                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Prefab
+                BasePartId: 200d8b92-1181-466f-87b8-44d999bdd669
+                InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
         -   Folder: null
             Entity:
                 Id: ecdd326b-c31c-430a-82d4-8744eed07d9e
@@ -4474,6 +4579,42 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 2fa10bc0-a6cb-4297-9bba-b1f98e2c4ac6
+        -   Entity:
+                Id: f106f069-2ae1-44a4-8cd3-937ddd06ea56
+                Name: Goal
+                Components:
+                    8e42323a99d9dffc2722507ca371e633: !TransformComponent
+                        Id: 373df3a5-ed7c-41b8-931f-bf53a8326714
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    85013c98396cbaeed9211c0208e633db: !ModelComponent
+                        Id: 2c4aac79-ee60-41cc-9c46-d7ad31ccfcf4
+                        Model: 83286573-59e7-443d-90cb-a5a73d0ca941:Models/Decors/shrine
+                        Materials: {}
+                    a943a23624d0a91c2975f2ff7d35f1fd: !StaticColliderComponent
+                        Id: 7e6219f5-d68b-4ab5-9e41-5a422d7b59be
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4a599f00bcdb6734cc99073a416a54f3: !CylinderColliderShapeDesc
+                                Height: 0.5
+                                LocalOffset: {X: 0.0, Y: 1.8, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            608b4cd68c9f395e3a27608b24b19db0: !CylinderColliderShapeDesc
+                                LocalOffset: {X: 0.0, Y: 0.3, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
+                BasePartId: 4a997223-5e76-4a2a-98d5-544d4f0131b1
+                InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
         -   Folder: null
             Entity:
                 Id: f48fa1e8-6bad-4491-8830-38973e7a6a64
@@ -4486,6 +4627,24 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! bda25fc0-1c9d-4347-9051-d1374c867fe2
+        -   Entity:
+                Id: f6ba556c-1bf9-4ed8-91c5-777a7e1b5287
+                Name: Orbiter
+                Components:
+                    955ee40439dd7fe70e4429e7e1963ca8: !TransformComponent
+                        Id: cead36e6-8a69-413b-b550-2b998822dfc0
+                        Position: {X: 4.0, Y: 1.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c212e526d0698478a4feee01ae4b0ad6: !ModelComponent
+                        Id: 997dfc32-a602-44e8-be81-d3c124c48fd6
+                        Model: 1acc32c3-af18-48f1-b0be-8302b31d961a:Models/GeoSphere_2
+                        Materials: {}
+            Base:
+                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Prefab
+                BasePartId: bc48fa99-1f8f-41dd-8310-2dccbe5c36c5
+                InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
         -   Folder: null
             Entity:
                 Id: f7412790-5da6-4418-8bfe-a892675338fe

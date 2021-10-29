@@ -41,4 +41,3 @@ Hierarchy:
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
                     69e255cd1ffdeaf4f8364ebc8371b636: !GameJam.TitleSceneScript,GameJam.Game
                         Id: 78e07913-fcea-4f20-ae2c-23b30788ec57
-                        UILibrary: null

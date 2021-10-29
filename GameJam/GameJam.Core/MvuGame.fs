@@ -5,6 +5,7 @@ open Stride.Engine;
 open Stride.Games;
 open Messages
 open SceneManager
+open System
 
 module Game =    
     
@@ -12,15 +13,19 @@ module Game =
         {
             PlayerModel : Player.Model
             PlatformModel : Platform.Model
+            GoalModel : Goal.Model
             UiModel : UI.Model
             CurrentScene : CurrentScene
+            StartTime: TimeSpan
+            CurrentTime: TimeSpan list
+            BestTime: TimeSpan list
         }
 
     type MvuGame() =
         inherit Game()
 
         let init () =
-            { PlayerModel = Player.empty (); PlatformModel = Platform.empty (); UiModel = UI.empty (); CurrentScene = Title}, []
+            { PlayerModel = Player.empty (); PlatformModel = Platform.empty (); GoalModel = Goal.empty (); UiModel = UI.empty (); CurrentScene = Title; StartTime = TimeSpan.Zero; CurrentTime = []; BestTime = []}, []
 
         let view (state : GameModel) (gameTime : GameTime) =
             match state.CurrentScene with
@@ -30,6 +35,7 @@ module Game =
                 Player.view state.PlayerModel
                 Platform.view state.PlatformModel (float32 gameTime.Elapsed.TotalSeconds)
                 UI.view state.UiModel (float32 gameTime.Elapsed.TotalSeconds)
+                Goal.view state.GoalModel (float32 gameTime.Elapsed.TotalSeconds)
             | Score -> 
                 ()
             
@@ -52,8 +58,9 @@ module Game =
                         this.SceneSystem.SceneInstance.RootScene.Children.Add(gameplayScene)
                         let (newPlayerModel,playerMessage) = Player.init (gameplayScene) (this.Input)
                         let (newPlatformodel,platformMessage) = Platform.init (gameplayScene)
+                        let (newGoalmodel,GoalMessage) = Goal.init (gameplayScene)
                         let (newUiModel,UiMessage) = UI.init (gameplayScene)
-                        { state with CurrentScene = GamePlay; PlayerModel = newPlayerModel; PlatformModel = newPlatformodel; UiModel = newUiModel }, msgs@ [playerMessage; platformMessage; UiMessage]
+                        { state with CurrentScene = GamePlay; PlayerModel = newPlayerModel; PlatformModel = newPlatformodel; GoalModel = newGoalmodel; UiModel = newUiModel; StartTime = gameTime.Total }, msgs@ [playerMessage; platformMessage; GoalMessage; UiMessage]
                     | _ -> state, msgs
                 | GamePlay ->      
                     match cmd with
@@ -66,9 +73,24 @@ module Game =
                     | UiMsg(m) -> 
                         let newModel, newMsg = UI.update m state.UiModel (float32 gameTime.Elapsed.TotalSeconds)
                         { state with UiModel = newModel }, msgs @ [newMsg]
-                    | Start -> {state with CurrentScene = GamePlay}, msgs
-                    | Restart -> {state with CurrentScene = Title}, msgs
+                    | GoalMsg(m) ->
+                        let newModel, newMsg = Goal.update m state.GoalModel (float32 gameTime.Elapsed.TotalSeconds)
+                        { state with GoalModel = newModel }, msgs @ [newMsg]
+                    | Collect ->
+                        let newTime = state.CurrentTime @ [gameTime.Total - state.StartTime]
+                        { state with CurrentTime = newTime }, msgs
+                    | Goal when state.PlayerModel.Counter = 2 ->
+                        this.Input.UnlockMousePosition()
+                        this.IsMouseVisible <- true
+                        let scoreScene = this.Content.Load<Scene>("ScoreScene")
+                        this.SceneSystem.SceneInstance.RootScene.Children.Clear()
+                        this.SceneSystem.SceneInstance.RootScene.Children.Add(scoreScene)
+                        let newTime = state.CurrentTime @ [gameTime.Total - state.StartTime]
+                        { state with CurrentScene = Score; CurrentTime = newTime }, msgs
+                    | Goal ->                        
+                        state, msgs
                     | Empty -> state, msgs
+                    | _ -> state, msgs
                 | Score -> 
                     state, msgs
 

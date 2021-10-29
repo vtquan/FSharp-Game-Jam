@@ -1,0 +1,15 @@
+!Model
+Id: 83286573-59e7-443d-90cb-a5a73d0ca941
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/shrine.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    a8dee68f2ceef00934220030d72a37e3:
+        Name: Stone
+        MaterialInstance:
+            Material: 52e53ea2-25ff-4e20-96fd-bf645057152b:Models/Decors/Stone
+Modifiers: {}
+~SourceHashes:
+    2c853d15e8590b79dc4f11336260984a~../../../Resources/Model/Decors/shrine.fbx: ac773d8d29818d3cff8ba8792b8445ac
