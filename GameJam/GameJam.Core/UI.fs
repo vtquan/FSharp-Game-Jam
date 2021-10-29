@@ -20,8 +20,8 @@ module UI =
     let empty () =
         { Counter = 0; Page = new UIPage() }
         
-    let init (sceneSystem : SceneSystem) =
-        let page = sceneSystem.SceneInstance.RootScene.Entities.FirstOrDefault(fun x -> x.Name = "UI").Get<UIComponent>().Page
+    let init (scene : Scene) =
+        let page = scene.Entities.FirstOrDefault(fun x -> x.Name = "UI").Get<UIComponent>().Page
         { Counter = 0; Page = page }, Empty
 
     let update msg (model : Model) (deltaTime : float32) =

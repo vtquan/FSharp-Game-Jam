@@ -19,6 +19,7 @@ module Event =
         | "NoMovement" -> [PlayerMsg(NoMovement)]
         | "AttachPlayer" -> [PlatformMsg(AttachPlayer(entity))]
         | "DetachPlayer" -> [PlatformMsg(DetachPlayer(entity))]
+        | "Start" -> [Start]
         | _ -> []
         
     let private TryReceiveAllEvent (eventReceiver : EventReceiver<'a>) =   

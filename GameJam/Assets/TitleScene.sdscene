@@ -1,0 +1,44 @@
+!SceneAsset
+Id: 09370b01-39c2-4bbb-8fd3-346f64b5bde1
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 70323ecc-ad36-457d-acab-93feb253424a
+        - ref!! a936bb36-f137-4636-b351-b798daa4a1cd
+    Parts:
+        -   Entity:
+                Id: 70323ecc-ad36-457d-acab-93feb253424a
+                Name: Camera
+                Components:
+                    90d00b28de9783a5a383fa7d15aad9c7: !TransformComponent
+                        Id: 0489bf8a-3f3b-4b3b-be54-0c0b018d02c6
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9e57e39b9ee70d70043f5f66706b77f5: !CameraComponent
+                        Id: bfb35fc3-66ec-4a0a-91d7-41b77ad7a357
+                        Name: null
+                        Projection: Perspective
+                        Slot: 9aeac611-d1f6-46da-a235-e20cc154e170
+        -   Entity:
+                Id: a936bb36-f137-4636-b351-b798daa4a1cd
+                Name: UI
+                Components:
+                    f1ca85042566792d8eb267d5c6286a71: !TransformComponent
+                        Id: 738ff309-f640-43fd-83cf-63e9f64e1926
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    41515036233a28b867bffe65a45e3c44: !UIComponent
+                        Id: a74e0e93-abc2-468d-afb6-9967193918f1
+                        Page: fe1491df-12b3-417e-96a4-aaf278b4b5f9:TitleUI
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    69e255cd1ffdeaf4f8364ebc8371b636: !GameJam.TitleSceneScript,GameJam.Game
+                        Id: 78e07913-fcea-4f20-ae2c-23b30788ec57
+                        UILibrary: null

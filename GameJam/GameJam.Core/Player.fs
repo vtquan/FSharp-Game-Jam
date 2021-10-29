@@ -22,8 +22,8 @@ module Player =
     let empty () =
         { Velocity = new Vector3(0f, 0.f, 0f); MoveDirection = Vector3.Zero; NewMoveDirection = Vector3.Zero; Jumped = false; JumpReactionRemaining = 0f; Counter = 0; Entity = new Entity(); AppearanceModel = new Entity(); AttachedPlatform = new Entity(); Input = new InputManager(); Camera = new CameraComponent() }
     
-    let init (sceneSystem : SceneSystem) (input : InputManager) =
-        let entity = sceneSystem.SceneInstance.RootScene.Entities.FirstOrDefault(fun x -> x.Name = "PlayerCharacter")        
+    let init (scene : Scene) (input : InputManager) =
+        let entity = scene.Entities.FirstOrDefault(fun x -> x.Name = "PlayerCharacter")        
         let cameraComponent = entity.GetChild(1).GetChild(0).Get<CameraComponent>()
         { Velocity = new Vector3(0f, 0f, 0f); MoveDirection = Vector3.Zero; NewMoveDirection = Vector3.Zero; Jumped = false; JumpReactionRemaining = jumpReactionThreshold; Counter = 0; Entity = entity; AppearanceModel = entity.GetChild(0); AttachedPlatform = new Entity(); Input = input; Camera = cameraComponent }, Empty
     

@@ -7,7 +7,23 @@ Offset: {X: 0.0, Y: 0.0, Z: 0.0}
 Hierarchy:
     RootParts:
         - ref!! 4379869f-bf1c-4213-9663-9ed326640622
+        - ref!! 0e75d337-df78-4f5e-86ec-d6831ac0ddf6
     Parts:
+        -   Entity:
+                Id: 0e75d337-df78-4f5e-86ec-d6831ac0ddf6
+                Name: Camera
+                Components:
+                    062ff85d0478590be03ccdb6c12f653f: !TransformComponent
+                        Id: b247bd7f-ec5f-44af-8acd-74064ab0dca0
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    47aa8e48eba1912c1809422d5cc43fb5: !CameraComponent
+                        Id: 3682a481-afa8-41d2-ba0a-90874de2edf0
+                        Name: null
+                        Projection: Perspective
+                        Slot: 9aeac611-d1f6-46da-a235-e20cc154e170
         -   Entity:
                 Id: 4379869f-bf1c-4213-9663-9ed326640622
                 Name: UI

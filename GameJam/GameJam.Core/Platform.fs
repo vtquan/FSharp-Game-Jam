@@ -30,19 +30,17 @@ module Platform =
     let empty () =
         { Timer = 0f; Direction = Forward; Platforms = []; Player = new Entity() }
         
-    let init (sceneSystem : SceneSystem) =
-        let player = sceneSystem.SceneInstance.RootScene.Entities.FirstOrDefault(fun x -> x.Name = "PlayerCharacter")    
-        let platforms = sceneSystem.SceneInstance.RootScene.Entities.Where(fun x -> x.Name.Contains("Platform"))    
+    let init (scene : Scene) =
+        let player = scene.Entities.FirstOrDefault(fun x -> x.Name = "PlayerCharacter")    
+        let platforms = scene.Entities.Where(fun x -> x.Name.Contains("Platform"))    
         let movingPlatforms = Seq.map (fun x -> { Entity = x; PlayerAttached = false }) platforms
 
         { Timer = 0f; Direction = Forward; Platforms = List.ofSeq movingPlatforms; Player = player }, PlatformMsg(Countup)
-
     
     let mapPlatformAttach (attachedPlatform : Entity) (currentPlatform : MovingPlatform)  =
         match currentPlatform.Entity.GetChild(0) = attachedPlatform with    //Platform is a prefab so the the collision trigger belong to the child entity
         | true -> { currentPlatform with PlayerAttached = true }
-        | false -> currentPlatform
-        
+        | false -> currentPlatform        
             
     let mapPlatformDetach (attachedPlatform : Entity) (currentPlatform : MovingPlatform)  =
         match currentPlatform.Entity.GetChild(0) = attachedPlatform with    //Platform is a prefab so the the collision trigger belong to the child entity

@@ -15,4 +15,7 @@ ExplicitFolders: []
 Bundles: []
 TemplateFolders: []
 RootAssets:
+    - 09370b01-39c2-4bbb-8fd3-346f64b5bde1:TitleScene
+    - 42d3e952-1b6a-482b-b225-2cdc7e4b0c69:GameplayScene
     - 9687679a-07a8-4f2b-82a0-d8b0ec802697:Audio/GameplayMusic
+    - f4c5e5f8-18b9-4172-92fd-5f2b439b3959:ScoreScene
