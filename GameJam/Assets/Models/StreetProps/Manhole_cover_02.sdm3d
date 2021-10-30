@@ -1,0 +1,19 @@
+!Model
+Id: aefb7318-8518-4716-8642-dd1316f5e567
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/StreetProps/Manhole_cover_02.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    45c4faddf9510f48a7ee4897bcd393bb:
+        Name: GrayManholecover02
+        MaterialInstance:
+            Material: ce5752eb-e956-49f8-beab-8b835e5bda89:Models/StreetProps/GrayManholecover02
+    209a9b79d2b2d0f049a240cfe76bb4cf:
+        Name: BlackManholecover02
+        MaterialInstance:
+            Material: a851aa04-b569-476d-a0f5-a1ae211690d8:Models/StreetProps/BlackManholecover02
+Modifiers: {}
+~SourceHashes:
+    fc5ed322a8e10ae7566703eddfc6990e~../../../Resources/Model/StreetProps/Manhole_cover_02.fbx: 62404a5d742460b5fdf67b641d739e61

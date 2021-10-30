@@ -1,0 +1,23 @@
+!Model
+Id: 802c3dc0-bd46-4a29-bbe5-b04591b3c02a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/StreetProps/PhoneBooth_01.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    ade5f3595ed6ff3056f9bc7c42d9634c:
+        Name: PhoneBooth_01Windows
+        MaterialInstance:
+            Material: c4d9b6a6-fec4-4dbc-8dfc-7334c741462d:Models/StreetProps/PhoneBooth_01Windows
+    c3a5b9b4df449486317b83d31028b73f:
+        Name: PhoneBooth_Blue
+        MaterialInstance:
+            Material: ea567f45-45ed-4c72-9089-bd267da9eb2b:Models/StreetProps/PhoneBooth_Blue
+    511eb6bafb55e763b5adefa5a120e177:
+        Name: PhoneBooth_01DoorHandle
+        MaterialInstance:
+            Material: 854b1b27-0f52-4ebc-b346-aef1ce343cd8:Models/StreetProps/PhoneBooth_01DoorHandle
+Modifiers: {}
+~SourceHashes:
+    d40d2e304ec155ba0d915aa8c2b8a7b0~../../../Resources/Model/StreetProps/PhoneBooth_01.fbx: 10858f738bcf5a74b3e1f7e0926638bf

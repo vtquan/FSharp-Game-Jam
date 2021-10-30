@@ -1,0 +1,19 @@
+!Model
+Id: 7bbe92b8-c5ba-4c12-a7df-5660dc8f4b89
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/StreetProps/BusStop.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    1c956f185a0979b7ac41d44aaeef8b6c:
+        Name: BlueBusStop
+        MaterialInstance:
+            Material: 458c45d2-3759-4f27-a442-0bab2ffd52fc:Models/StreetProps/BlueBusStop
+    a69bb6931a5cc8acf3dabdbd2ba0f766:
+        Name: LightBlue_BusStop
+        MaterialInstance:
+            Material: 1128ce3f-d0d0-4817-87cd-4215fda8a71a:Models/StreetProps/LightBlue_BusStop
+Modifiers: {}
+~SourceHashes:
+    3185c11b35edb9e466b5af4d05e52bf9~../../../Resources/Model/StreetProps/BusStop.fbx: 121aa5a9d253ce5e49ef2c23aaa62b07

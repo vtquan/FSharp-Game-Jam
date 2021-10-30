@@ -14,18 +14,48 @@ Hierarchy:
         - ref!! a28dd34e-a1cc-4188-99bd-b8341c715f89
         - ref!! 2615afc9-af20-45cd-b660-d8b44ec98e7a
         - ref!! a4bf3d0b-4423-479a-8b5f-89a1f014c214
+        - ref!! 21729b9e-3cc0-4cb9-af10-31c5ada1c9d2
+        - ref!! dcd765e3-1eb9-4e08-907e-67d158228eba
         - ref!! 4eee0bb3-93f7-403d-bcb4-9f06f2405c6e
         - ref!! a655bccd-1b3e-4135-aeca-9d624438b462
-        - ref!! 5f8d47e7-196d-43a6-8da9-935014d71377
-        - ref!! 07588446-449d-4d30-8535-3d2ddb7ec85f
+        - ref!! 174784cf-2251-4708-9961-61adcbfee06e
+        - ref!! 93544b3d-88b3-44ea-a57f-b0cc8e5c09fb
         - ref!! e6b484dc-4f6f-47f3-b6d7-171fef53d8e5
         - ref!! da30d2d1-174e-4f9d-8038-44001f8b3fb3
         - ref!! db87af60-06e3-4b8c-ab1e-6b8228166c34
-        - ref!! b1722410-1fe2-45b1-b9d3-34792e34d9d8
-        - ref!! 4de78ee7-df4e-4eb1-ae7e-45316a801c59
-        - ref!! 16bef75b-e8cc-41f0-abfd-c37d28ebfd57
-        - ref!! 174784cf-2251-4708-9961-61adcbfee06e
-        - ref!! 93544b3d-88b3-44ea-a57f-b0cc8e5c09fb
+        - ref!! 31544c5d-fa2f-45ab-8cea-11b312e50ed3
+        - ref!! 0e058890-10e4-4d4d-81eb-8ab7bf8efb26
+        - ref!! d31bbef3-eb5a-402c-a799-03461cc78147
+        - ref!! ed3afb31-702e-4afe-98d2-a6f7f3f0b859
+        - ref!! 545263bd-71c5-450a-8c87-4260f168e4c9
+        - ref!! 5f8d47e7-196d-43a6-8da9-935014d71377
+        - ref!! 07588446-449d-4d30-8535-3d2ddb7ec85f
+        - ref!! 3593615f-5c48-4c46-8827-12555e40ea32
+        - ref!! 401a1e75-e503-4c26-a75d-d6321249c16e
+        - ref!! 5f5d5495-dbae-4ed6-94d5-50382b84ba15
+        - ref!! e15d3655-4c15-4176-b87a-a9a6d3fa4626
+        - ref!! 2664e0b0-0948-462f-9297-96fc7ee47613
+        - ref!! 0da54299-948e-4168-8b68-c46ee86371ab
+        - ref!! 9421f681-16ef-40d8-a06f-638c500e27f8
+        - ref!! acfabe88-3dcd-45cb-a264-7359cfcd3702
+        - ref!! 152e685b-5683-4d16-9e28-71af0e97860a
+        - ref!! f5921cb3-61dc-4e65-b2cb-7e213b532bef
+        - ref!! 5a0dbcf7-93d2-4481-bfb0-892b8c6ee5d5
+        - ref!! cf59f2a6-1eb5-4afd-9dab-f6e0e7dea39a
+        - ref!! f0804916-42bc-4cf0-bd34-0e439b971c16
+        - ref!! f304bc7e-7723-4855-a40e-61a85f7e324f
+        - ref!! 1f792ecb-e02d-4b84-97bf-5584803f5820
+        - ref!! 13b31315-8fca-4784-b12e-e1784a0f8bab
+        - ref!! 3bf639cf-9521-4d3d-a375-c25cc641144a
+        - ref!! fdb55a0d-a70a-4e7c-98a4-5a36a4f0b44a
+        - ref!! bddf5944-216e-4605-a755-4de736f3582b
+        - ref!! 836238a0-6f72-4cda-af2f-32252a97d3a8
+        - ref!! c0f53c07-d814-445e-9480-64f97352cc1e
+        - ref!! ccafc82e-dc11-4976-98ec-06f7bf6bbaef
+        - ref!! 8c90c171-6a95-4f41-bc3a-17315ac38f7e
+        - ref!! b066338a-bb68-420f-82ef-0ce4a521b2eb
+        - ref!! 7aac2dca-eef3-4d78-a94d-43a67da24997
+        - ref!! c6eca3c6-f030-4024-aeab-4ad7077ae225
     Parts:
         -   Folder: null
             Entity:
@@ -327,13 +357,14 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! e1aa4545-1836-4539-a6cf-519b4360f92f
-        -   Entity:
+        -   Folder: Roads
+            Entity:
                 Id: 07588446-449d-4d30-8535-3d2ddb7ec85f
                 Name: road_straight
                 Components:
                     10695137d193691968aa281bae186a4a: !TransformComponent
                         Id: f0a78beb-7587-40bb-9660-26cba300ae29
-                        Position: {X: -3.7916222, Y: 0.0, Z: -16.525034}
+                        Position: {X: -3.7916222, Y: 0.0, Z: -26.486845}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -413,6 +444,33 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! ec7f16d4-04d6-45ef-b31d-fbb893a716cf
+        -   Folder: Roads
+            Entity:
+                Id: 0da54299-948e-4168-8b68-c46ee86371ab
+                Name: road_bend
+                Components:
+                    d133535d87d2e2c401a4003fc630a9b6: !TransformComponent
+                        Id: 27bbd7f8-cc60-4750-add4-31e1072f2b8c
+                        Position: {X: 36.07562, Y: 0.0, Z: -11.495844}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    6579eb48dd36b115aff15e38b9190517: !ModelComponent
+                        Id: 54b3055f-dbe3-43fa-b403-d05d5ba3e81b
+                        Model: 3ad28d0a-5418-4278-9c3d-cb9090f45bf3:Models/Roads/road_bend
+                        Materials: {}
+        -   Folder: Buildings
+            Entity:
+                Id: 0e058890-10e4-4d4d-81eb-8ab7bf8efb26
+                Name: BuildingD
+                Components:
+                    2bff2c6b1181c73adc84b51ac1ff29b0: !TransformComponent
+                        Id: fa5779d2-af88-4de3-b4fd-9bda2e90ed85
+                        Position: {X: 43.107708, Y: 0.0, Z: -34.711742}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            2d2ac68943020bae9a37924fbd377914: ref!! b16c96a0-4fda-44a0-93b0-8859de7dc4d6
         -   Entity:
                 Id: 10e720af-5481-4a29-9da1-f5293d4869c0
                 Name: Orbiter
@@ -559,6 +617,36 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: b41bdc67-a866-4349-8aad-d3f878935b25
+        -   Folder: Roads
+            Entity:
+                Id: 13b31315-8fca-4784-b12e-e1784a0f8bab
+                Name: road_straight
+                Components:
+                    a88dd8afc5e3c39bc745dcbde426cbad: !TransformComponent
+                        Id: 08737cb0-5e2a-4853-8e17-95dd2645e16a
+                        Position: {X: -23.919004, Y: 3.8146973E-06, Z: 32.78783}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 1.0, Z: 10.0}
+                        Children: {}
+                    d04a876b69a6b8ec660d561b9535c133: !ModelComponent
+                        Id: 3bfae004-def2-4fe0-987c-1674b94f69b5
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
+        -   Folder: Roads
+            Entity:
+                Id: 152e685b-5683-4d16-9e28-71af0e97860a
+                Name: road_roundabout
+                Components:
+                    a40d277dc9e7e3fbf2a6a2dc96d2966c: !TransformComponent
+                        Id: 279d618c-3d32-4ffa-b074-02d0133b1a42
+                        Position: {X: 16.182, Y: 0.0, Z: 12.558807}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    59c5496d1e8cb4c848b71f6ba8989782: !ModelComponent
+                        Id: c5d0167b-c7ec-484d-8da0-4d477814b2ab
+                        Model: 3b40e559-bfe5-4fa1-9297-5def66d4941d:Models/Roads/road_roundabout
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 15d18dd1-d760-420b-b739-fb9830fec770
@@ -619,41 +707,6 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: 6f5b659f-f870-4050-a481-1a04a05e128b
-        -   Entity:
-                Id: 16bef75b-e8cc-41f0-abfd-c37d28ebfd57
-                Name: Collectible
-                Components:
-                    0e2a562cad657c0a965f90f5d41d2bd9: !TransformComponent
-                        Id: 15229c34-952a-434e-8202-582b3bd7a83e
-                        Position: {X: 26.010208, Y: 1.5016296, Z: 4.6219473}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    9e6123a33fdfa32776c165a7b1acf15c: !ModelComponent
-                        Id: 1ac012ba-43aa-4a47-bef0-8519075ba95a
-                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
-                        IsShadowCaster: false
-                        Materials: {}
-                    3d6e4bfa0d348fc53eacdc1f479d97fd: !GameJam.CollectibleCollision,GameJam.Game
-                        Id: e7929dcd-cc5a-4bf5-a5f2-f1cdaae317ee
-                    352f57cb3280c41381fad38d6d9e09b2: !StaticColliderComponent
-                        Id: 3baf7933-61a3-44f6-bc08-626df843f4f2
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: true
-                        AlwaysUpdateNaviMeshCache: false
-                        ColliderShapes:
-                            6f2d8cf507589a88ed00406b603e8c47: !SphereColliderShapeDesc
-                                Is2D: false
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                    d519346d315c5ac418ca04473cbe0b4b: !AnimationComponent
-                        Id: fad515a1-4bef-45a3-9f8b-f42236444410
-                        Animations:
-                            95ee2f434d3e8ed3fc82e4563cc2929c~Idle: null
         -   Entity:
                 Id: 174784cf-2251-4708-9961-61adcbfee06e
                 Name: PlayerCharacter
@@ -865,6 +918,40 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: 398222f2-e39e-451a-b44e-766989a030bf
+        -   Folder: Roads
+            Entity:
+                Id: 1f792ecb-e02d-4b84-97bf-5584803f5820
+                Name: road_straight
+                Components:
+                    a88dd8afc5e3c39bc745dcbde426cbad: !TransformComponent
+                        Id: 4928eeae-e2ca-45c6-a688-9529b7dc2c26
+                        Position: {X: 6.317562, Y: 3.8146973E-06, Z: 32.78783}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 1.0, Z: 10.0}
+                        Children: {}
+                    d04a876b69a6b8ec660d561b9535c133: !ModelComponent
+                        Id: b3eeb8eb-2ed3-4309-acbe-6c3b80bba25c
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
+        -   Folder: null
+            Entity:
+                Id: 20714653-7589-449a-a820-ebcd3225d304
+                Name: Cobblestone
+                Components:
+                    f71e3f9144c41813720e5dee8bab7b82: !TransformComponent
+                        Id: cd1cecd1-1deb-472c-8fbc-37b8d0a763b0
+                        Position: {X: 0.0, Y: 0.013502032, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.5, Y: 0.25, Z: 0.5}
+                        Children: {}
+                    14e2f8cbd8112a1a063795e601f40502: !ModelComponent
+                        Id: 2b43dd7f-eb50-43a4-9468-175d71a9f95d
+                        Model: 140e25cf-01f9-484e-842f-2748207a7a6f:Models/pathCobbled
+                        Materials: {}
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1accebac-5acf-4fbd-bdbd-0798f1ed479b
+                InstanceId: a881924b-6fc7-40d8-abac-b7bce4971d1b
         -   Folder: null
             Entity:
                 Id: 20f3976c-0b71-4007-a1b6-74781f8b4830
@@ -921,6 +1008,18 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 332d4d70-7792-466d-8f53-e694051f193c
+        -   Folder: Platform
+            Entity:
+                Id: 21729b9e-3cc0-4cb9-af10-31c5ada1c9d2
+                Name: PosYPlatform
+                Components:
+                    a7e75453d760142f487e1f89c581a834: !TransformComponent
+                        Id: 00c286e4-1c84-49c5-929d-029099fe78f7
+                        Position: {X: -16.572765, Y: 3.8737783, Z: -15.433374}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            cf63f7d75dbe4682be3598c94ea80d1d: ref!! 5650074a-05e0-4053-85a4-2c7ea4c33cc5
         -   Folder: null
             Entity:
                 Id: 22107a8a-d8d1-4a1e-9768-6aa30cd275be
@@ -986,6 +1085,21 @@ Hierarchy:
                             28bba53d39b4e04d95e04f5b13c052af: !StaticPlaneColliderShapeDesc
                                 Normal: {X: 1.0, Y: 0.0, Z: 0.0}
                                 Offset: 0.0
+        -   Folder: Roads
+            Entity:
+                Id: 2664e0b0-0948-462f-9297-96fc7ee47613
+                Name: road_straight
+                Components:
+                    3eea20ab21951bb14a5513f66e41b955: !TransformComponent
+                        Id: 730b8749-1567-4efc-b8ed-35be3089b8bf
+                        Position: {X: 26.164927, Y: 0.0, Z: -26.486845}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    5faeb339b616af67ad55f20307e7261c: !ModelComponent
+                        Id: 1e8346c1-f336-4504-acbb-c73b64e3bf1d
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 2763b6d1-8403-4fa0-b638-6287c81ac919
@@ -998,6 +1112,52 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! e24b8c65-f29e-4adf-a601-f4a8733fbfcb
+        -   Entity:
+                Id: 3062e4b2-0492-4516-8ea7-6cfc9655bc85
+                Name: Entity
+                Components:
+                    f81bc976d2d9245fee3ddcc571964d0c: !TransformComponent
+                        Id: b16c96a0-4fda-44a0-93b0-8859de7dc4d6
+                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    656d78bb48826c27d0ba483fa398a187: !ModelComponent
+                        Id: 223dca5a-e86d-4877-a9ea-55388576cc4c
+                        Model: 8c17c610-3b49-4f4d-b57b-32c2c8519f1a:Models/Buildings/large_buildingD
+                        Materials: {}
+                    1d2396a7332dcb8b51590e452f02a457: !StaticColliderComponent
+                        Id: 51ffc12b-2b38-44da-94f9-7cb8a7168369
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            95e601cb989960190df0c41b6a6d64fd: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.2, Y: 1.65, Z: 1.3}
+                                LocalOffset: {X: 0.0, Y: 0.78, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: abadcc0e-ffc6-442e-b02d-4f595ed04b27:Prefabs/BuildingD
+                BasePartId: 47b0b22f-1d9a-49fa-bd92-8cb7c6447d59
+                InstanceId: 7e19f129-63af-4dd9-a7d0-d50ee3c4905b
+        -   Folder: Buildings
+            Entity:
+                Id: 31544c5d-fa2f-45ab-8cea-11b312e50ed3
+                Name: BuildingB
+                Components:
+                    df0c1ba26385345ce0def691931fca90: !TransformComponent
+                        Id: 111b3452-867a-4571-9f3f-c545b2f45394
+                        Position: {X: 21.435867, Y: -3.8146973E-06, Z: -32.72039}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            c6678b0e848692dbe75a08ba520edd80: ref!! 0583baea-daf4-4aaf-81f3-63aaa8358a6c
         -   Folder: null
             Entity:
                 Id: 335d46e8-654b-4f48-95cb-c8a452170317
@@ -1181,7 +1341,8 @@ Hierarchy:
                     7c901dfed21c864283aa0639481520b1: !ModelComponent
                         Id: 003c98bd-5682-4bcc-9a28-0bc90db0505e
                         Model: 1e44ad30-5adb-4596-ba45-c7151d3602dc:Models/GridBase10x10
-                        Materials: {}
+                        Materials:
+                            fe2aac4fc7390e4ddf851d54921c8d4e*~0: 1209e1d9-0c73-45c6-8e69-4d26ac9c7c4b:Materials/LambertMT
                     e892de73aae78041aa74ca19b0b9f867: !StaticColliderComponent
                         Id: 7842ccd7-2564-4ee0-9921-4c07023441c0
                         CanSleep: true
@@ -1214,6 +1375,21 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! a9b0fc89-f80e-4f6b-9ee2-89a910835982
+        -   Folder: Roads
+            Entity:
+                Id: 3593615f-5c48-4c46-8827-12555e40ea32
+                Name: road_straight
+                Components:
+                    10695137d193691968aa281bae186a4a: !TransformComponent
+                        Id: 9c185af7-f5b2-4269-879a-24c575b6202b
+                        Position: {X: -3.7916222, Y: 0.0, Z: 32.775383}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    c26efd76e51b38e7311fa6926b8663dd: !ModelComponent
+                        Id: 942c1a15-c856-4246-a97a-fa5357b302ae
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 36932cb6-16b3-4f83-8e81-93c7c29b2b78
@@ -1399,6 +1575,21 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! 769d34f9-f515-47d4-8d2f-7889d1409df3
+        -   Folder: Roads
+            Entity:
+                Id: 3bf639cf-9521-4d3d-a375-c25cc641144a
+                Name: road_straight
+                Components:
+                    73215458ac409977bb51bce61438309e: !TransformComponent
+                        Id: 7742c9c4-4dda-4245-93e7-c496d17b80cc
+                        Position: {X: -21.744762, Y: 0.0, Z: -9.28521}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    31ab0c22547ec4594201fa7d96e207c7: !ModelComponent
+                        Id: a2679c81-4dca-4a7e-86a0-8a7ae3cb6ab3
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 3d0907ba-f302-4716-af82-1b5659be5f69
@@ -1527,6 +1718,21 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: eba5f0ca-8d40-4d75-b448-886fa17fe891
+        -   Folder: Roads
+            Entity:
+                Id: 401a1e75-e503-4c26-a75d-d6321249c16e
+                Name: road_straight
+                Components:
+                    10695137d193691968aa281bae186a4a: !TransformComponent
+                        Id: d560df49-2ca6-4e96-a820-b763634d1b4e
+                        Position: {X: -13.88377, Y: 0.0, Z: 32.775383}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    c26efd76e51b38e7311fa6926b8663dd: !ModelComponent
+                        Id: eb3e9082-3b8f-418e-ab3a-05f8547eb940
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 407c2297-f44c-461f-a2b1-e0609b0c7852
@@ -1667,6 +1873,40 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 3bf025b7-cdfd-4888-b856-b76bbb085997
+        -   Entity:
+                Id: 48fb2b85-4a3c-458f-8b5c-5b22f2b0f64a
+                Name: Entity
+                Components:
+                    f81bc976d2d9245fee3ddcc571964d0c: !TransformComponent
+                        Id: 3883a1b0-86b1-41b9-befe-018ffbdd145b
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    656d78bb48826c27d0ba483fa398a187: !ModelComponent
+                        Id: c94c45be-7d05-44f4-914f-88a28e0b9e12
+                        Model: 6cf44ca6-b129-467c-bc9f-35fd2fcb2731:Models/Buildings/large_buildingA
+                        Materials: {}
+                    1d2396a7332dcb8b51590e452f02a457: !StaticColliderComponent
+                        Id: 498e239e-80bf-4710-aa76-e09fa3b8bddc
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            95e601cb989960190df0c41b6a6d64fd: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 2.0, Y: 1.65, Z: 1.3}
+                                LocalOffset: {X: 0.0, Y: 0.78, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: ae917418-8db9-45a6-a3a7-092c09800b21:Prefabs/BuildingA
+                BasePartId: 5603975a-e5a2-4e4c-8d50-165e546a0c47
+                InstanceId: 23633bf9-839e-4c1b-b5e4-406f6df6b799
         -   Folder: null
             Entity:
                 Id: 4db56884-9ec6-4a98-8b3e-5d2c96475615
@@ -1723,17 +1963,6 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: c8fcd4a7-852d-420d-b6a5-710e96c8ccf0
-        -   Entity:
-                Id: 4de78ee7-df4e-4eb1-ae7e-45316a801c59
-                Name: Collectible
-                Components:
-                    bbdd324fb11a3ffa664a7e0dc97c44a3: !TransformComponent
-                        Id: 1fd0d1a7-105b-48a7-96a4-1e5b43164002
-                        Position: {X: -16.551514, Y: 3.1770217, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            282521df27df10ac62e298393591df03: ref!! 54463fb6-883c-4b94-9d25-14fa72e19159
         -   Folder: Platform
             Entity:
                 Id: 4eee0bb3-93f7-403d-bcb4-9f06f2405c6e
@@ -1850,6 +2079,18 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: f89c80a9-b445-468d-8acb-be4aec2e3fe3
+        -   Folder: Collectibles
+            Entity:
+                Id: 545263bd-71c5-450a-8c87-4260f168e4c9
+                Name: Collectible
+                Components:
+                    98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
+                        Id: d49ea519-ffbc-4c8c-af91-2248f3e76340
+                        Position: {X: -13.209553, Y: 4.1882033, Z: 10.469761}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0d7d7260a101d9e0ad68ebe8c2ba7416: ref!! 139abf0e-fc94-482f-8ab1-60fdc1a5ada4
         -   Folder: null
             Entity:
                 Id: 548bef3b-72b9-44e9-83a4-1a754f2304a9
@@ -1891,6 +2132,63 @@ Hierarchy:
                     5847b2c0adfcf347a100f94d96c5d325: !AnimationComponent
                         Id: cab29794-9e9b-47f9-bd89-442bbc5a73c8
                         Animations: {}
+        -   Folder: null
+            Entity:
+                Id: 56a4df16-2ece-42f8-a1ff-dcaa31f8e7c9
+                Name: PlatformModel
+                Components:
+                    54d6b71ec8fcbddd4b1735cbe94f9bcd: !TransformComponent
+                        Id: 710ef0f5-6d41-4a85-9d76-b4f72247d437
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 7.0, Y: 15.0, Z: 7.0}
+                        Children:
+                            b42e4c5dbe113680dc8af7ef3e658964: ref!! cd1cecd1-1deb-472c-8fbc-37b8d0a763b0
+                    21cd90ea1121daabca158f4f3cd50a7e: !ModelComponent
+                        Id: f0d639ce-c556-4ca2-844d-575e478d5e72
+                        Model: f848c356-1efd-4930-a108-802f342efe97:Models/Floor1x0x1
+                        Materials:
+                            09cfe7480312f3a25741d03e9a3180da~0: fd079f98-39ec-40a1-9ff2-078c7a8f2860:Materials/Material
+                    93aecfb757796aec9d9f899c91e81470: !StaticColliderComponent
+                        Id: fb43426f-0fab-4cf0-bd1b-0e6f672b24e4
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4d0dc65723010a40854bfab5018f5cfe: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.1, Y: 0.05, Z: 1.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    a3bb214e8ee8cdc4637af5de07887741: !StaticColliderComponent
+                        Id: e4ac101f-c52f-42a5-a146-adf06ef69b82
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3bbfe6c308e462e91a9b5fe7a59be665: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 0.1, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ef7e112114af5963b8814471036c7808: !GameJam.MovingPlatformController,GameJam.Game
+                        Id: 8cc8e0cd-0e10-42e1-87d5-95dc38dadd99
+                    afeec27d3193453ad4cee8961e186815: !GameJam.AttachPlayer,GameJam.Game
+                        Id: b0a4247e-d38c-4c40-adba-b764bdf234b0
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1f028fbd-2786-418a-ac54-2849fe99e275
+                InstanceId: a881924b-6fc7-40d8-abac-b7bce4971d1b
         -   Folder: null
             Entity:
                 Id: 56d16127-f65e-4de4-a793-2aac0900da43
@@ -1983,6 +2281,21 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! 5ec3a173-dee3-45a9-821e-6c8aa4629ff0
+        -   Folder: Roads
+            Entity:
+                Id: 5a0dbcf7-93d2-4481-bfb0-892b8c6ee5d5
+                Name: road_straight
+                Components:
+                    ca233a6225205c2bea7ffa88c34ea21c: !TransformComponent
+                        Id: 3087fcbc-cc1b-4a2b-bc0b-fef2efe54f78
+                        Position: {X: 28.557, Y: 0.0, Z: 9.9518}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 10.0, Y: 1.0, Z: 10.0}
+                        Children: {}
+                    6a19f2126af7f4d004714ef1e922233f: !ModelComponent
+                        Id: 1e3bd01d-b50f-4c00-91d3-2c24f86a8323
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 5bece762-d3b5-4852-9781-44353a661562
@@ -2063,13 +2376,29 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! 12a026e5-df59-42d0-a114-de9561d6bb3a
-        -   Entity:
+        -   Folder: Roads
+            Entity:
+                Id: 5f5d5495-dbae-4ed6-94d5-50382b84ba15
+                Name: road_straight
+                Components:
+                    c1267eb965a65a1f3d7a4cc0a80f9fc3: !TransformComponent
+                        Id: 8363e2d2-148d-47ee-afc4-672421f79515
+                        Position: {X: 6.2091556, Y: 0.0, Z: -26.486845}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    73a0275113fdcc3619dfb6e2db9bb337: !ModelComponent
+                        Id: eb42ef03-a471-4080-b03d-42a39e21c880
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
+        -   Folder: Roads
+            Entity:
                 Id: 5f8d47e7-196d-43a6-8da9-935014d71377
                 Name: road_bend
                 Components:
                     6a21b9389810f1a32e0b0f5e9d082112: !TransformComponent
                         Id: 0a7c46a6-6793-4943-b058-7ed665212084
-                        Position: {X: -6.291275, Y: -3.8146973E-06, Z: -9.0}
+                        Position: {X: -6.291275, Y: -3.8146973E-06, Z: -18.956844}
                         Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -2307,6 +2636,25 @@ Hierarchy:
                 InstanceId: 472ffd46-4b33-4c0d-94bc-4bbd2d845763
         -   Folder: null
             Entity:
+                Id: 6cdf2e56-fb5b-4fb6-924d-16fe9ffc1fed
+                Name: Cobblestone
+                Components:
+                    f71e3f9144c41813720e5dee8bab7b82: !TransformComponent
+                        Id: 05d8be60-ab60-4aa4-be05-d3e3cefaa6da
+                        Position: {X: 0.0, Y: 0.013502032, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.5, Y: 0.25, Z: 0.5}
+                        Children: {}
+                    14e2f8cbd8112a1a063795e601f40502: !ModelComponent
+                        Id: 02314976-8599-41c4-b325-9098fab765d9
+                        Model: 140e25cf-01f9-484e-842f-2748207a7a6f:Models/pathCobbled
+                        Materials: {}
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1accebac-5acf-4fbd-bdbd-0798f1ed479b
+                InstanceId: 66c27ad8-b2cb-4e5b-b06b-c9d2c6951e98
+        -   Folder: null
+            Entity:
                 Id: 6d08d49e-0815-4a33-ba70-b775d2fea34e
                 Name: Wall0x2x5 (5)
                 Components:
@@ -2487,6 +2835,37 @@ Hierarchy:
                 BasePartAsset: eee167f9-41c2-48e6-8a95-307be4069627:Prefabs/BuildingE
                 BasePartId: 64d67ea6-4a40-4f52-800e-69cb116a495f
                 InstanceId: 03321315-ad33-4bf4-a71c-30dd922179ba
+        -   Folder: StreetProps
+            Entity:
+                Id: 7aac2dca-eef3-4d78-a94d-43a67da24997
+                Name: BusStop
+                Components:
+                    c6972ec3df0d6792cf212b72e821d6b2: !TransformComponent
+                        Id: e3f20983-aae9-4da3-ad90-6848a73455d3
+                        Position: {X: -27.150856, Y: -15.169224, Z: 33.24414}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.1, Y: 0.1, Z: 0.1}
+                        Children: {}
+                    cc2f6c658a4810aacfa74bb8866c38f2: !ModelComponent
+                        Id: cbe7085d-05d6-4846-9a9a-2560fd8d633c
+                        Model: 7bbe92b8-c5ba-4c12-a7df-5660dc8f4b89:Models/StreetProps/BusStop
+                        Materials: {}
+                    e0e0e2ad1a1446f76b09d2b3d5ca39d9: !StaticColliderComponent
+                        Id: 0661b000-1189-402f-93f3-1945489d470a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            2b1fee269399ac9534d8b6763aeafa90: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 30.0, Z: 3.0}
+                                LocalOffset: {X: 0.0, Y: -5.0, Z: -5.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: null
             Entity:
                 Id: 7c85b3ea-0c78-496a-944a-f7f9eb34a67f
@@ -2619,43 +2998,21 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: eeb00fff-0359-4230-81c9-f7d5c37ae8e1
-        -   Folder: null
+        -   Folder: Roads
             Entity:
-                Id: 82d2d3bc-719f-449f-a624-6e0ec65faa12
-                Name: Entity
+                Id: 836238a0-6f72-4cda-af2f-32252a97d3a8
+                Name: road_curve
                 Components:
-                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
-                        Id: 54463fb6-883c-4b94-9d25-14fa72e19159
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                    62f1172dc4b5d7c184853dab3d1b06f5: !TransformComponent
+                        Id: 1c19289e-7496-421f-93ea-38cdf9273405
+                        Position: {X: -8.777963, Y: 0.0, Z: 7.72472}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
-                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
-                        Id: 87e6579d-4f3b-43b9-b42d-746f398491d0
-                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                    b7553562d5bff3cbb5f2f7e396a402ac: !ModelComponent
+                        Id: 6326a0b9-56a6-4f8d-b355-830980735a2f
+                        Model: dca577b8-15eb-458b-8e3d-533618c7cfde:Models/Roads/road_curve
                         Materials: {}
-                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
-                        Id: 2bce3105-e704-4813-9749-2c6fdf272183
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: true
-                        AlwaysUpdateNaviMeshCache: false
-                        ColliderShapes:
-                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
-                                Is2D: false
-                                Radius: 1.0
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
-                        Id: 456a3871-dc1c-43c2-80f7-591b6c96f4e9
-                    169e73303589bae874bd695b9d8c044f: ~(Deleted)
-            Base:
-                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
-                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
-                InstanceId: e5cd5b7e-1e02-4d74-b120-5de0a518a2b7
         -   Folder: null
             Entity:
                 Id: 83d2abd3-43be-4214-bd53-dcb7f92d3e68
@@ -2760,6 +3117,42 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! afa082f5-3101-4dc9-993b-efab8bb3fa7c
+        -   Folder: StreetProps
+            Entity:
+                Id: 8c90c171-6a95-4f41-bc3a-17315ac38f7e
+                Name: TraficLight_02
+                Components:
+                    b1528060e2d1b5827be17b7a7a47d7fd: !TransformComponent
+                        Id: 9e3c0976-2183-498a-bac8-3930aa1f0614
+                        Position: {X: 20.408619, Y: 2.9728866, Z: -23.36551}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.1, Y: 0.1, Z: 0.1}
+                        Children: {}
+                    79ee010e35bf101bc23f2843c4a70600: !ModelComponent
+                        Id: 48710f0c-2fbb-42e5-b995-542aff5423da
+                        Model: e0bd255b-936c-4287-b063-8fa5bfaee693:Models/StreetProps/TraficLight_02
+                        Materials: {}
+                    6ed2520a12898aeafc6faff64d77ecd1: !StaticColliderComponent
+                        Id: 20490d69-1081-4f78-9a23-df38d81fac8d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3ffb21ab9b331fc9271cc9fe6721ce71: !CylinderColliderShapeDesc
+                                Height: 50.0
+                                Radius: 2.0
+                                LocalOffset: {X: 0.0, Y: -20.0, Z: -24.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            0018bc788008d546001a559a7082cd63: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 5.0, Y: 5.0, Z: 60.0}
+                                LocalOffset: {X: 0.0, Y: 5.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: null
             Entity:
                 Id: 8d7e25db-77f9-45b9-ab7a-dbd43368ef20
@@ -2926,7 +3319,7 @@ Hierarchy:
                 Components:
                     8e958a6dc565ac1d5ef2ae673523c66c: !TransformComponent
                         Id: b8b8eedd-1157-4a68-9d92-9a575d9c44b9
-                        Position: {X: -8.344177, Y: 0.0, Z: 34.940575}
+                        Position: {X: 16.497375, Y: 0.0, Z: 19.662846}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -2968,6 +3361,21 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: e25235e6-3425-4fdf-ad41-0b1cfee7b1c3
+        -   Folder: Roads
+            Entity:
+                Id: 9421f681-16ef-40d8-a06f-638c500e27f8
+                Name: road_straight
+                Components:
+                    fc0f2e7ecc1fb4268eb7b43527c5b6bd: !TransformComponent
+                        Id: 36905c86-3157-4ebe-bbe5-6dff21ebb839
+                        Position: {X: 8.686, Y: 0.0, Z: -9.201028}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    c49badfb687bdfcb9d8600a61d8c19bd: !ModelComponent
+                        Id: 3a435d31-e8e4-477c-896b-15e42e97fa9e
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 9622d2ab-651e-45c2-b326-9f01b1ec9da3
@@ -3203,7 +3611,7 @@ Hierarchy:
                 Components:
                     a7e75453d760142f487e1f89c581a834: !TransformComponent
                         Id: 3b4cdfd4-dd5f-475c-9b64-eac62fb73abf
-                        Position: {X: 20.143742, Y: 0.0, Z: 5.662464}
+                        Position: {X: 20.143742, Y: 3.8737783, Z: 5.662464}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -3271,6 +3679,21 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: c7bc8bf2-70a2-43b5-8cf1-119d8cfbceb1
+        -   Folder: Roads
+            Entity:
+                Id: acfabe88-3dcd-45cb-a264-7359cfcd3702
+                Name: road_straight
+                Components:
+                    f0346d86c27595713e9310ca84755ef8: !TransformComponent
+                        Id: aeaca32a-9ff5-4ac5-a79c-5bfc55512d2a
+                        Position: {X: 8.686, Y: 0.0, Z: 0.65473175}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    908e5373ecf5854f6fa616282f4f7fba: !ModelComponent
+                        Id: 7cec7550-4207-450c-b795-3911584364c7
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: ad31c946-7ab9-4b4a-b1e2-c9cffac9a3ae
@@ -3401,6 +3824,37 @@ Hierarchy:
                 BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
                 BasePartId: 256ecf1f-902b-4288-b314-7d30c3071560
                 InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
+        -   Folder: StreetProps
+            Entity:
+                Id: b066338a-bb68-420f-82ef-0ce4a521b2eb
+                Name: PhoneBooth_01
+                Components:
+                    d6e7350a6ca2bc2def7932fdaf87b8e7: !TransformComponent
+                        Id: f923675b-0b72-4cfa-99a3-47a1ea7935f6
+                        Position: {X: 25.58182, Y: 2.5669582, Z: -11.874633}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.3, Y: 0.3, Z: 0.3}
+                        Children: {}
+                    7d20208e6512e6e9bbce14e783520f49: !ModelComponent
+                        Id: b7be2827-3b67-486c-872d-63f9436e7cdc
+                        Model: 802c3dc0-bd46-4a29-bbe5-b04591b3c02a:Models/StreetProps/PhoneBooth_01
+                        Materials: {}
+                    79554c61202cd6bd0ff164b4b66dd877: !StaticColliderComponent
+                        Id: d0fe6daf-fedf-4768-b25a-13a584badc4f
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            6d698473b08e4df4e6efa6e25071520e: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 8.0, Y: 15.0, Z: 8.0}
+                                LocalOffset: {X: 0.0, Y: -2.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: null
             Entity:
                 Id: b11e4bd4-d5d5-4dc8-b236-8312723e4e72
@@ -3413,17 +3867,6 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! 54ae3c03-2729-4770-8410-f2bb8d3fe1ab
-        -   Entity:
-                Id: b1722410-1fe2-45b1-b9d3-34792e34d9d8
-                Name: Prefab
-                Components:
-                    60ecf5bc72365ee96819d0385d95e442: !TransformComponent
-                        Id: dd95c8fa-a992-4701-be1d-5de469cd84b2
-                        Position: {X: -3.4827995, Y: 0.0, Z: -25.190111}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            993ad64cbbaace508de1fbfffe36bf6b: ref!! 7483d45f-8a6b-4507-aa20-6f4513e012d3
         -   Folder: null
             Entity:
                 Id: b24a8349-64ec-4637-93a1-378142f69b5f
@@ -3644,41 +4087,21 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 7e325baf-3a06-4f5a-822b-765acde2fafa
-        -   Folder: null
+        -   Folder: Roads
             Entity:
-                Id: bd575f60-244d-4160-9c8a-98303545988c
-                Name: Entity
+                Id: bddf5944-216e-4605-a755-4de736f3582b
+                Name: road_end
                 Components:
-                    f81bc976d2d9245fee3ddcc571964d0c: !TransformComponent
-                        Id: 7483d45f-8a6b-4507-aa20-6f4513e012d3
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                    d4a2488f5faeaf00e6b45ed0a7865bfb: !TransformComponent
+                        Id: 8b048d63-6b54-41fd-a098-c8509b598c2b
+                        Position: {X: -33.205925, Y: 0.0, Z: 47.59054}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
-                    656d78bb48826c27d0ba483fa398a187: !ModelComponent
-                        Id: da222f7c-af88-48fb-9ca3-011385e58b7a
-                        Model: 6cf44ca6-b129-467c-bc9f-35fd2fcb2731:Models/Buildings/large_buildingA
+                    96232674600a266a384236cd74a62a60: !ModelComponent
+                        Id: ee7117a6-5590-4191-94af-e2e3298aca29
+                        Model: f9ebdb3b-1338-4465-8353-9260d10b6279:Models/Roads/road_end
                         Materials: {}
-                    1d2396a7332dcb8b51590e452f02a457: !StaticColliderComponent
-                        Id: 095bf177-16e9-472d-9cef-5f57b0f3c295
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        AlwaysUpdateNaviMeshCache: false
-                        ColliderShapes:
-                            95e601cb989960190df0c41b6a6d64fd: !BoxColliderShapeDesc
-                                Is2D: false
-                                Size: {X: 2.0, Y: 1.65, Z: 1.3}
-                                LocalOffset: {X: 0.0, Y: 0.78, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-            Base:
-                BasePartAsset: ae917418-8db9-45a6-a3a7-092c09800b21:Prefabs/BuildingA
-                BasePartId: 5603975a-e5a2-4e4c-8d50-165e546a0c47
-                InstanceId: 1425cde0-4bd9-45c4-97e1-8f4b840dd877
         -   Folder: null
             Entity:
                 Id: bec76e12-3972-401d-b303-554c8b4fd539
@@ -3727,6 +4150,37 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: 48057d91-13d6-4084-a325-57c047a3f287
+        -   Folder: StreetProps
+            Entity:
+                Id: c0f53c07-d814-445e-9480-64f97352cc1e
+                Name: TrafficBarrier_03
+                Components:
+                    5a9dc1388d4bac96c392a8d079d26ecc: !TransformComponent
+                        Id: 614157ad-93ba-4c38-9fa9-db190f529fe9
+                        Position: {X: 14.345626, Y: 1.022028, Z: -13.226753}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.25}
+                        Children: {}
+                    a68c879516ed6bdc86e1585ec7c48780: !ModelComponent
+                        Id: be75bd7f-3bb1-4120-8e5a-c1ef5a13261c
+                        Model: 34664fac-ecb3-4b4d-945c-c1e9828497e8:Models/StreetProps/TrafficBarrier_03
+                        Materials: {}
+                    58021afea7faa7688208e295c5d40b18: !StaticColliderComponent
+                        Id: 0ba948fa-2e68-4b35-9757-5e87cc0c576f
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            b1a12e482969a4126a06be2bb090d237: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 15.0, Y: 10.0, Z: 10.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: null
             Entity:
                 Id: c1af5f7f-a118-4601-9109-f6b97483a26d
@@ -3775,6 +4229,37 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! fe2637bc-5ee8-4565-a5f1-16a33fdded8a
+        -   Folder: StreetProps
+            Entity:
+                Id: c6eca3c6-f030-4024-aeab-4ad7077ae225
+                Name: PowerGenerator_02
+                Components:
+                    004f11e53617620038d164c3319dfe07: !TransformComponent
+                        Id: 45a70d62-5a51-4c06-bc3a-6431f1498fc5
+                        Position: {X: -25.772797, Y: 1.4341601, Z: -19.832277}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.3, Y: 0.3, Z: 0.3}
+                        Children: {}
+                    7c8279f4b0d55aa2bb334686a194b9a5: !ModelComponent
+                        Id: b8fdf9a0-3ecc-4ecc-a3a4-1584931701fe
+                        Model: 38530cfa-b684-4cac-82a9-ce04e1899f14:Models/StreetProps/PowerGenerator_02
+                        Materials: {}
+                    f03f66004f84e16b45bd2611d52c0bec: !StaticColliderComponent
+                        Id: 3a25c690-a087-4056-a98f-6734777dd64d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            101de3249904ceb86939ac7b92b0df3c: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 10.0, Y: 9.0, Z: 3.5}
+                                LocalOffset: {X: 0.0, Y: -2.0, Z: -1.2}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: null
             Entity:
                 Id: c7a0708e-3188-4b46-bda6-3b253da6f424
@@ -3838,6 +4323,84 @@ Hierarchy:
                         InvertY: false
                         RotationSpeed: 360.0
                         VerticalSpeed: 45.0
+        -   Entity:
+                Id: cc9f935e-8f30-4d2f-a949-25c2ad5b7421
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: e6770db9-d869-4d02-8179-c8398154fa3d
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: 309923a2-ae82-4be8-8328-ad7554e163d1
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 11bc780b-4a29-49a4-9dcc-cc6215c64a47
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: 3dbf095e-480f-44c3-9053-beb85039ff4f
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: 19240148-c0a8-4918-bfbe-85e927110c92
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: b1cec53e-d919-4f51-97db-e8f4a5af5186
+        -   Folder: StreetProps
+            Entity:
+                Id: ccafc82e-dc11-4976-98ec-06f7bf6bbaef
+                Name: TraficLight_02
+                Components:
+                    b1528060e2d1b5827be17b7a7a47d7fd: !TransformComponent
+                        Id: 6dfe94a3-12a8-49c6-bffa-73eef22a942f
+                        Position: {X: 10.340233, Y: 3.122736, Z: -15.744449}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 0.1, Y: 0.1, Z: 0.1}
+                        Children: {}
+                    79ee010e35bf101bc23f2843c4a70600: !ModelComponent
+                        Id: b7dcb32d-d5a1-40c0-b00d-222f0aa57ea4
+                        Model: e0bd255b-936c-4287-b063-8fa5bfaee693:Models/StreetProps/TraficLight_02
+                        Materials: {}
+                    6ed2520a12898aeafc6faff64d77ecd1: !StaticColliderComponent
+                        Id: 5b86411c-889e-44c3-847d-d9281463a632
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3ffb21ab9b331fc9271cc9fe6721ce71: !CylinderColliderShapeDesc
+                                Height: 50.0
+                                Radius: 2.0
+                                LocalOffset: {X: 0.0, Y: -20.0, Z: -24.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            0018bc788008d546001a559a7082cd63: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 5.0, Y: 5.0, Z: 60.0}
+                                LocalOffset: {X: 0.0, Y: 5.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: null
             Entity:
                 Id: cd1c2036-c4d9-4bc5-85d4-f7af12134237
@@ -3910,6 +4473,55 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: e70dded7-1729-4156-b46d-ede46da3b7f7
+        -   Folder: Roads
+            Entity:
+                Id: cf59f2a6-1eb5-4afd-9dab-f6e0e7dea39a
+                Name: road_straight
+                Components:
+                    94d9ba437247d2101477ba66632685f5: !TransformComponent
+                        Id: 1fbbfb5f-21c8-48e7-9649-eb26ba4441f9
+                        Position: {X: 28.557, Y: 9.536743E-07, Z: -9.206917}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    65ee795364b8e28d705455e67c4b89c9: !ModelComponent
+                        Id: 443b95e6-90df-4e2b-9d90-cb4bb7e7fe55
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
+        -   Entity:
+                Id: cfb0eac0-15f1-4935-9cca-d0986b76d879
+                Name: Entity
+                Components:
+                    f81bc976d2d9245fee3ddcc571964d0c: !TransformComponent
+                        Id: 0583baea-daf4-4aaf-81f3-63aaa8358a6c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    656d78bb48826c27d0ba483fa398a187: !ModelComponent
+                        Id: f84f68c5-aa01-4be9-91d2-f8d66581543c
+                        Model: 28b3067c-3567-4a73-8f8d-dbc14bfa8f45:Models/Buildings/large_buildingB
+                        Materials: {}
+                    1d2396a7332dcb8b51590e452f02a457: !StaticColliderComponent
+                        Id: f487d222-b294-4317-86d2-6b57d2f98be0
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            95e601cb989960190df0c41b6a6d64fd: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 1.65, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.78, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 627eafe3-2108-4735-96fa-c9796b43342c:Prefabs/BuildingB
+                BasePartId: e098f9b8-038f-4ee6-8694-2147fd79bc70
+                InstanceId: 5a8af55a-584c-4b4e-9504-1e891265e1c4
         -   Folder: null
             Entity:
                 Id: d03b736d-b5eb-494d-89cd-edddb12ca2f0
@@ -3934,6 +4546,18 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! 7b859f1a-8bcf-42aa-80b3-fc782c7ea6dc
+        -   Folder: Buildings
+            Entity:
+                Id: d31bbef3-eb5a-402c-a799-03461cc78147
+                Name: BuildingA
+                Components:
+                    9d5bb604d2654ebeeb7589b74c33cbc0: !TransformComponent
+                        Id: 332edf45-f5b1-4e8c-be92-dc2887f8fdf0
+                        Position: {X: -6.9915805, Y: 0.0, Z: -33.901978}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            efc9f31b8626024e530a9bdc90f89434: ref!! 3883a1b0-86b1-41b9-befe-018ffbdd145b
         -   Folder: null
             Entity:
                 Id: d39b696e-e703-4d63-b420-74d7d6c2aab4
@@ -4061,7 +4685,8 @@ Hierarchy:
                 BasePartAsset: 418a4eab-97e6-43e4-8756-ea03d39804c6:Prefabs/House1
                 BasePartId: 1e5377b0-5021-497b-8f1d-b6ae393dd1fd
                 InstanceId: f234cd29-0ec7-43fe-b4b4-1122de7f2a38
-        -   Entity:
+        -   Folder: Buildings
+            Entity:
                 Id: da30d2d1-174e-4f9d-8038-44001f8b3fb3
                 Name: BuildingE
                 Components:
@@ -4128,17 +4753,87 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 1f1d697a-e99e-4c25-8c2c-43c2d41191a8
-        -   Entity:
+        -   Folder: null
+            Entity:
+                Id: daab7c11-cad4-480e-b93f-7ee3725b7d31
+                Name: PlatformModel
+                Components:
+                    54d6b71ec8fcbddd4b1735cbe94f9bcd: !TransformComponent
+                        Id: 5650074a-05e0-4053-85a4-2c7ea4c33cc5
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 7.0, Y: 15.0, Z: 7.0}
+                        Children:
+                            b42e4c5dbe113680dc8af7ef3e658964: ref!! 05d8be60-ab60-4aa4-be05-d3e3cefaa6da
+                    21cd90ea1121daabca158f4f3cd50a7e: !ModelComponent
+                        Id: 7f1e280f-96bd-4a9c-897b-79de76b3cc34
+                        Model: f848c356-1efd-4930-a108-802f342efe97:Models/Floor1x0x1
+                        Materials:
+                            09cfe7480312f3a25741d03e9a3180da~0: fd079f98-39ec-40a1-9ff2-078c7a8f2860:Materials/Material
+                    93aecfb757796aec9d9f899c91e81470: !StaticColliderComponent
+                        Id: be011862-df53-4b9c-97e3-8c1618a28ccd
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4d0dc65723010a40854bfab5018f5cfe: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.1, Y: 0.05, Z: 1.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    a3bb214e8ee8cdc4637af5de07887741: !StaticColliderComponent
+                        Id: c013df5b-d695-4ec9-afc0-751c9860400f
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3bbfe6c308e462e91a9b5fe7a59be665: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 0.1, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ef7e112114af5963b8814471036c7808: !GameJam.MovingPlatformController,GameJam.Game
+                        Id: 5c7bc223-097f-4d6d-bac3-9542ad3b8cfe
+                    afeec27d3193453ad4cee8961e186815: !GameJam.AttachPlayer,GameJam.Game
+                        Id: 1cca1d77-1018-47fe-8882-34b4a95481c6
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1f028fbd-2786-418a-ac54-2849fe99e275
+                InstanceId: 66c27ad8-b2cb-4e5b-b06b-c9d2c6951e98
+        -   Folder: Buildings
+            Entity:
                 Id: db87af60-06e3-4b8c-ab1e-6b8228166c34
                 Name: House9
                 Components:
                     ccf5cd527f6e61ffa0b79dad2fbe70ee: !TransformComponent
                         Id: 11eda9a2-4f23-41f4-8d5d-dfe22e7c93b9
-                        Position: {X: -28.055122, Y: 0.0, Z: -32.292076}
+                        Position: {X: -31.37781, Y: 0.0, Z: 43.697334}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 10.0, Y: 10.0, Z: 10.0}
                         Children:
                             bc9d9fbaf94f7e184ab882aaf22899c0: ref!! dd5817c0-b640-4217-abd7-658c289edf6b
+        -   Folder: Platform
+            Entity:
+                Id: dcd765e3-1eb9-4e08-907e-67d158228eba
+                Name: PosYPlatform
+                Components:
+                    a7e75453d760142f487e1f89c581a834: !TransformComponent
+                        Id: 1a0c5ea4-fea6-4b2c-814b-a55a48c30a05
+                        Position: {X: 41.718613, Y: 3.8737783, Z: 16.690699}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            cf63f7d75dbe4682be3598c94ea80d1d: ref!! 710ef0f5-6d41-4a85-9d76-b4f72247d437
         -   Folder: null
             Entity:
                 Id: de20d619-fde6-4f2f-94c3-0611ce46217a
@@ -4223,6 +4918,21 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: 91d62419-8ea1-4570-bbba-e036e8b64d01
+        -   Folder: Roads
+            Entity:
+                Id: e15d3655-4c15-4176-b87a-a9a6d3fa4626
+                Name: road_intersection
+                Components:
+                    38d5926bb436df2f41a148253a857f6d: !TransformComponent
+                        Id: 63f7624a-1d31-4be0-a68e-bf5511296e33
+                        Position: {X: 16.182, Y: 0.0, Z: -11.495844}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    14ac2d97bf80071b4323eb9c24f1624b: !ModelComponent
+                        Id: f63e02ce-d40b-4d05-8093-cbd2ea7f51d3
+                        Model: 974c9cd0-be4c-4b8e-8023-8ad67ad12fb9:Models/Roads/road_intersection
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: e1f64499-ae52-4a94-84eb-cd1314988f04
@@ -4279,6 +4989,48 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 7af7f010-bb3d-4eb8-9da7-5eaaf682511f
+        -   Entity:
+                Id: e331dc3a-069b-4bef-afce-850fbcaf1758
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: 139abf0e-fc94-482f-8ab1-60fdc1a5ada4
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: 3e57f79a-4387-4031-b549-e023dd72bbeb
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 8455a59c-1eb0-4665-a709-7d7d7561fc61
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: 2787100e-def7-47d0-99ee-678454e3b4af
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: c05c4360-d26a-4c8e-abc8-8d3156617091
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: 8cdb8aa8-8f29-46f8-b214-c138e52fc0f2
         -   Folder: GlobalLights
             Entity:
                 Id: e466fadb-2747-432b-98b0-42b0dbba64d7
@@ -4337,13 +5089,14 @@ Hierarchy:
                 BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
                 BasePartId: 1accebac-5acf-4fbd-bdbd-0798f1ed479b
                 InstanceId: efd98a2c-098d-4566-81d0-37a78d9e04b1
-        -   Entity:
+        -   Folder: Buildings
+            Entity:
                 Id: e6b484dc-4f6f-47f3-b6d7-171fef53d8e5
                 Name: House1
                 Components:
                     7fdf3bee4eb5715356f5605946895da4: !TransformComponent
                         Id: 5b534eb0-21cf-4307-8f59-faa247fdff58
-                        Position: {X: -21.684816, Y: 3.8146973E-06, Z: 34.66575}
+                        Position: {X: -9.176401, Y: 3.8146973E-06, Z: 50.61511}
                         Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -4523,6 +5276,33 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! d601be98-8ce0-4364-be16-30704b3313d0
+        -   Folder: Collectibles
+            Entity:
+                Id: ed3afb31-702e-4afe-98d2-a6f7f3f0b859
+                Name: Collectible
+                Components:
+                    ed888d57bcb536adc9f73f68000cfebe: !TransformComponent
+                        Id: 2305d5a5-150e-4450-a971-ae0cf9d6baa3
+                        Position: {X: 34.007847, Y: 6.7594943, Z: 10.202896}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            da0ab96aa0c7309e04f459913f7cd0cf: ref!! e6770db9-d869-4d02-8179-c8398154fa3d
+        -   Folder: Roads
+            Entity:
+                Id: f0804916-42bc-4cf0-bd34-0e439b971c16
+                Name: road_straight
+                Components:
+                    0a768f089441540a147f0c6f0e1ddebb: !TransformComponent
+                        Id: c350278d-b1fb-46ec-9a7f-71e4b736fd54
+                        Position: {X: 28.557, Y: 1.9073486E-06, Z: 0.05978775}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    5b04457c4d2f50b0e2613efd5ed6c907: !ModelComponent
+                        Id: 43b94a78-6edc-42b3-bf72-8d80ca09989b
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: f0ad9fa3-d3c4-48eb-acf2-c53762d9d04e
@@ -4615,6 +5395,21 @@ Hierarchy:
                 BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
                 BasePartId: 4a997223-5e76-4a2a-98d5-544d4f0131b1
                 InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
+        -   Folder: Roads
+            Entity:
+                Id: f304bc7e-7723-4855-a40e-61a85f7e324f
+                Name: road_bend
+                Components:
+                    31b7ff8be3b8697fa4c532ac7e8a8fe6: !TransformComponent
+                        Id: f89c2b2f-8dd5-41db-be24-97a2e0d96b80
+                        Position: {X: 8.736277, Y: 0.0, Z: 40.131172}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    33fa6275bb75247e2720fde57cce2c58: !ModelComponent
+                        Id: b9a5900a-1404-41b3-8154-1615af7f399c
+                        Model: 3ad28d0a-5418-4278-9c3d-cb9090f45bf3:Models/Roads/road_bend
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: f48fa1e8-6bad-4491-8830-38973e7a6a64
@@ -4627,6 +5422,21 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! bda25fc0-1c9d-4347-9051-d1374c867fe2
+        -   Folder: Roads
+            Entity:
+                Id: f5921cb3-61dc-4e65-b2cb-7e213b532bef
+                Name: road_bend
+                Components:
+                    7df3230f051c3809f0e379c7b284acb5: !TransformComponent
+                        Id: bf43e714-c372-4744-a271-bc012d161cb0
+                        Position: {X: 28.547869, Y: 3.8146973E-06, Z: 20.06859}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    e537fb50128505c4563d30973152e6a6: !ModelComponent
+                        Id: 9e72fd50-2e06-48d7-b9b4-399c09c53f7c
+                        Model: 3ad28d0a-5418-4278-9c3d-cb9090f45bf3:Models/Roads/road_bend
+                        Materials: {}
         -   Entity:
                 Id: f6ba556c-1bf9-4ed8-91c5-777a7e1b5287
                 Name: Orbiter
@@ -4717,6 +5527,21 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! fb988874-6385-4ac9-922e-485a3b8e819f
+        -   Folder: Roads
+            Entity:
+                Id: fdb55a0d-a70a-4e7c-98a4-5a36a4f0b44a
+                Name: road_straight
+                Components:
+                    73215458ac409977bb51bce61438309e: !TransformComponent
+                        Id: 680351b6-453b-4d01-b97f-bd4419f0e317
+                        Position: {X: -21.744762, Y: 0.0, Z: 0.5564127}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Children: {}
+                    31ab0c22547ec4594201fa7d96e207c7: !ModelComponent
+                        Id: 6049e08e-0740-4ec5-9796-cf52fb03928f
+                        Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: ff1194c8-0efa-4a37-bfed-5be1cc84357f

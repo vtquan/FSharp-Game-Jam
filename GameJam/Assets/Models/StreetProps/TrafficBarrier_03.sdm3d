@@ -1,0 +1,19 @@
+!Model
+Id: 34664fac-ecb3-4b4d-945c-c1e9828497e8
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/StreetProps/TrafficBarrier_03.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    bf1abf01747b12eec5eff08df5f37408:
+        Name: Blacktrafficbarrier
+        MaterialInstance:
+            Material: 3ca044f7-8b4b-42dc-a529-a79b645de223:Models/StreetProps/Blacktrafficbarrier
+    3e9d5d604ce4c88211540a78dc3d51a2:
+        Name: YellowTraficBarrier.001
+        MaterialInstance:
+            Material: a8723292-eb4b-434d-8679-e9ffe89f2314:Models/StreetProps/YellowTraficBarrier.001
+Modifiers: {}
+~SourceHashes:
+    e686bff6d8589ef624812b62c955fbc1~../../../Resources/Model/StreetProps/TrafficBarrier_03.fbx: 3a9d2d71921d46fa0184d407b17b2c20

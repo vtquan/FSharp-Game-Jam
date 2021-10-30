@@ -1,0 +1,35 @@
+!Model
+Id: e0bd255b-936c-4287-b063-8fa5bfaee693
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/StreetProps/TraficLight_02.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    6d20398621be7e05e0ce933bd5ce42db:
+        Name: Black_TraficLight.002
+        MaterialInstance:
+            Material: ab09e300-2b3c-4891-bf72-688fbabf548b:Models/StreetProps/Black_TraficLight.002
+    e834a87e6aa49ccddacf07654525bbfe:
+        Name: Gray_LihgtPole.003
+        MaterialInstance:
+            Material: 5b2a32bf-2f37-4f87-861c-18f2050ae2b2:Models/StreetProps/Gray_LihgtPole.003
+    e864d398c4182f1bf17ae7bdad8c79ed:
+        Name: Yellow_LightPole.003
+        MaterialInstance:
+            Material: 9d4ad0ca-f8f9-4c80-8efc-29e4a4a82183:Models/StreetProps/Yellow_LightPole.003
+    fd9eb58ff543517c9b5757e30e009543:
+        Name: Red_TraficLight.002
+        MaterialInstance:
+            Material: c9b21764-5d78-4112-bd51-1ca9a20706f8:Models/StreetProps/Red_TraficLight.002
+    feae2207f2ba81f1234c7bfb4653d961:
+        Name: Orange_TraficLight.002
+        MaterialInstance:
+            Material: 361b7bd7-855f-45a7-a7fa-8a8cc121d360:Models/StreetProps/Orange_TraficLight.002
+    aa345de7a64c12e49d3d8ea43f83db80:
+        Name: Green_TraficLight.002
+        MaterialInstance:
+            Material: c9f4bfcd-602b-4f77-886d-b51b91e28523:Models/StreetProps/Green_TraficLight.002
+Modifiers: {}
+~SourceHashes:
+    595889bdb37a5615058e308f3358a07d~../../../Resources/Model/StreetProps/TraficLight_02.fbx: 9ba40f2791535a99871b7ab1e60d49a8

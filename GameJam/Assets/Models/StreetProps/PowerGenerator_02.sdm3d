@@ -1,0 +1,31 @@
+!Model
+Id: 38530cfa-b684-4cac-82a9-ce04e1899f14
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/StreetProps/PowerGenerator_02.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    2c1553ae5f9f67295061db006ff965f0:
+        Name: GrayPowerGenerator_01.001
+        MaterialInstance:
+            Material: 77a2644f-a3bf-41da-8051-f935d4403ba5:Models/StreetProps/GrayPowerGenerator_01.001
+    fa2cade5aa860e92ad3053e4181bc138:
+        Name: DarkowerGenerator_01.001
+        MaterialInstance:
+            Material: b6eacbab-713f-4bac-b981-aa109570c01a:Models/StreetProps/DarkowerGenerator_01.001
+    51b73887567f4f175ce8bf99d822e208:
+        Name: YellowPowerGenerator_01.001
+        MaterialInstance:
+            Material: 775c92a0-a73b-425c-bded-20550e2fd2ee:Models/StreetProps/YellowPowerGenerator_01.001
+    3c723b5564507a0500b0161ca6a77116:
+        Name: DarkBluePowerGenerator_02
+        MaterialInstance:
+            Material: b606496a-50f0-40a3-9ee0-ddda078a7882:Models/StreetProps/DarkBluePowerGenerator_02
+    da80e9eed4891fa3bec3052097660486:
+        Name: LightBluePowerGenerator_02
+        MaterialInstance:
+            Material: d0139ba1-a7c4-44f1-a519-04ff82184db8:Models/StreetProps/LightBluePowerGenerator_02
+Modifiers: {}
+~SourceHashes:
+    ae8538ba012d16b86e134804fa4d8c91~../../../Resources/Model/StreetProps/PowerGenerator_02.fbx: 1fbf51587d300cd1ad205a343f5c77c5

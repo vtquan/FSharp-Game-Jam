@@ -1,0 +1,19 @@
+!Model
+Id: 0bc33fc2-7cbf-4c6f-a3da-f5452dfb8522
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/StreetProps/Hidrant_01.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    45abda457931cc1aff550fd8b5932a6a:
+        Name: Hidrant_01
+        MaterialInstance:
+            Material: 83c377e9-1a29-4671-a877-b3a9408273d0:Models/StreetProps/Hidrant_01
+    25c8f83ae1513f0e4ce66805c0442b32:
+        Name: YellowPartHidrant_01
+        MaterialInstance:
+            Material: 7ccec5bd-a928-4323-be29-e4835f9e3a91:Models/StreetProps/YellowPartHidrant_01
+Modifiers: {}
+~SourceHashes:
+    e002d5b7c7dd6ee06ad164db12f540b7~../../../Resources/Model/StreetProps/Hidrant_01.fbx: 4fc0bebbce6802abf2afebc2c659b2dd
