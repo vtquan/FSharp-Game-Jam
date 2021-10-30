@@ -1,15 +1,15 @@
 !MaterialAsset
-Id: 0216283d-da4f-4510-904b-4ad27e70850c
+Id: cdf54c9a-04f2-4b3f-ab46-4e89ab4d2627
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
 Attributes:
     Diffuse: !MaterialDiffuseMapFeature
         DiffuseMap: !ComputeColor
-            Value: {R: 0.8468734, G: 0.18116428, B: 0.0069954107, A: 1.0}
+            Value: {R: 0.7156936, G: 0.10224173, B: 0.042311415, A: 1.0}
     DiffuseModel: !MaterialDiffuseLambertModelFeature {}
     Specular: !MaterialSpecularMapFeature
         SpecularMap: !ComputeColor
-            Value: {R: 0.8468734, G: 0.18116428, B: 0.0069954107, A: 1.0}
+            Value: {R: 0.7156936, G: 0.10224173, B: 0.042311415, A: 1.0}
         Intensity: !ComputeFloat
             Value: 1.0
     SpecularModel: !MaterialSpecularMicrofacetModelFeature

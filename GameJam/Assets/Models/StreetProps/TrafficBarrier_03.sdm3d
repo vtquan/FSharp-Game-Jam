@@ -9,7 +9,7 @@ Materials:
     bf1abf01747b12eec5eff08df5f37408:
         Name: Blacktrafficbarrier
         MaterialInstance:
-            Material: 3ca044f7-8b4b-42dc-a529-a79b645de223:Models/StreetProps/Blacktrafficbarrier
+            Material: ab09e300-2b3c-4891-bf72-688fbabf548b:Models/StreetProps/Black
     3e9d5d604ce4c88211540a78dc3d51a2:
         Name: YellowTraficBarrier.001
         MaterialInstance:

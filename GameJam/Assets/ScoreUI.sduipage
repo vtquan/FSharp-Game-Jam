@@ -9,20 +9,6 @@ Hierarchy:
         - !Grid ref!! dca9c9a6-5aa6-4216-b9ca-ebfce2f95fa4
     Parts:
         -   UIElement: !TextBlock
-                Id: 0e274962-e013-4416-8e3b-dc93cd171e88
-                DependencyProperties: {}
-                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                HorizontalAlignment: Left
-                VerticalAlignment: Top
-                Margin: {Left: 200.0, Top: 450.0}
-                MaximumWidth: 3.4028235E+38
-                MaximumHeight: 3.4028235E+38
-                MaximumDepth: 3.4028235E+38
-                Text: 02:05:00
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
-                TextSize: 20.0
-                TextColor: {R: 240, G: 240, B: 240, A: 255}
-        -   UIElement: !TextBlock
                 Id: 14f89f4d-21dd-4874-9347-c66f31d14695
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
@@ -32,7 +18,7 @@ Hierarchy:
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
-                Name: Tim3
+                Name: Time3
                 Text: 00:34:00
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
@@ -63,7 +49,7 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Name: Time5
-                Text: 01:17:00
+                Text: Shrine/Candles by Kay Lousberg (www.kaylousberg.com)
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
@@ -77,6 +63,7 @@ Hierarchy:
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
+                Name: Time11
                 Text: 02:05:00
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
@@ -107,7 +94,7 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Name: Time1
-                Text: 00:17:00
+                Text: Thanks for Playing!
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
@@ -123,21 +110,6 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: Time2
                 Text: 00:24:00
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
-                TextSize: 20.0
-                TextColor: {R: 240, G: 240, B: 240, A: 255}
-        -   UIElement: !TextBlock
-                Id: 5ce57d16-4459-44c1-ad88-69b42aaf3e3b
-                DependencyProperties: {}
-                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                HorizontalAlignment: Left
-                VerticalAlignment: Top
-                Margin: {Left: 200.0, Top: 350.0}
-                MaximumWidth: 3.4028235E+38
-                MaximumHeight: 3.4028235E+38
-                MaximumDepth: 3.4028235E+38
-                Name: Time7
-                Text: 01:34:00
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
@@ -167,7 +139,7 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Name: Time2
-                Text: 00:24:00
+                Text: 'Credits:'
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
@@ -183,21 +155,6 @@ Hierarchy:
                 BorderColor: {R: 63, G: 9, B: 9, A: 255}
                 BorderThickness: {}
         -   UIElement: !TextBlock
-                Id: 665bc810-61c3-46c1-980f-6fc1a2ab6bd5
-                DependencyProperties: {}
-                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                HorizontalAlignment: Left
-                VerticalAlignment: Top
-                Margin: {Left: 200.0, Top: 325.0}
-                MaximumWidth: 3.4028235E+38
-                MaximumHeight: 3.4028235E+38
-                MaximumDepth: 3.4028235E+38
-                Name: Time6
-                Text: 01:23:00
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
-                TextSize: 20.0
-                TextColor: {R: 240, G: 240, B: 240, A: 255}
-        -   UIElement: !TextBlock
                 Id: 8e456f1e-12a4-4c75-842f-358e8bccfd3c
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
@@ -207,6 +164,7 @@ Hierarchy:
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
+                Name: Time13
                 Text: 02:18:00
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
@@ -235,6 +193,7 @@ Hierarchy:
                     23a35fadb7d46c7bfe653e2d699c9896: !TextBlock ref!! 357babd7-a452-49e2-b058-77c3f4e39eee
                     e2ce2474b7c1cf76d30d3af6e4be957e: !TextBlock ref!! ffdb35d4-0316-4a57-95d7-161442c3ef49
                     0f1153c119d1320832dfa22ca6786050: !TextBlock ref!! 8e456f1e-12a4-4c75-842f-358e8bccfd3c
+                    596a5e61423dc3419b3756998d10d5d5: !TextBlock ref!! d5b105f3-abe2-42d2-a3a4-46d1b4527a53
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}
@@ -248,6 +207,7 @@ Hierarchy:
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
+                Name: Time10
                 Text: 01:51:00
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
@@ -262,22 +222,8 @@ Hierarchy:
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
-                Name: Tim4
+                Name: Time4
                 Text: 00:57:00
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
-                TextSize: 20.0
-                TextColor: {R: 240, G: 240, B: 240, A: 255}
-        -   UIElement: !TextBlock
-                Id: bccebd4c-8ce1-47bf-8c21-add61a633a09
-                DependencyProperties: {}
-                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                HorizontalAlignment: Left
-                VerticalAlignment: Top
-                Margin: {Left: 200.0, Top: 425.0}
-                MaximumWidth: 3.4028235E+38
-                MaximumHeight: 3.4028235E+38
-                MaximumDepth: 3.4028235E+38
-                Text: 01:51:00
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
@@ -307,31 +253,10 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Name: Tim4
-                Text: 00:57:00
+                Text: Streets props/Plants by @Zsky
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
-        -   UIElement: !Button
-                Id: c8945613-a752-4952-9c90-84fe681118f6
-                DependencyProperties: {}
-                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                DrawLayerNumber: 2
-                HorizontalAlignment: Left
-                VerticalAlignment: Top
-                Margin: {}
-                MaximumWidth: 3.4028235E+38
-                MaximumHeight: 3.4028235E+38
-                MaximumDepth: 3.4028235E+38
-                Name: RestartButton
-                Content: !TextBlock ref!! f1cffd07-124a-43ec-8269-8feb5998ab8d
-                PressedImage: !SpriteFromSheet
-                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
-                    CurrentFrame: 2
-                NotPressedImage: !SpriteFromSheet
-                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
-                    CurrentFrame: 1
-                MouseOverImage: !SpriteFromSheet
-                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
         -   UIElement: !TextBlock
                 Id: d58aa843-1256-43d7-ae19-5f2ca04d590c
                 DependencyProperties: {}
@@ -347,6 +272,21 @@ Hierarchy:
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: d5b105f3-abe2-42d2-a3a4-46d1b4527a53
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 525.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Time14
+                Text: 02:18:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !Grid
                 Id: dca9c9a6-5aa6-4216-b9ca-ebfce2f95fa4
                 DependencyProperties: {}
@@ -359,53 +299,9 @@ Hierarchy:
                     54998e500b5c254989c841aff25c8eb3: !Border ref!! 65fc6843-2a46-478e-bc09-297926579e8a
                     985572e38f7a02abf79b92166e4ac6ca: !Grid ref!! 91d25264-1ef4-4662-aa94-71f1546051d8
                     c6c764d659093383204e2f0e772f0104: !Grid ref!! faf754a8-0692-4218-a193-33ef6d7a038f
-                    f6687b0616c07b0af882cd0c1dc83e4d: !Button ref!! c8945613-a752-4952-9c90-84fe681118f6
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}
-        -   UIElement: !TextBlock
-                Id: dd0a2f0d-09d5-4f55-8d50-8599acb7cb0c
-                DependencyProperties: {}
-                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                HorizontalAlignment: Left
-                VerticalAlignment: Top
-                Margin: {Left: 200.0, Top: 475.0}
-                MaximumWidth: 3.4028235E+38
-                MaximumHeight: 3.4028235E+38
-                MaximumDepth: 3.4028235E+38
-                Text: 02:11:00
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
-                TextSize: 20.0
-                TextColor: {R: 240, G: 240, B: 240, A: 255}
-        -   UIElement: !TextBlock
-                Id: e241f522-5951-48f8-8689-2cec7f47c314
-                DependencyProperties: {}
-                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                HorizontalAlignment: Left
-                VerticalAlignment: Top
-                Margin: {Left: 200.0, Top: 375.0}
-                MaximumWidth: 3.4028235E+38
-                MaximumHeight: 3.4028235E+38
-                MaximumDepth: 3.4028235E+38
-                Name: Time8
-                Text: 01:44:00
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
-                TextSize: 20.0
-                TextColor: {R: 240, G: 240, B: 240, A: 255}
-        -   UIElement: !TextBlock
-                Id: e56ad962-3066-4e1b-b5a6-895d3d52c8ff
-                DependencyProperties: {}
-                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                HorizontalAlignment: Left
-                VerticalAlignment: Top
-                Margin: {Left: 200.0, Top: 500.0}
-                MaximumWidth: 3.4028235E+38
-                MaximumHeight: 3.4028235E+38
-                MaximumDepth: 3.4028235E+38
-                Text: 02:18:00
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
-                TextSize: 20.0
-                TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !TextBlock
                 Id: f057653e-c3e5-4da2-9df0-2c301b1606b4
                 DependencyProperties: {}
@@ -417,18 +313,7 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Name: Tim3
-                Text: 00:34:00
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
-                TextSize: 20.0
-                TextColor: {R: 240, G: 240, B: 240, A: 255}
-        -   UIElement: !TextBlock
-                Id: f1cffd07-124a-43ec-8269-8feb5998ab8d
-                DependencyProperties: {}
-                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                HorizontalAlignment: Center
-                VerticalAlignment: Center
-                Margin: {}
-                Text: Restart
+                Text: Buildings/Roads by Kenney (www.kenney.nl)
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
@@ -448,32 +333,9 @@ Hierarchy:
                     c56e6f3f0734e8f70d5757a13f945d4b: !TextBlock ref!! f057653e-c3e5-4da2-9df0-2c301b1606b4
                     c00d42970d2390754185511304f688ff: !TextBlock ref!! c110524a-c8f8-418d-a70a-c2dd93467ef8
                     f4eaa6a95005aca6434edbb12c4ee2af: !TextBlock ref!! 317cb145-e49a-455c-bc98-5058012a7c04
-                    fba067c883a5bb22784da21355cad2c8: !TextBlock ref!! 665bc810-61c3-46c1-980f-6fc1a2ab6bd5
-                    646ca6836e3be520539402d1d29908cf: !TextBlock ref!! 5ce57d16-4459-44c1-ad88-69b42aaf3e3b
-                    ae58ac07ada565d224c4b1900fb5fdb1: !TextBlock ref!! e241f522-5951-48f8-8689-2cec7f47c314
-                    7f0ce16bd58a9888fa5e73a4986c337f: !TextBlock ref!! fb8e60d8-4bec-47c7-a18f-918c55326a9a
-                    fdd86540b108298287fd931ebf731f19: !TextBlock ref!! bccebd4c-8ce1-47bf-8c21-add61a633a09
-                    23a35fadb7d46c7bfe653e2d699c9896: !TextBlock ref!! 0e274962-e013-4416-8e3b-dc93cd171e88
-                    e2ce2474b7c1cf76d30d3af6e4be957e: !TextBlock ref!! dd0a2f0d-09d5-4f55-8d50-8599acb7cb0c
-                    0f1153c119d1320832dfa22ca6786050: !TextBlock ref!! e56ad962-3066-4e1b-b5a6-895d3d52c8ff
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}
-        -   UIElement: !TextBlock
-                Id: fb8e60d8-4bec-47c7-a18f-918c55326a9a
-                DependencyProperties: {}
-                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                HorizontalAlignment: Left
-                VerticalAlignment: Top
-                Margin: {Left: 200.0, Top: 400.0}
-                MaximumWidth: 3.4028235E+38
-                MaximumHeight: 3.4028235E+38
-                MaximumDepth: 3.4028235E+38
-                Name: Time9
-                Text: 01:38:00
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
-                TextSize: 20.0
-                TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !TextBlock
                 Id: fbc1a30e-5ae2-486b-bcc8-369bca4986aa
                 DependencyProperties: {}
@@ -499,6 +361,7 @@ Hierarchy:
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
+                Name: Time12
                 Text: 02:11:00
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0

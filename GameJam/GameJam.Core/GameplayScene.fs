@@ -18,19 +18,21 @@ module GameplayScene =
         {
             PlayerModel : Player.Model
             PlatformModel : Platform.Model
+            CollectibleModel : Collectible.Model
             GoalModel : Goal.Model
             GameplayUiModel : GameplayUI.Model
         }
     
     let empty () =
-        { PlayerModel = Player.empty (); PlatformModel = Platform.empty (); GoalModel = Goal.empty (); GameplayUiModel = GameplayUI.empty () }
+        { PlayerModel = Player.empty (); PlatformModel = Platform.empty (); CollectibleModel = Collectible.empty (); GoalModel = Goal.empty (); GameplayUiModel = GameplayUI.empty () }
 
     let init (scene : Scene) (input : InputManager) =
         let (newPlayerModel,playerMessage) = Player.init (scene) (input)
         let (newPlatformodel,platformMessage) = Platform.init (scene)
+        let (newCollectibleModel,collectibleMessage) = Collectible.init (scene)
         let (newGoalmodel,GoalMessage) = Goal.init (scene)
         let (newUiModel,UiMessage) = GameplayUI.init (scene)
-        { PlayerModel = newPlayerModel; PlatformModel = newPlatformodel; GoalModel = newGoalmodel; GameplayUiModel = newUiModel }, [playerMessage; platformMessage; GoalMessage; UiMessage]
+        { PlayerModel = newPlayerModel; PlatformModel = newPlatformodel; CollectibleModel = newCollectibleModel; GoalModel = newGoalmodel; GameplayUiModel = newUiModel }, [playerMessage; platformMessage; collectibleMessage; GoalMessage; UiMessage]
     
     let update cmd state (deltaTime : float32) =
         let mapToGameplaySceneMsg msgs =
@@ -42,6 +44,9 @@ module GameplayScene =
         | PlatformMsg(m) -> 
             let newModel, newMsg = Platform.update m state.PlatformModel (deltaTime)
             { state with PlatformModel = newModel }, mapToGameplaySceneMsg newMsg
+        | CollectibleMsg(m) -> 
+            let newModel, newMsg = Collectible.update m state.CollectibleModel (deltaTime)
+            { state with CollectibleModel = newModel }, mapToGameplaySceneMsg newMsg
         | UiMsg(m) -> 
             let newModel, newMsg = GameplayUI.update m state.GameplayUiModel (deltaTime)
             { state with GameplayUiModel = newModel }, mapToGameplaySceneMsg newMsg
@@ -52,6 +57,7 @@ module GameplayScene =
     let view (state : Model) (gameTime : GameTime) =
         Player.view state.PlayerModel
         Platform.view state.PlatformModel (float32 gameTime.Elapsed.TotalSeconds)
-        GameplayUI.view state.GameplayUiModel (float32 gameTime.Elapsed.TotalSeconds)
+        Collectible.view state.CollectibleModel (float32 gameTime.Elapsed.TotalSeconds)
         Goal.view state.GoalModel (float32 gameTime.Elapsed.TotalSeconds)
+        GameplayUI.view state.GameplayUiModel (float32 gameTime.Elapsed.TotalSeconds)
 

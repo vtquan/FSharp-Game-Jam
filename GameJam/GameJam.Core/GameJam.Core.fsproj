@@ -19,6 +19,7 @@
     <Compile Include="Message.fs" />
     <Compile Include="Event.fs" />
     <Compile Include="Platform.fs" />
+    <Compile Include="Collectible.fs" />
     <Compile Include="Player.fs" />
     <Compile Include="Goal.fs" />
     <Compile Include="SceneManager.fs" />

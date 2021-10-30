@@ -40,6 +40,10 @@ module Player =
 
     let update msg model (deltaTime : float32) =
         match msg with
+        | Collision(e) when model.Counter = 13 -> 
+            e.Scene <- null
+            { model with Counter = model.Counter + 1 }, [GoalMsg(Activate)]
+
         | Collision(e) -> 
             e.Scene <- null
             { model with Counter = model.Counter + 1 }, []

@@ -15,8 +15,7 @@ open System
 open Stride.Core.Serialization.Contents
 
 module Goal =
-    let rotationSpeed = 60f
-    let growthRate = 50f
+    let private rotationSpeed = 60f
 
     type Model =
         { Activated : bool; Rotation: float32; Entity: Entity  }

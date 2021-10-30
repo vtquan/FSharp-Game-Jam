@@ -33,14 +33,7 @@ Hierarchy:
                         ColliderShapes:
                             48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
                                 Is2D: false
-                                Radius: 1.0
+                                Radius: 1.5
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                     828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
                         Id: a283be19-b751-4aa0-ad97-bcb2eedb332e
-                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
-                        Id: 022e67f4-497e-4e90-b695-373e888e1aa4
-                        Sounds:
-                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
-                        UseHRTF: true
-                        DirectionalFactor: 0.831
-                        Environment: Medium

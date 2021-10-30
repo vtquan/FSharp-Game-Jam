@@ -1,0 +1,23 @@
+!Model
+Id: 7b4147b4-c90a-4c33-aee5-051ae59799ca
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/StreetProps/TrafficBarrier_01.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    20cdbe4e6959baac690424b2fa09ed19:
+        Name: RedCone.002
+        MaterialInstance:
+            Material: cdf54c9a-04f2-4b3f-ab46-4e89ab4d2627:Models/StreetProps/RedCone.002
+    7c8b5f89c33b86eee5935f9f909a0a77:
+        Name: WhiteCone.002
+        MaterialInstance:
+            Material: 741ba4fc-d052-444d-ab0b-7609aa39449a:Models/StreetProps/WhiteCone.002
+    dfb6b3278557420a2e51f36a3099fd25:
+        Name: BlackCone
+        MaterialInstance:
+            Material: ab09e300-2b3c-4891-bf72-688fbabf548b:Models/StreetProps/Black
+Modifiers: {}
+~SourceHashes:
+    8a11aa2a7855afa75607ec5a363d9f7c~../../../Resources/Model/StreetProps/TrafficBarrier_01.fbx: 27926663b7f34deebb39b7bab17fe7fd

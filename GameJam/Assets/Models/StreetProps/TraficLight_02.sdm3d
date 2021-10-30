@@ -9,7 +9,7 @@ Materials:
     6d20398621be7e05e0ce933bd5ce42db:
         Name: Black_TraficLight.002
         MaterialInstance:
-            Material: ab09e300-2b3c-4891-bf72-688fbabf548b:Models/StreetProps/Black_TraficLight.002
+            Material: ab09e300-2b3c-4891-bf72-688fbabf548b:Models/StreetProps/Black
     e834a87e6aa49ccddacf07654525bbfe:
         Name: Gray_LihgtPole.003
         MaterialInstance:

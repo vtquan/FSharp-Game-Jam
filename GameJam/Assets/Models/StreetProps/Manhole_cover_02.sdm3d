@@ -13,7 +13,7 @@ Materials:
     209a9b79d2b2d0f049a240cfe76bb4cf:
         Name: BlackManholecover02
         MaterialInstance:
-            Material: a851aa04-b569-476d-a0f5-a1ae211690d8:Models/StreetProps/BlackManholecover02
+            Material: null
 Modifiers: {}
 ~SourceHashes:
     fc5ed322a8e10ae7566703eddfc6990e~../../../Resources/Model/StreetProps/Manhole_cover_02.fbx: 62404a5d742460b5fdf67b641d739e61

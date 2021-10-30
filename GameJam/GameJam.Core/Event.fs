@@ -9,7 +9,7 @@ module Event =
     let private ProcessGameEvent ((message, entity) : string * Entity) : GameMsg list = 
         match message with
         | "Collect" -> 
-            [GameplaySceneMsg(PlayerMsg(Collision(entity))); GameplaySceneMsg(GoalMsg(Activate)); GameplaySceneMsg(UiMsg(Increment)); Collect]
+            [GameplaySceneMsg(PlayerMsg(Collision(entity))); GameplaySceneMsg(UiMsg(Increment)); Collect]
         | "Left" -> [GameplaySceneMsg(PlayerMsg(MoveLeft))]
         | "Right" -> [GameplaySceneMsg(PlayerMsg(MoveRight))]
         | "Up" -> [GameplaySceneMsg(PlayerMsg(MoveUp))]

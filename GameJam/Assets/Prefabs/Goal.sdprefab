@@ -48,7 +48,8 @@ Hierarchy:
                     85013c98396cbaeed9211c0208e633db: !ModelComponent
                         Id: f316d9e4-c0ee-4da1-8cff-8c2fef17225a
                         Model: 83286573-59e7-443d-90cb-a5a73d0ca941:Models/Decors/shrine
-                        Materials: {}
+                        Materials:
+                            256dda00d331f95b8a339997d87600b0~0: 52e53ea2-25ff-4e20-96fd-bf645057152b:Models/Decors/Stone
                     a943a23624d0a91c2975f2ff7d35f1fd: !StaticColliderComponent
                         Id: b1940604-318f-42bf-9c44-f9d759651b46
                         CanSleep: false
@@ -61,8 +62,9 @@ Hierarchy:
                         AlwaysUpdateNaviMeshCache: false
                         ColliderShapes:
                             4a599f00bcdb6734cc99073a416a54f3: !CylinderColliderShapeDesc
-                                Height: 0.5
-                                LocalOffset: {X: 0.0, Y: 1.8, Z: 0.0}
+                                Height: 0.3
+                                Radius: 0.55
+                                LocalOffset: {X: 0.0, Y: 1.83, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                             608b4cd68c9f395e3a27608b24b19db0: !CylinderColliderShapeDesc
                                 LocalOffset: {X: 0.0, Y: 0.3, Z: 0.0}

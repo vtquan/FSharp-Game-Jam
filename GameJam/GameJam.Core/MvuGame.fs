@@ -102,7 +102,7 @@ module Game =
             
             Messages <- Messages @ Event.ProcessAllEvent ()
 
-            this.DebugTextSystem.Print(sprintf "X:%f\n\nY:%f\n\nZ:%f" State.GameplayModel.PlayerModel.Entity.Transform.Position.X State.GameplayModel.PlayerModel.Entity.Transform.Position.Y State.GameplayModel.PlayerModel.Entity.Transform.Position.Z, new Int2(50,50))
+            this.DebugTextSystem.Print(sprintf "X:%f\n\nY:%f\n\nZ:%f" State.GameplayModel.PlayerModel.Entity.Transform.Position.X State.GameplayModel.PlayerModel.Entity.Transform.Position.Y State.GameplayModel.PlayerModel.Entity.Transform.Position.Z, new Int2(50,200))
             this.GameUpdate Messages State gametime
             view State gametime
 

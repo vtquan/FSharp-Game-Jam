@@ -6,10 +6,10 @@ Source: !file ../../../Resources/Model/Decors/shrine.fbx
 Skeleton: null
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
-    a8dee68f2ceef00934220030d72a37e3:
-        Name: Stone
+    cdabcb38b4960cb2fd0dba588aaf317b:
+        Name: Stone.001
         MaterialInstance:
             Material: 52e53ea2-25ff-4e20-96fd-bf645057152b:Models/Decors/Stone
 Modifiers: {}
 ~SourceHashes:
-    2c853d15e8590b79dc4f11336260984a~../../../Resources/Model/Decors/shrine.fbx: ac773d8d29818d3cff8ba8792b8445ac
+    2c853d15e8590b79dc4f11336260984a~../../../Resources/Model/Decors/shrine.fbx: baf18a53f24e4a40359abee39a5c54fe
