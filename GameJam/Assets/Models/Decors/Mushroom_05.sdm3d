@@ -1,0 +1,19 @@
+!Model
+Id: cfe5f179-65bb-470d-b007-62024bee072b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/Mushroom_05.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    0101bc16b8bd0a77486e6fea391e98a4:
+        Name: Gray_Mushroom05
+        MaterialInstance:
+            Material: 11865903-b079-4d64-9be7-f1ecb8c52654:Models/Decors/GrayMushroom
+    9a7af0fe2470f19765ccc9bf142659da:
+        Name: DarkBlue_Mushroom05
+        MaterialInstance:
+            Material: fdf0df83-38d6-4e66-b624-09d791d125b0:Models/Decors/DarkBlue
+Modifiers: {}
+~SourceHashes:
+    24478f237d554127a0a3681dc0b64e78~../../../Resources/Model/Decors/Mushroom_05.fbx: 2e4ab7ea82e61b70755dc1a8a2be8265

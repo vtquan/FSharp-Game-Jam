@@ -1,0 +1,23 @@
+!Model
+Id: 108e38a5-aced-4016-8d7a-6dafc091b06a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/BushPurpleFlowers.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    398fe6a10f4e57ed6c3a820f56a8874b:
+        Name: Bush.018
+        MaterialInstance:
+            Material: 6e2a4b74-c94c-4ddc-9a9d-656d3a34aca8:Models/Decors/Bush
+    c89df0219d48fdc184782726894a11c6:
+        Name: BushLeafs.010
+        MaterialInstance:
+            Material: 67e14065-0ed7-485b-8fa2-ad2e0587dba3:Models/Decors/BushLeafs
+    dbe6b2e851d2d7b8d52b13a2b8a0596d:
+        Name: PurpleFlowersBush
+        MaterialInstance:
+            Material: 596101ad-e506-4477-8265-36efadd56066:Models/Decors/PurpleFlowers
+Modifiers: {}
+~SourceHashes:
+    3cd6da52097776776dec90c2ee44dd3c~../../../Resources/Model/Decors/BushPurpleFlowers.fbx: 70710af385908c5bf50e67a136c1d769

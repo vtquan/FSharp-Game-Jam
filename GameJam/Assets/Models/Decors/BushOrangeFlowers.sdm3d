@@ -1,0 +1,23 @@
+!Model
+Id: da9ed107-92b4-4018-9f75-93c9a9cb7c6b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/BushOrangeFlowers.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    21236850cc21892297d8c02e3ab12f6d:
+        Name: Bush.017
+        MaterialInstance:
+            Material: 6e2a4b74-c94c-4ddc-9a9d-656d3a34aca8:Models/Decors/Bush
+    c3d8e73dbd9b53e4e331bb6bee592a77:
+        Name: BushLeafs.009
+        MaterialInstance:
+            Material: 67e14065-0ed7-485b-8fa2-ad2e0587dba3:Models/Decors/BushLeafs
+    a628307fcdc8d15eb59b19469424ea8b:
+        Name: OrangeFlowersBush
+        MaterialInstance:
+            Material: c14cac19-3368-4d2d-97ac-be6e63d3ad40:Models/Decors/Orange
+Modifiers: {}
+~SourceHashes:
+    d118e459d4ab1df1fd44b1a3316a735e~../../../Resources/Model/Decors/BushOrangeFlowers.fbx: db778aff7f3af8c016015a06fd915ec5

@@ -1,0 +1,19 @@
+!Model
+Id: 100190be-75d9-411d-a314-e41c11dc30b1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/Flower_05.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    2de161623f9f8859a767d53158cf6d66:
+        Name: YellowFlower_05
+        MaterialInstance:
+            Material: 3627fbd0-3642-4885-9905-3d10a259348f:Models/Decors/YellowFlowersBush
+    7be0554c7f396848ce0011a8d9bdbed2:
+        Name: GreenFlower_05
+        MaterialInstance:
+            Material: ee91f3dc-46ee-4620-bbb9-1da186e9ad8d:Models/Decors/GreenFlower
+Modifiers: {}
+~SourceHashes:
+    b26ca75818931d91501374c785aa2ea2~../../../Resources/Model/Decors/Flower_05.fbx: 8817132cd9ac08d274073402e4a60ea1

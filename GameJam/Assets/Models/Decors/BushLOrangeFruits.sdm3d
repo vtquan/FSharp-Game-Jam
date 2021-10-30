@@ -1,0 +1,23 @@
+!Model
+Id: 29966bc4-fba3-4400-8267-b47a6fd45b69
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/BushLOrangeFruits.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    416e78e877cc269749265510c52bc7fc:
+        Name: Bush.014
+        MaterialInstance:
+            Material: 6e2a4b74-c94c-4ddc-9a9d-656d3a34aca8:Models/Decors/Bush
+    f39d8473d6e297500efe8b72824e57ca:
+        Name: BushLeafs.006
+        MaterialInstance:
+            Material: 67e14065-0ed7-485b-8fa2-ad2e0587dba3:Models/Decors/BushLeafs
+    86cd8552b3bd114f1a4f06ddbcb02e79:
+        Name: OrangeFruitBush.004
+        MaterialInstance:
+            Material: c14cac19-3368-4d2d-97ac-be6e63d3ad40:Models/Decors/Orange
+Modifiers: {}
+~SourceHashes:
+    c74c005d66eda31eb786b44b5516eae6~../../../Resources/Model/Decors/BushLOrangeFruits.fbx: f3b9dd3fb26c72cfaf8852572247f29c

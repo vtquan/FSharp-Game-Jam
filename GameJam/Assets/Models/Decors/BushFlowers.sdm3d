@@ -1,0 +1,39 @@
+!Model
+Id: d22efcad-6f7f-472c-9cd5-a14462926c9a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/BushFlowers.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    e6beb5cdd6168a3867777a58f3ef311e:
+        Name: Bush.004
+        MaterialInstance:
+            Material: 6e2a4b74-c94c-4ddc-9a9d-656d3a34aca8:Models/Decors/Bush
+    20d1c81a712109147ea3cc7d5a51ed4c:
+        Name: BushLeafs.002
+        MaterialInstance:
+            Material: 67e14065-0ed7-485b-8fa2-ad2e0587dba3:Models/Decors/BushLeafs
+    ba9bc2ecf3cacc14e37dd2d23bbe79cf:
+        Name: PurpleFlowersBush
+        MaterialInstance:
+            Material: 596101ad-e506-4477-8265-36efadd56066:Models/Decors/PurpleFlowers
+    6bae0a543377481f906b2ab01f4eb0de:
+        Name: BlueFlowersBush.001
+        MaterialInstance:
+            Material: 4fd00adb-88d5-485a-b417-a78553f8296f:Models/Decors/BlueFlowers
+    2524866572baaacdc977119c43add8ef:
+        Name: OrangeFlowersBush
+        MaterialInstance:
+            Material: c14cac19-3368-4d2d-97ac-be6e63d3ad40:Models/Decors/Orange
+    f808a12ea4b85edddc2e4c934722daba:
+        Name: YellowFlowersBush
+        MaterialInstance:
+            Material: 3627fbd0-3642-4885-9905-3d10a259348f:Models/Decors/YellowFlowersBush
+    56d85737ca0abf78d168d75f260e5e42:
+        Name: RedFlowersBush
+        MaterialInstance:
+            Material: 995e6f1f-ea68-41a0-983a-b8eb458064e2:Models/Decors/Red
+Modifiers: {}
+~SourceHashes:
+    456a640ce2c6eaa162e864b0bf56337a~../../../Resources/Model/Decors/BushFlowers.fbx: a5a3f4514746ccbf960a25c9185bffd8

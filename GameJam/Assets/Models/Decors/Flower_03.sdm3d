@@ -1,0 +1,19 @@
+!Model
+Id: a9d073a8-cf5f-4ab9-bb72-b0cc00543640
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/Flower_03.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    eb35355ca02c41f9051a4f94f2264df2:
+        Name: BlueFlower_04
+        MaterialInstance:
+            Material: 4fd00adb-88d5-485a-b417-a78553f8296f:Models/Decors/BlueFlowers
+    75effd05f7e7f08f5d4ccff5599ef9f4:
+        Name: GreenFlower_05.002
+        MaterialInstance:
+            Material: ee91f3dc-46ee-4620-bbb9-1da186e9ad8d:Models/Decors/GreenFlower
+Modifiers: {}
+~SourceHashes:
+    df912dc251142786306e0bd4d4c7c705~../../../Resources/Model/Decors/Flower_03.fbx: 4c4ac07406ddf13658ae875f70653044

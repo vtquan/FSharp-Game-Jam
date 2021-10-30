@@ -1,0 +1,31 @@
+!Model
+Id: c1cce271-2c80-479d-b077-c71c1afefe1d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Buildings/house_type18mod.glb
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    f670d7d35b7bb7f709ea395b502025c7:
+        Name: border
+        MaterialInstance:
+            Material: 58138cab-c72d-4c6b-b78f-eec8356bdd10:Models/Buildings/border
+    c957d13f9d667bb2e1eb042dafe481ff:
+        Name: window
+        MaterialInstance:
+            Material: 7c00874e-31bc-4dfb-919d-ba0a6ba3ce5f:Models/Buildings/window
+    0d5b1a773b70044e57de2d67e0ad5ea0:
+        Name: _defaultMat
+        MaterialInstance:
+            Material: 94f98125-f2e9-4efc-a27f-163086be5100:Models/Buildings/_defaultMat.001
+    fcbc9aee37159afa752ab4b64cb56c9a:
+        Name: door
+        MaterialInstance:
+            Material: ab9e8678-21a0-40d1-8c43-81fa5a57ead7:Models/Buildings/door
+    2096fa307ddc7d5b5a560cce2dff3bd4:
+        Name: roof
+        MaterialInstance:
+            Material: 1f3ea917-d91f-4942-af89-a58911019bd0:Models/Buildings/roof
+Modifiers: {}
+~SourceHashes:
+    8540604a045659463ca33ded74eb1070~../../../Resources/Model/Buildings/house_type18mod.glb: aad9e7b37eb344663bc0c67e8443b5a6

@@ -1,0 +1,19 @@
+!Model
+Id: ff14161e-d2df-436e-bc4c-c259ced2f132
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/PumpkinPlant_Stage03.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    e7901fc520d3c9ee0098e026e739f4f2:
+        Name: DarkOragnePumpkinPlant
+        MaterialInstance:
+            Material: 40791035-34c2-496e-9622-ea2e307c3358:Models/Decors/DarkOragnePumpkinPlant
+    597048fe4583fa5ceb67749ed0f82cf7:
+        Name: GreenPumpkinPlant.002
+        MaterialInstance:
+            Material: 985b7e0e-2772-4985-89c2-9a777ed22ac1:Models/Decors/GreenPumpkinPlant
+Modifiers: {}
+~SourceHashes:
+    84d0b7cf4c8208fb3e7d6f906310d792~../../../Resources/Model/Decors/PumpkinPlant_Stage03.fbx: a9b1ebef1ba9e99599f19579396f2b4a

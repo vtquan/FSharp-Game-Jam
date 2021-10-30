@@ -1,0 +1,23 @@
+!Model
+Id: 2cb52fdc-801f-4b47-843f-a7d31ed0869b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/BushYellowFlowers.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    6e4fc2bb69883474527763e10222a87b:
+        Name: Bush.020
+        MaterialInstance:
+            Material: 6e2a4b74-c94c-4ddc-9a9d-656d3a34aca8:Models/Decors/Bush
+    574021d2b798befe6dc147591a84940a:
+        Name: BushLeafs.012
+        MaterialInstance:
+            Material: 67e14065-0ed7-485b-8fa2-ad2e0587dba3:Models/Decors/BushLeafs
+    023da21830a0ef282fa1e8ab1c508c8f:
+        Name: YellowFlowersBush
+        MaterialInstance:
+            Material: 3627fbd0-3642-4885-9905-3d10a259348f:Models/Decors/YellowFlowersBush
+Modifiers: {}
+~SourceHashes:
+    ae0a4d300d177bcf43b704438836a6d1~../../../Resources/Model/Decors/BushYellowFlowers.fbx: 7a836014c00195970e34b0132660c35a

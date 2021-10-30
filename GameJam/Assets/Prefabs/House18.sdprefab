@@ -1,0 +1,43 @@
+!PrefabAsset
+Id: 1667e737-8356-4ecf-b8bc-6aa584be6763
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 329c6dfc-f943-4a0e-b6f1-91578a31a424
+    Parts:
+        -   Entity:
+                Id: 329c6dfc-f943-4a0e-b6f1-91578a31a424
+                Name: Entity
+                Components:
+                    8cd83dd767f61b61c4d5a8b098934890: !TransformComponent
+                        Id: 72e0c391-bdfb-4eb1-a8d9-85599b2e4e10
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    ddfc0e46621dd346340a3140ab4b8b0f: !ModelComponent
+                        Id: 0c897c67-ecb4-4d51-abd1-2478b81e82e3
+                        Model: c1cce271-2c80-479d-b077-c71c1afefe1d:Models/Buildings/house_type18mod
+                        Materials: {}
+                    4d9b59f0c0f7d6571b744c8ddbf698af: !StaticColliderComponent
+                        Id: 008f101d-b6ac-4501-8933-a3f290268b1b
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            eb6e7dc4ebd6cfcd42c88e59255bfc18: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.8, Y: 0.5, Z: 1.0}
+                                LocalOffset: {X: 0.35, Y: 0.18, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            f9fb716406ce9fd68ba9cac00d3a6383: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: -0.18, Y: 0.4, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

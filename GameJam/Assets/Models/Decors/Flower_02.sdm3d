@@ -1,0 +1,19 @@
+!Model
+Id: 46a96c89-7d01-4f56-9d33-56333f6de610
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/Flower_02.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    a02ec911da3e6ceed5c37b9cfb37e13a:
+        Name: CreamFlower_02
+        MaterialInstance:
+            Material: e7ea7d77-5832-45c7-82c4-60b409ee47a9:Models/Decors/CreamFlower
+    e250b2d61f96df8660f6bbd26b606dd2:
+        Name: GreenFlower_02
+        MaterialInstance:
+            Material: b0a2066c-00d8-4daa-8f7b-5ef0be52eaf6:Models/Decors/GreenFlower_02
+Modifiers: {}
+~SourceHashes:
+    350594f546160aaae2d71cbca3167335~../../../Resources/Model/Decors/Flower_02.fbx: 46f46465d85b655a6e7ad247bbd0c73a

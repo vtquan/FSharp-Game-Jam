@@ -1,0 +1,19 @@
+!Model
+Id: 094f5a98-19aa-401e-a821-ea97450e835d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/PumpkinPlant_Stage02.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    b3b059201b6c9a2320cd6ba7a450d8f2:
+        Name: OrangePumpkinPlant
+        MaterialInstance:
+            Material: dd8dd92a-5c6b-4d79-8e9e-058c8c294429:Models/Decors/OrangePumpkinPlant
+    fe4c8c51df30ff3b664977bc5fa86f03:
+        Name: GreenPumpkinPlant.001
+        MaterialInstance:
+            Material: 985b7e0e-2772-4985-89c2-9a777ed22ac1:Models/Decors/GreenPumpkinPlant
+Modifiers: {}
+~SourceHashes:
+    b2ca605b7d9ef744bc889094c888c681~../../../Resources/Model/Decors/PumpkinPlant_Stage02.fbx: ed3df081893e8450551af2f65ea77f40

@@ -56,6 +56,33 @@ Hierarchy:
         - ref!! b066338a-bb68-420f-82ef-0ce4a521b2eb
         - ref!! 7aac2dca-eef3-4d78-a94d-43a67da24997
         - ref!! c6eca3c6-f030-4024-aeab-4ad7077ae225
+        - ref!! 7e1cb0b6-a2cb-43ab-b2e2-29cabfde177d
+        - ref!! b9dcb907-91c9-4ba9-ab9b-d3f6d44583ae
+        - ref!! bee6aaec-ef44-44c6-a791-d423477439f6
+        - ref!! df7454b0-cd57-436a-8bd4-9582daac99e5
+        - ref!! 96e7a8b0-d1ec-489b-b493-76efadad574d
+        - ref!! fa655741-7937-43d8-b613-6706c22d909d
+        - ref!! 9d38380a-95da-4282-a46e-994983cb86f2
+        - ref!! d42c5b56-2125-40f9-bec9-4dd4b6218926
+        - ref!! 146fb8c0-b784-434c-b5f4-aa64352794d6
+        - ref!! 26221121-97d2-454d-b5dc-a13259df2943
+        - ref!! 9e4ecf5b-c797-42bf-a679-29ac091c3ace
+        - ref!! f2c5af67-dce3-4094-a01d-e2f9776e3b78
+        - ref!! 469cfd19-14c3-4d54-b621-c979f4fea170
+        - ref!! 9d86db45-9c2d-48e1-947d-d208140c6f1f
+        - ref!! 68e9109a-ce29-441c-b4e1-68f2a278f507
+        - ref!! 05ae3835-695b-4a22-b7db-e4d4389710e9
+        - ref!! af6bb2e3-e395-415b-8ec5-bd70dd0d9846
+        - ref!! 93265f69-c705-49bf-999c-66302650bff9
+        - ref!! fb53f733-8943-48fc-81f9-1c473d1c3322
+        - ref!! 9b59bfe3-a4e1-4f73-bb8a-c27117870070
+        - ref!! 2d01a9e5-78f6-46c0-a261-6cc42adf24ee
+        - ref!! 65247761-63e9-45e9-ab01-2d06ee1f5f2c
+        - ref!! e64b1e2c-5d0e-4954-8464-fec6ccefc149
+        - ref!! c487bc6a-48ef-4ac6-8965-1aa16fbd61ef
+        - ref!! 1ca04738-aa48-4507-b374-250f4c6bd148
+        - ref!! 139e5b46-5509-48bf-8e1d-f1c1e0a6e52c
+        - ref!! 34b2bbbb-e0a4-4099-a1a5-6abcef09bdfa
     Parts:
         -   Folder: null
             Entity:
@@ -289,6 +316,20 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 0747cda7-73ea-4ec6-89b9-f37970c47c10
+        -   Entity:
+                Id: 05ae3835-695b-4a22-b7db-e4d4389710e9
+                Name: Plant_03
+                Components:
+                    53ebcd29a9bd121af8ae8032b7f925fa: !TransformComponent
+                        Id: 901fe4a7-fbe3-49c1-9791-97ab414a41b8
+                        Position: {X: 25.533491, Y: 2.0, Z: -4.4105606}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b3f0bf6769952d276630ce68f3753778: !ModelComponent
+                        Id: a128ca01-0709-437a-819b-f96975c9c1ef
+                        Model: 883db512-cda8-4cf3-83bc-5e185f97176e:Models/Decors/Plant_03
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 063edd62-6ad5-4816-9696-76658121bdf8
@@ -617,6 +658,20 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: b41bdc67-a866-4349-8aad-d3f878935b25
+        -   Entity:
+                Id: 139e5b46-5509-48bf-8e1d-f1c1e0a6e52c
+                Name: Flower_01
+                Components:
+                    db530a802a82b5e87db199d46f4d0e68: !TransformComponent
+                        Id: ac2cd6dc-e998-4f16-b7e9-d31f628d31db
+                        Position: {X: 37.21146, Y: 0.7, Z: 49.6556}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    64dbcc8473546fc3e7a3a69711285e93: !ModelComponent
+                        Id: 2f3b8547-ca9d-43ff-b998-293beb730a71
+                        Model: b26b1a6f-fd0f-4ded-bc9b-5d1a24327663:Models/Decors/Flower_01
+                        Materials: {}
         -   Folder: Roads
             Entity:
                 Id: 13b31315-8fca-4784-b12e-e1784a0f8bab
@@ -624,7 +679,7 @@ Hierarchy:
                 Components:
                     a88dd8afc5e3c39bc745dcbde426cbad: !TransformComponent
                         Id: 08737cb0-5e2a-4853-8e17-95dd2645e16a
-                        Position: {X: -23.919004, Y: 3.8146973E-06, Z: 32.78783}
+                        Position: {X: -23.694761, Y: 3.8146973E-06, Z: 32.50666}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 10.0, Y: 1.0, Z: 10.0}
                         Children: {}
@@ -632,6 +687,21 @@ Hierarchy:
                         Id: 3bfae004-def2-4fe0-987c-1674b94f69b5
                         Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
                         Materials: {}
+        -   Entity:
+                Id: 146fb8c0-b784-434c-b5f4-aa64352794d6
+                Name: Flower_02
+                Components:
+                    6e030bfb11bed63951804e8764bfd493: !TransformComponent
+                        Id: 555d7278-a80b-434d-b45a-75c00cb55def
+                        Position: {X: 32.606876, Y: 0.7, Z: -31.890385}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    7b288e31de3d2a2df434665f6bbeff36: !ModelComponent
+                        Id: fac64956-617a-4dde-9659-983a729c3e44
+                        Model: 46a96c89-7d01-4f56-9d33-56333f6de610:Models/Decors/Flower_02
+                        Materials:
+                            225ca76439bb46cf9feec2643bf7609a~1: ee91f3dc-46ee-4620-bbb9-1da186e9ad8d:Models/Decors/GreenFlower
         -   Folder: Roads
             Entity:
                 Id: 152e685b-5683-4d16-9e28-71af0e97860a
@@ -802,6 +872,20 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! 144be51f-adae-46bb-b82d-963d7106eb0a
+        -   Entity:
+                Id: 1ca04738-aa48-4507-b374-250f4c6bd148
+                Name: Flower_01
+                Components:
+                    89c3dbf33294f45cafcecc89cff5abf6: !TransformComponent
+                        Id: 4eaf6489-a88e-4d10-86db-ff8d3012345f
+                        Position: {X: 41.160694, Y: 0.7, Z: 39.33557}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    19b03993b6cbc9efdda56bec45229e6c: !ModelComponent
+                        Id: 09b67507-b43b-47df-934b-75cce4410d81
+                        Model: b26b1a6f-fd0f-4ded-bc9b-5d1a24327663:Models/Decors/Flower_01
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 1ccb727a-c92e-43d0-8ad3-e81575a1bfde
@@ -925,7 +1009,7 @@ Hierarchy:
                 Components:
                     a88dd8afc5e3c39bc745dcbde426cbad: !TransformComponent
                         Id: 4928eeae-e2ca-45c6-a688-9529b7dc2c26
-                        Position: {X: 6.317562, Y: 3.8146973E-06, Z: 32.78783}
+                        Position: {X: 6.317562, Y: 3.8146973E-06, Z: 32.47503}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 10.0, Y: 1.0, Z: 10.0}
                         Children: {}
@@ -1085,6 +1169,20 @@ Hierarchy:
                             28bba53d39b4e04d95e04f5b13c052af: !StaticPlaneColliderShapeDesc
                                 Normal: {X: 1.0, Y: 0.0, Z: 0.0}
                                 Offset: 0.0
+        -   Entity:
+                Id: 26221121-97d2-454d-b5dc-a13259df2943
+                Name: Flower_03
+                Components:
+                    9da92de7316cd3ca3594cc2b42abe84b: !TransformComponent
+                        Id: d3a2b58a-f727-444b-be00-361d7b9daa7d
+                        Position: {X: 53.159103, Y: 0.5, Z: -37.124573}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    0e5318071b4ec68fe3f14ace78bc46b2: !ModelComponent
+                        Id: 78342a50-8a3b-49e6-ae09-b78637625865
+                        Model: a9d073a8-cf5f-4ab9-bb72-b0cc00543640:Models/Decors/Flower_03
+                        Materials: {}
         -   Folder: Roads
             Entity:
                 Id: 2664e0b0-0948-462f-9297-96fc7ee47613
@@ -1112,6 +1210,20 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! e24b8c65-f29e-4adf-a601-f4a8733fbfcb
+        -   Entity:
+                Id: 2d01a9e5-78f6-46c0-a261-6cc42adf24ee
+                Name: BushOrangeFlowers
+                Components:
+                    fd59ea4af8cca592c05648e5cf4d108a: !TransformComponent
+                        Id: 32ddedb2-831a-4513-bbba-5729a5054f42
+                        Position: {X: 31.450686, Y: 2.0, Z: 36.44703}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6ed01dcf088b93ddd4346675ffc6a946: !ModelComponent
+                        Id: 34f589a9-6f05-4cd3-83b4-a28ae5f51ab5
+                        Model: da9ed107-92b4-4018-9f75-93c9a9cb7c6b:Models/Decors/BushOrangeFlowers
+                        Materials: {}
         -   Entity:
                 Id: 3062e4b2-0492-4516-8ea7-6cfc9655bc85
                 Name: Entity
@@ -1363,6 +1475,20 @@ Hierarchy:
                 BasePartAsset: 4f27e0ab-44d4-4274-a421-f8cb479fd6d0:BlocksPrefabs/GridBase10x10
                 BasePartId: b045349c-565e-4488-9130-a795b0e3b229
                 InstanceId: 2fda84c9-e281-4070-9c6d-0232f6ad6efb
+        -   Entity:
+                Id: 34b2bbbb-e0a4-4099-a1a5-6abcef09bdfa
+                Name: Flower_02
+                Components:
+                    d80a2cbf78c81470bca0c946009392c2: !TransformComponent
+                        Id: 1ec6af4c-b97a-4d61-8add-0519959def61
+                        Position: {X: 43.216312, Y: 0.7, Z: 48.08}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    57425ba11b0590148d11d668e757a0c9: !ModelComponent
+                        Id: 19b151e2-10c9-492e-91e2-48a0a447d805
+                        Model: 46a96c89-7d01-4f56-9d33-56333f6de610:Models/Decors/Flower_02
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 34be6671-31ab-499f-8ff2-6fc55e610d47
@@ -1382,7 +1508,7 @@ Hierarchy:
                 Components:
                     10695137d193691968aa281bae186a4a: !TransformComponent
                         Id: 9c185af7-f5b2-4269-879a-24c575b6202b
-                        Position: {X: -3.7916222, Y: 0.0, Z: 32.775383}
+                        Position: {X: -3.690681, Y: 0.0, Z: 32.575985}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -1582,7 +1708,7 @@ Hierarchy:
                 Components:
                     73215458ac409977bb51bce61438309e: !TransformComponent
                         Id: 7742c9c4-4dda-4245-93e7-c496d17b80cc
-                        Position: {X: -21.744762, Y: 0.0, Z: -9.28521}
+                        Position: {X: -21.210564, Y: 0.0, Z: -9.28521}
                         Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -1725,7 +1851,7 @@ Hierarchy:
                 Components:
                     10695137d193691968aa281bae186a4a: !TransformComponent
                         Id: d560df49-2ca6-4e96-a820-b763634d1b4e
-                        Position: {X: -13.88377, Y: 0.0, Z: 32.775383}
+                        Position: {X: -13.708656, Y: 0.0, Z: 32.56612}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -1817,6 +1943,20 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! b3c87512-7a04-4243-8c0b-b8bcf73e4f93
+        -   Entity:
+                Id: 469cfd19-14c3-4d54-b621-c979f4fea170
+                Name: Flower_05
+                Components:
+                    4d69ea5b8e244bc1d2e5b096c697ab20: !TransformComponent
+                        Id: 3498efda-20d2-451c-846c-51f1d69748ff
+                        Position: {X: -1.2983513, Y: 0.8, Z: 26.48107}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    d8965f4c98da483a7728f5280e1dea28: !ModelComponent
+                        Id: e7c7c027-0b10-4014-b9b1-1b422248eeaa
+                        Model: 100190be-75d9-411d-a314-e41c11dc30b1:Models/Decors/Flower_05
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 4746210a-a274-45fc-baf4-8bddb1d2a90f
@@ -2281,6 +2421,45 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! 5ec3a173-dee3-45a9-821e-6c8aa4629ff0
+        -   Entity:
+                Id: 5996a968-5702-4367-bab4-54a02aa6534e
+                Name: Entity
+                Components:
+                    8cd83dd767f61b61c4d5a8b098934890: !TransformComponent
+                        Id: af4e4697-00bd-4e22-ae52-06347e3de93f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    ddfc0e46621dd346340a3140ab4b8b0f: !ModelComponent
+                        Id: fbe76c72-469d-447f-a360-ec395fd88369
+                        Model: c1cce271-2c80-479d-b077-c71c1afefe1d:Models/Buildings/house_type18mod
+                        Materials: {}
+                    4d9b59f0c0f7d6571b744c8ddbf698af: !StaticColliderComponent
+                        Id: 669c99be-2906-4c8d-ba92-de79403d28f0
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            eb6e7dc4ebd6cfcd42c88e59255bfc18: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.8, Y: 0.5, Z: 1.0}
+                                LocalOffset: {X: 0.35, Y: 0.18, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            f9fb716406ce9fd68ba9cac00d3a6383: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: -0.18, Y: 0.4, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 1667e737-8356-4ecf-b8bc-6aa584be6763:Prefabs/House18
+                BasePartId: 329c6dfc-f943-4a0e-b6f1-91578a31a424
+                InstanceId: a51f454d-c3f6-40f9-809c-28ddc88d795a
         -   Folder: Roads
             Entity:
                 Id: 5a0dbcf7-93d2-4481-bfb0-892b8c6ee5d5
@@ -2542,6 +2721,20 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! ddbb424c-1716-4128-9593-5b9838cc57f2
+        -   Entity:
+                Id: 65247761-63e9-45e9-ab01-2d06ee1f5f2c
+                Name: BushOrangeFlowers
+                Components:
+                    f3fd0a38d5e7766ad2ef90de26fd7399: !TransformComponent
+                        Id: b1d25219-f22a-4be0-ad4d-dcec2e320a31
+                        Position: {X: 41.946857, Y: 2.0, Z: 30.626305}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    e77dd052c7771d02e5a504e462002cb4: !ModelComponent
+                        Id: cbcc042f-b0b5-4cf3-a83f-b675ea232e01
+                        Model: da9ed107-92b4-4018-9f75-93c9a9cb7c6b:Models/Decors/BushOrangeFlowers
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 6637c752-cf0d-4c79-979d-63e3c9103963
@@ -2634,6 +2827,20 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 472ffd46-4b33-4c0d-94bc-4bbd2d845763
+        -   Entity:
+                Id: 68e9109a-ce29-441c-b4e1-68f2a278f507
+                Name: Mushroom_05
+                Components:
+                    dde375e17eb4b6de1f45e9efdabd82cd: !TransformComponent
+                        Id: 436d8cc8-0fb4-4e80-87cd-0a55cdbf6b7b
+                        Position: {X: -26.187828, Y: 0.6, Z: 10.7060375}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    36c9720d0cca7f1b283044f7547f7792: !ModelComponent
+                        Id: 1d87d90b-538b-46eb-b98b-0f815c25a7c2
+                        Model: cfe5f179-65bb-470d-b007-62024bee072b:Models/Decors/Mushroom_05
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 6cdf2e56-fb5b-4fb6-924d-16fe9ffc1fed
@@ -2807,7 +3014,7 @@ Hierarchy:
                 Components:
                     f81bc976d2d9245fee3ddcc571964d0c: !TransformComponent
                         Id: 64683101-9b50-4176-ac66-65ae9276e37d
-                        Position*: {X: -5.765201, Y: 0.0, Z: 34.16843}
+                        Position*: {X: -3.141244, Y: 0.0, Z: 15.691856}
                         Rotation*: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 10.0, Y: 10.0, Z: 10.0}
                         Children: {}
@@ -2878,6 +3085,17 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! e990ebb4-d69e-43a5-baa6-a0b63a8da8bc
+        -   Entity:
+                Id: 7e1cb0b6-a2cb-43ab-b2e2-29cabfde177d
+                Name: House18
+                Components:
+                    e6c3029f1c05d9a7601ab97b6ace5057: !TransformComponent
+                        Id: b3b1ec05-a48d-407d-a4d0-f71d30ebbc86
+                        Position: {X: -29.899096, Y: 0.0, Z: 29.19551}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            54627013116fa1d04db3e66db1823fcb: ref!! af4e4697-00bd-4e22-ae52-06347e3de93f
         -   Folder: null
             Entity:
                 Id: 7e3ca8ec-2054-4692-939d-b62123003093
@@ -3005,7 +3223,7 @@ Hierarchy:
                 Components:
                     62f1172dc4b5d7c184853dab3d1b06f5: !TransformComponent
                         Id: 1c19289e-7496-421f-93ea-38cdf9273405
-                        Position: {X: -8.777963, Y: 0.0, Z: 7.72472}
+                        Position: {X: -8.777963, Y: 0.0, Z: 7.506746}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -3314,6 +3532,20 @@ Hierarchy:
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 4e6d9a19-474a-4ddb-89d4-bc59c9c25fb8
         -   Entity:
+                Id: 93265f69-c705-49bf-999c-66302650bff9
+                Name: PumpkinPlant_Stage02
+                Components:
+                    3c5e3bbdc5a99b4bb9cd02eb1c784317: !TransformComponent
+                        Id: 7c04e795-9c09-43cb-8716-472cb8369851
+                        Position: {X: 5.4853587, Y: 1.0, Z: 31.556784}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    7d6575df35c26e2f0f7de44eb2dff37f: !ModelComponent
+                        Id: e8487a70-52d2-4df9-8b3a-490fce79f752
+                        Model: 094f5a98-19aa-401e-a821-ea97450e835d:Models/Decors/PumpkinPlant_Stage02
+                        Materials: {}
+        -   Entity:
                 Id: 93544b3d-88b3-44ea-a57f-b0cc8e5c09fb
                 Name: Goal
                 Components:
@@ -3388,6 +3620,20 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! ff3ed795-7c26-4d38-8116-e44366255c45
+        -   Entity:
+                Id: 96e7a8b0-d1ec-489b-b493-76efadad574d
+                Name: BushPurpleFlowers
+                Components:
+                    0dad3b50c56d6f67e8ae15d4a2cac6fb: !TransformComponent
+                        Id: a3218411-d174-4045-ba4d-6e88d9047c3c
+                        Position: {X: 31.67609, Y: 2.0, Z: -42.36109}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    83addb7edd3b19c8b271a5cefe0af67b: !ModelComponent
+                        Id: fe10d897-1f26-41ba-9762-ea64c85ddef8
+                        Model: 108e38a5-aced-4016-8d7a-6dafc091b06a:Models/Decors/BushPurpleFlowers
+                        Materials: {}
         -   Folder: Platform/Grid
             Entity:
                 Id: 9787f02c-8760-4c1f-86f9-2c5344b234ad
@@ -3513,6 +3759,20 @@ Hierarchy:
                 BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
                 BasePartId: 1f028fbd-2786-418a-ac54-2849fe99e275
                 InstanceId: 998c1e02-925d-4d60-afc6-97d2e953c337
+        -   Entity:
+                Id: 9b59bfe3-a4e1-4f73-bb8a-c27117870070
+                Name: BushFlowers
+                Components:
+                    8e5d354c1d6bde7af6c94d91ff427183: !TransformComponent
+                        Id: 42689c46-d66a-43fa-bd58-7ae9d167a394
+                        Position: {X: 27.963572, Y: 2.0, Z: 47.18163}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    acb09d0fa5421dc5cdd489f1c99fca94: !ModelComponent
+                        Id: 7eedd7d0-aeda-4d91-b1c4-1ada5c8ca96d
+                        Model: d22efcad-6f7f-472c-9cd5-a14462926c9a:Models/Decors/BushFlowers
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: 9c71bdf4-80ec-46cd-9170-48a4ec133a3d
@@ -3525,6 +3785,48 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! ef9a3e5e-e4ee-40bd-8bbc-c557fd953e5c
+        -   Entity:
+                Id: 9d38380a-95da-4282-a46e-994983cb86f2
+                Name: BushYellowFlowers
+                Components:
+                    49a8053ee152dbf064be553947ff1cd0: !TransformComponent
+                        Id: ef71e0c0-9be5-4fe4-8328-711399ec5642
+                        Position: {X: 48.991055, Y: 2.0, Z: -14.154337}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    e9c98d9f89820653c47d7918ef13f58b: !ModelComponent
+                        Id: 606ab4fa-307a-4176-bc99-06cf58a25e62
+                        Model: 2cb52fdc-801f-4b47-843f-a7d31ed0869b:Models/Decors/BushYellowFlowers
+                        Materials: {}
+        -   Entity:
+                Id: 9d86db45-9c2d-48e1-947d-d208140c6f1f
+                Name: Mushroom_04
+                Components:
+                    6fca28efaa1c6b1843a3ba5939f84fbe: !TransformComponent
+                        Id: 33a107dc-d6ed-46cd-873a-d173709be153
+                        Position: {X: -23.379246, Y: 0.6, Z: 6.2491074}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ce3032bffc7c150e67dc69599e01a122: !ModelComponent
+                        Id: 307fa2cc-f2d9-4b11-af47-781746b40604
+                        Model: 2d5e632c-734b-490d-9fe4-16585b13c116:Models/Decors/Mushroom_04
+                        Materials: {}
+        -   Entity:
+                Id: 9e4ecf5b-c797-42bf-a679-29ac091c3ace
+                Name: Flower_04
+                Components:
+                    5e0d3332dbb19ee1cded9a2dee932646: !TransformComponent
+                        Id: fbefbc48-8f72-4ec8-9fe5-1a71564c4f01
+                        Position: {X: 4.5777626, Y: 0.0, Z: 48.406437}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    4f5115e6c7c639bfba28a7b7ebb0bf85: !ModelComponent
+                        Id: f3e97ff7-6867-4c50-b276-49d9d4d617ac
+                        Model: 80bc412e-c71e-4daa-bf78-476e1c6b398b:Models/Decors/Flower_04
+                        Materials: {}
         -   Entity:
                 Id: a1e6f2ed-e38d-4e77-b564-a7a3b43ef5c6
                 Name: Core
@@ -3824,6 +4126,20 @@ Hierarchy:
                 BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
                 BasePartId: 256ecf1f-902b-4288-b314-7d30c3071560
                 InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
+        -   Entity:
+                Id: af6bb2e3-e395-415b-8ec5-bd70dd0d9846
+                Name: Plant_04
+                Components:
+                    bdcda571c2cb737dea5904c0d42cfa85: !TransformComponent
+                        Id: a425c0d7-be7b-4d3f-9535-d15d1e396937
+                        Position: {X: -39.93866, Y: 0.0, Z: 49.40789}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    1c9ac23eb55f0ad3c10106fd5887071c: !ModelComponent
+                        Id: 682c06b8-2911-474e-b4d7-931cb427ab51
+                        Model: 647a793c-64e4-483a-8a27-224b9b2acb46:Models/Decors/Plant_04
+                        Materials: {}
         -   Folder: StreetProps
             Entity:
                 Id: b066338a-bb68-420f-82ef-0ce4a521b2eb
@@ -3995,6 +4311,20 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! 2573d0eb-5ad8-453b-80f7-2bf416a0dcc5
+        -   Entity:
+                Id: b9dcb907-91c9-4ba9-ab9b-d3f6d44583ae
+                Name: BushFlowers
+                Components:
+                    10fe0f373ea98ede4ec7c264eac0b7ae: !TransformComponent
+                        Id: 57f10a8a-2996-47a3-a4f3-aac066919b85
+                        Position: {X: -7.812765, Y: 2.0, Z: 28.276144}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    e7e1494f97ae83c93d529d3e0a7ab35b: !ModelComponent
+                        Id: 8fe2e95a-4377-46b0-91f5-845da0fdf63c
+                        Model: d22efcad-6f7f-472c-9cd5-a14462926c9a:Models/Decors/BushFlowers
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: ba0e2818-b07c-444f-a1e6-e94a951a2835
@@ -4094,7 +4424,7 @@ Hierarchy:
                 Components:
                     d4a2488f5faeaf00e6b45ed0a7865bfb: !TransformComponent
                         Id: 8b048d63-6b54-41fd-a098-c8509b598c2b
-                        Position: {X: -33.205925, Y: 0.0, Z: 47.59054}
+                        Position: {X: -33.724552, Y: 0.0, Z: 47.59054}
                         Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -4114,6 +4444,20 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! 5fddb018-a6b5-4c8a-b65f-266d1b25e6eb
+        -   Entity:
+                Id: bee6aaec-ef44-44c6-a791-d423477439f6
+                Name: BushLOrangeFruits
+                Components:
+                    84b55f422c713263059d75103a1cb98b: !TransformComponent
+                        Id: c426e9c2-01a3-42a4-afc4-bd10275cfc93
+                        Position: {X: -24.95118, Y: 2.0, Z: -29.778057}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9383c416b91f48e431b0bfbafc2cb941: !ModelComponent
+                        Id: 4cb634ea-f24f-48e0-8d0e-e615938c8e1b
+                        Model: 29966bc4-fba3-4400-8267-b47a6fd45b69:Models/Decors/BushLOrangeFruits
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: bf6f8080-5b71-4111-939e-c48d036566b9
@@ -4205,6 +4549,20 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! 880d0340-7c75-477e-833c-35cbf087ad66
+        -   Entity:
+                Id: c487bc6a-48ef-4ac6-8965-1aa16fbd61ef
+                Name: Plant_04
+                Components:
+                    f0630a6c40e30bf2a44c2541c3d8081f: !TransformComponent
+                        Id: ae35deb1-a342-4c95-ae7c-164c4c6a9959
+                        Position: {X: 37.89523, Y: 2.0, Z: 44.4553}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2c557db61234952cbed229bc9fcf0467: !ModelComponent
+                        Id: 275475e0-8a5e-4c69-959f-e44b5d5368b3
+                        Model: 647a793c-64e4-483a-8a27-224b9b2acb46:Models/Decors/Plant_04
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: c496ac20-50fd-47de-9476-d6e815e4134b
@@ -4236,7 +4594,7 @@ Hierarchy:
                 Components:
                     004f11e53617620038d164c3319dfe07: !TransformComponent
                         Id: 45a70d62-5a51-4c06-bc3a-6431f1498fc5
-                        Position: {X: -25.772797, Y: 1.4341601, Z: -19.832277}
+                        Position: {X: -19.858437, Y: 1.4341601, Z: -34.512512}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.3, Y: 0.3, Z: 0.3}
                         Children: {}
@@ -4614,6 +4972,21 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 852b1b19-212a-401c-aff7-90b296bb6584
+        -   Entity:
+                Id: d42c5b56-2125-40f9-bec9-4dd4b6218926
+                Name: Flower_01
+                Components:
+                    2ba46d9b4f1a585dbbe85d5dbf037d4c: !TransformComponent
+                        Id: 15cbc0c1-514e-4ad0-b3f7-766136241336
+                        Position: {X: 6.909773, Y: 0.7, Z: -33.804455}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    7d65644a6507f9b7536ea4ccb92f1997: !ModelComponent
+                        Id: 2016127e-15cf-440d-b81a-9fd50a33850c
+                        Model: b26b1a6f-fd0f-4ded-bc9b-5d1a24327663:Models/Decors/Flower_01
+                        Materials:
+                            a4bdd58fb3edd3005123948b7ca17cb3~1: ee91f3dc-46ee-4620-bbb9-1da186e9ad8d:Models/Decors/GreenFlower
         -   Folder: null
             Entity:
                 Id: d6ec2693-3dcb-4b23-8ce8-161df411f0a0
@@ -4870,6 +5243,20 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: f54c659b-3ef3-4cbb-927a-25bd52c10915
+        -   Entity:
+                Id: df7454b0-cd57-436a-8bd4-9582daac99e5
+                Name: BushOrangeFlowers
+                Components:
+                    2501cca675f5a1d8ee348253d1535924: !TransformComponent
+                        Id: 384905a5-6fa3-430e-a710-9af62ca986b4
+                        Position: {X: 26.25737, Y: 2.0, Z: 2.9828658}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6f65f6e43557959fa6145fceb1209b1f: !ModelComponent
+                        Id: e6b90e23-7065-42e2-aec2-d39f9f46fb80
+                        Model: da9ed107-92b4-4018-9f75-93c9a9cb7c6b:Models/Decors/BushOrangeFlowers
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: e0ed39e9-9bcf-4b9b-a446-74f649e21feb
@@ -5070,6 +5457,20 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! e5f02935-d01f-4ee5-9a51-3267ea9b6d3d
+        -   Entity:
+                Id: e64b1e2c-5d0e-4954-8464-fec6ccefc149
+                Name: PumpkinPlant_Stage02
+                Components:
+                    54d0c2b1ca86a13fe7741d35b45ed9f4: !TransformComponent
+                        Id: d1d2b9f1-0b02-4517-8858-88321aadba5f
+                        Position: {X: 49.670555, Y: 1.0, Z: 49.051937}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    4f44521e3202a8e6e6fcde6c0379f81e: !ModelComponent
+                        Id: d3283e48-470b-4571-9b51-88912dda1977
+                        Model: 094f5a98-19aa-401e-a821-ea97450e835d:Models/Decors/PumpkinPlant_Stage02
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: e6594fd1-a84e-4148-be7d-1ac3d73b4afa
@@ -5395,6 +5796,20 @@ Hierarchy:
                 BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
                 BasePartId: 4a997223-5e76-4a2a-98d5-544d4f0131b1
                 InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
+        -   Entity:
+                Id: f2c5af67-dce3-4094-a01d-e2f9776e3b78
+                Name: Mushroom_03
+                Components:
+                    b2a6075828266d085af6b27fb851b350: !TransformComponent
+                        Id: 7320926c-c254-4d20-8006-fa1bc60066df
+                        Position: {X: 28.684837, Y: 0.8, Z: 9.693634}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c1c480bd1f564190407ed5555f9e11e6: !ModelComponent
+                        Id: be4b216d-f3d5-4b7d-b517-a5ca8741aece
+                        Model: eb5eff51-3282-4191-b509-b58c42e5c072:Models/Decors/Mushroom_03
+                        Materials: {}
         -   Folder: Roads
             Entity:
                 Id: f304bc7e-7723-4855-a40e-61a85f7e324f
@@ -5402,7 +5817,7 @@ Hierarchy:
                 Components:
                     31b7ff8be3b8697fa4c532ac7e8a8fe6: !TransformComponent
                         Id: f89c2b2f-8dd5-41db-be24-97a2e0d96b80
-                        Position: {X: 8.736277, Y: 0.0, Z: 40.131172}
+                        Position: {X: 8.736277, Y: 0.0, Z: 39.938717}
                         Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -5479,6 +5894,34 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! e5f74a97-7655-4750-8c9e-83fe5164dd74
+        -   Entity:
+                Id: fa655741-7937-43d8-b613-6706c22d909d
+                Name: BushRedFlowers
+                Components:
+                    9eda17cf5a5987fef9875e72c74da25f: !TransformComponent
+                        Id: 9c0e893a-a4d2-4e6e-a920-f08a88bbd16a
+                        Position: {X: 9.062551, Y: 2.0, Z: -41.505966}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    83e050d20e78462323daa6e81ed64a08: !ModelComponent
+                        Id: 1db745c2-2251-48a0-904e-6f857dfb0dcd
+                        Model: 305bca82-603e-4633-8d05-6a80cef73c49:Models/Decors/BushRedFlowers
+                        Materials: {}
+        -   Entity:
+                Id: fb53f733-8943-48fc-81f9-1c473d1c3322
+                Name: PumpkinPlant_Stage03
+                Components:
+                    5f961bf3747305094b31147792b79690: !TransformComponent
+                        Id: 9ee779a1-e372-4816-84ae-0dbe7162763f
+                        Position: {X: 49.93254, Y: 1.0, Z: 42.25283}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    7bed45639310556d310b07762864cad2: !ModelComponent
+                        Id: 99708ec3-5a4d-4986-8096-95de1e200394
+                        Model: ff14161e-d2df-436e-bc4c-c259ced2f132:Models/Decors/PumpkinPlant_Stage03
+                        Materials: {}
         -   Folder: null
             Entity:
                 Id: fcd9b26a-ffad-42ef-952b-d75be90e4446
@@ -5534,7 +5977,7 @@ Hierarchy:
                 Components:
                     73215458ac409977bb51bce61438309e: !TransformComponent
                         Id: 680351b6-453b-4d01-b97f-bd4419f0e317
-                        Position: {X: -21.744762, Y: 0.0, Z: 0.5564127}
+                        Position: {X: -21.246702, Y: 0.0, Z: 0.5564127}
                         Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}

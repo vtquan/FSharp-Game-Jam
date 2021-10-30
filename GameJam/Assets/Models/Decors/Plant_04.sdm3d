@@ -1,0 +1,15 @@
+!Model
+Id: 647a793c-64e4-483a-8a27-224b9b2acb46
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/Plant_04.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    d3f895fa1326e6705afcb7cfa799231d:
+        Name: YellowPlant_04
+        MaterialInstance:
+            Material: 1a73ae7e-8c2c-4388-ad4f-8c7c213faec6:Models/Decors/Yellow
+Modifiers: {}
+~SourceHashes:
+    67408902aec4bf24ff273af8b4d5160d~../../../Resources/Model/Decors/Plant_04.fbx: b14012312819d5150f7063ac4acb806e

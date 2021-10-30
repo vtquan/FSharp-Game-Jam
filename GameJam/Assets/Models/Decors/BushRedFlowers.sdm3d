@@ -1,0 +1,23 @@
+!Model
+Id: 305bca82-603e-4633-8d05-6a80cef73c49
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Decors/BushRedFlowers.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    8d9e886d063257f9e1415dc638b52c01:
+        Name: Bush.019
+        MaterialInstance:
+            Material: 6e2a4b74-c94c-4ddc-9a9d-656d3a34aca8:Models/Decors/Bush
+    936b4c8d8254e06649059657c89f6976:
+        Name: BushLeafs.011
+        MaterialInstance:
+            Material: 67e14065-0ed7-485b-8fa2-ad2e0587dba3:Models/Decors/BushLeafs
+    c425377973154e3f047eadb15daa718c:
+        Name: RedFlowersBush
+        MaterialInstance:
+            Material: 995e6f1f-ea68-41a0-983a-b8eb458064e2:Models/Decors/Red
+Modifiers: {}
+~SourceHashes:
+    fadd09b04226c578a6bdb95f0a960b5c~../../../Resources/Model/Decors/BushRedFlowers.fbx: 0c7ff8455230c7557be1f1bbef5db9f3
