@@ -35,7 +35,7 @@ module Platform =
         let platforms = scene.Entities.Where(fun x -> x.Name.Contains("Platform"))    
         let movingPlatforms = Seq.map (fun x -> { Entity = x; PlayerAttached = false }) platforms
 
-        { Timer = 0f; Direction = Forward; Platforms = List.ofSeq movingPlatforms; Player = player }, PlatformMsg(Countup)
+        { Timer = 0f; Direction = Forward; Platforms = List.ofSeq movingPlatforms; Player = player }, GameplaySceneMsg(PlatformMsg(Countup))
     
     let mapPlatformAttach (attachedPlatform : Entity) (currentPlatform : MovingPlatform)  =
         match currentPlatform.Entity.GetChild(0) = attachedPlatform with    //Platform is a prefab so the the collision trigger belong to the child entity
@@ -50,24 +50,24 @@ module Platform =
     let update msg (model : Model) (deltaTime : float32) =
         match msg with        
         | Countup when model.Timer > duration -> 
-            { model with Timer = model.Timer - deltaTime; Direction = Reverse }, PlatformMsg(Countdown)
+            { model with Timer = model.Timer - deltaTime; Direction = Reverse }, [PlatformMsg(Countdown)]
             
         | Countup -> 
-            { model with Timer = model.Timer + deltaTime }, PlatformMsg(Countup)
+            { model with Timer = model.Timer + deltaTime }, [PlatformMsg(Countup)]
             
         | Countdown when model.Timer < 0f -> 
-            { model with Timer = model.Timer + deltaTime; Direction = Forward }, PlatformMsg(Countup)
+            { model with Timer = model.Timer + deltaTime; Direction = Forward }, [PlatformMsg(Countup)]
             
         | Countdown -> 
-            { model with Timer = model.Timer - deltaTime }, PlatformMsg(Countdown)
+            { model with Timer = model.Timer - deltaTime }, [PlatformMsg(Countdown)]
             
         | AttachPlayer(e) ->
             let newPlatforms = List.map (mapPlatformAttach e) model.Platforms
-            { model with Timer = model.Timer - deltaTime; Platforms = newPlatforms }, Empty
+            { model with Timer = model.Timer - deltaTime; Platforms = newPlatforms }, []
             
         | DetachPlayer(e) ->
             let newPlatforms = List.map (mapPlatformDetach e) model.Platforms
-            { model with Timer = model.Timer - deltaTime; Platforms = newPlatforms }, Empty
+            { model with Timer = model.Timer - deltaTime; Platforms = newPlatforms }, []
 
     
     let view (model : Model) (deltaTime : float32) =

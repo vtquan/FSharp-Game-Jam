@@ -42,28 +42,28 @@ module Player =
         match msg with
         | Collision(e) -> 
             e.Scene <- null
-            { model with Counter = model.Counter + 1 }, Empty
+            { model with Counter = model.Counter + 1 }, []
             
         | MoveLeft -> 
-            { model with NewMoveDirection = model.NewMoveDirection - Vector3.UnitX }, PlayerMsg(NewVelocity)
+            { model with NewMoveDirection = model.NewMoveDirection - Vector3.UnitX }, [PlayerMsg(NewVelocity)]
                         
         | MoveRight -> 
-            { model with NewMoveDirection = model.NewMoveDirection + Vector3.UnitX }, PlayerMsg(NewVelocity)
+            { model with NewMoveDirection = model.NewMoveDirection + Vector3.UnitX }, [PlayerMsg(NewVelocity)]
             
         | MoveUp -> 
-            { model with NewMoveDirection = model.NewMoveDirection + Vector3.UnitZ }, PlayerMsg(NewVelocity)
+            { model with NewMoveDirection = model.NewMoveDirection + Vector3.UnitZ }, [PlayerMsg(NewVelocity)]
             
         | MoveDown -> 
-            { model with NewMoveDirection = model.NewMoveDirection - Vector3.UnitZ }, PlayerMsg(NewVelocity)
+            { model with NewMoveDirection = model.NewMoveDirection - Vector3.UnitZ }, [PlayerMsg(NewVelocity)]
 
         | Jump when model.Jumped = false && model.JumpReactionRemaining > 0f  -> 
             GameJam.Events.IsGroundedEventKey.Broadcast(false)
             let characterComponent = model.Entity.Get<CharacterComponent>()
             characterComponent.Jump()
-            { model with Velocity = new Vector3(model.Velocity.X, 1.3f, model.Velocity.Z); Jumped = true; JumpReactionRemaining = 0f }, Empty
+            { model with Velocity = new Vector3(model.Velocity.X, 1.3f, model.Velocity.Z); Jumped = true; JumpReactionRemaining = 0f }, []
             
         | Jump -> 
-            model, Empty
+            model, []
             
         | NewVelocity -> 
             let leftStickInput = model.Input.GetLeftThumbAny(deadZone)
@@ -80,21 +80,21 @@ module Player =
                     | true -> worldSpeed
                     | false -> worldSpeed * ((moveLength - deadZone) / (1f - deadZone))
             let moveVelocity = model.MoveDirection*0.90f + newMoveDirection *0.1f;
-            { model with Velocity = new Vector3(model.Velocity.X, model.Velocity.Y - 0.03f, model.Velocity.Z) + model.MoveDirection * 0.02f; MoveDirection  = moveVelocity; NewMoveDirection = Vector3.Zero }, Empty  
+            { model with Velocity = new Vector3(model.Velocity.X, model.Velocity.Y - 0.03f, model.Velocity.Z) + model.MoveDirection * 0.02f; MoveDirection  = moveVelocity; NewMoveDirection = Vector3.Zero }, []  
             
         | Grounded when model.Jumped = true -> 
             GameJam.Events.IsGroundedEventKey.Broadcast(true)
-            { model with Jumped = false; JumpReactionRemaining = jumpReactionThreshold }, Empty
+            { model with Jumped = false; JumpReactionRemaining = jumpReactionThreshold }, []
             
         | Grounded -> 
             GameJam.Events.IsGroundedEventKey.Broadcast(true)
-            { model with Jumped = false; JumpReactionRemaining = jumpReactionThreshold }, Empty
+            { model with Jumped = false; JumpReactionRemaining = jumpReactionThreshold }, []
 
         | Airborne ->
-            { model with JumpReactionRemaining = model.JumpReactionRemaining - deltaTime }, Empty
+            { model with JumpReactionRemaining = model.JumpReactionRemaining - deltaTime }, []
             
         | NoMovement -> 
-            { model with NewMoveDirection = Vector3.Zero }, PlayerMsg(NewVelocity)
+            { model with NewMoveDirection = Vector3.Zero }, [PlayerMsg(NewVelocity)]
     
     let view model =
         let characterComponent = model.Entity.Get<CharacterComponent>()

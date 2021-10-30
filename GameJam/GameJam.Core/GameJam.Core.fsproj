@@ -23,6 +23,8 @@
     <Compile Include="Goal.fs" />
     <Compile Include="SceneManager.fs" />
     <Compile Include="UI.fs" />
+    <Compile Include="ScoreScene.fs" />
+    <Compile Include="GameplayScene.fs" />
     <Compile Include="MvuGame.fs" />
   </ItemGroup>
 

@@ -11,10 +11,8 @@ module Game =
     
     type GameModel =
         {
-            PlayerModel : Player.Model
-            PlatformModel : Platform.Model
-            GoalModel : Goal.Model
-            UiModel : UI.Model
+            GameplayModel : GameplayScene.Model
+            ScoreModel : ScoreScene.Model
             CurrentScene : CurrentScene
             StartTime: TimeSpan
             CurrentTime: TimeSpan list
@@ -25,19 +23,16 @@ module Game =
         inherit Game()
 
         let init () =
-            { PlayerModel = Player.empty (); PlatformModel = Platform.empty (); GoalModel = Goal.empty (); UiModel = UI.empty (); CurrentScene = Title; StartTime = TimeSpan.Zero; CurrentTime = []; BestTime = []}, []
+            { GameplayModel = GameplayScene.empty (); ScoreModel = ScoreScene.empty (); CurrentScene = Title; StartTime = TimeSpan.Zero; CurrentTime = []; BestTime = []}, []
 
         let view (state : GameModel) (gameTime : GameTime) =
             match state.CurrentScene with
             | Title -> 
                 ()
             | GamePlay -> 
-                Player.view state.PlayerModel
-                Platform.view state.PlatformModel (float32 gameTime.Elapsed.TotalSeconds)
-                UI.view state.UiModel (float32 gameTime.Elapsed.TotalSeconds)
-                Goal.view state.GoalModel (float32 gameTime.Elapsed.TotalSeconds)
+                GameplayScene.view state.GameplayModel gameTime
             | Score -> 
-                ()
+                ScoreScene.view state.ScoreModel gameTime
             
         let mutable State, Messages = init ()
         let mutable NextMessages : GameMsg list = []
@@ -48,51 +43,54 @@ module Game =
             ()
 
         member private this.GameUpdate (cmds : GameMsg list) (state : GameModel) (gameTime : GameTime) =
+            let scoreScene = this.Content.Load<Scene>("ScoreScene")
+
             let GameUpdateFold ((state, msgs) : GameModel * GameMsg list) cmd  = 
-                match state.CurrentScene with
-                | Title -> 
-                    match cmd with
+                match cmd with
+                | TitleSceneMsg(m) ->
+                    match m with
                     | Start -> 
+                        let titleScene = this.Content.Load<Scene>("TitleScene")
+                        this.SceneSystem.SceneInstance.RootScene.Children.Remove(titleScene) |> ignore
+                        this.Content.Unload(titleScene)
                         let gameplayScene = this.Content.Load<Scene>("GameplayScene")
-                        this.SceneSystem.SceneInstance.RootScene.Children.Clear()
                         this.SceneSystem.SceneInstance.RootScene.Children.Add(gameplayScene)
-                        let (newPlayerModel,playerMessage) = Player.init (gameplayScene) (this.Input)
-                        let (newPlatformodel,platformMessage) = Platform.init (gameplayScene)
-                        let (newGoalmodel,GoalMessage) = Goal.init (gameplayScene)
-                        let (newUiModel,UiMessage) = UI.init (gameplayScene)
-                        { state with CurrentScene = GamePlay; PlayerModel = newPlayerModel; PlatformModel = newPlatformodel; GoalModel = newGoalmodel; UiModel = newUiModel; StartTime = gameTime.Total }, msgs@ [playerMessage; platformMessage; GoalMessage; UiMessage]
-                    | _ -> state, msgs
-                | GamePlay ->      
-                    match cmd with
-                    | PlayerMsg(m) -> 
-                        let newModel, newMsg = Player.update m state.PlayerModel (float32 gameTime.Elapsed.TotalSeconds)
-                        { state with PlayerModel = newModel }, msgs @ [newMsg]
-                    | PlatformMsg(m) -> 
-                        let newModel, newMsg = Platform.update m state.PlatformModel (float32 gameTime.Elapsed.TotalSeconds)
-                        { state with PlatformModel = newModel }, msgs @ [newMsg]
-                    | UiMsg(m) -> 
-                        let newModel, newMsg = UI.update m state.UiModel (float32 gameTime.Elapsed.TotalSeconds)
-                        { state with UiModel = newModel }, msgs @ [newMsg]
-                    | GoalMsg(m) ->
-                        let newModel, newMsg = Goal.update m state.GoalModel (float32 gameTime.Elapsed.TotalSeconds)
-                        { state with GoalModel = newModel }, msgs @ [newMsg]
-                    | Collect ->
-                        let newTime = state.CurrentTime @ [gameTime.Total - state.StartTime]
-                        { state with CurrentTime = newTime }, msgs
-                    | Goal when state.PlayerModel.Counter = 2 ->
-                        this.Input.UnlockMousePosition()
-                        this.IsMouseVisible <- true
-                        let scoreScene = this.Content.Load<Scene>("ScoreScene")
-                        this.SceneSystem.SceneInstance.RootScene.Children.Clear()
-                        this.SceneSystem.SceneInstance.RootScene.Children.Add(scoreScene)
-                        let newTime = state.CurrentTime @ [gameTime.Total - state.StartTime]
-                        { state with CurrentScene = Score; CurrentTime = newTime }, msgs
-                    | Goal ->                        
-                        state, msgs
-                    | Empty -> state, msgs
-                    | _ -> state, msgs
-                | Score -> 
+                        let (gameplaySceneModel,gameplaySceneInitMessage) = GameplayScene.init gameplayScene this.Input
+                        { state with CurrentScene = GamePlay; GameplayModel = gameplaySceneModel; StartTime = gameTime.Total; CurrentTime = [] }, gameplaySceneInitMessage
+                | GameplaySceneMsg(m) ->
+                    let (gameplaySceneModel,gameplaySceneInitMessage) = GameplayScene.update m state.GameplayModel (float32 gameTime.Elapsed.TotalSeconds)
+                    { state with GameplayModel = gameplaySceneModel }, msgs @ gameplaySceneInitMessage
+                | ScoreSceneMsg(m) ->
                     state, msgs
+                | Collect ->
+                    let newTime = state.CurrentTime @ [gameTime.Total - state.StartTime]
+                    { state with CurrentTime = newTime }, msgs
+                | Goal when state.GameplayModel.PlayerModel.Counter = 2 ->
+                    this.Input.UnlockMousePosition()
+                    this.IsMouseVisible <- true
+                    
+                    let gameplayScene = this.Content.Load<Scene>("GameplayScene")
+                    this.SceneSystem.SceneInstance.RootScene.Children.Remove(gameplayScene) |> ignore
+                    this.Content.Unload(gameplayScene)
+                    let scoreScene = this.Content.Load<Scene>("ScoreScene")
+                    this.SceneSystem.SceneInstance.RootScene.Children.Add(scoreScene)
+                    let (scoreSceneModel,scoreSceneInitMessage) = ScoreScene.init state.CurrentTime state.BestTime scoreScene
+                    let newTime = state.CurrentTime @ [gameTime.Total - state.StartTime]
+                    { state with CurrentScene = Score; ScoreModel = scoreSceneModel; CurrentTime = newTime }, []  // Clear msgs since score scene doesn't have any messages at initialization
+                | Goal ->            
+                    state, msgs
+                | Restart -> 
+                    let scoreScene = this.Content.Load<Scene>("ScoreScene")
+                    this.SceneSystem.SceneInstance.RootScene.Children.Remove(scoreScene) |> ignore
+                    this.Content.Unload(scoreScene)
+                    let titleScene = this.Content.Load<Scene>("TitleScene")
+                    this.SceneSystem.SceneInstance.RootScene.Children.Add(titleScene)
+                    let bestTime = 
+                        if state.BestTime.Length > 0 then
+                            if state.CurrentTime.Item(1) > state.BestTime.Item(1) then state.CurrentTime else state.BestTime
+                        else
+                            state.CurrentTime
+                    { state with CurrentScene = Title; BestTime = bestTime}, []
 
             let newState, nextMessages = List.fold GameUpdateFold (State, []) cmds
             State <- newState
@@ -104,7 +102,7 @@ module Game =
             
             Messages <- Messages @ Event.ProcessAllEvent ()
 
-            this.DebugTextSystem.Print(sprintf "%i\n\n%f" State.PlayerModel.Counter State.PlatformModel.Timer, new Int2(50,50))
+            //this.DebugTextSystem.Print(sprintf "%i\n\n%f" State.PlayerModel.Counter State.PlatformModel.Timer, new Int2(50,50))
             this.GameUpdate Messages State gametime
             view State gametime
 

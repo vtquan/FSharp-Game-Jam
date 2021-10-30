@@ -8,19 +8,21 @@ open Messages
 module Event =
     let private ProcessGameEvent ((message, entity) : string * Entity) : GameMsg list = 
         match message with
-        | "Collect" -> [PlayerMsg(Collision(entity)); GoalMsg(Activate); UiMsg(Increment); Collect]
-        | "Left" -> [PlayerMsg(MoveLeft)]
-        | "Right" -> [PlayerMsg(MoveRight)]
-        | "Up" -> [PlayerMsg(MoveUp)]
-        | "Down" -> [PlayerMsg(MoveDown)]
-        | "Jump" -> [PlayerMsg(Jump)]
-        | "Grounded" -> [PlayerMsg(Grounded)]
-        | "Airborne" -> [PlayerMsg(Airborne)]
-        | "NoMovement" -> [PlayerMsg(NoMovement)]
-        | "AttachPlayer" -> [PlatformMsg(AttachPlayer(entity))]
-        | "DetachPlayer" -> [PlatformMsg(DetachPlayer(entity))]
+        | "Collect" -> 
+            [GameplaySceneMsg(PlayerMsg(Collision(entity))); GameplaySceneMsg(GoalMsg(Activate)); GameplaySceneMsg(UiMsg(Increment)); Collect]
+        | "Left" -> [GameplaySceneMsg(PlayerMsg(MoveLeft))]
+        | "Right" -> [GameplaySceneMsg(PlayerMsg(MoveRight))]
+        | "Up" -> [GameplaySceneMsg(PlayerMsg(MoveUp))]
+        | "Down" -> [GameplaySceneMsg(PlayerMsg(MoveDown))]
+        | "Jump" -> [GameplaySceneMsg(PlayerMsg(Jump))]
+        | "Grounded" -> [GameplaySceneMsg(PlayerMsg(Grounded))]
+        | "Airborne" -> [GameplaySceneMsg(PlayerMsg(Airborne))]
+        | "NoMovement" -> [GameplaySceneMsg(PlayerMsg(NoMovement))]
+        | "AttachPlayer" -> [GameplaySceneMsg(PlatformMsg(AttachPlayer(entity)))]
+        | "DetachPlayer" -> [GameplaySceneMsg(PlatformMsg(DetachPlayer(entity)))]
         | "Goal" -> [Goal]
-        | "Start" -> [Start]
+        | "Start" -> [TitleSceneMsg(Start)]
+        | "Restart" -> [Restart]
         | _ -> []
         
     let private TryReceiveAllEvent (eventReceiver : EventReceiver<'a>) =   

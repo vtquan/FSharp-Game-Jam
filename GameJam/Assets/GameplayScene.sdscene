@@ -428,7 +428,7 @@ Hierarchy:
                         Model: 1acc32c3-af18-48f1-b0be-8302b31d961a:Models/GeoSphere_2
                         Materials: {}
             Base:
-                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Prefab
+                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
                 BasePartId: 603c208e-3d4b-4c57-89d1-3168f3133d12
                 InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
         -   Folder: null
@@ -3398,7 +3398,7 @@ Hierarchy:
                         Model: 1acc32c3-af18-48f1-b0be-8302b31d961a:Models/GeoSphere_2
                         Materials: {}
             Base:
-                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Prefab
+                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
                 BasePartId: 256ecf1f-902b-4288-b314-7d30c3071560
                 InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
         -   Folder: null
@@ -4508,7 +4508,7 @@ Hierarchy:
                         Model: 1acc32c3-af18-48f1-b0be-8302b31d961a:Models/GeoSphere_2
                         Materials: {}
             Base:
-                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Prefab
+                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
                 BasePartId: 200d8b92-1181-466f-87b8-44d999bdd669
                 InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
         -   Folder: null
@@ -4642,7 +4642,7 @@ Hierarchy:
                         Model: 1acc32c3-af18-48f1-b0be-8302b31d961a:Models/GeoSphere_2
                         Materials: {}
             Base:
-                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Prefab
+                BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
                 BasePartId: bc48fa99-1f8f-41dd-8310-2dccbe5c36c5
                 InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
         -   Folder: null

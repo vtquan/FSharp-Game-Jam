@@ -29,14 +29,25 @@ module Messages =
         
     type UiMsg = 
         | Increment
+        
+    type TitleSceneMsg =
+        | Start
 
-    type GameMsg =
+    type GameplaySceneMsg =
         | PlayerMsg of PlayerMsg
         | PlatformMsg of PlatformMsg
         | GoalMsg of GoalMsg
         | UiMsg of UiMsg
+        
+    type ScoreSceneMsg =
+        | Restart 
+
+    type GameMsg =
+        | TitleSceneMsg of TitleSceneMsg
+        | GameplaySceneMsg of GameplaySceneMsg
+        | ScoreSceneMsg of ScoreSceneMsg
         | Collect
-        | Start
         | Restart 
         | Goal
         | Empty
+        

@@ -15,7 +15,7 @@ open System
 open Stride.Core.Serialization.Contents
 
 module Goal =
-    let rotationSpeed = 30f
+    let rotationSpeed = 60f
     let growthRate = 50f
 
     type Model =
@@ -31,11 +31,11 @@ module Goal =
     let update msg (model : Model) (deltaTime : float32) =
         match msg with        
         | Activate ->
-            { model with Activated = true }, GoalMsg(Rotate)
+            { model with Activated = true }, [GoalMsg(Rotate)]
         | Rotate when model.Rotation > 720f ->
-            { model with Rotation = model.Rotation + rotationSpeed * deltaTime - 720f }, GoalMsg(Rotate)
+            { model with Rotation = model.Rotation + rotationSpeed * deltaTime - 720f }, [GoalMsg(Rotate)]
         | Rotate ->
-            { model with Rotation = model.Rotation + rotationSpeed * deltaTime }, GoalMsg(Rotate)
+            { model with Rotation = model.Rotation + rotationSpeed * deltaTime }, [GoalMsg(Rotate)]
 
     let view (model : Model) (deltaTime : float32) =
         match model.Activated with
