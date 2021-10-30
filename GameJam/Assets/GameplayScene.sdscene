@@ -16,18 +16,38 @@ Hierarchy:
         - ref!! a4bf3d0b-4423-479a-8b5f-89a1f014c214
         - ref!! 21729b9e-3cc0-4cb9-af10-31c5ada1c9d2
         - ref!! dcd765e3-1eb9-4e08-907e-67d158228eba
-        - ref!! 4eee0bb3-93f7-403d-bcb4-9f06f2405c6e
+        - ref!! 72d85d84-16d9-4f0c-a410-9cad589730a3
+        - ref!! 952e8f01-9af3-49fa-8307-aebd5302c324
+        - ref!! 314afca0-71c4-48fe-83a1-e96831e2caed
+        - ref!! 42c680d5-7ee6-4cf9-8027-2320af5901a2
+        - ref!! 73d42a3f-9ad2-4356-8f7d-9be5aea2c504
+        - ref!! 8554c040-ea57-47b0-88b2-e455851861a2
+        - ref!! cca0cc86-4fba-46a4-8db8-85238283dccf
         - ref!! a655bccd-1b3e-4135-aeca-9d624438b462
         - ref!! 174784cf-2251-4708-9961-61adcbfee06e
         - ref!! 93544b3d-88b3-44ea-a57f-b0cc8e5c09fb
         - ref!! e6b484dc-4f6f-47f3-b6d7-171fef53d8e5
+        - ref!! 9b15f58e-8c4a-4479-867a-bd99eaedb936
         - ref!! da30d2d1-174e-4f9d-8038-44001f8b3fb3
         - ref!! db87af60-06e3-4b8c-ab1e-6b8228166c34
+        - ref!! 5c92c8a1-c819-4e16-8b25-e4883ab3d5b0
         - ref!! 31544c5d-fa2f-45ab-8cea-11b312e50ed3
         - ref!! 0e058890-10e4-4d4d-81eb-8ab7bf8efb26
         - ref!! d31bbef3-eb5a-402c-a799-03461cc78147
         - ref!! ed3afb31-702e-4afe-98d2-a6f7f3f0b859
+        - ref!! 0c3f9bd9-68aa-4ea8-b9b5-e7c8d8ae520f
         - ref!! 545263bd-71c5-450a-8c87-4260f168e4c9
+        - ref!! ba54e311-0be8-41c9-a6f5-9bc2776eb378
+        - ref!! 329ae4af-c10d-438a-83e1-8b67dd4f2bea
+        - ref!! f3319600-96e3-4759-a853-1288527cc115
+        - ref!! 418449b7-a4a5-4eaf-9171-5a183c8cab90
+        - ref!! e73294ed-49db-41a2-b39d-354944232cfd
+        - ref!! aa8c821d-af99-40e1-bc50-da2163296fdd
+        - ref!! 3d73a73f-5972-4614-91a3-0af2125f8cab
+        - ref!! d7c17c58-ee80-4d90-9ffb-9dde6df014b2
+        - ref!! dd52dcf6-4f56-4b98-ae63-9b5f21207961
+        - ref!! f2ed04ee-6191-448f-8a91-4132bb25961d
+        - ref!! f71003b6-7633-418f-90d8-76d15b19b3c5
         - ref!! 5f8d47e7-196d-43a6-8da9-935014d71377
         - ref!! 07588446-449d-4d30-8535-3d2ddb7ec85f
         - ref!! 3593615f-5c48-4c46-8827-12555e40ea32
@@ -56,7 +76,7 @@ Hierarchy:
         - ref!! b066338a-bb68-420f-82ef-0ce4a521b2eb
         - ref!! 7aac2dca-eef3-4d78-a94d-43a67da24997
         - ref!! c6eca3c6-f030-4024-aeab-4ad7077ae225
-        - ref!! 7e1cb0b6-a2cb-43ab-b2e2-29cabfde177d
+        - ref!! 042721fb-2792-4cea-84f3-9ae0064a2f0b
         - ref!! b9dcb907-91c9-4ba9-ab9b-d3f6d44583ae
         - ref!! bee6aaec-ef44-44c6-a791-d423477439f6
         - ref!! df7454b0-cd57-436a-8bd4-9582daac99e5
@@ -83,6 +103,12 @@ Hierarchy:
         - ref!! 1ca04738-aa48-4507-b374-250f4c6bd148
         - ref!! 139e5b46-5509-48bf-8e1d-f1c1e0a6e52c
         - ref!! 34b2bbbb-e0a4-4099-a1a5-6abcef09bdfa
+        - ref!! 7e1cb0b6-a2cb-43ab-b2e2-29cabfde177d
+        - ref!! a03d5c19-2732-428e-9c9e-0dbe26db7dc5
+        - ref!! a4c73753-514a-4506-a085-ef0ca81aa9c8
+        - ref!! 3b16003b-0674-4965-9698-645b49704447
+        - ref!! 3709f2cd-abbb-4556-9845-9d7523735e43
+        - ref!! 653c2d66-a1dd-4791-8820-af2335a6262b
     Parts:
         -   Folder: null
             Entity:
@@ -260,6 +286,37 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 710cbf89-2799-4d47-b6b5-eea0e2565aca
+        -   Folder: StreetProps
+            Entity:
+                Id: 042721fb-2792-4cea-84f3-9ae0064a2f0b
+                Name: PowerGenerator_02
+                Components:
+                    004f11e53617620038d164c3319dfe07: !TransformComponent
+                        Id: 121856e4-a711-4c6a-9a5a-562854ab4d1a
+                        Position: {X: 0.32420343, Y: 18.255825, Z: 5.699332}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7c8279f4b0d55aa2bb334686a194b9a5: !ModelComponent
+                        Id: b49d204e-e9d9-4eb8-96df-68bb9ae6fdc9
+                        Model: 38530cfa-b684-4cac-82a9-ce04e1899f14:Models/StreetProps/PowerGenerator_02
+                        Materials: {}
+                    f03f66004f84e16b45bd2611d52c0bec: !StaticColliderComponent
+                        Id: 1d38e292-3b1c-42b7-bcb5-077a64acb2e8
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            101de3249904ceb86939ac7b92b0df3c: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 10.0, Y: 9.0, Z: 3.5}
+                                LocalOffset: {X: 0.0, Y: -2.0, Z: -1.2}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: null
             Entity:
                 Id: 0454e3b8-e6a8-4201-8729-18165a9f411b
@@ -316,7 +373,8 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 0747cda7-73ea-4ec6-89b9-f37970c47c10
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 05ae3835-695b-4a22-b7db-e4d4389710e9
                 Name: Plant_03
                 Components:
@@ -388,6 +446,63 @@ Hierarchy:
                 InstanceId: 64204fcd-43df-4525-9a3a-68a5978854a0
         -   Folder: null
             Entity:
+                Id: 072112f1-2afc-4883-9464-60deb31bac76
+                Name: PlatformModel
+                Components:
+                    54d6b71ec8fcbddd4b1735cbe94f9bcd: !TransformComponent
+                        Id: 50b8fb05-3579-4465-8719-200b5ec33a89
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 7.0, Y: 15.0, Z: 7.0}
+                        Children:
+                            b42e4c5dbe113680dc8af7ef3e658964: ref!! f8d81d28-bd5a-448c-bd51-8a99fd61761e
+                    21cd90ea1121daabca158f4f3cd50a7e: !ModelComponent
+                        Id: f9aa8ba7-c833-4ae7-a286-5ac8b9f95237
+                        Model: f848c356-1efd-4930-a108-802f342efe97:Models/Floor1x0x1
+                        Materials:
+                            09cfe7480312f3a25741d03e9a3180da~0: fd079f98-39ec-40a1-9ff2-078c7a8f2860:Materials/Material
+                    93aecfb757796aec9d9f899c91e81470: !StaticColliderComponent
+                        Id: b34bd7de-267a-46a8-981d-75e57d050dfa
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4d0dc65723010a40854bfab5018f5cfe: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.1, Y: 0.05, Z: 1.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    a3bb214e8ee8cdc4637af5de07887741: !StaticColliderComponent
+                        Id: d01d5b8d-840c-4a2b-9b5b-76a669cefdb3
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3bbfe6c308e462e91a9b5fe7a59be665: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 0.1, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ef7e112114af5963b8814471036c7808: !GameJam.MovingPlatformController,GameJam.Game
+                        Id: 9f982c44-3a1b-44e7-9773-980e1d12bbac
+                    afeec27d3193453ad4cee8961e186815: !GameJam.AttachPlayer,GameJam.Game
+                        Id: b03843e8-5ac1-4900-9ff0-94d9c20a0312
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1f028fbd-2786-418a-ac54-2849fe99e275
+                InstanceId: 18f4b97f-3150-47d9-a637-46db33906f10
+        -   Folder: null
+            Entity:
                 Id: 0722e1ab-01fd-4812-98e3-9ce4cb22ddce
                 Name: Wall0x2x5 (7)
                 Components:
@@ -437,6 +552,18 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! f9b2f157-fb34-4307-863c-e4389e2592cb
+        -   Folder: Collectibles
+            Entity:
+                Id: 0c3f9bd9-68aa-4ea8-b9b5-e7c8d8ae520f
+                Name: Collectible
+                Components:
+                    ed888d57bcb536adc9f73f68000cfebe: !TransformComponent
+                        Id: 0cc8be65-e06b-4c1b-998c-49c20596022b
+                        Position: {X: 38.188114, Y: 1.0112014, Z: 44.587254}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            da0ab96aa0c7309e04f459913f7cd0cf: ref!! aea4677b-a6a5-4183-b3bb-c7a0bbd07207
         -   Folder: null
             Entity:
                 Id: 0cfe5ced-9ded-463a-8889-6dd59678342a
@@ -512,6 +639,40 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             2d2ac68943020bae9a37924fbd377914: ref!! b16c96a0-4fda-44a0-93b0-8859de7dc4d6
+        -   Entity:
+                Id: 0ec7688e-0eeb-48e6-a0dd-60f9c2869d36
+                Name: Entity
+                Components:
+                    f81bc976d2d9245fee3ddcc571964d0c: !TransformComponent
+                        Id: 9df7d97b-f738-4e19-9384-a94d09fd317f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    656d78bb48826c27d0ba483fa398a187: !ModelComponent
+                        Id: 075dd0e9-92a6-4694-951c-9e374990b62c
+                        Model: 8c17c610-3b49-4f4d-b57b-32c2c8519f1a:Models/Buildings/large_buildingD
+                        Materials: {}
+                    1d2396a7332dcb8b51590e452f02a457: !StaticColliderComponent
+                        Id: 777c3be3-1744-4f5e-94fa-bdfdaf42e4de
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            95e601cb989960190df0c41b6a6d64fd: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.2, Y: 1.65, Z: 1.3}
+                                LocalOffset: {X: 0.0, Y: 0.78, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: abadcc0e-ffc6-442e-b02d-4f595ed04b27:Prefabs/BuildingD
+                BasePartId: 47b0b22f-1d9a-49fa-bd92-8cb7c6447d59
+                InstanceId: 129d5b15-9bb0-49ef-8b32-7b0d8e4bd2fd
         -   Entity:
                 Id: 10e720af-5481-4a29-9da1-f5293d4869c0
                 Name: Orbiter
@@ -658,7 +819,8 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: b41bdc67-a866-4349-8aad-d3f878935b25
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 139e5b46-5509-48bf-8e1d-f1c1e0a6e52c
                 Name: Flower_01
                 Components:
@@ -679,21 +841,22 @@ Hierarchy:
                 Components:
                     a88dd8afc5e3c39bc745dcbde426cbad: !TransformComponent
                         Id: 08737cb0-5e2a-4853-8e17-95dd2645e16a
-                        Position: {X: -23.694761, Y: 3.8146973E-06, Z: 32.50666}
+                        Position: {X: -23.621328, Y: 3.8146973E-06, Z: 32.57093}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 10.0, Y: 1.0, Z: 10.0}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
                     d04a876b69a6b8ec660d561b9535c133: !ModelComponent
                         Id: 3bfae004-def2-4fe0-987c-1674b94f69b5
                         Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
                         Materials: {}
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 146fb8c0-b784-434c-b5f4-aa64352794d6
                 Name: Flower_02
                 Components:
                     6e030bfb11bed63951804e8764bfd493: !TransformComponent
                         Id: 555d7278-a80b-434d-b45a-75c00cb55def
-                        Position: {X: 32.606876, Y: 0.7, Z: -31.890385}
+                        Position: {X: 13.905285, Y: 0.7, Z: -31.890385}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -783,7 +946,7 @@ Hierarchy:
                 Components:
                     b296752080481e41b569d385767428ce: !TransformComponent
                         Id: a76204cb-d9c4-4dcf-88ff-13d1fdea3071
-                        Position: {X: -5.0, Y: 0.09678906, Z: 5.0}
+                        Position: {X: 6.5618963, Y: 0.09678906, Z: 14.137}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -860,6 +1023,48 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! 8d706e33-b52e-45ce-8eb7-2b7b4ae29f55
+        -   Entity:
+                Id: 1c139687-36a5-4b45-a491-9c83d3e903e2
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: b6b323d6-9ae5-4f22-8a04-6ea712dcab00
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: 115098fd-91bf-4c00-a5b6-4cc67461612c
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 53e08c47-cb86-4346-adfd-91a50cef4ee7
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: 3b730913-5d0f-40dd-afad-dc50a33b63c3
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: e51effef-bf97-43dd-a64a-cabfa1ad1a97
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: 54f54d3e-4e25-4f8c-b3a2-1199d61dad16
         -   Folder: null
             Entity:
                 Id: 1c9d54af-21b4-4f36-b63d-b04e3cdb3838
@@ -872,7 +1077,8 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! 144be51f-adae-46bb-b82d-963d7106eb0a
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 1ca04738-aa48-4507-b374-250f4c6bd148
                 Name: Flower_01
                 Components:
@@ -886,6 +1092,63 @@ Hierarchy:
                         Id: 09b67507-b43b-47df-934b-75cce4410d81
                         Model: b26b1a6f-fd0f-4ded-bc9b-5d1a24327663:Models/Decors/Flower_01
                         Materials: {}
+        -   Folder: null
+            Entity:
+                Id: 1cad8b8f-0bf5-4ce9-879a-2ba02f5151e4
+                Name: PlatformModel
+                Components:
+                    54d6b71ec8fcbddd4b1735cbe94f9bcd: !TransformComponent
+                        Id: 41e06532-23a2-40f2-b7d8-81ac3c261342
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 7.0, Y: 15.0, Z: 7.0}
+                        Children:
+                            b42e4c5dbe113680dc8af7ef3e658964: ref!! 9425f35f-acc6-4693-81cb-e7355c95fbf1
+                    21cd90ea1121daabca158f4f3cd50a7e: !ModelComponent
+                        Id: dd2deda4-d4b2-4df7-8f30-c0a2f9d225d1
+                        Model: f848c356-1efd-4930-a108-802f342efe97:Models/Floor1x0x1
+                        Materials:
+                            09cfe7480312f3a25741d03e9a3180da~0: fd079f98-39ec-40a1-9ff2-078c7a8f2860:Materials/Material
+                    93aecfb757796aec9d9f899c91e81470: !StaticColliderComponent
+                        Id: 6b549b16-fa4f-4155-ac2c-dc4a39146b51
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4d0dc65723010a40854bfab5018f5cfe: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.1, Y: 0.05, Z: 1.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    a3bb214e8ee8cdc4637af5de07887741: !StaticColliderComponent
+                        Id: 0196b739-7ad4-4ba1-a40d-cd1722157e7c
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3bbfe6c308e462e91a9b5fe7a59be665: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 0.1, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ef7e112114af5963b8814471036c7808: !GameJam.MovingPlatformController,GameJam.Game
+                        Id: 1a6e554c-b56c-436f-8173-68545501757b
+                    afeec27d3193453ad4cee8961e186815: !GameJam.AttachPlayer,GameJam.Game
+                        Id: b9c60b7c-fdce-46c8-8941-74971b1c72c1
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1f028fbd-2786-418a-ac54-2849fe99e275
+                InstanceId: e53bba1a-6f43-4055-9781-727e7475b355
         -   Folder: null
             Entity:
                 Id: 1ccb727a-c92e-43d0-8ad3-e81575a1bfde
@@ -1017,6 +1280,48 @@ Hierarchy:
                         Id: b3eeb8eb-2ed3-4309-acbe-6c3b80bba25c
                         Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
                         Materials: {}
+        -   Entity:
+                Id: 1fb5a960-19d1-4310-bfd9-fd0c674508b6
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: e519d531-fc07-48e2-b9fa-a1f737dc1ab0
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: 9a769a23-a960-4f74-ad54-b1567961ebee
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 413178f7-7dfd-4f22-9af1-e8cbd36d9552
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: 65b59b18-1f5d-46a8-a33e-58d116b0566d
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: 89e3cbbf-f0dc-45f0-ba25-ea9405ae8a8e
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: c44de9c3-d19d-4504-8a89-202b07309ea7
         -   Folder: null
             Entity:
                 Id: 20714653-7589-449a-a820-ebcd3225d304
@@ -1095,11 +1400,11 @@ Hierarchy:
         -   Folder: Platform
             Entity:
                 Id: 21729b9e-3cc0-4cb9-af10-31c5ada1c9d2
-                Name: PosYPlatform
+                Name: NegYPlatform
                 Components:
                     a7e75453d760142f487e1f89c581a834: !TransformComponent
                         Id: 00c286e4-1c84-49c5-929d-029099fe78f7
-                        Position: {X: -16.572765, Y: 3.8737783, Z: -15.433374}
+                        Position: {X: -34.99844, Y: 19.0, Z: 40.462788}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -1169,7 +1474,8 @@ Hierarchy:
                             28bba53d39b4e04d95e04f5b13c052af: !StaticPlaneColliderShapeDesc
                                 Normal: {X: 1.0, Y: 0.0, Z: 0.0}
                                 Offset: 0.0
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 26221121-97d2-454d-b5dc-a13259df2943
                 Name: Flower_03
                 Components:
@@ -1210,7 +1516,8 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! e24b8c65-f29e-4adf-a601-f4a8733fbfcb
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 2d01a9e5-78f6-46c0-a261-6cc42adf24ee
                 Name: BushOrangeFlowers
                 Components:
@@ -1224,6 +1531,25 @@ Hierarchy:
                         Id: 34f589a9-6f05-4cd3-83b4-a28ae5f51ab5
                         Model: da9ed107-92b4-4018-9f75-93c9a9cb7c6b:Models/Decors/BushOrangeFlowers
                         Materials: {}
+        -   Folder: null
+            Entity:
+                Id: 302de46b-e79a-4de5-b621-b7b7e810f297
+                Name: Cobblestone
+                Components:
+                    f71e3f9144c41813720e5dee8bab7b82: !TransformComponent
+                        Id: 9425f35f-acc6-4693-81cb-e7355c95fbf1
+                        Position: {X: 0.0, Y: 0.013502032, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.5, Y: 0.25, Z: 0.5}
+                        Children: {}
+                    14e2f8cbd8112a1a063795e601f40502: !ModelComponent
+                        Id: 07dd5ce0-c39b-4fe9-9e5b-3e774de1bf1e
+                        Model: 140e25cf-01f9-484e-842f-2748207a7a6f:Models/pathCobbled
+                        Materials: {}
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1accebac-5acf-4fbd-bdbd-0798f1ed479b
+                InstanceId: e53bba1a-6f43-4055-9781-727e7475b355
         -   Entity:
                 Id: 3062e4b2-0492-4516-8ea7-6cfc9655bc85
                 Name: Entity
@@ -1258,6 +1584,18 @@ Hierarchy:
                 BasePartAsset: abadcc0e-ffc6-442e-b02d-4f595ed04b27:Prefabs/BuildingD
                 BasePartId: 47b0b22f-1d9a-49fa-bd92-8cb7c6447d59
                 InstanceId: 7e19f129-63af-4dd9-a7d0-d50ee3c4905b
+        -   Folder: Platform
+            Entity:
+                Id: 314afca0-71c4-48fe-83a1-e96831e2caed
+                Name: PosXPlatform
+                Components:
+                    f4ea9b40ed81484e1af136b9c353cd11: !TransformComponent
+                        Id: f8a28269-43aa-4302-8422-5e4e19ae4385
+                        Position: {X: 9.83428, Y: 18.0, Z: 41.018772}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            aebc7c703ff7b1e4150cd7b07d2afb12: ref!! 50b8fb05-3579-4465-8719-200b5ec33a89
         -   Folder: Buildings
             Entity:
                 Id: 31544c5d-fa2f-45ab-8cea-11b312e50ed3
@@ -1270,6 +1608,18 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c6678b0e848692dbe75a08ba520edd80: ref!! 0583baea-daf4-4aaf-81f3-63aaa8358a6c
+        -   Folder: Collectibles
+            Entity:
+                Id: 329ae4af-c10d-438a-83e1-8b67dd4f2bea
+                Name: Collectible
+                Components:
+                    98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
+                        Id: 7f673cac-de5a-4407-b2dd-807383a42424
+                        Position: {X: 0.2597245, Y: 17.89797, Z: 2.774026}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0d7d7260a101d9e0ad68ebe8c2ba7416: ref!! b46cff3f-89aa-4cce-a1d6-e2d61cbffad4
         -   Folder: null
             Entity:
                 Id: 335d46e8-654b-4f48-95cb-c8a452170317
@@ -1326,63 +1676,6 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 442970f4-8fd0-4414-922a-3e0a73392061
-        -   Folder: null
-            Entity:
-                Id: 3378d010-a0c0-4c6d-972c-5b5347e9a861
-                Name: PlatformModel
-                Components:
-                    54d6b71ec8fcbddd4b1735cbe94f9bcd: !TransformComponent
-                        Id: f68f1315-8587-44c0-8235-cff8c270ad35
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 7.0, Y: 15.0, Z: 7.0}
-                        Children:
-                            b42e4c5dbe113680dc8af7ef3e658964: ref!! 6462eab7-eb83-480a-80f3-074fd0093f9c
-                    21cd90ea1121daabca158f4f3cd50a7e: !ModelComponent
-                        Id: 4e78e7f2-4f00-46dc-a009-50ecc2294dee
-                        Model: f848c356-1efd-4930-a108-802f342efe97:Models/Floor1x0x1
-                        Materials:
-                            09cfe7480312f3a25741d03e9a3180da~0: fd079f98-39ec-40a1-9ff2-078c7a8f2860:Materials/Material
-                    93aecfb757796aec9d9f899c91e81470: !StaticColliderComponent
-                        Id: f5fe03a7-d6ef-46c3-9f08-76a56de47cc3
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        AlwaysUpdateNaviMeshCache: false
-                        ColliderShapes:
-                            4d0dc65723010a40854bfab5018f5cfe: !BoxColliderShapeDesc
-                                Is2D: false
-                                Size: {X: 1.1, Y: 0.05, Z: 1.1}
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    a3bb214e8ee8cdc4637af5de07887741: !StaticColliderComponent
-                        Id: f738d792-30a7-4c88-8fdd-8857939693d4
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: true
-                        AlwaysUpdateNaviMeshCache: false
-                        ColliderShapes:
-                            3bbfe6c308e462e91a9b5fe7a59be665: !BoxColliderShapeDesc
-                                Is2D: false
-                                Size: {X: 0.8, Y: 0.1, Z: 0.8}
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    ef7e112114af5963b8814471036c7808: !GameJam.MovingPlatformController,GameJam.Game
-                        Id: 4fa51b31-be16-4500-8683-fa26bdfa6fee
-                    afeec27d3193453ad4cee8961e186815: !GameJam.AttachPlayer,GameJam.Game
-                        Id: ce7471fe-3e02-4ec0-be84-36aec5e193ef
-            Base:
-                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
-                BasePartId: 1f028fbd-2786-418a-ac54-2849fe99e275
-                InstanceId: efd98a2c-098d-4566-81d0-37a78d9e04b1
         -   Folder: null
             Entity:
                 Id: 33f068d2-ac10-483f-95e3-7b976b680db9
@@ -1475,7 +1768,8 @@ Hierarchy:
                 BasePartAsset: 4f27e0ab-44d4-4274-a421-f8cb479fd6d0:BlocksPrefabs/GridBase10x10
                 BasePartId: b045349c-565e-4488-9130-a795b0e3b229
                 InstanceId: 2fda84c9-e281-4070-9c6d-0232f6ad6efb
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 34b2bbbb-e0a4-4099-a1a5-6abcef09bdfa
                 Name: Flower_02
                 Components:
@@ -1501,6 +1795,48 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! a9b0fc89-f80e-4f6b-9ee2-89a910835982
+        -   Entity:
+                Id: 3519d4bf-62f4-4c38-bf31-3de7b3ed9c4a
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: b46cff3f-89aa-4cce-a1d6-e2d61cbffad4
+                        Position*: {X: 0.0, Y: -0.9974347, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: 5cf2555a-1930-4be6-bd81-f02eed595633
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 3f1ec1c0-1bfc-4164-82f1-c2283a0585b3
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: ee49cc4f-dbea-43bd-9334-14c3a9c28880
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: dccc427f-7ede-4c49-8150-9aba9577b5e1
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: 2e05a507-5840-4a32-b283-bd071d4517b9
         -   Folder: Roads
             Entity:
                 Id: 3593615f-5c48-4c46-8827-12555e40ea32
@@ -1649,6 +1985,18 @@ Hierarchy:
                             ad408a5e6cdf86458308b7ea95beb969: !StaticPlaneColliderShapeDesc
                                 Normal: {X: 1.0, Y: 0.0, Z: 0.0}
                                 Offset: 0.0
+        -   Folder: Buildings
+            Entity:
+                Id: 3709f2cd-abbb-4556-9845-9d7523735e43
+                Name: BuildingB
+                Components:
+                    f90e298960a461b936b3ec876f9d51eb: !TransformComponent
+                        Id: 565294b8-ee4a-4d0d-aec5-1f96f908ff99
+                        Position: {X: -26.081337, Y: 0.0, Z: -12.130769}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            2e15ffa7273449ab60530502e19f7d72: ref!! a6b3f4f3-7626-4047-b7d2-42ae525a4b83
         -   Folder: null
             Entity:
                 Id: 393f7ead-385a-4110-becb-2030efa12970
@@ -1701,6 +2049,18 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! 769d34f9-f515-47d4-8d2f-7889d1409df3
+        -   Folder: Buildings
+            Entity:
+                Id: 3b16003b-0674-4965-9698-645b49704447
+                Name: BuildingE
+                Components:
+                    9cdf3dd0347d2e101c1dadb0db7ecc23: !TransformComponent
+                        Id: 054dd71a-44bc-4fc5-a282-1ab5a17743b6
+                        Position: {X: -1.4131808, Y: 3.8146973E-06, Z: -6.224045}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            b1e54d93091416b23bbe3f4bd5856bca: ref!! 471bdaac-e91c-43db-8640-f2135453a961
         -   Folder: Roads
             Entity:
                 Id: 3bf639cf-9521-4d3d-a375-c25cc641144a
@@ -1808,6 +2168,75 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: 04d7b5ad-cec1-4539-b052-4a0a0f0e671c
+        -   Folder: Collectibles
+            Entity:
+                Id: 3d73a73f-5972-4614-91a3-0af2125f8cab
+                Name: Collectible
+                Components:
+                    98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
+                        Id: 1e3f4365-bd48-4a8e-b9ab-e528813ec351
+                        Position: {X: -25.895964, Y: 1.5569305, Z: 38.562065}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0d7d7260a101d9e0ad68ebe8c2ba7416: ref!! 2f7036b1-75f7-4067-b58c-d5293cabb111
+        -   Folder: null
+            Entity:
+                Id: 3d94b9ca-851e-49c0-8053-7dd6b27a19b4
+                Name: PlatformModel
+                Components:
+                    54d6b71ec8fcbddd4b1735cbe94f9bcd: !TransformComponent
+                        Id: 04ffa19a-e7b7-4994-835e-3ac946189718
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 7.0, Y: 15.0, Z: 7.0}
+                        Children:
+                            b42e4c5dbe113680dc8af7ef3e658964: ref!! 0804fd64-c42d-47b4-a650-950a0f70ccc4
+                    21cd90ea1121daabca158f4f3cd50a7e: !ModelComponent
+                        Id: 9835577a-6d98-4ac9-bf78-f4e4d8ba407d
+                        Model: f848c356-1efd-4930-a108-802f342efe97:Models/Floor1x0x1
+                        Materials:
+                            09cfe7480312f3a25741d03e9a3180da~0: fd079f98-39ec-40a1-9ff2-078c7a8f2860:Materials/Material
+                    93aecfb757796aec9d9f899c91e81470: !StaticColliderComponent
+                        Id: f5305fe5-d275-4e31-b6c2-65dddd64f1be
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4d0dc65723010a40854bfab5018f5cfe: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.1, Y: 0.05, Z: 1.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    a3bb214e8ee8cdc4637af5de07887741: !StaticColliderComponent
+                        Id: f04dd180-fdb1-484a-b3f8-414d37868e57
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3bbfe6c308e462e91a9b5fe7a59be665: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 0.1, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ef7e112114af5963b8814471036c7808: !GameJam.MovingPlatformController,GameJam.Game
+                        Id: 72badfe2-438f-43f9-ba76-b7ea6e74fa73
+                    afeec27d3193453ad4cee8961e186815: !GameJam.AttachPlayer,GameJam.Game
+                        Id: 7285c83f-f194-4abf-8953-d5b7e00c4ca2
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1f028fbd-2786-418a-ac54-2849fe99e275
+                InstanceId: 52cff99a-b271-44b5-b055-cd090b58ab9e
         -   Folder: null
             Entity:
                 Id: 3eb74e76-a427-4944-ab87-849db736c6c8
@@ -1871,6 +2300,18 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             a116d811cab5bf4da5211050e1d34e10: ref!! 1ddb12bb-8e62-4505-8150-86269d1d571e
+        -   Folder: Collectibles
+            Entity:
+                Id: 418449b7-a4a5-4eaf-9171-5a183c8cab90
+                Name: Collectible
+                Components:
+                    98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
+                        Id: 70ff7db2-1613-4c45-a9d3-67c9c878331b
+                        Position: {X: 10.426953, Y: 12.437631, Z: -22.763443}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0d7d7260a101d9e0ad68ebe8c2ba7416: ref!! 5a007921-d996-46f2-8282-b0608ba33e13
         -   Folder: null
             Entity:
                 Id: 41886165-5e76-4b63-af91-942cb7615527
@@ -1883,6 +2324,18 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! 1b762c4c-0491-4b0f-851d-3ce2b98a9024
+        -   Folder: Platform
+            Entity:
+                Id: 42c680d5-7ee6-4cf9-8027-2320af5901a2
+                Name: NegZPlatform
+                Components:
+                    f4ea9b40ed81484e1af136b9c353cd11: !TransformComponent
+                        Id: 57559dde-3a42-4258-b803-16c07783c118
+                        Position: {X: 30.0, Y: 18.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            aebc7c703ff7b1e4150cd7b07d2afb12: ref!! 12dc0cf7-9571-40c8-af87-9a585ebe36fa
         -   Folder: null
             Entity:
                 Id: 4388e262-1072-46da-aa2b-dc9477a6c43f
@@ -1919,6 +2372,82 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! 8cb1b251-cb1f-4eb1-b150-cd64baddd7f8
+        -   Entity:
+                Id: 4511e5d3-cb65-42e7-ba47-4fbe6d30e161
+                Name: Entity
+                Components:
+                    f81bc976d2d9245fee3ddcc571964d0c: !TransformComponent
+                        Id: a6b3f4f3-7626-4047-b7d2-42ae525a4b83
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    656d78bb48826c27d0ba483fa398a187: !ModelComponent
+                        Id: 7021b8c9-f9d8-40f3-81f7-d926784b22c7
+                        Model: 28b3067c-3567-4a73-8f8d-dbc14bfa8f45:Models/Buildings/large_buildingB
+                        Materials: {}
+                    1d2396a7332dcb8b51590e452f02a457: !StaticColliderComponent
+                        Id: bfbb1764-a8ae-45c2-b484-fd908b7d1b06
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            95e601cb989960190df0c41b6a6d64fd: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 1.65, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.78, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 627eafe3-2108-4735-96fa-c9796b43342c:Prefabs/BuildingB
+                BasePartId: e098f9b8-038f-4ee6-8694-2147fd79bc70
+                InstanceId: 5b57f5f7-bc96-4b41-a47f-44130862b4d9
+        -   Entity:
+                Id: 4570c464-7339-40bf-b6f0-50e5730d0698
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: f3a7ab83-6776-4559-9bf4-b25e72a7366a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: 99cf8555-2887-4a71-9856-6a9cf3c26cbb
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 517556e0-4baa-4c1d-b2ba-c78d073e6e45
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: 634c1399-2319-442a-9a27-23a410085c49
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: 34dfeef8-5981-4530-9949-b59953616896
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: a6c8b10c-f0d1-4967-955d-7a08a9f98f2d
         -   Folder: null
             Entity:
                 Id: 461dc368-59f6-4f08-a9ab-acd0d2f4adf2
@@ -1943,7 +2472,8 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! b3c87512-7a04-4243-8c0b-b8bcf73e4f93
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 469cfd19-14c3-4d54-b621-c979f4fea170
                 Name: Flower_05
                 Components:
@@ -2047,6 +2577,87 @@ Hierarchy:
                 BasePartAsset: ae917418-8db9-45a6-a3a7-092c09800b21:Prefabs/BuildingA
                 BasePartId: 5603975a-e5a2-4e4c-8d50-165e546a0c47
                 InstanceId: 23633bf9-839e-4c1b-b5e4-406f6df6b799
+        -   Entity:
+                Id: 4b8c2558-0179-416d-8f9b-7fa362da7436
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: 5a007921-d996-46f2-8282-b0608ba33e13
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: 9c600319-a93c-458b-8bee-49ca5d511714
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 81d3688e-801f-46ac-b35c-088b09f15eba
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: b7cd79e3-2e1e-412f-929b-26beb0efa879
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: 522407e0-dd2b-4632-aee0-5753e67ae5f2
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: 8bdcfffa-f2aa-4921-8c20-a8e69ef165bf
+        -   Entity:
+                Id: 4b8e2bc2-3ab8-455f-bdae-b3825b566b4a
+                Name: Entity
+                Components:
+                    8cd83dd767f61b61c4d5a8b098934890: !TransformComponent
+                        Id: 1d91f711-e4f4-4157-8b0e-94b578260488
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    ddfc0e46621dd346340a3140ab4b8b0f: !ModelComponent
+                        Id: 34e5a45a-82d9-41ec-a81d-850d1b44ec2d
+                        Model: c1cce271-2c80-479d-b077-c71c1afefe1d:Models/Buildings/house_type18mod
+                        Materials: {}
+                    4d9b59f0c0f7d6571b744c8ddbf698af: !StaticColliderComponent
+                        Id: 8faf7585-2ac6-4e55-b006-821fa62c36fc
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            eb6e7dc4ebd6cfcd42c88e59255bfc18: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.8, Y: 0.45, Z: 0.9}
+                                LocalOffset: {X: 0.35, Y: 0.18, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            f9fb716406ce9fd68ba9cac00d3a6383: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 1.05, Z: 0.9}
+                                LocalOffset: {X: -0.18, Y: 0.4, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 1667e737-8356-4ecf-b8bc-6aa584be6763:Prefabs/House18
+                BasePartId: 329c6dfc-f943-4a0e-b6f1-91578a31a424
+                InstanceId: aa9b7865-fa7c-407f-8c85-701150182439
         -   Folder: null
             Entity:
                 Id: 4db56884-9ec6-4a98-8b3e-5d2c96475615
@@ -2103,18 +2714,48 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: c8fcd4a7-852d-420d-b6a5-710e96c8ccf0
-        -   Folder: Platform
-            Entity:
-                Id: 4eee0bb3-93f7-403d-bcb4-9f06f2405c6e
-                Name: NegYPlatform
+        -   Entity:
+                Id: 4dee5f02-1d10-486a-94b8-b8c82cb9958a
+                Name: Entity
                 Components:
-                    f4ea9b40ed81484e1af136b9c353cd11: !TransformComponent
-                        Id: 8d69320c-8080-400d-868e-3efe53896019
-                        Position: {X: 11.9806795, Y: 33.080894, Z: 7.329946}
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: 2f7036b1-75f7-4067-b58c-d5293cabb111
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            aebc7c703ff7b1e4150cd7b07d2afb12: ref!! f68f1315-8587-44c0-8235-cff8c270ad35
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: 70bf6c91-46fb-419c-80dd-d68585b4a957
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 1cb5a421-9b95-48fc-afbf-86861cc6646a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: d66a44f9-ec8f-4faf-ae77-2d2628580530
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: 7b84ef88-e856-4008-aa16-2617febeb72e
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: 07b27b10-233b-4c94-97d5-a80e8c8805ce
         -   Folder: null
             Entity:
                 Id: 505c1f92-cfa8-4a95-956b-f2b2d5781f2b
@@ -2226,7 +2867,7 @@ Hierarchy:
                 Components:
                     98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
                         Id: d49ea519-ffbc-4c8c-af91-2248f3e76340
-                        Position: {X: -13.209553, Y: 4.1882033, Z: 10.469761}
+                        Position: {X: -0.09484196, Y: 1.3516711, Z: 10.469761}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -2448,12 +3089,12 @@ Hierarchy:
                         ColliderShapes:
                             eb6e7dc4ebd6cfcd42c88e59255bfc18: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 1.8, Y: 0.5, Z: 1.0}
+                                Size: {X: 1.8, Y: 0.45, Z: 0.9}
                                 LocalOffset: {X: 0.35, Y: 0.18, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                             f9fb716406ce9fd68ba9cac00d3a6383: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 0.8, Y: 1.0, Z: 1.0}
+                                Size: {X: 0.8, Y: 1.05, Z: 0.9}
                                 LocalOffset: {X: -0.18, Y: 0.4, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
@@ -2543,6 +3184,18 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! 20e48856-38e0-4f32-afd2-0614cb382405
+        -   Folder: Buildings
+            Entity:
+                Id: 5c92c8a1-c819-4e16-8b25-e4883ab3d5b0
+                Name: House9
+                Components:
+                    ccf5cd527f6e61ffa0b79dad2fbe70ee: !TransformComponent
+                        Id: 0840930c-851f-4d38-ae6a-ac0ec66551ad
+                        Position: {X: 41.893513, Y: 0.0, Z: 21.597534}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children:
+                            bc9d9fbaf94f7e184ab882aaf22899c0: ref!! 6215823f-9c49-458f-8c35-d7e4d8948f07
         -   Folder: null
             Entity:
                 Id: 5d484f7c-8ab0-424e-bd9b-18dd0fcb25fc
@@ -2709,6 +3362,48 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! 17f28095-9da8-4f39-813f-6a7a1cdae669
+        -   Entity:
+                Id: 649e4f7c-723a-42fe-9336-7b20b6791a52
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: 778f9067-58b4-4559-aa1d-2e9ede8c8fce
+                        Position*: {X: 25.615479, Y: -16.960876, Z: 44.76327}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: 831bb980-0f87-4d5a-bf13-18f07e5edca0
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 7c9ffe14-8d0c-44aa-b55e-0bcb1aaa89ad
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: dc6aed0a-efe0-4e70-a5ad-9aa9e8936f0d
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: 630a5dcb-adb8-41b8-a215-28932eeb22f7
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: d9241cce-4604-4b45-9ca8-011da6fa40d5
         -   Folder: null
             Entity:
                 Id: 649fa88f-888c-48f1-bf4f-b6f489aa60ab
@@ -2721,7 +3416,8 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! ddbb424c-1716-4128-9593-5b9838cc57f2
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 65247761-63e9-45e9-ab01-2d06ee1f5f2c
                 Name: BushOrangeFlowers
                 Components:
@@ -2735,6 +3431,18 @@ Hierarchy:
                         Id: cbcc042f-b0b5-4cf3-a83f-b675ea232e01
                         Model: da9ed107-92b4-4018-9f75-93c9a9cb7c6b:Models/Decors/BushOrangeFlowers
                         Materials: {}
+        -   Folder: Buildings
+            Entity:
+                Id: 653c2d66-a1dd-4791-8820-af2335a6262b
+                Name: BuildingD
+                Components:
+                    9130f772c772e8841010ad3be4daccbb: !TransformComponent
+                        Id: bb56550f-7f3b-4c2b-bbe2-6da6aabf7a23
+                        Position: {X: -15.153294, Y: 0.0, Z: -31.605885}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            9c9634374befe865ce0698b24d887a55: ref!! 9df7d97b-f738-4e19-9384-a94d09fd317f
         -   Folder: null
             Entity:
                 Id: 6637c752-cf0d-4c79-979d-63e3c9103963
@@ -2827,7 +3535,48 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 472ffd46-4b33-4c0d-94bc-4bbd2d845763
-        -   Entity:
+        -   Folder: null
+            Entity:
+                Id: 684b209b-e8f9-4641-aaf1-9e56e8a488ae
+                Name: Entity
+                Components:
+                    8cd83dd767f61b61c4d5a8b098934890: !TransformComponent
+                        Id: 6215823f-9c49-458f-8c35-d7e4d8948f07
+                        Position*: {X: 0.293114, Y: 0.0, Z: 0.5051363}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale*: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ddfc0e46621dd346340a3140ab4b8b0f: !ModelComponent
+                        Id: cf7ac80c-ef2a-41e3-8262-af55feca1e4a
+                        Model: a4bb272f-36eb-40de-aedc-6a0dcbb8897a:Models/Buildings/house_type09mod
+                        Materials: {}
+                    4d9b59f0c0f7d6571b744c8ddbf698af: !StaticColliderComponent
+                        Id: 414ee6cc-a56b-4fb3-87bf-905edcbf89e6
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            eb6e7dc4ebd6cfcd42c88e59255bfc18: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.2, Y: 0.5, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.18, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            f9fb716406ce9fd68ba9cac00d3a6383: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.5, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.22, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 3ddc6dde-2081-4d8e-989c-9eb9f3518217:Prefabs/House9
+                BasePartId: dbc40f3c-5a99-4534-991e-1e148b1453bf
+                InstanceId: eab9a307-0425-4467-acb0-f5fbdfd89e0a
+        -   Folder: PlantDecors
+            Entity:
                 Id: 68e9109a-ce29-441c-b4e1-68f2a278f507
                 Name: Mushroom_05
                 Components:
@@ -2841,6 +3590,25 @@ Hierarchy:
                         Id: 1d87d90b-538b-46eb-b98b-0f815c25a7c2
                         Model: cfe5f179-65bb-470d-b007-62024bee072b:Models/Decors/Mushroom_05
                         Materials: {}
+        -   Folder: null
+            Entity:
+                Id: 6c6f6c0a-f8e6-4aab-9f36-b4f8deea7aa1
+                Name: Cobblestone
+                Components:
+                    f71e3f9144c41813720e5dee8bab7b82: !TransformComponent
+                        Id: 6628bc1b-1c55-42f3-a80a-d4266a08c313
+                        Position: {X: 0.0, Y: 0.013502032, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.5, Y: 0.25, Z: 0.5}
+                        Children: {}
+                    14e2f8cbd8112a1a063795e601f40502: !ModelComponent
+                        Id: 92e3fd55-9094-402b-b952-fe2e5f7642d2
+                        Model: 140e25cf-01f9-484e-842f-2748207a7a6f:Models/pathCobbled
+                        Materials: {}
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1accebac-5acf-4fbd-bdbd-0798f1ed479b
+                InstanceId: 2874473d-dcbb-4394-874c-8c074d573ef7
         -   Folder: null
             Entity:
                 Id: 6cdf2e56-fb5b-4fb6-924d-16fe9ffc1fed
@@ -2920,6 +3688,72 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! 4dc154de-9892-4aeb-8d0b-e62b55c4d549
+        -   Folder: Platform
+            Entity:
+                Id: 72d85d84-16d9-4f0c-a410-9cad589730a3
+                Name: NegXPlatform
+                Components:
+                    f4ea9b40ed81484e1af136b9c353cd11: !TransformComponent
+                        Id: 905efdd4-a9b0-462c-a429-814c95c98306
+                        Position: {X: -4.243, Y: 18.0, Z: 41.002625}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            aebc7c703ff7b1e4150cd7b07d2afb12: ref!! 41e06532-23a2-40f2-b7d8-81ac3c261342
+        -   Folder: Platform
+            Entity:
+                Id: 73d42a3f-9ad2-4356-8f7d-9be5aea2c504
+                Name: NegZPlatform
+                Components:
+                    f4ea9b40ed81484e1af136b9c353cd11: !TransformComponent
+                        Id: 48686f29-03fa-403e-94cd-36a3854566c7
+                        Position: {X: -15.015938, Y: 18.0, Z: 30.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            aebc7c703ff7b1e4150cd7b07d2afb12: ref!! 04ffa19a-e7b7-4994-835e-3ac946189718
+        -   Entity:
+                Id: 753237a8-57fb-44aa-82c8-41a29c1995ed
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: 2768991e-9d7e-41c3-92c6-e3490a5be228
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: 46c01138-0619-4b96-ac85-ec7364ad984d
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 86e1188c-6fbd-4120-bfb1-6373eab2a3f2
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: 71cc84d7-7831-4e5e-8e38-b878d4c20aba
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: 17220789-226c-43f3-a0a9-cba9e23811ad
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: 9194060b-96a7-4916-91a3-75580288fd2a
         -   Folder: null
             Entity:
                 Id: 75b4f1d4-0095-44be-b753-7aa1fc90aef3
@@ -3075,6 +3909,25 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: null
             Entity:
+                Id: 7b8e20e6-1888-426b-8e93-4b2157737962
+                Name: Cobblestone
+                Components:
+                    f71e3f9144c41813720e5dee8bab7b82: !TransformComponent
+                        Id: 7aa99247-947e-45c4-b362-2038174380b3
+                        Position: {X: 0.0, Y: 0.013502032, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.5, Y: 0.25, Z: 0.5}
+                        Children: {}
+                    14e2f8cbd8112a1a063795e601f40502: !ModelComponent
+                        Id: 2b2b3284-db14-4e73-ba76-a62aea50fab5
+                        Model: 140e25cf-01f9-484e-842f-2748207a7a6f:Models/pathCobbled
+                        Materials: {}
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1accebac-5acf-4fbd-bdbd-0798f1ed479b
+                InstanceId: d03350b6-0890-4bed-9b91-5b0dca1397bd
+        -   Folder: null
+            Entity:
                 Id: 7c85b3ea-0c78-496a-944a-f7f9eb34a67f
                 Name: Wall0x2x5 (4)
                 Components:
@@ -3085,13 +3938,14 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! e990ebb4-d69e-43a5-baa6-a0b63a8da8bc
-        -   Entity:
+        -   Folder: Buildings
+            Entity:
                 Id: 7e1cb0b6-a2cb-43ab-b2e2-29cabfde177d
                 Name: House18
                 Components:
                     e6c3029f1c05d9a7601ab97b6ace5057: !TransformComponent
                         Id: b3b1ec05-a48d-407d-a4d0-f71d30ebbc86
-                        Position: {X: -29.899096, Y: 0.0, Z: 29.19551}
+                        Position: {X: -17.880146, Y: 0.0, Z: 29.19551}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -3243,6 +4097,37 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! 1afb411e-6996-4788-9e4a-b96658bdc142
+        -   Folder: Platform
+            Entity:
+                Id: 8554c040-ea57-47b0-88b2-e455851861a2
+                Name: PosZPlatform
+                Components:
+                    f4ea9b40ed81484e1af136b9c353cd11: !TransformComponent
+                        Id: 58969938-ed92-41ad-88c0-ede5be626508
+                        Position: {X: 30.0, Y: 18.0, Z: 15.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            aebc7c703ff7b1e4150cd7b07d2afb12: ref!! 3187751d-46f0-4178-a9c9-1b8c367a9bd0
+        -   Folder: null
+            Entity:
+                Id: 8638f7ae-8d13-476e-b0b3-c3248ffd6206
+                Name: Cobblestone
+                Components:
+                    f71e3f9144c41813720e5dee8bab7b82: !TransformComponent
+                        Id: 11b97897-55fe-4fcb-8c1f-ee0c9e69aa42
+                        Position: {X: 0.0, Y: 0.013502032, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.5, Y: 0.25, Z: 0.5}
+                        Children: {}
+                    14e2f8cbd8112a1a063795e601f40502: !ModelComponent
+                        Id: b42ee8fc-8fc4-4fcb-ab99-f4b443674d0d
+                        Model: 140e25cf-01f9-484e-842f-2748207a7a6f:Models/pathCobbled
+                        Materials: {}
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1accebac-5acf-4fbd-bdbd-0798f1ed479b
+                InstanceId: a3615ea9-fd13-4910-ab41-839fbcf31ff8
         -   Folder: null
             Entity:
                 Id: 89079149-f163-45a4-8266-3ddae28c2e83
@@ -3342,9 +4227,9 @@ Hierarchy:
                 Components:
                     b1528060e2d1b5827be17b7a7a47d7fd: !TransformComponent
                         Id: 9e3c0976-2183-498a-bac8-3930aa1f0614
-                        Position: {X: 20.408619, Y: 2.9728866, Z: -23.36551}
+                        Position: {X: 20.408619, Y: 6.17114, Z: -23.36551}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 0.1, Y: 0.1, Z: 0.1}
+                        Scale: {X: 0.1, Y: 0.2, Z: 0.1}
                         Children: {}
                     79ee010e35bf101bc23f2843c4a70600: !ModelComponent
                         Id: 48710f0c-2fbb-42e5-b995-542aff5423da
@@ -3407,6 +4292,25 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: 3c502830-8d3f-42c5-8c60-bd2ffbe3eb64
+        -   Folder: null
+            Entity:
+                Id: 8db3e8cd-6af1-4155-8a16-b32ee592dc3d
+                Name: Cobblestone
+                Components:
+                    f71e3f9144c41813720e5dee8bab7b82: !TransformComponent
+                        Id: 0804fd64-c42d-47b4-a650-950a0f70ccc4
+                        Position: {X: 0.0, Y: 0.013502032, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.5, Y: 0.25, Z: 0.5}
+                        Children: {}
+                    14e2f8cbd8112a1a063795e601f40502: !ModelComponent
+                        Id: a64461d1-585b-4de7-9ce2-328661e716c2
+                        Model: 140e25cf-01f9-484e-842f-2748207a7a6f:Models/pathCobbled
+                        Materials: {}
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1accebac-5acf-4fbd-bdbd-0798f1ed479b
+                InstanceId: 52cff99a-b271-44b5-b055-cd090b58ab9e
         -   Folder: null
             Entity:
                 Id: 907e0eaf-fbed-4b10-8f18-125b4d252340
@@ -3531,7 +4435,8 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 4e6d9a19-474a-4ddb-89d4-bc59c9c25fb8
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 93265f69-c705-49bf-999c-66302650bff9
                 Name: PumpkinPlant_Stage02
                 Components:
@@ -3545,6 +4450,41 @@ Hierarchy:
                         Id: e8487a70-52d2-4df9-8b3a-490fce79f752
                         Model: 094f5a98-19aa-401e-a821-ea97450e835d:Models/Decors/PumpkinPlant_Stage02
                         Materials: {}
+        -   Folder: null
+            Entity:
+                Id: 93482ffc-c3eb-45fb-9499-477ea86d6492
+                Name: Entity
+                Components:
+                    8cd83dd767f61b61c4d5a8b098934890: !TransformComponent
+                        Id: b0bc5cab-aaa5-4ddd-824f-6e3bf0778001
+                        Position: {X: -6.427, Y: 0.0, Z: 4.737}
+                        Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    ddfc0e46621dd346340a3140ab4b8b0f: !ModelComponent
+                        Id: 3bb26a4b-13ce-4f2c-a204-2e0511f9d3e5
+                        Model: 1dd84c03-c43d-4c95-80e2-87992ef8bdb2:Models/Buildings/house_type01mod
+                        Materials: {}
+                    4d9b59f0c0f7d6571b744c8ddbf698af: !StaticColliderComponent
+                        Id: 2be13f64-6f6d-4f29-aacf-63cb424285c3
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            eb6e7dc4ebd6cfcd42c88e59255bfc18: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.15, Y: 0.55, Z: 1.0}
+                                LocalOffset: {X: 0.64, Y: 0.18, Z: -0.45}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 418a4eab-97e6-43e4-8756-ea03d39804c6:Prefabs/House1
+                BasePartId: 1e5377b0-5021-497b-8f1d-b6ae393dd1fd
+                InstanceId: 1c2656f6-8fc0-4ced-9eb6-0b3428f2d43c
         -   Entity:
                 Id: 93544b3d-88b3-44ea-a57f-b0cc8e5c09fb
                 Name: Goal
@@ -3608,6 +4548,18 @@ Hierarchy:
                         Id: 3a435d31-e8e4-477c-896b-15e42e97fa9e
                         Model: df747ec9-fece-401a-bed2-9bc17b407d6d:Models/Roads/road_straight
                         Materials: {}
+        -   Folder: Platform
+            Entity:
+                Id: 952e8f01-9af3-49fa-8307-aebd5302c324
+                Name: NegXPlatform
+                Components:
+                    f4ea9b40ed81484e1af136b9c353cd11: !TransformComponent
+                        Id: 765caec2-4ad9-4876-8b7c-12f552ff81f6
+                        Position: {X: 16.073397, Y: 18.0, Z: -18.369112}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            aebc7c703ff7b1e4150cd7b07d2afb12: ref!! 67696c47-d27e-4529-a97c-940b995fa079
         -   Folder: null
             Entity:
                 Id: 9622d2ab-651e-45c2-b326-9f01b1ec9da3
@@ -3620,7 +4572,8 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! ff3ed795-7c26-4d38-8116-e44366255c45
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 96e7a8b0-d1ec-489b-b493-76efadad574d
                 Name: BushPurpleFlowers
                 Components:
@@ -3759,7 +4712,20 @@ Hierarchy:
                 BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
                 BasePartId: 1f028fbd-2786-418a-ac54-2849fe99e275
                 InstanceId: 998c1e02-925d-4d60-afc6-97d2e953c337
-        -   Entity:
+        -   Folder: Buildings
+            Entity:
+                Id: 9b15f58e-8c4a-4479-867a-bd99eaedb936
+                Name: House1
+                Components:
+                    7fdf3bee4eb5715356f5605946895da4: !TransformComponent
+                        Id: 0a741729-0332-49cb-842a-08a5c98934fe
+                        Position: {X: 2.801856, Y: 3.8146973E-06, Z: 50.61511}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1ffa934742631d16c89e6af5cb969809: ref!! b0bc5cab-aaa5-4ddd-824f-6e3bf0778001
+        -   Folder: PlantDecors
+            Entity:
                 Id: 9b59bfe3-a4e1-4f73-bb8a-c27117870070
                 Name: BushFlowers
                 Components:
@@ -3785,7 +4751,8 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! ef9a3e5e-e4ee-40bd-8bbc-c557fd953e5c
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 9d38380a-95da-4282-a46e-994983cb86f2
                 Name: BushYellowFlowers
                 Components:
@@ -3799,7 +4766,8 @@ Hierarchy:
                         Id: 606ab4fa-307a-4176-bc99-06cf58a25e62
                         Model: 2cb52fdc-801f-4b47-843f-a7d31ed0869b:Models/Decors/BushYellowFlowers
                         Materials: {}
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 9d86db45-9c2d-48e1-947d-d208140c6f1f
                 Name: Mushroom_04
                 Components:
@@ -3813,7 +4781,8 @@ Hierarchy:
                         Id: 307fa2cc-f2d9-4b11-af47-781746b40604
                         Model: 2d5e632c-734b-490d-9fe4-16585b13c116:Models/Decors/Mushroom_04
                         Materials: {}
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: 9e4ecf5b-c797-42bf-a679-29ac091c3ace
                 Name: Flower_04
                 Components:
@@ -3827,6 +4796,75 @@ Hierarchy:
                         Id: f3e97ff7-6867-4c50-b276-49d9d4d617ac
                         Model: 80bc412e-c71e-4daa-bf78-476e1c6b398b:Models/Decors/Flower_04
                         Materials: {}
+        -   Folder: Buildings
+            Entity:
+                Id: a03d5c19-2732-428e-9c9e-0dbe26db7dc5
+                Name: House18
+                Components:
+                    e6c3029f1c05d9a7601ab97b6ace5057: !TransformComponent
+                        Id: 10749695-fb94-4cc8-a03a-899a89455848
+                        Position: {X: 47.26303, Y: 0.0, Z: -7.4543605}
+                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            54627013116fa1d04db3e66db1823fcb: ref!! 1d91f711-e4f4-4157-8b0e-94b578260488
+        -   Folder: null
+            Entity:
+                Id: a1442ebc-5dc8-46f2-bed7-b56bb292432d
+                Name: PlatformModel
+                Components:
+                    54d6b71ec8fcbddd4b1735cbe94f9bcd: !TransformComponent
+                        Id: f1584a9f-927b-4dc7-8cdb-0d63262a3613
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 7.0, Y: 15.0, Z: 7.0}
+                        Children:
+                            b42e4c5dbe113680dc8af7ef3e658964: ref!! 6628bc1b-1c55-42f3-a80a-d4266a08c313
+                    21cd90ea1121daabca158f4f3cd50a7e: !ModelComponent
+                        Id: 326e82c1-3f70-4f45-a0bf-2ee8307c1200
+                        Model: f848c356-1efd-4930-a108-802f342efe97:Models/Floor1x0x1
+                        Materials:
+                            09cfe7480312f3a25741d03e9a3180da~0: fd079f98-39ec-40a1-9ff2-078c7a8f2860:Materials/Material
+                    93aecfb757796aec9d9f899c91e81470: !StaticColliderComponent
+                        Id: 17a96bdd-4e93-4448-8b57-623c707a3fed
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4d0dc65723010a40854bfab5018f5cfe: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.1, Y: 0.05, Z: 1.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    a3bb214e8ee8cdc4637af5de07887741: !StaticColliderComponent
+                        Id: 8cf2b10c-3375-43f6-ba05-693cace43f08
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3bbfe6c308e462e91a9b5fe7a59be665: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 0.1, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ef7e112114af5963b8814471036c7808: !GameJam.MovingPlatformController,GameJam.Game
+                        Id: 52ce452f-e020-4efb-8a89-971c767c4842
+                    afeec27d3193453ad4cee8961e186815: !GameJam.AttachPlayer,GameJam.Game
+                        Id: 2f13f1fb-c7a2-48b0-a567-a8d8990930cc
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1f028fbd-2786-418a-ac54-2849fe99e275
+                InstanceId: 2874473d-dcbb-4394-874c-8c074d573ef7
         -   Entity:
                 Id: a1e6f2ed-e38d-4e77-b564-a7a3b43ef5c6
                 Name: Core
@@ -3906,6 +4944,83 @@ Hierarchy:
                             9d5e5408d9b17b429f55a67f6cd0fbf2: !StaticPlaneColliderShapeDesc
                                 Normal: {X: -1.0, Y: 0.0, Z: 0.0}
                                 Offset: 0.0
+        -   Folder: null
+            Entity:
+                Id: a3c81e64-6c65-40bf-8eb0-1ebc6b9e1f8e
+                Name: Entity
+                Components:
+                    8cd83dd767f61b61c4d5a8b098934890: !TransformComponent
+                        Id: 9aab9782-625f-4780-be8c-df37fd31a840
+                        Position*: {X: 17.263424, Y: 0.0, Z: 26.437122}
+                        Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    ddfc0e46621dd346340a3140ab4b8b0f: !ModelComponent
+                        Id: a5064272-967d-4578-aae8-0d17bfe810bd
+                        Model: 1dd84c03-c43d-4c95-80e2-87992ef8bdb2:Models/Buildings/house_type01mod
+                        Materials: {}
+                    4d9b59f0c0f7d6571b744c8ddbf698af: !StaticColliderComponent
+                        Id: 9b9cd07d-fa06-423a-aab4-4e78cd3b7c86
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            eb6e7dc4ebd6cfcd42c88e59255bfc18: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.15, Y: 0.55, Z: 1.0}
+                                LocalOffset: {X: 0.64, Y: 0.18, Z: -0.45}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 418a4eab-97e6-43e4-8756-ea03d39804c6:Prefabs/House1
+                BasePartId: 1e5377b0-5021-497b-8f1d-b6ae393dd1fd
+                InstanceId: acdb0f05-d650-427c-9e02-7ebda60fe7d1
+        -   Entity:
+                Id: a3f312b6-ab8a-43e3-8849-cec2e3ef811b
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: 8d999de1-89c1-4b7e-9329-dde966db552e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: f90fdd55-cc6e-4256-88cb-a90c1fdfcea8
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 0042467d-1cf8-4658-a90d-809da06f536c
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: 1319164f-3060-4754-af96-8263059d12f1
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: 54393043-7428-44e2-a87a-3ea287cfa0a9
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: c80888ec-dbbe-48f4-93ee-82cf8000279d
         -   Folder: Platform
             Entity:
                 Id: a4bf3d0b-4423-479a-8b5f-89a1f014c214
@@ -3913,11 +5028,23 @@ Hierarchy:
                 Components:
                     a7e75453d760142f487e1f89c581a834: !TransformComponent
                         Id: 3b4cdfd4-dd5f-475c-9b64-eac62fb73abf
-                        Position: {X: 20.143742, Y: 3.8737783, Z: 5.662464}
+                        Position: {X: -37.635574, Y: 3.8737783, Z: -33.324566}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             cf63f7d75dbe4682be3598c94ea80d1d: ref!! 7be376dd-40d8-418d-8142-d1676d8e7679
+        -   Folder: Buildings
+            Entity:
+                Id: a4c73753-514a-4506-a085-ef0ca81aa9c8
+                Name: BuildingB
+                Components:
+                    18bc8b161106f06cdaadf6edf367cca3: !TransformComponent
+                        Id: 36fda54a-fd4e-47f9-b8d9-4c62f5117bea
+                        Position: {X: 0.31811333, Y: 0.0, Z: 2.9034839}
+                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            839e571859eb4af9ceb7d3713a11f526: ref!! be4245be-0792-4ad0-b3a2-da42736ca4a8
         -   Entity:
                 Id: a655bccd-1b3e-4135-aeca-9d624438b462
                 Name: UI
@@ -3981,6 +5108,18 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: c7bc8bf2-70a2-43b5-8cf1-119d8cfbceb1
+        -   Folder: Collectibles
+            Entity:
+                Id: aa8c821d-af99-40e1-bc50-da2163296fdd
+                Name: Collectible
+                Components:
+                    98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
+                        Id: ff87ad90-d0dd-4942-b268-ce54f799a43b
+                        Position: {X: -25.895964, Y: 1.5569305, Z: -4.8090353}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0d7d7260a101d9e0ad68ebe8c2ba7416: ref!! 52e00c7a-16f1-48e7-8f8f-3ab7b30586a9
         -   Folder: Roads
             Entity:
                 Id: acfabe88-3dcd-45cb-a264-7359cfcd3702
@@ -4052,6 +5191,63 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 0783e757-2ae9-4c31-bab7-4d38ccf906be
+        -   Folder: null
+            Entity:
+                Id: ad4744ca-48bc-49b7-8f04-5d2e808b73ac
+                Name: PlatformModel
+                Components:
+                    54d6b71ec8fcbddd4b1735cbe94f9bcd: !TransformComponent
+                        Id: 3187751d-46f0-4178-a9c9-1b8c367a9bd0
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 7.0, Y: 15.0, Z: 7.0}
+                        Children:
+                            b42e4c5dbe113680dc8af7ef3e658964: ref!! 6bccc5e2-51ce-473d-b642-0eca8cc68f90
+                    21cd90ea1121daabca158f4f3cd50a7e: !ModelComponent
+                        Id: 3e22d22c-e8ee-49eb-ab06-565321b0f8fc
+                        Model: f848c356-1efd-4930-a108-802f342efe97:Models/Floor1x0x1
+                        Materials:
+                            09cfe7480312f3a25741d03e9a3180da~0: fd079f98-39ec-40a1-9ff2-078c7a8f2860:Materials/Material
+                    93aecfb757796aec9d9f899c91e81470: !StaticColliderComponent
+                        Id: 7607fd58-24ab-41c3-8f1f-45ea8c76ba86
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4d0dc65723010a40854bfab5018f5cfe: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.1, Y: 0.05, Z: 1.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    a3bb214e8ee8cdc4637af5de07887741: !StaticColliderComponent
+                        Id: c199ef35-9e5c-43c5-920a-0b323da08e8a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3bbfe6c308e462e91a9b5fe7a59be665: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 0.1, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ef7e112114af5963b8814471036c7808: !GameJam.MovingPlatformController,GameJam.Game
+                        Id: 818c6286-8c26-458e-b5d0-702b6a8f48e9
+                    afeec27d3193453ad4cee8961e186815: !GameJam.AttachPlayer,GameJam.Game
+                        Id: 6ef5baa8-fd5f-4270-a213-87c8b233527e
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1f028fbd-2786-418a-ac54-2849fe99e275
+                InstanceId: c1330494-597c-4c29-ace2-c724a0f89565
         -   Folder: null
             Entity:
                 Id: adff5da3-e355-41c3-9330-743301d98da4
@@ -4126,13 +5322,14 @@ Hierarchy:
                 BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
                 BasePartId: 256ecf1f-902b-4288-b314-7d30c3071560
                 InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: af6bb2e3-e395-415b-8ec5-bd70dd0d9846
                 Name: Plant_04
                 Components:
                     bdcda571c2cb737dea5904c0d42cfa85: !TransformComponent
                         Id: a425c0d7-be7b-4d3f-9535-d15d1e396937
-                        Position: {X: -39.93866, Y: 0.0, Z: 49.40789}
+                        Position: {X: -39.93866, Y: 2.0, Z: 49.40789}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -4299,6 +5496,40 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! b1bc0680-7f86-449c-b5ec-0f635313e64f
+        -   Entity:
+                Id: b615c26e-7488-4a6b-893d-159bbe19c1dd
+                Name: Entity
+                Components:
+                    f81bc976d2d9245fee3ddcc571964d0c: !TransformComponent
+                        Id: 471bdaac-e91c-43db-8640-f2135453a961
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    656d78bb48826c27d0ba483fa398a187: !ModelComponent
+                        Id: 0774b57b-9fb5-44eb-b2db-6c5291e58894
+                        Model: 64cdbd2d-29b8-472e-88e1-d828fd907e8a:Models/Buildings/large_buildingE
+                        Materials: {}
+                    1d2396a7332dcb8b51590e452f02a457: !StaticColliderComponent
+                        Id: 87335da5-d496-44f5-abcd-fc6095e5bf1e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            95e601cb989960190df0c41b6a6d64fd: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.2, Y: 2.0, Z: 1.35}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: eee167f9-41c2-48e6-8a95-307be4069627:Prefabs/BuildingE
+                BasePartId: 64d67ea6-4a40-4f52-800e-69cb116a495f
+                InstanceId: d7980f27-3387-4b4a-8ed9-20308c415df3
         -   Folder: null
             Entity:
                 Id: b96ddd18-2048-4d76-b357-6b02574949b4
@@ -4311,13 +5542,14 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! 2573d0eb-5ad8-453b-80f7-2bf416a0dcc5
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: b9dcb907-91c9-4ba9-ab9b-d3f6d44583ae
                 Name: BushFlowers
                 Components:
                     10fe0f373ea98ede4ec7c264eac0b7ae: !TransformComponent
                         Id: 57f10a8a-2996-47a3-a4f3-aac066919b85
-                        Position: {X: -7.812765, Y: 2.0, Z: 28.276144}
+                        Position: {X: 1.2604103, Y: 2.0, Z: 30.031836}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -4325,6 +5557,48 @@ Hierarchy:
                         Id: 8fe2e95a-4377-46b0-91f5-845da0fdf63c
                         Model: d22efcad-6f7f-472c-9cd5-a14462926c9a:Models/Decors/BushFlowers
                         Materials: {}
+        -   Entity:
+                Id: ba015b8c-3d82-47d7-8634-1c9706a326fc
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: aea4677b-a6a5-4183-b3bb-c7a0bbd07207
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: f6abc102-3f89-45b4-b6a2-3bbfbf8f324c
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: e06bf6f5-d86d-401c-a843-eb40e4983a20
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: fc61047f-0f4f-4e1a-be5a-2acafa45abbb
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: a7bffebe-47c9-47dc-bf13-04841bdd5b87
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: 84344b9f-dafb-44bd-904b-fc2f7540d88e
         -   Folder: null
             Entity:
                 Id: ba0e2818-b07c-444f-a1e6-e94a951a2835
@@ -4361,6 +5635,18 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: d46ee9e3-06fe-41b7-b241-67e88ee3703c
+        -   Folder: Collectibles
+            Entity:
+                Id: ba54e311-0be8-41c9-a6f5-9bc2776eb378
+                Name: Collectible
+                Components:
+                    98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
+                        Id: 79a2aba9-0f5e-45bb-adae-95e7a2b5c89c
+                        Position: {X: 16.338142, Y: 12.65109, Z: 19.578886}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0d7d7260a101d9e0ad68ebe8c2ba7416: ref!! f3a7ab83-6776-4559-9bf4-b25e72a7366a
         -   Folder: null
             Entity:
                 Id: bad9dd8e-7472-47ff-85a6-66ea128af716
@@ -4417,6 +5703,63 @@ Hierarchy:
                 BasePartAsset: 184752eb-997d-4f94-b373-37752da1ed22:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 7e325baf-3a06-4f5a-822b-765acde2fafa
+        -   Folder: null
+            Entity:
+                Id: bc18a54d-826e-4504-b7d0-aba5df0b3249
+                Name: PlatformModel
+                Components:
+                    54d6b71ec8fcbddd4b1735cbe94f9bcd: !TransformComponent
+                        Id: 67696c47-d27e-4529-a97c-940b995fa079
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 7.0, Y: 15.0, Z: 7.0}
+                        Children:
+                            b42e4c5dbe113680dc8af7ef3e658964: ref!! 11b97897-55fe-4fcb-8c1f-ee0c9e69aa42
+                    21cd90ea1121daabca158f4f3cd50a7e: !ModelComponent
+                        Id: 7442c9a2-4da1-4175-9804-9c6361678975
+                        Model: f848c356-1efd-4930-a108-802f342efe97:Models/Floor1x0x1
+                        Materials:
+                            09cfe7480312f3a25741d03e9a3180da~0: fd079f98-39ec-40a1-9ff2-078c7a8f2860:Materials/Material
+                    93aecfb757796aec9d9f899c91e81470: !StaticColliderComponent
+                        Id: 8d442762-d47c-49a2-a120-27f4d416befc
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4d0dc65723010a40854bfab5018f5cfe: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.1, Y: 0.05, Z: 1.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    a3bb214e8ee8cdc4637af5de07887741: !StaticColliderComponent
+                        Id: f30a3e93-83e2-43bd-9f0a-ad6275caf8da
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3bbfe6c308e462e91a9b5fe7a59be665: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 0.1, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ef7e112114af5963b8814471036c7808: !GameJam.MovingPlatformController,GameJam.Game
+                        Id: 35996273-67d9-4875-a06c-da8b3ffa828e
+                    afeec27d3193453ad4cee8961e186815: !GameJam.AttachPlayer,GameJam.Game
+                        Id: fa21938a-1d88-491c-be62-7bbbd2a6ec79
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1f028fbd-2786-418a-ac54-2849fe99e275
+                InstanceId: a3615ea9-fd13-4910-ab41-839fbcf31ff8
         -   Folder: Roads
             Entity:
                 Id: bddf5944-216e-4605-a755-4de736f3582b
@@ -4424,7 +5767,7 @@ Hierarchy:
                 Components:
                     d4a2488f5faeaf00e6b45ed0a7865bfb: !TransformComponent
                         Id: 8b048d63-6b54-41fd-a098-c8509b598c2b
-                        Position: {X: -33.724552, Y: 0.0, Z: 47.59054}
+                        Position: {X: -33.483685, Y: 0.0, Z: 47.59054}
                         Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -4444,7 +5787,8 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! 5fddb018-a6b5-4c8a-b65f-266d1b25e6eb
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: bee6aaec-ef44-44c6-a791-d423477439f6
                 Name: BushLOrangeFruits
                 Components:
@@ -4501,9 +5845,9 @@ Hierarchy:
                 Components:
                     5a9dc1388d4bac96c392a8d079d26ecc: !TransformComponent
                         Id: 614157ad-93ba-4c38-9fa9-db190f529fe9
-                        Position: {X: 14.345626, Y: 1.022028, Z: -13.226753}
+                        Position: {X: 13.624366, Y: 1.7735682, Z: -13.226753}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 0.25, Y: 0.25, Z: 0.25}
+                        Scale: {X: 0.35, Y: 0.4, Z: 0.25}
                         Children: {}
                     a68c879516ed6bdc86e1585ec7c48780: !ModelComponent
                         Id: be75bd7f-3bb1-4120-8e5a-c1ef5a13261c
@@ -4549,7 +5893,8 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! 880d0340-7c75-477e-833c-35cbf087ad66
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: c487bc6a-48ef-4ac6-8965-1aa16fbd61ef
                 Name: Plant_04
                 Components:
@@ -4594,9 +5939,9 @@ Hierarchy:
                 Components:
                     004f11e53617620038d164c3319dfe07: !TransformComponent
                         Id: 45a70d62-5a51-4c06-bc3a-6431f1498fc5
-                        Position: {X: -19.858437, Y: 1.4341601, Z: -34.512512}
+                        Position: {X: -31.996487, Y: 2.4034572, Z: -28.947546}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 0.3, Y: 0.3, Z: 0.3}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
                         Children: {}
                     7c8279f4b0d55aa2bb334686a194b9a5: !ModelComponent
                         Id: b8fdf9a0-3ecc-4ecc-a3a4-1584931701fe
@@ -4656,6 +6001,44 @@ Hierarchy:
                 InstanceId: 8adf770f-1d1f-48d5-a3cc-ab68c579ce5d
         -   Folder: null
             Entity:
+                Id: c7e54526-63fc-471b-9176-47c04387c867
+                Name: Cobblestone
+                Components:
+                    f71e3f9144c41813720e5dee8bab7b82: !TransformComponent
+                        Id: 6bccc5e2-51ce-473d-b642-0eca8cc68f90
+                        Position: {X: 0.0, Y: 0.013502032, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.5, Y: 0.25, Z: 0.5}
+                        Children: {}
+                    14e2f8cbd8112a1a063795e601f40502: !ModelComponent
+                        Id: b44c92b9-359f-41f4-aa62-c9199906f4a3
+                        Model: 140e25cf-01f9-484e-842f-2748207a7a6f:Models/pathCobbled
+                        Materials: {}
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1accebac-5acf-4fbd-bdbd-0798f1ed479b
+                InstanceId: c1330494-597c-4c29-ace2-c724a0f89565
+        -   Folder: null
+            Entity:
+                Id: c7ea2fcd-f150-4f2a-8736-65ffdb0a74f6
+                Name: Cobblestone
+                Components:
+                    f71e3f9144c41813720e5dee8bab7b82: !TransformComponent
+                        Id: f8d81d28-bd5a-448c-bd51-8a99fd61761e
+                        Position: {X: 0.0, Y: 0.013502032, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.5, Y: 0.25, Z: 0.5}
+                        Children: {}
+                    14e2f8cbd8112a1a063795e601f40502: !ModelComponent
+                        Id: 5ac1d3cf-c497-48c0-8402-88f795874299
+                        Model: 140e25cf-01f9-484e-842f-2748207a7a6f:Models/pathCobbled
+                        Materials: {}
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1accebac-5acf-4fbd-bdbd-0798f1ed479b
+                InstanceId: 18f4b97f-3150-47d9-a637-46db33906f10
+        -   Folder: null
+            Entity:
                 Id: cbf2b963-db13-4d24-87f1-63d97b833f56
                 Name: Camera
                 Components:
@@ -4681,6 +6064,48 @@ Hierarchy:
                         InvertY: false
                         RotationSpeed: 360.0
                         VerticalSpeed: 45.0
+        -   Entity:
+                Id: cc64298c-c725-428c-b355-4fde8c3c4a01
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: 736dd9a8-6871-47ba-ab0d-464e11bda460
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: 0c08b5fc-373d-4002-a628-74f597afbd2a
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 511afee0-0f93-4ced-9457-41fea5e5316d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: 1b8fd3c8-75cb-4dbe-9e3d-85b48ad95002
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: dcee807e-c3a5-4743-8c58-9bb402e270aa
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: ba664d11-51a1-4cdd-bc5c-ec09e04dad58
         -   Entity:
                 Id: cc9f935e-8f30-4d2f-a949-25c2ad5b7421
                 Name: Entity
@@ -4723,6 +6148,18 @@ Hierarchy:
                 BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
                 BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
                 InstanceId: b1cec53e-d919-4f51-97db-e8f4a5af5186
+        -   Folder: Platform
+            Entity:
+                Id: cca0cc86-4fba-46a4-8db8-85238283dccf
+                Name: PosZPlatform
+                Components:
+                    f4ea9b40ed81484e1af136b9c353cd11: !TransformComponent
+                        Id: fcba4a37-84b1-4923-aeca-07a88adeb75a
+                        Position: {X: -15.015938, Y: 18.0, Z: -10.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            aebc7c703ff7b1e4150cd7b07d2afb12: ref!! f1584a9f-927b-4dc7-8cdb-0d63262a3613
         -   Folder: StreetProps
             Entity:
                 Id: ccafc82e-dc11-4976-98ec-06f7bf6bbaef
@@ -4730,9 +6167,9 @@ Hierarchy:
                 Components:
                     b1528060e2d1b5827be17b7a7a47d7fd: !TransformComponent
                         Id: 6dfe94a3-12a8-49c6-bffa-73eef22a942f
-                        Position: {X: 10.340233, Y: 3.122736, Z: -15.744449}
+                        Position: {X: 10.340233, Y: 6.2066674, Z: -15.744449}
                         Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
-                        Scale: {X: 0.1, Y: 0.1, Z: 0.1}
+                        Scale: {X: 0.1, Y: 0.2, Z: 0.1}
                         Children: {}
                     79ee010e35bf101bc23f2843c4a70600: !ModelComponent
                         Id: b7dcb32d-d5a1-40c0-b00d-222f0aa57ea4
@@ -4852,7 +6289,7 @@ Hierarchy:
                 Components:
                     f81bc976d2d9245fee3ddcc571964d0c: !TransformComponent
                         Id: 0583baea-daf4-4aaf-81f3-63aaa8358a6c
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position*: {X: 11.726, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 10.0, Y: 10.0, Z: 10.0}
                         Children: {}
@@ -4911,8 +6348,8 @@ Hierarchy:
                 Components:
                     9d5bb604d2654ebeeb7589b74c33cbc0: !TransformComponent
                         Id: 332edf45-f5b1-4e8c-be92-dc2887f8fdf0
-                        Position: {X: -6.9915805, Y: 0.0, Z: -33.901978}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Position: {X: -26.58856, Y: 0.0, Z: 5.6075497}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             efc9f31b8626024e530a9bdc90f89434: ref!! 3883a1b0-86b1-41b9-befe-018ffbdd145b
@@ -4973,6 +6410,41 @@ Hierarchy:
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 852b1b19-212a-401c-aff7-90b296bb6584
         -   Entity:
+                Id: d3f2da92-4701-4525-990f-492a9efbd606
+                Name: Entity
+                Components:
+                    f81bc976d2d9245fee3ddcc571964d0c: !TransformComponent
+                        Id: be4245be-0792-4ad0-b3a2-da42736ca4a8
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    656d78bb48826c27d0ba483fa398a187: !ModelComponent
+                        Id: 143145f3-a10c-4f6a-a5ad-166a96147750
+                        Model: 28b3067c-3567-4a73-8f8d-dbc14bfa8f45:Models/Buildings/large_buildingB
+                        Materials: {}
+                    1d2396a7332dcb8b51590e452f02a457: !StaticColliderComponent
+                        Id: 93b6576f-a663-435d-a3f4-39d9fa0b23f8
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            95e601cb989960190df0c41b6a6d64fd: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 1.65, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.78, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 627eafe3-2108-4735-96fa-c9796b43342c:Prefabs/BuildingB
+                BasePartId: e098f9b8-038f-4ee6-8694-2147fd79bc70
+                InstanceId: 09037f3a-ef35-4835-8fc3-f46728d54556
+        -   Folder: PlantDecors
+            Entity:
                 Id: d42c5b56-2125-40f9-bec9-4dd4b6218926
                 Name: Flower_01
                 Components:
@@ -5058,6 +6530,18 @@ Hierarchy:
                 BasePartAsset: 418a4eab-97e6-43e4-8756-ea03d39804c6:Prefabs/House1
                 BasePartId: 1e5377b0-5021-497b-8f1d-b6ae393dd1fd
                 InstanceId: f234cd29-0ec7-43fe-b4b4-1122de7f2a38
+        -   Folder: Collectibles
+            Entity:
+                Id: d7c17c58-ee80-4d90-9ffb-9dde6df014b2
+                Name: Collectible
+                Components:
+                    98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
+                        Id: 3392c663-001d-40ba-86d5-feec6dbf42b3
+                        Position: {X: -37.139446, Y: 22.894, Z: 40.01422}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0d7d7260a101d9e0ad68ebe8c2ba7416: ref!! 8d999de1-89c1-4b7e-9329-dde966db552e
         -   Folder: Buildings
             Entity:
                 Id: da30d2d1-174e-4f9d-8038-44001f8b3fb3
@@ -5065,8 +6549,8 @@ Hierarchy:
                 Components:
                     d47ecdc7a47d9fa7e7db58ba53acb5e9: !TransformComponent
                         Id: d11c4156-eb24-468f-a999-8928a6bd8313
-                        Position: {X: -24.94822, Y: 0.0, Z: -19.04442}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Position: {X: -16.163715, Y: 0.0, Z: -35.07807}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             0bb665fcd6b04ef8767d58ca9863554c: ref!! 64683101-9b50-4176-ac66-65ae9276e37d
@@ -5198,15 +6682,27 @@ Hierarchy:
         -   Folder: Platform
             Entity:
                 Id: dcd765e3-1eb9-4e08-907e-67d158228eba
-                Name: PosYPlatform
+                Name: NegYPlatform
                 Components:
                     a7e75453d760142f487e1f89c581a834: !TransformComponent
                         Id: 1a0c5ea4-fea6-4b2c-814b-a55a48c30a05
-                        Position: {X: 41.718613, Y: 3.8737783, Z: 16.690699}
+                        Position: {X: 42.03286, Y: 19.0, Z: 38.377487}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             cf63f7d75dbe4682be3598c94ea80d1d: ref!! 710ef0f5-6d41-4a85-9d76-b4f72247d437
+        -   Folder: Collectibles
+            Entity:
+                Id: dd52dcf6-4f56-4b98-ae63-9b5f21207961
+                Name: Collectible
+                Components:
+                    98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
+                        Id: 7c5b7cb8-b235-44af-a7d4-ae2d0053a1df
+                        Position: {X: 29.527235, Y: 22.281971, Z: 9.440182}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0d7d7260a101d9e0ad68ebe8c2ba7416: ref!! 2768991e-9d7e-41c3-92c6-e3490a5be228
         -   Folder: null
             Entity:
                 Id: de20d619-fde6-4f2f-94c3-0611ce46217a
@@ -5243,7 +6739,8 @@ Hierarchy:
                 BasePartAsset: a423bec4-f032-407d-9f02-6e14e99c1736:BlocksPrefabs/Wall0x2x5
                 BasePartId: fbdff817-df62-4a56-83f8-19a9d12589b8
                 InstanceId: f54c659b-3ef3-4cbb-927a-25bd52c10915
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: df7454b0-cd57-436a-8bd4-9582daac99e5
                 Name: BushOrangeFlowers
                 Components:
@@ -5257,6 +6754,63 @@ Hierarchy:
                         Id: e6b90e23-7065-42e2-aec2-d39f9f46fb80
                         Model: da9ed107-92b4-4018-9f75-93c9a9cb7c6b:Models/Decors/BushOrangeFlowers
                         Materials: {}
+        -   Folder: null
+            Entity:
+                Id: e094d67f-a45a-45d4-a859-f2c3d5fbfc02
+                Name: PlatformModel
+                Components:
+                    54d6b71ec8fcbddd4b1735cbe94f9bcd: !TransformComponent
+                        Id: 12dc0cf7-9571-40c8-af87-9a585ebe36fa
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 7.0, Y: 15.0, Z: 7.0}
+                        Children:
+                            b42e4c5dbe113680dc8af7ef3e658964: ref!! 7aa99247-947e-45c4-b362-2038174380b3
+                    21cd90ea1121daabca158f4f3cd50a7e: !ModelComponent
+                        Id: 5c0e2b12-cfaf-4f83-877b-699b0a3becca
+                        Model: f848c356-1efd-4930-a108-802f342efe97:Models/Floor1x0x1
+                        Materials:
+                            09cfe7480312f3a25741d03e9a3180da~0: fd079f98-39ec-40a1-9ff2-078c7a8f2860:Materials/Material
+                    93aecfb757796aec9d9f899c91e81470: !StaticColliderComponent
+                        Id: 377f9c9f-c9cd-4147-a9e7-406a7733f437
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4d0dc65723010a40854bfab5018f5cfe: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.1, Y: 0.05, Z: 1.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    a3bb214e8ee8cdc4637af5de07887741: !StaticColliderComponent
+                        Id: 3d82425f-f0a1-41f3-a685-5afea544dd60
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            3bbfe6c308e462e91a9b5fe7a59be665: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.8, Y: 0.1, Z: 0.8}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ef7e112114af5963b8814471036c7808: !GameJam.MovingPlatformController,GameJam.Game
+                        Id: fbe26e3c-7a1c-4de8-a5a9-1f132a490815
+                    afeec27d3193453ad4cee8961e186815: !GameJam.AttachPlayer,GameJam.Game
+                        Id: 69914390-b102-4001-af3d-9bb7e53753a7
+            Base:
+                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
+                BasePartId: 1f028fbd-2786-418a-ac54-2849fe99e275
+                InstanceId: d03350b6-0890-4bed-9b91-5b0dca1397bd
         -   Folder: null
             Entity:
                 Id: e0ed39e9-9bcf-4b9b-a446-74f649e21feb
@@ -5377,6 +6931,48 @@ Hierarchy:
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 7af7f010-bb3d-4eb8-9da7-5eaaf682511f
         -   Entity:
+                Id: e3087753-55ed-4c00-92d0-4548d874c969
+                Name: Entity
+                Components:
+                    785c6eb75080e866f40b0f055ccaf844: !TransformComponent
+                        Id: 52e00c7a-16f1-48e7-8f8f-3ab7b30586a9
+                        Position*: {X: 1.511263, Y: 0.0, Z: -9.00783E-08}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    14d785ae32082d0bd7cbc57b03d60cda: !ModelComponent
+                        Id: ea0601c5-28d4-4806-9a6f-728b745601d5
+                        Model: 3a6c5199-0af9-465b-b67f-48c346f82dfe:Models/candyBag
+                        Materials: {}
+                    ae5d96be0565b4b8c244a5458ea63a2a: !StaticColliderComponent
+                        Id: 0787734c-06dd-4484-8a64-23c8c1f760a9
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            48b1594073956b0ebefa1d13ae0d448f: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    828bb13fe4c374e3ca385753b214c9bc: !GameJam.CollectibleCollision,GameJam.Game
+                        Id: 40b2dd5f-bd00-4f5c-a788-a3a8c4af0f8c
+                    169e73303589bae874bd695b9d8c044f: !AudioEmitterComponent
+                        Id: f6659795-3974-40f1-b23e-67fde1818cd5
+                        Sounds:
+                            08ff80b4538fb843e8f24455dbb15c98~ConstantEmitter: bcf59f33-215b-49fc-b0f0-53d222c1835d:Audio/Bluezone_BC0248_037_ambience_synth_atmosphere
+                        UseHRTF: true
+                        DirectionalFactor: 0.831
+                        Environment: Medium
+            Base:
+                BasePartAsset: d3e8147b-4a8a-42f3-917d-bfc211f9d2bb:Prefabs/Collectible
+                BasePartId: 74caf4b8-3bc9-4f3d-abcb-65bdad5df69e
+                InstanceId: 56049996-8591-4256-aa84-d7a4e369266d
+        -   Entity:
                 Id: e331dc3a-069b-4bef-afce-850fbcaf1758
                 Name: Entity
                 Components:
@@ -5457,7 +7053,8 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             db07bec9b88cb84e9f8d6d3511eb10f2: ref!! e5f02935-d01f-4ee5-9a51-3267ea9b6d3d
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: e64b1e2c-5d0e-4954-8464-fec6ccefc149
                 Name: PumpkinPlant_Stage02
                 Components:
@@ -5471,25 +7068,6 @@ Hierarchy:
                         Id: d3283e48-470b-4571-9b51-88912dda1977
                         Model: 094f5a98-19aa-401e-a821-ea97450e835d:Models/Decors/PumpkinPlant_Stage02
                         Materials: {}
-        -   Folder: null
-            Entity:
-                Id: e6594fd1-a84e-4148-be7d-1ac3d73b4afa
-                Name: Cobblestone
-                Components:
-                    f71e3f9144c41813720e5dee8bab7b82: !TransformComponent
-                        Id: 6462eab7-eb83-480a-80f3-074fd0093f9c
-                        Position: {X: 0.0, Y: 0.013502032, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 0.5, Y: 0.25, Z: 0.5}
-                        Children: {}
-                    14e2f8cbd8112a1a063795e601f40502: !ModelComponent
-                        Id: 758240cd-e6cf-487d-aab6-7590ead554f8
-                        Model: 140e25cf-01f9-484e-842f-2748207a7a6f:Models/pathCobbled
-                        Materials: {}
-            Base:
-                BasePartAsset: 1c2644bc-162c-4a24-9301-411287f686cc:Prefabs/Platform
-                BasePartId: 1accebac-5acf-4fbd-bdbd-0798f1ed479b
-                InstanceId: efd98a2c-098d-4566-81d0-37a78d9e04b1
         -   Folder: Buildings
             Entity:
                 Id: e6b484dc-4f6f-47f3-b6d7-171fef53d8e5
@@ -5502,6 +7080,19 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             1ffa934742631d16c89e6af5cb969809: ref!! f6f46751-8066-4b4d-b545-d6eeb0016ccf
+                            1609c522a5abb08c44e726e3f59918c2: ref!! 9aab9782-625f-4780-be8c-df37fd31a840
+        -   Folder: Collectibles
+            Entity:
+                Id: e73294ed-49db-41a2-b39d-354944232cfd
+                Name: Collectible
+                Components:
+                    98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
+                        Id: 4be4ff57-7bb4-417d-8a18-1c6406266027
+                        Position: {X: 35.63551, Y: 1.3086064, Z: -37.893322}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0d7d7260a101d9e0ad68ebe8c2ba7416: ref!! b6b323d6-9ae5-4f22-8a04-6ea712dcab00
         -   Folder: null
             Entity:
                 Id: e962b13d-5bfa-4c19-874d-a2d3e5ff90ad
@@ -5684,7 +7275,7 @@ Hierarchy:
                 Components:
                     ed888d57bcb536adc9f73f68000cfebe: !TransformComponent
                         Id: 2305d5a5-150e-4450-a971-ae0cf9d6baa3
-                        Position: {X: 34.007847, Y: 6.7594943, Z: 10.202896}
+                        Position: {X: 53.509094, Y: 1.4220167, Z: 10.202896}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -5796,7 +7387,8 @@ Hierarchy:
                 BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
                 BasePartId: 4a997223-5e76-4a2a-98d5-544d4f0131b1
                 InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: f2c5af67-dce3-4094-a01d-e2f9776e3b78
                 Name: Mushroom_03
                 Components:
@@ -5810,6 +7402,18 @@ Hierarchy:
                         Id: be4b216d-f3d5-4b7d-b517-a5ca8741aece
                         Model: eb5eff51-3282-4191-b509-b58c42e5c072:Models/Decors/Mushroom_03
                         Materials: {}
+        -   Folder: Collectibles
+            Entity:
+                Id: f2ed04ee-6191-448f-8a91-4132bb25961d
+                Name: Collectible
+                Components:
+                    98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
+                        Id: 0e761657-0ffa-494c-9b39-7408ce0eb6df
+                        Position: {X: 2.9433477, Y: 22.281971, Z: 41.29212}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0d7d7260a101d9e0ad68ebe8c2ba7416: ref!! 736dd9a8-6871-47ba-ab0d-464e11bda460
         -   Folder: Roads
             Entity:
                 Id: f304bc7e-7723-4855-a40e-61a85f7e324f
@@ -5825,6 +7429,18 @@ Hierarchy:
                         Id: b9a5900a-1404-41b3-8154-1615af7f399c
                         Model: 3ad28d0a-5418-4278-9c3d-cb9090f45bf3:Models/Roads/road_bend
                         Materials: {}
+        -   Folder: Collectibles
+            Entity:
+                Id: f3319600-96e3-4759-a853-1288527cc115
+                Name: Collectible
+                Components:
+                    98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
+                        Id: 21dffdaf-153e-44c3-bd44-c28245ae30bf
+                        Position: {X: -1.3931742, Y: 22.10251, Z: -32.50332}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0d7d7260a101d9e0ad68ebe8c2ba7416: ref!! e519d531-fc07-48e2-b9fa-a1f737dc1ab0
         -   Folder: null
             Entity:
                 Id: f48fa1e8-6bad-4491-8830-38973e7a6a64
@@ -5870,6 +7486,18 @@ Hierarchy:
                 BasePartAsset: 019c364c-b9ab-47b5-8cc3-27235e1dbbdb:Prefabs/Goal
                 BasePartId: bc48fa99-1f8f-41dd-8310-2dccbe5c36c5
                 InstanceId: 22746a2d-0c0a-4c08-828f-f9737a8cd47e
+        -   Folder: Collectibles
+            Entity:
+                Id: f71003b6-7633-418f-90d8-76d15b19b3c5
+                Name: Collectible
+                Components:
+                    98dd9ce11b7f1b6c4efd40b5e1cf8a6a: !TransformComponent
+                        Id: e99c1337-99ef-4e3f-a3bf-6fcfc179c69d
+                        Position: {X: 2.9433477, Y: 22.281971, Z: 24.896133}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0d7d7260a101d9e0ad68ebe8c2ba7416: ref!! 778f9067-58b4-4559-aa1d-2e9ede8c8fce
         -   Folder: null
             Entity:
                 Id: f7412790-5da6-4418-8bfe-a892675338fe
@@ -5894,7 +7522,8 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c444819e77a60441a6144bd7bd8a4a23: ref!! e5f74a97-7655-4750-8c9e-83fe5164dd74
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: fa655741-7937-43d8-b613-6706c22d909d
                 Name: BushRedFlowers
                 Components:
@@ -5908,7 +7537,8 @@ Hierarchy:
                         Id: 1db745c2-2251-48a0-904e-6f857dfb0dcd
                         Model: 305bca82-603e-4633-8d05-6a80cef73c49:Models/Decors/BushRedFlowers
                         Materials: {}
-        -   Entity:
+        -   Folder: PlantDecors
+            Entity:
                 Id: fb53f733-8943-48fc-81f9-1c473d1c3322
                 Name: PumpkinPlant_Stage03
                 Components:

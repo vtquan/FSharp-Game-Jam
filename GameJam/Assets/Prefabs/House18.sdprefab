@@ -33,11 +33,11 @@ Hierarchy:
                         ColliderShapes:
                             eb6e7dc4ebd6cfcd42c88e59255bfc18: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 1.8, Y: 0.5, Z: 1.0}
+                                Size: {X: 1.8, Y: 0.45, Z: 0.9}
                                 LocalOffset: {X: 0.35, Y: 0.18, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                             f9fb716406ce9fd68ba9cac00d3a6383: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 0.8, Y: 1.0, Z: 1.0}
+                                Size: {X: 0.8, Y: 1.05, Z: 0.9}
                                 LocalOffset: {X: -0.18, Y: 0.4, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

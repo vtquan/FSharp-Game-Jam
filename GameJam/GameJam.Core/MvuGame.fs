@@ -65,7 +65,7 @@ module Game =
                 | Collect ->
                     let newTime = state.CurrentTime @ [gameTime.Total - state.StartTime]
                     { state with CurrentTime = newTime }, msgs
-                | Goal when state.GameplayModel.PlayerModel.Counter = 2 ->
+                | Goal when state.GameplayModel.PlayerModel.Counter = 14 ->
                     this.Input.UnlockMousePosition()
                     this.IsMouseVisible <- true
                     
@@ -102,7 +102,7 @@ module Game =
             
             Messages <- Messages @ Event.ProcessAllEvent ()
 
-            //this.DebugTextSystem.Print(sprintf "%i\n\n%f" State.PlayerModel.Counter State.PlatformModel.Timer, new Int2(50,50))
+            this.DebugTextSystem.Print(sprintf "X:%f\n\nY:%f\n\nZ:%f" State.GameplayModel.PlayerModel.Entity.Transform.Position.X State.GameplayModel.PlayerModel.Entity.Transform.Position.Y State.GameplayModel.PlayerModel.Entity.Transform.Position.Z, new Int2(50,50))
             this.GameUpdate Messages State gametime
             view State gametime
 
