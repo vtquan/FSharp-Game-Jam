@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net5.0</TargetFrameworks>
     <RootNamespace>GameJam</RootNamespace>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Stride.Core" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" />

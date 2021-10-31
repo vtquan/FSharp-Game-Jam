@@ -48,14 +48,15 @@ namespace GameJam
                 // Play the music
                 music.Play();
             }
-            else if (result == "Score")
+            result = await Events.musicEvent.ReceiveAsync();
+            if (result == "Score")
             {
                 music.Stop();
                 musicSound = Content.Load<Sound>("Audio/ScoreMusic");
 
                 // Create a sound instance
                 music = musicSound.CreateInstance();
-                music.Volume = 0.4f;
+                music.Volume = 1f;
 
                 await music.ReadyToPlay();
 

@@ -43,7 +43,7 @@ Hierarchy:
                         Id: 493bdafe-0d6c-4994-8c49-b150e16b272e
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Scale: {X: 10.0, Y: 4.5, Z: 10.0}
                         Children: {}
                     85013c98396cbaeed9211c0208e633db: !ModelComponent
                         Id: f316d9e4-c0ee-4da1-8cff-8c2fef17225a
@@ -103,7 +103,7 @@ Hierarchy:
                 Components:
                     955ee40439dd7fe70e4429e7e1963ca8: !TransformComponent
                         Id: a8e0ba2e-e596-47cc-8316-80869a0a9286
-                        Position: {X: 0.0, Y: 4.0, Z: 0.0}
+                        Position: {X: 0.0, Y: 3.635015, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 2.0, Y: 2.0, Z: 2.0}
                         Children:

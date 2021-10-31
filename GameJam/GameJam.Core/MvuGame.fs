@@ -77,7 +77,7 @@ module Game =
                     this.Content.Unload(gameplayScene)
                     let scoreScene = this.Content.Load<Scene>("ScoreScene")
                     this.SceneSystem.SceneInstance.RootScene.Children.Add(scoreScene)
-                    GameJam.Events.MusicEventKey.Broadcast("Gameplay");
+                    GameJam.Events.MusicEventKey.Broadcast("Score");
                     let newTime = state.CurrentTime @ [gameTime.Total - state.StartTime]
                     let (scoreSceneModel,scoreSceneInitMessage) = ScoreScene.init newTime state.BestTime scoreScene
                     { state with CurrentScene = Score; ScoreModel = scoreSceneModel; CurrentTime = newTime }, []  // Clear msgs since score scene doesn't have any messages at initialization
@@ -106,7 +106,7 @@ module Game =
             
             Messages <- Messages @ Event.ProcessAllEvent ()
 
-            this.DebugTextSystem.Print(sprintf "X:%f\n\nY:%f\n\nZ:%f" State.GameplayModel.PlayerModel.Entity.Transform.Position.X State.GameplayModel.PlayerModel.Entity.Transform.Position.Y State.GameplayModel.PlayerModel.Entity.Transform.Position.Z, new Int2(50,200))
+            //this.DebugTextSystem.Print(sprintf "X:%f\n\nY:%f\n\nZ:%f" State.GameplayModel.PlayerModel.Entity.Transform.Position.X State.GameplayModel.PlayerModel.Entity.Transform.Position.Y State.GameplayModel.PlayerModel.Entity.Transform.Position.Z, new Int2(50,200))
             this.GameUpdate Messages State gametime
             view State gametime
 

@@ -247,7 +247,7 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Name: Time5
-                Text: Level Music -  Miasma Storm by Scott Arc
+                Text: Level Music -  She's an angel by Scott Arc
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
@@ -325,6 +325,21 @@ Hierarchy:
                     Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
                     Center: {X: 0.0, Y: 0.0}
                 Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !TextBlock
+                Id: 86940e9a-66e5-48db-b439-7ff61018e367
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 475.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Time5
+                Text: Sound Effect - https://sonniss.com/gameaudiogdc
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !TextBlock
                 Id: 89972450-57bf-4dfa-8633-a1406ef99dbd
                 DependencyProperties: {}
@@ -730,6 +745,7 @@ Hierarchy:
                     20b662a8c86148405b9786b536bfdbc6: !TextBlock ref!! b3c2e60a-ca24-4bab-a572-6d6a618e5dc8
                     627fa496d90bc72f8444da16bd526180: !TextBlock ref!! 0a1713b8-9f88-4763-beb5-91c9ee2e4af5
                     5f700ce9ae1b9e6eb6c08bc0c2a5412b: !TextBlock ref!! ce0b2c2f-6cef-43f6-931a-404740695b18
+                    6a2e145db8b5beeddae4272e89ebb904: !TextBlock ref!! 86940e9a-66e5-48db-b439-7ff61018e367
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}

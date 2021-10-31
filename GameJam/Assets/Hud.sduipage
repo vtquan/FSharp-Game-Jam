@@ -8,20 +8,39 @@ Hierarchy:
     RootParts:
         - !Grid ref!! 6e26ca3f-91d5-414b-8b9d-ed1092120248
     Parts:
-        -   UIElement: !Border
-                Id: 32a38fa0-e09a-45fb-a30e-d1ae37e72c5d
+        -   UIElement: !ImageElement
+                Id: 22cc9d5e-353e-4963-8a2b-fb0519e1f7e8
                 DependencyProperties: {}
-                BackgroundColor: {R: 165, G: 49, B: 49, A: 0}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 75.0
+                Height: 45.0
                 HorizontalAlignment: Left
                 VerticalAlignment: Top
-                Margin: {Left: 75.0, Top: 75.0}
+                Margin: {Left: 52.0, Top: 84.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !Border
+                Id: 32a38fa0-e09a-45fb-a30e-d1ae37e72c5d
+                DependencyProperties:
+                    d0a0160668aead805d40e6f3b807202e~Panel.ZIndexPropertyKey: -1
+                BackgroundColor: {R: 0, G: 141, B: 188, A: 255}
+                Width: 300.0
+                Height: 50.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 52.0, Top: 84.0}
                 MinimumWidth: 300.0
                 MinimumHeight: 50.0
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Padding: {}
-                BorderColor: {R: 0, G: 0, B: 0, A: 255}
+                BorderColor: {R: 200, G: 185, B: 185, A: 255}
                 BorderThickness: {}
         -   UIElement: !Grid
                 Id: 6e26ca3f-91d5-414b-8b9d-ed1092120248
@@ -35,6 +54,7 @@ Hierarchy:
                 Children:
                     1abf44181b12b4860c689403a098ed9c: !TextBlock ref!! 722abf63-807c-4596-ace9-1f2d38e7ecd3
                     d5d5e95fc06b683df474ec0585ea8087: !Border ref!! 32a38fa0-e09a-45fb-a30e-d1ae37e72c5d
+                    cae0f48bf1f41a67953b80368bac8906: !ImageElement ref!! 22cc9d5e-353e-4963-8a2b-fb0519e1f7e8
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}
@@ -42,8 +62,10 @@ Hierarchy:
                 Id: 722abf63-807c-4596-ace9-1f2d38e7ecd3
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 78.61972
+                Height: 626.0
                 HorizontalAlignment: Left
-                Margin: {Left: 100.0, Top: 100.0}
+                Margin: {Left: 127.0, Top: 94.0}
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
@@ -52,5 +74,5 @@ Hierarchy:
                 Name: CollectionCounter
                 Text: 10/14
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
-                TextSize: 20.0
+                TextSize: 25.0
                 TextColor: {R: 255, G: 255, B: 255, A: 255}

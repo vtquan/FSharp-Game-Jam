@@ -2116,7 +2116,7 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                             0018bc788008d546001a559a7082cd63: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 5.0, Y: 5.0, Z: 60.0}
+                                Size: {X: 10.0, Y: 5.0, Z: 60.0}
                                 LocalOffset: {X: 0.0, Y: 5.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: PlantDecors
@@ -2499,7 +2499,7 @@ Hierarchy:
                 Components:
                     955ee40439dd7fe70e4429e7e1963ca8: !TransformComponent
                         Id: 0f183e69-79db-4394-956c-d0a9edd1e24e
-                        Position: {X: 0.0, Y: 4.0, Z: 0.0}
+                        Position: {X: 0.0, Y: 3.635015, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 2.0, Y: 2.0, Z: 2.0}
                         Children:
@@ -2793,7 +2793,7 @@ Hierarchy:
                 Components:
                     d6e7350a6ca2bc2def7932fdaf87b8e7: !TransformComponent
                         Id: f923675b-0b72-4cfa-99a3-47a1ea7935f6
-                        Position: {X: 25.58182, Y: 2.5669582, Z: -11.874633}
+                        Position: {X: 28.899338, Y: 2.5669582, Z: 12.152984}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.3, Y: 0.3, Z: 0.3}
                         Children: {}
@@ -3284,7 +3284,7 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                             0018bc788008d546001a559a7082cd63: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 5.0, Y: 5.0, Z: 60.0}
+                                Size: {X: 10.0, Y: 5.0, Z: 60.0}
                                 LocalOffset: {X: 0.0, Y: 5.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: Roads
@@ -3531,7 +3531,7 @@ Hierarchy:
                 Components:
                     a7e75453d760142f487e1f89c581a834: !TransformComponent
                         Id: 1a0c5ea4-fea6-4b2c-814b-a55a48c30a05
-                        Position: {X: 42.03286, Y: 19.0, Z: 38.377487}
+                        Position: {X: 37.01259, Y: 18.38135, Z: 38.377487}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -3823,7 +3823,7 @@ Hierarchy:
                         Id: 373df3a5-ed7c-41b8-931f-bf53a8326714
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
+                        Scale: {X: 10.0, Y: 4.5, Z: 10.0}
                         Children: {}
                     85013c98396cbaeed9211c0208e633db: !ModelComponent
                         Id: 2c4aac79-ee60-41cc-9c46-d7ad31ccfcf4
@@ -3861,7 +3861,7 @@ Hierarchy:
                 Components:
                     b2a6075828266d085af6b27fb851b350: !TransformComponent
                         Id: 7320926c-c254-4d20-8006-fa1bc60066df
-                        Position: {X: 28.684837, Y: 0.8, Z: 9.693634}
+                        Position: {X: 28.684837, Y: 0.8, Z: -10.906767}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
