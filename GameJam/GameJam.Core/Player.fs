@@ -42,10 +42,12 @@ module Player =
         match msg with
         | Collision(e) when model.Counter = 13 -> 
             e.Scene <- null
+            GameJam.Events.SfxEventKey.Broadcast()
             { model with Counter = model.Counter + 1 }, [GoalMsg(Activate)]
 
         | Collision(e) -> 
             e.Scene <- null
+            GameJam.Events.SfxEventKey.Broadcast()
             { model with Counter = model.Counter + 1 }, []
             
         | MoveLeft -> 

@@ -17,7 +17,7 @@ namespace GameJam
         public override async Task Execute()
         {
             // Load the sound
-            Sound musicSound = Content.Load<Sound>("Audio/GameplayMusic");
+            Sound musicSound = Content.Load<Sound>("Audio/TitleMusic");
 
             // Create a sound instance
             SoundInstance music = musicSound.CreateInstance();
@@ -32,6 +32,36 @@ namespace GameJam
 
             // Play the music
             music.Play();
+
+            var result = await Events.musicEvent.ReceiveAsync();
+            if(result == "Gameplay")
+            {
+                music.Stop();
+                musicSound = Content.Load<Sound>("Audio/GameplayMusic");
+
+                // Create a sound instance
+                music = musicSound.CreateInstance();
+                music.Volume = 0.4f;
+
+                await music.ReadyToPlay();
+
+                // Play the music
+                music.Play();
+            }
+            else if (result == "Score")
+            {
+                music.Stop();
+                musicSound = Content.Load<Sound>("Audio/ScoreMusic");
+
+                // Create a sound instance
+                music = musicSound.CreateInstance();
+                music.Volume = 0.4f;
+
+                await music.ReadyToPlay();
+
+                // Play the music
+                music.Play();
+            }
         }
     }
 }

@@ -1,0 +1,7 @@
+!Sound
+Id: 4777eaa6-a874-4e7a-bd5e-330439ef80e4
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Audio/04 - PRANA.wav
+StreamFromDisk: true
+Spatialized: false

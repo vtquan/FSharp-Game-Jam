@@ -1,0 +1,7 @@
+!Texture
+Id: 3c8182c4-e950-48d4-bb67-b608818f2f53
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/UI/Shrine.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

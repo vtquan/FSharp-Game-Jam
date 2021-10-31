@@ -15,7 +15,10 @@ Hierarchy:
                 HorizontalAlignment: Center
                 VerticalAlignment: Center
                 Margin: {}
-                Text: Click me!
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: Start
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
@@ -28,20 +31,37 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Children:
+                    49aa42bb68040b78428f08b8beb7642a: !ImageElement ref!! f9fdd4c5-9345-44d0-ba7f-12c1ba3553a8
                     45579e4c67fa830e33afef4223496de5: !Button ref!! 9bfe6a2c-b89a-41d5-9595-9ee68f0b936a
+                    97ff596ff7664e45fd354934a134d2b4: !ImageElement ref!! 771e849e-00af-4aa4-85b2-4e0acf820407
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}
+        -   UIElement: !ImageElement
+                Id: 771e849e-00af-4aa4-85b2-4e0acf820407
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Source: !SpriteFromTexture
+                    Texture: a3f0f4f6-441e-4bc9-9ddd-f47ad2225807:UI/Title
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
         -   UIElement: !Button
                 Id: 9bfe6a2c-b89a-41d5-9595-9ee68f0b936a
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
                 DrawLayerNumber: 2
-                Margin: {}
+                HorizontalAlignment: Center
+                VerticalAlignment: Bottom
+                Margin: {Bottom: 50.0}
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Name: StartButton
+                Padding: {Top: 7.0}
                 Content: !TextBlock ref!! 1ba2fc8c-dda4-4f15-9970-d9956a9ec3e6
                 PressedImage: !SpriteFromSheet
                     Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
@@ -51,3 +71,17 @@ Hierarchy:
                     CurrentFrame: 1
                 MouseOverImage: !SpriteFromSheet
                     Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+        -   UIElement: !ImageElement
+                Id: f9fdd4c5-9345-44d0-ba7f-12c1ba3553a8
+                DependencyProperties:
+                    51608233ad6c3d470baf6cd1b6fa4fd0~Panel.ZIndexPropertyKey: -5
+                BackgroundColor: {R: 111, G: 52, B: 52, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Source: !SpriteFromTexture
+                    Texture: ddd1430d-7637-4a57-bd69-8341cd6cbc8c:UI/Background
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+                StretchType: FillOnStretch

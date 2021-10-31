@@ -3,7 +3,7 @@ Id: 755ac387-2d3c-4a20-962b-766c914bca03
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
 Archetype: f6a5c934-008c-422b-aefa-bea759846f28:Animations/Pumpkin_Idle
-Source*: !file D:/Projects/Blender/PumpkinThing/PumpkinThing_JumpEnd.fbx
+Source*: !file ../../Resources/Model/PumpkinThing_JumpEnd.fbx
 ClipDuration:
     Enabled: false
     StartAnimationTime: 0:00:00:00.0000000
@@ -17,4 +17,4 @@ PreviewModel: 56bb9e30-0907-43fd-bfcb-ada31e3c26df:Models/PumpkinThing
 AnimationTimeMinimum*: 0:00:00:00.0000000
 AnimationTimeMaximum*: 0:00:00:00.1666700
 ~SourceHashes:
-    3e9347f3862a7e8a1c70b2c955e0293c~D:/Projects/Blender/PumpkinThing/PumpkinThing_JumpEnd.fbx: b20d464c8bf96bd58df1ddcd01f750b0
+    5a8f8329b081f2f6afbb5a90f585ae95~../../Resources/Model/PumpkinThing_JumpEnd.fbx: b20d464c8bf96bd58df1ddcd01f750b0

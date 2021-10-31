@@ -490,11 +490,9 @@ Hierarchy:
                             47b7f2884469c9d74a4712034dba6f5a: Down
                         KeysJump:
                             23fe5ceb28bd9649fa594f451bbef24b: Space
-                    4e675eefa33c66b2da0d1ac535acfe76: !AudioListenerComponent
-                        Id: 569bb411-d34e-4eb1-810a-0df315d0ae64
+                    de4a979e63b2aa1c53d5575febe2d6c9: !AudioListenerComponent
+                        Id: 31e76cfe-ce19-450b-bf53-968239210489
                         Enabled: false
-                    42732c008e118a3d7330e9582158b4a2: !GameJam.PlayMusic,GameJam.Game
-                        Id: efe870ba-7688-46f8-a169-b99520d01d1a
         -   Entity:
                 Id: 1c139687-36a5-4b45-a491-9c83d3e903e2
                 Name: Entity
@@ -607,7 +605,7 @@ Hierarchy:
                 Components:
                     a88dd8afc5e3c39bc745dcbde426cbad: !TransformComponent
                         Id: 4928eeae-e2ca-45c6-a688-9529b7dc2c26
-                        Position: {X: 6.317562, Y: 3.8146973E-06, Z: 32.432}
+                        Position: {X: 6.218, Y: 3.8146973E-06, Z: 32.432}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -908,7 +906,7 @@ Hierarchy:
                 Components:
                     10695137d193691968aa281bae186a4a: !TransformComponent
                         Id: 9c185af7-f5b2-4269-879a-24c575b6202b
-                        Position: {X: -3.690681, Y: 0.0, Z: 32.432}
+                        Position: {X: -3.791, Y: 0.0, Z: 32.432}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -1084,7 +1082,7 @@ Hierarchy:
                 Components:
                     10695137d193691968aa281bae186a4a: !TransformComponent
                         Id: d560df49-2ca6-4e96-a820-b763634d1b4e
-                        Position: {X: -13.708656, Y: 0.0, Z: 32.432}
+                        Position: {X: -13.709, Y: 0.0, Z: 32.432}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -1555,9 +1553,9 @@ Hierarchy:
                 Components:
                     ca233a6225205c2bea7ffa88c34ea21c: !TransformComponent
                         Id: 3087fcbc-cc1b-4a2b-bc0b-fef2efe54f78
-                        Position: {X: 28.557, Y: 0.0, Z: 9.9518}
+                        Position: {X: 28.557, Y: 0.0, Z: 10.1}
                         Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 10.0, Y: 1.0, Z: 10.0}
+                        Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
                     6a19f2126af7f4d004714ef1e922233f: !ModelComponent
                         Id: 1e3bd01d-b50f-4c00-91d3-2c24f86a8323
@@ -3809,7 +3807,7 @@ Hierarchy:
                 Components:
                     0a768f089441540a147f0c6f0e1ddebb: !TransformComponent
                         Id: c350278d-b1fb-46ec-9a7f-71e4b736fd54
-                        Position: {X: 28.557, Y: 1.9073486E-06, Z: 0.05978775}
+                        Position: {X: 28.557, Y: 1.9073486E-06, Z: 0.1}
                         Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}
@@ -3890,7 +3888,7 @@ Hierarchy:
                 Components:
                     31b7ff8be3b8697fa4c532ac7e8a8fe6: !TransformComponent
                         Id: f89c2b2f-8dd5-41db-be24-97a2e0d96b80
-                        Position: {X: 8.736277, Y: 0.0, Z: 39.938717}
+                        Position: {X: 8.686, Y: 0.0, Z: 39.938717}
                         Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 10.0, Y: 5.0, Z: 10.0}
                         Children: {}

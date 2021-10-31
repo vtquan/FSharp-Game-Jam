@@ -19,8 +19,13 @@ namespace GameJam
         public static readonly EventKey<bool> JumpEventKey = new();
 
         public static readonly EventKey<Tuple<string, Entity>> GameEventKey = new();
-
         public static readonly EventReceiver<Tuple<string, Entity>> gameListener = new(GameEventKey, EventReceiverOptions.Buffered);
+
+        public static readonly EventKey<string> MusicEventKey = new();
+        public static readonly EventReceiver<string> musicEvent = new EventReceiver<string>(MusicEventKey);
+
+        public static readonly EventKey SfxEventKey = new();
+        public static readonly EventReceiver sfxEvent = new EventReceiver(SfxEventKey);
 
 
         public static readonly EventReceiver<Vector3> moveDirectionEvent = new EventReceiver<Vector3>(MoveDirectionEventKey);

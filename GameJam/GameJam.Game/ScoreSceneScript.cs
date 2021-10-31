@@ -19,12 +19,12 @@ namespace GameJam
         {
             // Initialization of the script.
             var uiComponent = Entity.Get<UIComponent>();
-            var restartButton = uiComponent.Page.RootElement.FindVisualChildOfType<ButtonBase>("RestartButton");
+            //var restartButton = uiComponent.Page.RootElement.FindVisualChildOfType<ButtonBase>("RestartButton");
 
-            restartButton.Click += delegate
-            {
-                Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Restart", Entity));
-            };
+            //restartButton.Click += delegate
+            //{
+            //    Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Restart", Entity));
+            //};
         }
 
         public override void Update()

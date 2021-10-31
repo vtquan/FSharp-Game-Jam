@@ -5,5 +5,20 @@ Tags: []
 ChildrenIds: []
 Offset: {X: 0.0, Y: 0.0, Z: 0.0}
 Hierarchy:
-    RootParts: []
-    Parts: []
+    RootParts:
+        - ref!! e37440b2-1033-4e47-9d1f-8051efe9b079
+    Parts:
+        -   Entity:
+                Id: e37440b2-1033-4e47-9d1f-8051efe9b079
+                Name: Entity
+                Components:
+                    f7a93decebda632e7fa4b10832921202: !TransformComponent
+                        Id: 2ae6588c-a9aa-4b2a-b335-5d523657c751
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    bcaee45915c0e2059df854303d4a7b9c: !GameJam.PlayMusic,GameJam.Game
+                        Id: b273a495-d9d3-4575-82f2-730ad2b35e8f
+                    2575452fad6343e91d84c9f0dd944e40: !GameJam.PlaySfx,GameJam.Game
+                        Id: e90fc3ef-0ffd-44d4-802e-f816fc0b1053

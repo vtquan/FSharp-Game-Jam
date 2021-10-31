@@ -1,0 +1,9 @@
+!Sound
+Id: 1301c7b3-8ae7-4055-8602-cf97a24a56d8
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Audio/echo hit pan  subsonic pro sound effect.wav
+SampleRate: 96000
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

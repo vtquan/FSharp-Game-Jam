@@ -8,6 +8,57 @@ Hierarchy:
     RootParts:
         - !Grid ref!! dca9c9a6-5aa6-4216-b9ca-ebfce2f95fa4
     Parts:
+        -   UIElement: !ImageElement
+                Id: 053b9dd2-64d2-4684-94dc-8c09533d7b39
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 425.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !TextBlock
+                Id: 0a1713b8-9f88-4763-beb5-91c9ee2e4af5
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 225.0, Top: 450.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Time5
+                Text: https://www.youtube.com/watch?v=yNExRHVRy6w
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !ImageElement
+                Id: 0dc61826-9768-4ebb-895f-d2a6c59388a3
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 525.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
         -   UIElement: !TextBlock
                 Id: 14f89f4d-21dd-4874-9347-c66f31d14695
                 DependencyProperties: {}
@@ -38,6 +89,24 @@ Hierarchy:
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !ImageElement
+                Id: 21210d0e-c7e5-4ebf-8c57-4b943160ee57
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 400.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
         -   UIElement: !TextBlock
                 Id: 317cb145-e49a-455c-bc98-5058012a7c04
                 DependencyProperties: {}
@@ -84,6 +153,21 @@ Hierarchy:
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !TextBlock
+                Id: 3acee25e-c02b-4a16-b525-f20485980956
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 375.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Time5
+                Text: Title Music -  I Can't Take This... by Scott Arc
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
                 Id: 3d6915cb-0323-406f-a58f-182621eda4fd
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
@@ -95,6 +179,75 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: Time1
                 Text: Thanks for Playing!
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !ImageElement
+                Id: 43e8faa0-9c3b-4cc2-be77-7b13341afb4d
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 550.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 3c8182c4-e950-48d4-bb67-b608818f2f53:UI/Shrine
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !ImageElement
+                Id: 458fe537-c751-4d6e-a934-9bc703fcb214
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 300.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !ImageElement
+                Id: 4825bc87-abc1-4f10-8e8e-78fca0f851bc
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 275.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !TextBlock
+                Id: 4c1fc821-54e5-4d06-a2b5-3f477e3dbe3a
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 400.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Time5
+                Text: Level Music -  Miasma Storm by Scott Arc
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
@@ -154,6 +307,39 @@ Hierarchy:
                 Padding: {}
                 BorderColor: {R: 63, G: 9, B: 9, A: 255}
                 BorderThickness: {}
+        -   UIElement: !ImageElement
+                Id: 664d8338-ff0f-4334-9d10-8051bf81d601
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 200.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !TextBlock
+                Id: 89972450-57bf-4dfa-8633-a1406ef99dbd
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 550.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Time15
+                Text: 02:18:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !TextBlock
                 Id: 8e456f1e-12a4-4c75-842f-358e8bccfd3c
                 DependencyProperties: {}
@@ -194,9 +380,94 @@ Hierarchy:
                     e2ce2474b7c1cf76d30d3af6e4be957e: !TextBlock ref!! ffdb35d4-0316-4a57-95d7-161442c3ef49
                     0f1153c119d1320832dfa22ca6786050: !TextBlock ref!! 8e456f1e-12a4-4c75-842f-358e8bccfd3c
                     596a5e61423dc3419b3756998d10d5d5: !TextBlock ref!! d5b105f3-abe2-42d2-a3a4-46d1b4527a53
+                    f2078736a499351c84ac3437f7d77df0: !TextBlock ref!! 89972450-57bf-4dfa-8633-a1406ef99dbd
+                    d745746edf47341732a7c5824cb80001: !ImageElement ref!! 664d8338-ff0f-4334-9d10-8051bf81d601
+                    dc993b9c071fedb4233d6934e7f3bb72: !ImageElement ref!! d39ab82b-b9fc-4d61-874b-61a596b0a51d
+                    0b8c75dbda01bb7f5c1c74bf00abcec2: !ImageElement ref!! 941da737-fcfe-48e6-ab94-2a2e8d014fa0
+                    c603e299fa899da5b26d215e9b1534a3: !ImageElement ref!! 4825bc87-abc1-4f10-8e8e-78fca0f851bc
+                    432d9d8e702146f67b3d913b3f17bb84: !ImageElement ref!! 458fe537-c751-4d6e-a934-9bc703fcb214
+                    5a97207f58d4652b44c44c4e2ad34534: !ImageElement ref!! db7f77a8-469e-4bfa-a487-1f8c754c1e7b
+                    84e384e593c9449d6924aa3f70a6e23d: !ImageElement ref!! dec8ea01-c83e-40b2-a8b5-e5a55c72a652
+                    90923232fb70e20517f2666094018484: !ImageElement ref!! dd3ab99f-7a24-4129-b021-b924e49e92ff
+                    51f7cdb9ca7cfb55b880539c5532e3ca: !ImageElement ref!! 21210d0e-c7e5-4ebf-8c57-4b943160ee57
+                    0293d4b878a9114d1f7aa58681fb53b5: !ImageElement ref!! 053b9dd2-64d2-4684-94dc-8c09533d7b39
+                    a520fcbb365923c3b48bfc5ab75b21cd: !ImageElement ref!! a2118d55-831e-41f1-9e83-f404645e1d53
+                    20086b2915729f31d436dcce0b2f012d: !ImageElement ref!! d52d3722-b2df-401d-b8d4-e1b94b91917d
+                    2d53a13ddc3129e3f489cadf03c9ef13: !ImageElement ref!! 95b7b008-d005-4447-8497-ba48ee6b561a
+                    3bd796be8afc77da13bc0d37292073ef: !ImageElement ref!! 0dc61826-9768-4ebb-895f-d2a6c59388a3
+                    114a1c208344885bd053114d0669af4f: !ImageElement ref!! 43e8faa0-9c3b-4cc2-be77-7b13341afb4d
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}
+        -   UIElement: !ImageElement
+                Id: 941da737-fcfe-48e6-ab94-2a2e8d014fa0
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 250.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !ImageElement
+                Id: 95b7b008-d005-4447-8497-ba48ee6b561a
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 500.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !TextBlock
+                Id: 9606bae8-6832-44f2-b881-dd923006ce99
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 325.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Time5
+                Text: BlenderToStrideAnimationSeparator Blender Extension
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !ImageElement
+                Id: a2118d55-831e-41f1-9e83-f404645e1d53
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 450.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
         -   UIElement: !TextBlock
                 Id: a67e8d01-a0a9-4cec-a72f-cb4f328786f0
                 DependencyProperties: {}
@@ -209,6 +480,21 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: Time10
                 Text: 01:51:00
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: b3c2e60a-ca24-4bab-a572-6d6a618e5dc8
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 200.0, Top: 425.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Time5
+                Text: Result Music -  PRANA by Scott Arc
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
@@ -253,10 +539,61 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Name: Tim4
-                Text: Streets props/Plants by @Zsky
+                Text: Streets props/Plants by @Zsky (www.patreon.com/Zsky)
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: ce0b2c2f-6cef-43f6-931a-404740695b18
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 225.0, Top: 350.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Time5
+                Text: (https://github.com/JackPilley/BlenderToStrideAnimationSeparator)
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !ImageElement
+                Id: d39ab82b-b9fc-4d61-874b-61a596b0a51d
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 225.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !ImageElement
+                Id: d52d3722-b2df-401d-b8d4-e1b94b91917d
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 475.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
         -   UIElement: !TextBlock
                 Id: d58aa843-1256-43d7-ae19-5f2ca04d590c
                 DependencyProperties: {}
@@ -287,6 +624,24 @@ Hierarchy:
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !ImageElement
+                Id: db7f77a8-469e-4bfa-a487-1f8c754c1e7b
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 325.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
         -   UIElement: !Grid
                 Id: dca9c9a6-5aa6-4216-b9ca-ebfce2f95fa4
                 DependencyProperties: {}
@@ -302,6 +657,42 @@ Hierarchy:
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}
+        -   UIElement: !ImageElement
+                Id: dd3ab99f-7a24-4129-b021-b924e49e92ff
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 375.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !ImageElement
+                Id: dec8ea01-c83e-40b2-a8b5-e5a55c72a652
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 25.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 170.0, Top: 350.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                DefaultWidth: 10.0
+                DefaultHeight: 10.0
+                DefaultDepth: 10.0
+                Source: !SpriteFromTexture
+                    Texture: 105bf8f2-a6c0-4903-81ef-696fe61db718:UI/Candy
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
         -   UIElement: !TextBlock
                 Id: f057653e-c3e5-4da2-9df0-2c301b1606b4
                 DependencyProperties: {}
@@ -322,7 +713,7 @@ Hierarchy:
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
                 HorizontalAlignment: Left
-                Margin: {Left: 300.0}
+                Margin: {Left: 250.0}
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
@@ -333,6 +724,12 @@ Hierarchy:
                     c56e6f3f0734e8f70d5757a13f945d4b: !TextBlock ref!! f057653e-c3e5-4da2-9df0-2c301b1606b4
                     c00d42970d2390754185511304f688ff: !TextBlock ref!! c110524a-c8f8-418d-a70a-c2dd93467ef8
                     f4eaa6a95005aca6434edbb12c4ee2af: !TextBlock ref!! 317cb145-e49a-455c-bc98-5058012a7c04
+                    ce03ffce878c5b401aff47b3abf593f3: !TextBlock ref!! 9606bae8-6832-44f2-b881-dd923006ce99
+                    4db4ac3021539fbeedfef248aabfbeb9: !TextBlock ref!! 3acee25e-c02b-4a16-b525-f20485980956
+                    347d244979d737e91a66e16a8999810c: !TextBlock ref!! 4c1fc821-54e5-4d06-a2b5-3f477e3dbe3a
+                    20b662a8c86148405b9786b536bfdbc6: !TextBlock ref!! b3c2e60a-ca24-4bab-a572-6d6a618e5dc8
+                    627fa496d90bc72f8444da16bd526180: !TextBlock ref!! 0a1713b8-9f88-4763-beb5-91c9ee2e4af5
+                    5f700ce9ae1b9e6eb6c08bc0c2a5412b: !TextBlock ref!! ce0b2c2f-6cef-43f6-931a-404740695b18
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}

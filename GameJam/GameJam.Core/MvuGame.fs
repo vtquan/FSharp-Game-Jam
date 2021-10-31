@@ -55,6 +55,9 @@ module Game =
                         this.Content.Unload(titleScene)
                         let gameplayScene = this.Content.Load<Scene>("GameplayScene")
                         this.SceneSystem.SceneInstance.RootScene.Children.Add(gameplayScene)
+                        GameJam.Events.MusicEventKey.Broadcast("Gameplay");
+                        this.Input.LockMousePosition()
+                        this.IsMouseVisible <- false
                         let (gameplaySceneModel,gameplaySceneInitMessage) = GameplayScene.init gameplayScene this.Input
                         { state with CurrentScene = GamePlay; GameplayModel = gameplaySceneModel; StartTime = gameTime.Total; CurrentTime = [] }, gameplaySceneInitMessage
                 | GameplaySceneMsg(m) ->
@@ -74,8 +77,9 @@ module Game =
                     this.Content.Unload(gameplayScene)
                     let scoreScene = this.Content.Load<Scene>("ScoreScene")
                     this.SceneSystem.SceneInstance.RootScene.Children.Add(scoreScene)
-                    let (scoreSceneModel,scoreSceneInitMessage) = ScoreScene.init state.CurrentTime state.BestTime scoreScene
+                    GameJam.Events.MusicEventKey.Broadcast("Gameplay");
                     let newTime = state.CurrentTime @ [gameTime.Total - state.StartTime]
+                    let (scoreSceneModel,scoreSceneInitMessage) = ScoreScene.init newTime state.BestTime scoreScene
                     { state with CurrentScene = Score; ScoreModel = scoreSceneModel; CurrentTime = newTime }, []  // Clear msgs since score scene doesn't have any messages at initialization
                 | Goal ->            
                     state, msgs
