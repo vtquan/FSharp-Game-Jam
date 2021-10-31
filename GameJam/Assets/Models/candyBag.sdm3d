@@ -2,7 +2,7 @@
 Id: 3a6c5199-0af9-465b-b67f-48c346f82dfe
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../Resources/KayKit Halloween/Models/fbx/candyBag.fbx
+Source: !file ../../Resources/Model/candyBag.fbx
 Skeleton: null
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -32,4 +32,4 @@ Materials:
             Material: 711fa9de-af49-43ac-8e88-2abc9e76bcd3:Materials/Orange
 Modifiers: {}
 ~SourceHashes:
-    d228d74546ca54f48db2643441c3ecdb~../../Resources/KayKit Halloween/Models/fbx/candyBag.fbx: 6fc3cbb0e87a398c6151abf9868133aa
+    3fee1f4ad067c564de41b44921725476~../../Resources/Model/candyBag.fbx: 6fc3cbb0e87a398c6151abf9868133aa

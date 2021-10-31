@@ -39,5 +39,3 @@ Hierarchy:
                         Page: 75cfb6d9-2d81-46f6-a91a-c411660d93df:ScoreUI
                         Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
-                    abf948cb9ad46e5d146988cc803e7116: !GameJam.ScoreSceneScript,GameJam.Game
-                        Id: 1af6df77-d345-48ce-926e-31f352ba7bce
