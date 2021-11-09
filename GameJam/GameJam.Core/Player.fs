@@ -26,17 +26,6 @@ module Player =
         let entity = scene.Entities.FirstOrDefault(fun x -> x.Name = "PlayerCharacter")        
         let cameraComponent = entity.GetChild(1).GetChild(0).Get<CameraComponent>()
         { Velocity = new Vector3(0f, 0f, 0f); MoveDirection = Vector3.Zero; NewMoveDirection = Vector3.Zero; Jumped = false; JumpReactionRemaining = jumpReactionThreshold; Counter = 0; Entity = entity; AppearanceModel = entity.GetChild(0); AttachedPlatform = new Entity(); Input = input; Camera = cameraComponent }, Empty
-    
-    
-    // Cap x and z movement speed
-    let capHorizontalVelocity (velocity : Vector3) speedLimit =
-        let horizontalVelocity = new Vector3(velocity.X, 0f, velocity.Z)
-        match horizontalVelocity.Length() > speedLimit with
-        | true -> 
-            let cappedHorizontalVelocity = Vector3.Normalize(velocity)
-            let cappedVelocity = new Vector3(cappedHorizontalVelocity.X, velocity.Y, cappedHorizontalVelocity.Z)
-            cappedVelocity
-        | false -> velocity
 
     let update msg model (deltaTime : float32) =
         match msg with

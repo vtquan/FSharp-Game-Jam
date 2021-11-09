@@ -38,9 +38,9 @@ module Game =
         let mutable NextMessages : GameMsg list = []
         
         override this.BeginRun () = 
+            let mainScene = this.Content.Load<Scene>("MainScene")
             let titleScene = this.Content.Load<Scene>("TitleScene")
-            this.SceneSystem.SceneInstance.RootScene.Children.Add(titleScene)
-            ()
+            mainScene.Children.Add(titleScene)
 
         member private this.GameUpdate (cmds : GameMsg list) (state : GameModel) (gameTime : GameTime) =
             let scoreScene = this.Content.Load<Scene>("ScoreScene")
