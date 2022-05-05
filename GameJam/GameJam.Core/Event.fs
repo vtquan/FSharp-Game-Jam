@@ -1,55 +1,27 @@
 ﻿namespace GameJam.Core
 
-open Stride.Engine
 open Stride.Engine.Events
 open System.Linq
-open Messages
+open GameJam.Core.Message
 
 module Event =
-    let private ProcessGameEvent ((message, entity) : string * Entity) : GameMsg list = 
-        match message with
-        | "Collect" -> 
-            [GameplaySceneMsg(PlayerMsg(Collision(entity))); GameplaySceneMsg(UiMsg(Increment)); Collect]
-        | "Left" -> [GameplaySceneMsg(PlayerMsg(MoveLeft))]
-        | "Right" -> [GameplaySceneMsg(PlayerMsg(MoveRight))]
-        | "Up" -> [GameplaySceneMsg(PlayerMsg(MoveUp))]
-        | "Down" -> [GameplaySceneMsg(PlayerMsg(MoveDown))]
-        | "Jump" -> [GameplaySceneMsg(PlayerMsg(Jump))]
-        | "Grounded" -> [GameplaySceneMsg(PlayerMsg(Grounded))]
-        | "Airborne" -> [GameplaySceneMsg(PlayerMsg(Airborne))]
-        | "NoMovement" -> [GameplaySceneMsg(PlayerMsg(NoMovement))]
-        | "AttachPlayer" -> [GameplaySceneMsg(PlatformMsg(AttachPlayer(entity)))]
-        | "DetachPlayer" -> [GameplaySceneMsg(PlatformMsg(DetachPlayer(entity)))]
-        | "Goal" -> [Goal]
-        | "Start" -> [TitleSceneMsg(Start)]
-        | "Restart" -> [Restart]
-        | _ -> []
-       
-    let private TryReceiveAllEvent (eventReceiver : EventReceiver<'a>) =   
+    let private parseEvent (eventReceiver : EventReceiver<'a>) (eventMap : 'a -> GameMsg list) =   
         let eventList = (Seq.empty).ToList()
-        let m = eventReceiver.TryReceiveAll(eventList)
-        let a = Seq.toList eventList
-        m, Seq.toList eventList
-            
-    let private TryReceiveEvent (eventReceiver : EventReceiver) =
+        let numEvent = eventReceiver.TryReceiveAll(eventList)
+        let events = Seq.toList eventList
+        [
+            for e in events do
+                yield! eventMap e   //Could use a map instead but this will allow returning multiple messages for an event
+        ]
+                
+    let private tryReceiveEvent (eventReceiver : EventReceiver) =
         eventReceiver.TryReceive()
-
-    let ProcessAllGameEvent (eventReceiver : EventReceiver<string * Entity>) : GameMsg list =
-        let numEvent, events = TryReceiveAllEvent eventReceiver
-        match numEvent with
-        | 0 -> []
-        | _ ->
-            let msgSeq =
-                seq {
-                    for e in events do
-                        yield! ProcessGameEvent e   //Could use a map instead but this will allow returning multiple messages for an event
-                }
-            List.ofSeq msgSeq
     
     let ProcessAllEvent () : GameMsg list=        
         let msgSeq =
-            seq {
-                yield! ProcessAllGameEvent GameJam.Events.gameListener  //Can be expanded with additional yield! process listener
-            }
-
-        List.ofSeq (Seq.filter(fun m -> match m with | Empty -> false | _ -> true ) (Seq.distinct msgSeq))
+            [
+                yield! parseEvent GameJam.Events.gameEvent GameEvent.map
+                //yield! parseEvent GameJam.Events.stringEvent StringEvent.mapStringEvent
+            ]
+        msgSeq
+        |> List.distinct

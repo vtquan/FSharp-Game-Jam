@@ -6,7 +6,7 @@ open Stride.Engine
 open Stride.Games;
 open Stride.Physics
 open System.Linq
-open Messages
+open GameJam.Core.Message
 open Stride.Rendering.Sprites
 open Stride.Input
 open System

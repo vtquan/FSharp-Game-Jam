@@ -17,16 +17,28 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Message.fs" />
-    <Compile Include="Event.fs" />
+    <Compile Include="Message\PlayerMsg.fs" />
+    <Compile Include="Message\PlatformMsg.fs" />
+    <Compile Include="Message\CollectibleMsg.fs" />
+    <Compile Include="Message\GoalMsg.fs" />
+    <Compile Include="Message\UiMsg.fs" />
+    <Compile Include="Message\TitleSceneMsg.fs" />
+    <Compile Include="Message\GameplaySceneMsg.fs" />
+    <Compile Include="Message\ScoreSceneMsg.fs" />
+    <Compile Include="Message\SceneManagerMsg.fs" />
+    <Compile Include="Message\GameMsg.fs" />
+    <Compile Include="Event\StringEvent.fs" />
+    <Compile Include="Event\GameEvent.fs" />
+    <Compile Include="Player.fs" />
     <Compile Include="Platform.fs" />
     <Compile Include="Collectible.fs" />
-    <Compile Include="Player.fs" />
     <Compile Include="Goal.fs" />
     <Compile Include="SceneManager.fs" />
     <Compile Include="UI.fs" />
     <Compile Include="ScoreScene.fs" />
+    <Compile Include="TitleScene.fs" />
     <Compile Include="GameplayScene.fs" />
+    <Compile Include="Event.fs" />
     <Compile Include="MvuGame.fs" />
   </ItemGroup>
 

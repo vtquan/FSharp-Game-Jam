@@ -8,32 +8,11 @@ open Stride.UI.Controls;
 open Stride.Games;
 open Stride.Physics
 open System.Linq
-open Messages
+open GameJam.Core.Message
 open Stride.Rendering.Sprites
 open Stride.Input
 open System
 open Stride.UI.Panels
-
-module TitleUI =
-    type Model =
-        { Counter: int; Page : UIPage }
-    
-    let empty () =
-        { Counter = 0; Page = new UIPage() }
-        
-    let init (scene : Scene) =
-        let page = scene.Entities.FirstOrDefault(fun x -> x.Name = "UI").Get<UIComponent>().Page
-        { Counter = 0; Page = page }, Empty
-
-    let update msg (model : Model) (deltaTime : float32) =
-        match msg with        
-        | Increment ->
-            { model with Counter = model.Counter + 1 }, []
-    
-    let view (model : Model) (deltaTime : float32) =
-        let bonusCounter = model.Page.RootElement.FindVisualChildOfType<TextBlock>("CollectionCounter");
-        bonusCounter.Text <- sprintf "%i/14" model.Counter
-        ()
 
 module GameplayUI =
     type Model =

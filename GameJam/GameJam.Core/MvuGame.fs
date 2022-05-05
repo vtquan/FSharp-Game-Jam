@@ -3,7 +3,7 @@
 open Stride.Core.Mathematics
 open Stride.Engine;
 open Stride.Games;
-open Messages
+open GameJam.Core.Message
 open SceneManager
 open System
 
@@ -43,8 +43,6 @@ module Game =
             mainScene.Children.Add(titleScene)
 
         member private this.GameUpdate (cmds : GameMsg list) (state : GameModel) (gameTime : GameTime) =
-            let scoreScene = this.Content.Load<Scene>("ScoreScene")
-
             let GameUpdateFold ((state, msgs) : GameModel * GameMsg list) cmd  = 
                 match cmd with
                 | TitleSceneMsg(m) ->
@@ -105,7 +103,7 @@ module Game =
             base.Update(gametime);
             
             Messages <- Messages @ Event.ProcessAllEvent ()
-
+            //this.DebugTextSystem.Print(sprintf "%A" Messages, new Int2(50,200))
             //this.DebugTextSystem.Print(sprintf "X:%f\n\nY:%f\n\nZ:%f" State.GameplayModel.PlayerModel.Entity.Transform.Position.X State.GameplayModel.PlayerModel.Entity.Transform.Position.Y State.GameplayModel.PlayerModel.Entity.Transform.Position.Z, new Int2(50,200))
             this.GameUpdate Messages State gametime
             view State gametime

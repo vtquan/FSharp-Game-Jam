@@ -59,7 +59,6 @@ namespace GameJam.Camera
 
         private Vector3 cameraRotationXYZ = new Vector3(-20, 45, 0);
         private Vector3 targetRotationXYZ = new Vector3(-20, 45, 0);
-        private readonly EventReceiver<Vector2> cameraDirectionEvent = new EventReceiver<Vector2>(Events.CameraDirectionEventKey);
         private List<HitResult> resultsOutput;
         private ConeColliderShape coneShape;
 
@@ -125,7 +124,7 @@ namespace GameJam.Camera
 
             // Camera movement from player input
             Vector2 cameraMovement;
-            cameraDirectionEvent.TryReceive(out cameraMovement);
+            Events.cameraDirectionEvent.TryReceive(out cameraMovement);
 
             if (InvertY) cameraMovement.Y *= -1;
             targetRotationXYZ.X += cameraMovement.Y * dt * VerticalSpeed;
