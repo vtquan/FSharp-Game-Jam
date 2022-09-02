@@ -34,7 +34,6 @@ module Player =
         match message with
         | "Collect" -> 
             GameJam.Events.UiEventKey.Broadcast("Increment");
-            GameJam.Events.GameEventKey.Broadcast("Collect", entity);
             [Collision(entity)]
         | "Left" -> [MoveLeft]
         | "Right" -> [MoveRight]
@@ -56,13 +55,6 @@ module Player =
 
     let update (msg : PlayerMsg) model (deltaTime : float32) : Model * PlayerMsg list =
         match msg with
-        | Collision(e) when model.Counter = 13 -> 
-            e.Scene <- null
-            GameJam.Events.SfxEventKey.Broadcast()
-            GameJam.Events.ScoreEventKey.Broadcast("Collect")
-            GameJam.Events.GoalEventKey.Broadcast("Activate")
-            { model with Counter = model.Counter + 1 }, []
-
         | Collision(e) -> 
             e.Scene <- null
             GameJam.Events.SfxEventKey.Broadcast()

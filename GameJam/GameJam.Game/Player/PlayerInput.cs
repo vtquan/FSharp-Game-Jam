@@ -89,34 +89,6 @@ namespace GameJam.Player
                 {
                     Events.PlayerEventKey.Broadcast(new Tuple<string, Entity>("NoMovement", Entity));
                 }
-
-                //// Broadcast the movement vector as a world-space Vector3 to allow characters to be controlled
-                //var worldSpeed = (Camera != null)
-                //    ? Utils.LogicDirectionToWorldDirection(moveDirection, Camera, Vector3.UnitY)
-                //    : new Vector3(moveDirection.X, 0, moveDirection.Y);
-
-                //// Adjust vector's magnitute - worldSpeed has been normalized
-                //var moveLength = moveDirection.Length();
-                //var isDeadZoneLeft = moveLength < DeadZone;
-                //if (isDeadZoneLeft)
-                //{
-                //    worldSpeed = Vector3.Zero;
-                //}
-                //else
-                //{
-                //    if (moveLength > 1)
-                //    {
-                //        moveLength = 1;
-                //    }
-                //    else
-                //    {
-                //        moveLength = (moveLength - DeadZone) / (1f - DeadZone);
-                //    }
-
-                //    worldSpeed *= moveLength;
-                //}
-
-                //Events.MoveDirectionEventKey.Broadcast(worldSpeed);
             }
 
             // Camera rotation: left-right rotates the camera horizontally while up-down controls its altitude
@@ -158,10 +130,6 @@ namespace GameJam.Player
 
                 // Keyboard: jumping
                 didJump |= (KeysJump.Any(key => Input.IsKeyPressed(key)));
-
-                //Events.JumpEventKey.Broadcast(didJump);
-                if(didJump)
-                    Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Jump", Entity));
             }
         }
     }

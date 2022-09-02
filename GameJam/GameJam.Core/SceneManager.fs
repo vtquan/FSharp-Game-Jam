@@ -26,6 +26,7 @@ module SceneManager =
             Game : Game; 
             CurrentScene: CurrentScene; 
             NewScene : CurrentScene option
+            TitleSceneModel : TitleScene.Model
             GameplaySceneModel : GameplayScene.Model
             ScoreSceneModel : ScoreScene.Model
         }
@@ -46,7 +47,7 @@ module SceneManager =
         | _ -> []
 
     let empty = 
-        { Game = new Game(); CurrentScene = Title; NewScene = None; GameplaySceneModel = GameplayScene.empty; ScoreSceneModel = ScoreScene.empty; }
+        { Game = new Game(); CurrentScene = Title; NewScene = None; TitleSceneModel = TitleScene.empty; GameplaySceneModel = GameplayScene.empty; ScoreSceneModel = ScoreScene.empty; }
 
     let init game = 
         { empty with Game = game }
@@ -92,7 +93,9 @@ module SceneManager =
             | Some(s) -> 
                 match s with
                 | Title -> 
-                    model, []
+                    let titleScene = model.Game.Content.Load<Scene>("TitleScene")
+                    let (titleSceneModel, titleSceneInitMessage) = TitleScene.init model.Game
+                    { model with TitleSceneModel = titleSceneModel; CurrentScene = Title; NewScene = None }, (List.map TitleSceneMsg titleSceneInitMessage)    
                 | Gameplay ->                     
                     let gameplayScene = model.Game.Content.Load<Scene>("GameplayScene")
                     let (gameplaySceneModel,gameplaySceneInitMessage) = GameplayScene.init gameplayScene model.Game.Input
@@ -105,11 +108,9 @@ module SceneManager =
                     model, []
             | None ->
                 model, []
-        | TitleSceneMsg(m) ->
-            match m with
-            | Start -> 
-                GameJam.Events.SceneManagerEventKey.Broadcast("Gameplay")
-                model, []
+        | TitleSceneMsg(m) ->            
+            let (newModel,msg) = TitleScene.update m model.TitleSceneModel deltaTime
+            { model with TitleSceneModel = newModel }, (List.map TitleSceneMsg msg)
         | GameplaySceneMsg(m) -> 
             let (newModel,msg) = GameplayScene.update m model.GameplaySceneModel gameTime
             { model with GameplaySceneModel = newModel }, (List.map GameplaySceneMsg msg)
@@ -130,7 +131,7 @@ module SceneManager =
             model.Game.SceneSystem.SceneInstance.RootScene.Children.Add(newScene)
             match s with
             | Title ->
-               ()
+                ()
             | Gameplay ->         
                 GameJam.Events.MusicEventKey.Broadcast("Gameplay");
                 model.Game.Input.LockMousePosition()
@@ -139,7 +140,8 @@ module SceneManager =
                 GameJam.Events.MusicEventKey.Broadcast("Score");
                 model.Game.Input.UnlockMousePosition()
                 model.Game.IsMouseVisible <- true
-            | _ -> ()
+            | _ -> 
+                ()
         | _ -> 
             match model.CurrentScene with
             | Title -> 
