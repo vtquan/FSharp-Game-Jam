@@ -25,7 +25,7 @@ namespace GameJam
             while (Game.IsRunning)
             {
                 var firstCollision = await trigger.NewCollision();
-                Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Goal", Entity));
+                Events.ScoreEventKey.Broadcast("Goal");
                 //await Script.NextFrame();
             }
         }

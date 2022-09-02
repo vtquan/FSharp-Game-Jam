@@ -20,14 +20,13 @@ namespace GameJam
             MvuGame = (Game)Services.GetService<IGame>();
 
             var triggers = Entity.GetAll<PhysicsComponent>();
-            triggers.ElementAt(1).ProcessCollisions = true; // Only the second static collider will attach the player. Don't attach player for running into the side of the platform
 
             while (Game.IsRunning)
             {
                 var firstCollision = await triggers.ElementAt(1).NewCollision();
-                Events.GameEventKey.Broadcast(new Tuple<string, Entity>("AttachPlayer", Entity));
+                Events.PlatformEventKey.Broadcast(new Tuple<string, Entity>("AttachPlayer", Entity));
                 await triggers.ElementAt(1).CollisionEnded();
-                Events.GameEventKey.Broadcast(new Tuple<string, Entity>("DetachPlayer", Entity));
+                Events.PlatformEventKey.Broadcast(new Tuple<string, Entity>("DetachPlayer", Entity));
                 //await Script.NextFrame();
             }
         }

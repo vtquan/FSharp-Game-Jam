@@ -1,11 +1,18 @@
 ﻿namespace GameJam.Core
 
 open Stride.Engine
-open GameJam.Core.Message
 
 module TitleScene =
     type Model =
         {Game : Game}
+
+    type TitleSceneMsg =
+        | Start    
+    
+    let map message = 
+        match message with
+        | "Start" -> [Start]
+        | _ -> []
 
     let init = {Game = new Game()}
     

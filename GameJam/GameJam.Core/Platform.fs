@@ -6,7 +6,6 @@ open Stride.Engine
 open Stride.Games;
 open Stride.Physics
 open System.Linq
-open GameJam.Core.Message
 open Stride.Rendering.Sprites
 open Stride.Input
 open System
@@ -26,8 +25,20 @@ module Platform =
 
     type Model =
         { Timer: float32; Direction: Direction; Platforms : MovingPlatform list; Player : Entity }
+
+    type PlatformMsg = 
+        | Countdown
+        | Countup
+        | AttachPlayer of Entity
+        | DetachPlayer of Entity
     
-    let empty () =
+    let map ((message, entity) : string * Entity) : PlatformMsg list = 
+        match message with
+        | "AttachPlayer" -> [AttachPlayer(entity)]
+        | "DetachPlayer" -> [DetachPlayer(entity)]
+        | _ -> []
+
+    let empty =
         { Timer = 0f; Direction = Forward; Platforms = []; Player = new Entity() }
         
     let init (scene : Scene) =
@@ -35,7 +46,7 @@ module Platform =
         let platforms = scene.Entities.Where(fun x -> x.Name.Contains("Platform"))    
         let movingPlatforms = Seq.map (fun x -> { Entity = x; PlayerAttached = false }) platforms
 
-        { Timer = 0f; Direction = Forward; Platforms = List.ofSeq movingPlatforms; Player = player }, GameplaySceneMsg(PlatformMsg(Countup))
+        { empty with Platforms = List.ofSeq movingPlatforms; Player = player }, [Countup]
     
     let mapPlatformAttach (attachedPlatform : Entity) (currentPlatform : MovingPlatform)  =
         match currentPlatform.Entity.GetChild(0) = attachedPlatform with    //Platform is a prefab so the the collision trigger belong to the child entity
@@ -50,16 +61,16 @@ module Platform =
     let update msg (model : Model) (deltaTime : float32) =
         match msg with        
         | Countup when model.Timer > duration -> 
-            { model with Timer = model.Timer - deltaTime; Direction = Reverse }, [PlatformMsg(Countdown)]
+            { model with Timer = model.Timer - deltaTime; Direction = Reverse }, [Countdown]
             
         | Countup -> 
-            { model with Timer = model.Timer + deltaTime }, [PlatformMsg(Countup)]
+            { model with Timer = model.Timer + deltaTime }, [Countup]
             
         | Countdown when model.Timer < 0f -> 
-            { model with Timer = model.Timer + deltaTime; Direction = Forward }, [PlatformMsg(Countup)]
+            { model with Timer = model.Timer + deltaTime; Direction = Forward }, [Countup]
             
         | Countdown -> 
-            { model with Timer = model.Timer - deltaTime }, [PlatformMsg(Countdown)]
+            { model with Timer = model.Timer - deltaTime }, [Countdown]
             
         | AttachPlayer(e) ->
             let newPlatforms = List.map (mapPlatformAttach e) model.Platforms

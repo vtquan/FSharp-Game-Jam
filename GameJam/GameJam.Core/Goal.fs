@@ -8,7 +8,6 @@ open Stride.UI.Controls;
 open Stride.Games;
 open Stride.Physics
 open System.Linq
-open GameJam.Core.Message
 open Stride.Rendering.Sprites
 open Stride.Input
 open System
@@ -20,21 +19,30 @@ module Goal =
     type Model =
         { Activated : bool; Rotation: float32; Entity: Entity  }
 
-    let empty () =
+    type GoalMsg = 
+        | Activate
+        | Rotate
+    
+    let map message = 
+        match message with
+        | "Activate" -> [Activate]
+        | _ -> []
+
+    let empty =
         { Activated = false; Rotation = 0f; Entity = new Entity() }
     
     let init (scene : Scene) =
         let entity = scene.Entities.FirstOrDefault(fun x -> x.Name = "Goal").FindChild("Core")
-        { Activated = false; Rotation = 0f; Entity = entity }, Empty
+        { empty with Entity = entity }, []
 
-    let update msg (model : Model) (deltaTime : float32) =
+    let update msg (model : Model) (deltaTime : float32) : Model * GoalMsg list =
         match msg with        
         | Activate ->
-            { model with Activated = true }, [GoalMsg(Rotate)]
+            { model with Activated = true }, [Rotate]
         | Rotate when model.Rotation > 720f ->
-            { model with Rotation = model.Rotation + rotationSpeed * deltaTime - 720f }, [GoalMsg(Rotate)]
+            { model with Rotation = model.Rotation + rotationSpeed * deltaTime - 720f }, [Rotate]
         | Rotate ->
-            { model with Rotation = model.Rotation + rotationSpeed * deltaTime }, [GoalMsg(Rotate)]
+            { model with Rotation = model.Rotation + rotationSpeed * deltaTime }, [Rotate]
 
     let view (model : Model) (deltaTime : float32) =
         match model.Activated with

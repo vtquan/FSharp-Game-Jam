@@ -24,7 +24,7 @@ namespace GameJam
 
             startButton.Click += delegate
             {
-                Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Start", Entity));
+                Events.TitleSceneEventKey.Broadcast("Start");
             };
         }
 

@@ -6,7 +6,6 @@ open Stride.Engine
 open Stride.Games;
 open Stride.Physics
 open System.Linq
-open GameJam.Core.Message
 open Stride.Rendering.Sprites
 open Stride.Input
 open System
@@ -19,37 +18,67 @@ module Player =
     type Model =
         { Velocity : Vector3; MoveDirection : Vector3; NewMoveDirection: Vector3; Jumped : bool; JumpReactionRemaining : float32; Counter : int; Entity : Entity; AppearanceModel : Entity; AttachedPlatform : Entity; Input : InputManager; Camera : CameraComponent }
     
-    let empty () =
+    type PlayerMsg = 
+        | MoveLeft
+        | MoveRight
+        | MoveUp
+        | MoveDown
+        | NoMovement
+        | NewVelocity
+        | Jump
+        | Grounded
+        | Airborne
+        | Collision of Entity
+
+    let map ((message, entity) : string * Entity) : PlayerMsg list = 
+        match message with
+        | "Collect" -> 
+            GameJam.Events.UiEventKey.Broadcast("Increment");
+            GameJam.Events.GameEventKey.Broadcast("Collect", entity);
+            [Collision(entity)]
+        | "Left" -> [MoveLeft]
+        | "Right" -> [MoveRight]
+        | "Up" -> [MoveUp]
+        | "Down" -> [MoveDown]
+        | "Jump" -> [Jump]
+        | "Grounded" -> [Grounded]
+        | "Airborne" -> [Airborne]
+        | "NoMovement" -> [NoMovement]
+        | _ -> []
+
+    let empty =
         { Velocity = new Vector3(0f, 0.f, 0f); MoveDirection = Vector3.Zero; NewMoveDirection = Vector3.Zero; Jumped = false; JumpReactionRemaining = 0f; Counter = 0; Entity = new Entity(); AppearanceModel = new Entity(); AttachedPlatform = new Entity(); Input = new InputManager(); Camera = new CameraComponent() }
     
-    let init (scene : Scene) (input : InputManager) =
+    let init (scene : Scene) (input : InputManager) : Model * PlayerMsg list =
         let entity = scene.Entities.FirstOrDefault(fun x -> x.Name = "PlayerCharacter")        
         let cameraComponent = entity.GetChild(1).GetChild(0).Get<CameraComponent>()
-        { Velocity = new Vector3(0f, 0f, 0f); MoveDirection = Vector3.Zero; NewMoveDirection = Vector3.Zero; Jumped = false; JumpReactionRemaining = jumpReactionThreshold; Counter = 0; Entity = entity; AppearanceModel = entity.GetChild(0); AttachedPlatform = new Entity(); Input = input; Camera = cameraComponent }, Empty
+        { empty with JumpReactionRemaining = jumpReactionThreshold; Entity = entity; AppearanceModel = entity.GetChild(0); Input = input; Camera = cameraComponent }, []
 
-    let update msg model (deltaTime : float32) =
+    let update (msg : PlayerMsg) model (deltaTime : float32) : Model * PlayerMsg list =
         match msg with
-        | Collision(e) when model.Counter = 13 -> 
+        | Collision(e) when model.Counter = 1 -> 
             e.Scene <- null
             GameJam.Events.SfxEventKey.Broadcast()
-            { model with Counter = model.Counter + 1 }, [GoalMsg(Activate)]
+            GameJam.Events.GoalEventKey.Broadcast("Activate")
+            { model with Counter = model.Counter + 1 }, []
 
         | Collision(e) -> 
             e.Scene <- null
             GameJam.Events.SfxEventKey.Broadcast()
+            GameJam.Events.ScoreEventKey.Broadcast("Collect")
             { model with Counter = model.Counter + 1 }, []
             
         | MoveLeft -> 
-            { model with NewMoveDirection = model.NewMoveDirection - Vector3.UnitX }, [PlayerMsg(NewVelocity)]
+            { model with NewMoveDirection = model.NewMoveDirection - Vector3.UnitX }, [NewVelocity]
                         
         | MoveRight -> 
-            { model with NewMoveDirection = model.NewMoveDirection + Vector3.UnitX }, [PlayerMsg(NewVelocity)]
+            { model with NewMoveDirection = model.NewMoveDirection + Vector3.UnitX }, [NewVelocity]
             
         | MoveUp -> 
-            { model with NewMoveDirection = model.NewMoveDirection + Vector3.UnitZ }, [PlayerMsg(NewVelocity)]
+            { model with NewMoveDirection = model.NewMoveDirection + Vector3.UnitZ }, [NewVelocity]
             
         | MoveDown -> 
-            { model with NewMoveDirection = model.NewMoveDirection - Vector3.UnitZ }, [PlayerMsg(NewVelocity)]
+            { model with NewMoveDirection = model.NewMoveDirection - Vector3.UnitZ }, [NewVelocity]
 
         | Jump when model.Jumped = false && model.JumpReactionRemaining > 0f  -> 
             GameJam.Events.IsGroundedEventKey.Broadcast(false)
@@ -89,7 +118,7 @@ module Player =
             { model with JumpReactionRemaining = model.JumpReactionRemaining - deltaTime }, []
             
         | NoMovement -> 
-            { model with NewMoveDirection = Vector3.Zero }, [PlayerMsg(NewVelocity)]
+            { model with NewMoveDirection = Vector3.Zero }, [NewVelocity]
     
     let view model =
         let characterComponent = model.Entity.Get<CharacterComponent>()

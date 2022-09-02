@@ -51,43 +51,43 @@ namespace GameJam.Player
                 if (KeysLeft.Any(key => Input.IsKeyDown(key)))
                 {
                     isKeyPress = true;
-                    Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Left", Entity));
+                    Events.PlayerEventKey.Broadcast(new Tuple<string, Entity>("Left", Entity));
                     moveDirection += -Vector2.UnitX;
                 }
                 if (KeysRight.Any(key => Input.IsKeyDown(key)))
                 {
                     isKeyPress = true;
-                    Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Right", Entity));
+                    Events.PlayerEventKey.Broadcast(new Tuple<string, Entity>("Right", Entity));
                     moveDirection += +Vector2.UnitX;
                 }
                 if (KeysUp.Any(key => Input.IsKeyDown(key)))
                 {
                     isKeyPress = true;
-                    Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Up", Entity));
+                    Events.PlayerEventKey.Broadcast(new Tuple<string, Entity>("Up", Entity));
                     moveDirection += +Vector2.UnitY;
                 }
                 if (KeysDown.Any(key => Input.IsKeyDown(key)))
                 {
                     isKeyPress = true;
-                    Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Down", Entity));
+                    Events.PlayerEventKey.Broadcast(new Tuple<string, Entity>("Down", Entity));
                     moveDirection += -Vector2.UnitY;
                 }
                 if (KeysJump.Any(key => Input.IsKeyDown(key)))
                 {
                     isKeyPress = true;
-                    Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Jump", Entity));
+                    Events.PlayerEventKey.Broadcast(new Tuple<string, Entity>("Jump", Entity));
                 }
                 else if (Entity.Get<CharacterComponent>().IsGrounded)
                 {
-                    Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Grounded", Entity));
+                    Events.PlayerEventKey.Broadcast(new Tuple<string, Entity>("Grounded", Entity));
                 }
                 else if (Entity.Get<CharacterComponent>().IsGrounded == false)
                 {
-                    Events.GameEventKey.Broadcast(new Tuple<string, Entity>("Airborne", Entity));
+                    Events.PlayerEventKey.Broadcast(new Tuple<string, Entity>("Airborne", Entity));
                 }
                 if (isKeyPress == false)
                 {
-                    Events.GameEventKey.Broadcast(new Tuple<string, Entity>("NoMovement", Entity));
+                    Events.PlayerEventKey.Broadcast(new Tuple<string, Entity>("NoMovement", Entity));
                 }
 
                 //// Broadcast the movement vector as a world-space Vector3 to allow characters to be controlled

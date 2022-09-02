@@ -6,7 +6,7 @@ namespace GameJam
     {
         static void Main(string[] args)
         {
-            using (var game = new Core.Game.MvuGame())
+            using (var game = new Core.MvuGame())
             {
                 game.Run();
             }

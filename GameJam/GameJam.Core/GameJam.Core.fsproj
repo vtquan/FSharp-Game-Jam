@@ -1,44 +1,34 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <WarnOn>3390;$(WarnOn)</WarnOn>
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Stride.Core" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" />
-    <PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" IncludeAssets="build" />
-    <PackageReference Include="Stride.Engine" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" />
-    <PackageReference Include="Stride.Particles" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" />
-    <PackageReference Include="Stride.Physics" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" />
-    <PackageReference Include="Stride.UI" Version="4.1.0.1459-beta" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Stride.Engine" Version="4.1.0.1734" />
+    <PackageReference Include="Stride.Video" Version="4.1.0.1734" />
+    <PackageReference Include="Stride.Physics" Version="4.1.0.1734" />
+    <PackageReference Include="Stride.Navigation" Version="4.1.0.1734" />
+    <PackageReference Include="Stride.Particles" Version="4.1.0.1734" />
+    <PackageReference Include="Stride.UI" Version="4.1.0.1734" />
+    <PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.1.0.1734" IncludeAssets="build;buildTransitive" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Message\PlayerMsg.fs" />
-    <Compile Include="Message\PlatformMsg.fs" />
-    <Compile Include="Message\CollectibleMsg.fs" />
-    <Compile Include="Message\GoalMsg.fs" />
-    <Compile Include="Message\UiMsg.fs" />
-    <Compile Include="Message\TitleSceneMsg.fs" />
-    <Compile Include="Message\GameplaySceneMsg.fs" />
-    <Compile Include="Message\ScoreSceneMsg.fs" />
-    <Compile Include="Message\SceneManagerMsg.fs" />
-    <Compile Include="Message\GameMsg.fs" />
-    <Compile Include="Event\StringEvent.fs" />
-    <Compile Include="Event\GameEvent.fs" />
     <Compile Include="Player.fs" />
     <Compile Include="Platform.fs" />
     <Compile Include="Collectible.fs" />
+    <Compile Include="Score.fs" />
     <Compile Include="Goal.fs" />
     <Compile Include="SceneManager.fs" />
     <Compile Include="UI.fs" />
     <Compile Include="ScoreScene.fs" />
     <Compile Include="TitleScene.fs" />
     <Compile Include="GameplayScene.fs" />
-    <Compile Include="Event.fs" />
+    <Compile Include="Game.fs" />
     <Compile Include="MvuGame.fs" />
   </ItemGroup>
 
