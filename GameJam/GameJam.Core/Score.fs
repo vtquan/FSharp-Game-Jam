@@ -41,15 +41,15 @@ module Score =
         match msg with     
         | Start ->
             { model with StartTime = gameTime.Total }, []
-        | Collect when model.Records.Length = 2 ->
+        | Collect when model.Records.Length = 13 ->
             GameJam.Events.GoalEventKey.Broadcast("Activate")
             let records = model.Records @ [gameTime.Total - model.StartTime]
             { model with Records = records }, []
         | Collect ->
             let records = model.Records @ [gameTime.Total - model.StartTime]
             { model with Records = records }, []
-        | Goal when model.Records.Length = 2 ->
-            GameJam.Events.ScoreSceneEventKey.Broadcast("Start")
+        | Goal when model.Records.Length = 14 ->
+            GameJam.Events.SceneManagerEventKey.Broadcast("Score")
             let records = model.Records @ [gameTime.Total - model.StartTime]
             { model with Records = records }, []
         | Goal ->            

@@ -12,8 +12,6 @@ module Game =
     type Model =
         {
             SceneManagerModel : SceneManager.Model
-            GameplayModel : GameplayScene.Model
-            ScoreModel : ScoreScene.Model
             StartTime: TimeSpan
             CurrentTime: TimeSpan list
             BestTime: TimeSpan list
@@ -21,13 +19,10 @@ module Game =
 
     type Msg =
         | SceneManagerMsg of SceneManager.SceneManagerMsg
-        | TitleSceneMsg of TitleScene.TitleSceneMsg
-        | GameplaySceneMsg of GameplayScene.GameplaySceneMsg
-        | ScoreSceneMsg of ScoreScene.ScoreSceneMsg
         | Restart
 
     let empty =
-        { SceneManagerModel = SceneManager.empty; GameplayModel = GameplayScene.empty; ScoreModel = ScoreScene.empty; StartTime = TimeSpan.Zero; CurrentTime = []; BestTime = []}
+        { SceneManagerModel = SceneManager.empty; StartTime = TimeSpan.Zero; CurrentTime = []; BestTime = []}
         
     let init (game : Game) : Model * Msg list =
         { empty with SceneManagerModel = SceneManager.init game }, []
@@ -57,24 +52,16 @@ module Game =
     let mapAllEvent () : Msg list =
         let messages =
             [
-                yield! mapEvent GameJam.Events.sceneManagerEvent SceneManager.map (List.map SceneManagerMsg)
-                yield! mapEvent GameJam.Events.titleSceneEvent TitleScene.map (List.map TitleSceneMsg)
-                yield! List.map GameplaySceneMsg (GameplayScene.mapAllEvent ())
+                //yield! mapEvent GameJam.Events.sceneManagerEvent SceneManager.map (List.map SceneManagerMsg)
+                //yield! mapEvent GameJam.Events.sceneManagerEvent SceneManager.map (List.map SceneManagerMsg)
+                //yield! mapEvent GameJam.Events.titleSceneEvent TitleScene.map (List.map TitleSceneMsg)
+                yield! List.map SceneManagerMsg (SceneManager.mapAllEvent ())
             ] |> List.distinct
         messages
 
     let view (gameModel : Model) (gameTime : GameTime) =
         let deltaTime = float32 gameTime.Elapsed.TotalSeconds
-        SceneManager.view gameModel.SceneManagerModel
-        match gameModel.SceneManagerModel.CurrentScene with
-        | Title -> 
-            ()
-        | GamePlay -> 
-            GameplayScene.view gameModel.GameplayModel gameTime
-        | Score -> 
-            ScoreScene.view gameModel.ScoreModel gameTime
-        | Load -> 
-            ()
+        SceneManager.view gameModel.SceneManagerModel gameTime
 
     let update (gameModel : Model) (cmds : Msg list) (gameTime : GameTime) (game : Game) =
         let deltaTime = float32 gameTime.Elapsed.TotalSeconds
@@ -82,21 +69,8 @@ module Game =
         let updateFold ((gameModel, msgs) : Model * Msg list) cmd = 
             match cmd with
             | SceneManagerMsg(m) -> 
-                let (model,msg) = SceneManager.update m gameModel.SceneManagerModel deltaTime
+                let (model,msg) = SceneManager.update m gameModel.SceneManagerModel gameTime
                 { gameModel with SceneManagerModel = model }, msgs @ (List.map SceneManagerMsg msg)
-            | TitleSceneMsg(m) ->
-                match m with
-                | Start -> 
-                    GameJam.Events.SceneManagerEventKey.Broadcast("GamePlay")
-                    let gameplayScene = game.Content.Load<Scene>("GameplayScene")
-                    let (gameplaySceneModel,gameplaySceneInitMessage) = GameplayScene.init gameplayScene game.Input
-                    { gameModel with GameplayModel = gameplaySceneModel; StartTime = gameTime.Total; CurrentTime = [] }, msgs @ (List.map GameplaySceneMsg gameplaySceneInitMessage)           
-            | GameplaySceneMsg(m) -> 
-                let (model,msg) = GameplayScene.update m gameModel.GameplayModel gameTime
-                { gameModel with GameplayModel = model }, msgs @ (List.map GameplaySceneMsg msg)
-            | ScoreSceneMsg(m) -> 
-                let (model,msg) = ScoreScene.update m gameModel.ScoreModel deltaTime game
-                { gameModel with ScoreModel = model }, msgs @ (List.map ScoreSceneMsg msg)
             | Restart -> 
                 let scoreScene = game.Content.Load<Scene>("ScoreScene")
                 game.SceneSystem.SceneInstance.RootScene.Children.Remove(scoreScene) |> ignore

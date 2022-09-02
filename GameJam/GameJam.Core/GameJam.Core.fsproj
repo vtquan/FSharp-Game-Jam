@@ -23,11 +23,12 @@
     <Compile Include="Collectible.fs" />
     <Compile Include="Score.fs" />
     <Compile Include="Goal.fs" />
-    <Compile Include="SceneManager.fs" />
     <Compile Include="UI.fs" />
+    <Compile Include="ScoreUI.fs" />
     <Compile Include="ScoreScene.fs" />
     <Compile Include="TitleScene.fs" />
     <Compile Include="GameplayScene.fs" />
+    <Compile Include="SceneManager.fs" />
     <Compile Include="Game.fs" />
     <Compile Include="MvuGame.fs" />
   </ItemGroup>

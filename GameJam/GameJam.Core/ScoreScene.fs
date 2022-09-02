@@ -25,15 +25,15 @@ module ScoreScene =
     let map message = 
         match message with
         | "Start" -> [Start]
-        | "Restart" -> [Start]
+        | "Restart" -> [Restart]
         | _ -> []
 
     let empty =
-        { ScoreUiModel = ScoreUI.empty () }
+        { ScoreUiModel = ScoreUI.empty }
 
-    let init currentTime bestTime (scene : Scene) =
-        let (newUiModel,UiMessage) = ScoreUI.init currentTime bestTime (scene)
-        { empty with ScoreUiModel = newUiModel }, [UiMessage]
+    let init records bestTime (scene : Scene) =
+        let newUiModel = ScoreUI.init records bestTime (scene)
+        { empty with ScoreUiModel = newUiModel }, []
     
     let update cmd state (deltaTime : float32) (game : Game) =
         match cmd with
