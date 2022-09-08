@@ -42,11 +42,11 @@ module Score =
         | Start ->
             { model with StartTime = gameTime.Total }, []
         | Collect ->
-            if model.Records.Length = 13 then
+            if model.Records.Length = 0 then
                 GameJam.Events.GoalEventKey.Broadcast("Activate")
             let records = model.Records @ [gameTime.Total - model.StartTime]
             { model with Records = records }, []
-        | Goal when model.Records.Length = 14 ->
+        | Goal when model.Records.Length = 1 ->
             GameJam.Events.SceneManagerEventKey.Broadcast("Score")
             let records = model.Records @ [gameTime.Total - model.StartTime]
             { model with Records = records }, []

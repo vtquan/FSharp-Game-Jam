@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="EventHelper.fs" />
     <Compile Include="Player.fs" />
     <Compile Include="Platform.fs" />
     <Compile Include="Collectible.fs" />

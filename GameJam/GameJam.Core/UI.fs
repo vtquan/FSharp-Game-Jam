@@ -13,11 +13,11 @@ open Stride.Input
 open System
 open Stride.UI.Panels
 
-module UI =
+module GameplayUI =
     type Model =
         { Counter: int; Page : UIPage }
 
-    type UiMsg = 
+    type GameplayUiMsg = 
         | Increment
     
     let map message = 

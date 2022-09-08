@@ -11,6 +11,9 @@ namespace GameJam
 {
     public static class Events
     {
+        public static readonly EventKey<string> GameEventKey = new();
+        public static readonly EventReceiver<string> gameEvent = new(GameEventKey, EventReceiverOptions.Buffered);
+
         public static readonly EventKey<Tuple<string, Entity>> PlayerEventKey = new();
         public static readonly EventReceiver<Tuple<string, Entity>> playerEvent = new(PlayerEventKey, EventReceiverOptions.Buffered);
         

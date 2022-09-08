@@ -20,6 +20,11 @@ module Game =
     type Msg =
         | SceneManagerMsg of SceneManager.SceneManagerMsg
         | Restart
+    
+    let map message = 
+        match message with
+        | "Restart" -> [Restart]
+        | _ -> []
 
     let empty =
         { SceneManagerModel = SceneManager.empty; StartTime = TimeSpan.Zero; CurrentTime = []; BestTime = []}
@@ -27,34 +32,10 @@ module Game =
     let init (game : Game) : Model * Msg list =
         { empty with SceneManagerModel = SceneManager.init game }, []
 
-    let private mapEvent (eventReceiver : EventReceiver<'a>) (eventMap : 'a -> 'b list) (listMap : 'b list -> Msg list) =   
-        let eventList = (Seq.empty).ToList()
-        let numEvent = eventReceiver.TryReceiveAll(eventList)
-        let events = Seq.toList eventList
-        let messages =
-            [
-                for e in events do
-                    yield! listMap (eventMap e)
-            ]
-        messages
-
-    let private mapEvent2 (eventReceiver : EventReceiver<'a>) (eventMap : 'a -> 'b list) =   
-        let eventList = (Seq.empty).ToList()
-        let numEvent = eventReceiver.TryReceiveAll(eventList)
-        let events = Seq.toList eventList
-        let messages =
-            [
-                for e in events do
-                    yield! eventMap e
-            ]
-        messages
-
     let mapAllEvent () : Msg list =
         let messages =
             [
-                //yield! mapEvent GameJam.Events.sceneManagerEvent SceneManager.map (List.map SceneManagerMsg)
-                //yield! mapEvent GameJam.Events.sceneManagerEvent SceneManager.map (List.map SceneManagerMsg)
-                //yield! mapEvent GameJam.Events.titleSceneEvent TitleScene.map (List.map TitleSceneMsg)
+                yield! EventHelper.parseEvent GameJam.Events.gameEvent map
                 yield! List.map SceneManagerMsg (SceneManager.mapAllEvent ())
             ] |> List.distinct
         messages
@@ -72,14 +53,10 @@ module Game =
                 let (model,msg) = SceneManager.update m gameModel.SceneManagerModel gameTime
                 { gameModel with SceneManagerModel = model }, msgs @ (List.map SceneManagerMsg msg)
             | Restart -> 
-                let scoreScene = game.Content.Load<Scene>("ScoreScene")
-                game.SceneSystem.SceneInstance.RootScene.Children.Remove(scoreScene) |> ignore
-                game.Content.Unload(scoreScene)
-                let titleScene = game.Content.Load<Scene>("TitleScene")
-                game.SceneSystem.SceneInstance.RootScene.Children.Add(titleScene)
+                GameJam.Events.SceneManagerEventKey.Broadcast("Title")
                 let bestTime = 
                     if gameModel.BestTime.Length > 0 then
-                        if gameModel.CurrentTime.Item(1) > gameModel.BestTime.Item(1) then gameModel.CurrentTime else gameModel.BestTime
+                        if gameModel.SceneManagerModel.GameplaySceneModel.ScoreModel.Records.Item(14) < gameModel.BestTime.Item(14) then gameModel.SceneManagerModel.GameplaySceneModel.ScoreModel.Records else gameModel.BestTime
                     else
                         gameModel.CurrentTime
                 GameJam.Events.SceneManagerEventKey.Broadcast("Title")

@@ -13,6 +13,7 @@ open Stride.Input
 open System
 open Stride.Core.Serialization.Contents
 open Stride.Engine.Events
+open EventHelper
 
 module SceneManager =    
     type CurrentScene =
@@ -52,33 +53,11 @@ module SceneManager =
     let init game = 
         { empty with Game = game }
 
-    let private mapEvent2 (eventReceiver : EventReceiver<'a>) (eventMap : 'a -> 'b list) =   
-        let eventList = (Seq.empty).ToList()
-        let numEvent = eventReceiver.TryReceiveAll(eventList)
-        let events = Seq.toList eventList
-        let messages =
-            [
-                for e in events do
-                    yield! eventMap e
-            ]
-        messages
-
-    let private mapEvent (eventReceiver : EventReceiver<'a>) (eventMap : 'a -> 'b list) (listMap : 'b list -> SceneManagerMsg list) =   
-        let eventList = (Seq.empty).ToList()
-        let numEvent = eventReceiver.TryReceiveAll(eventList)
-        let events = Seq.toList eventList
-        let messages =
-            [
-                for e in events do
-                    yield! listMap (eventMap e)
-            ]
-        messages
-
     let mapAllEvent () : SceneManagerMsg list =
         let messages =
             [
-                yield! mapEvent GameJam.Events.titleSceneEvent TitleScene.map (List.map TitleSceneMsg)
-                yield! mapEvent2 GameJam.Events.sceneManagerEvent map
+                yield! parseEventMap GameJam.Events.titleSceneEvent TitleScene.map (List.map TitleSceneMsg)
+                yield! parseEvent GameJam.Events.sceneManagerEvent map
                 yield! List.map GameplaySceneMsg (GameplayScene.mapAllEvent ())
             ] |> List.distinct
         messages
@@ -125,13 +104,16 @@ module SceneManager =
             let newSceneName = s.ToString() + "Scene"
             let oldScene = model.Game.Content.Load<Scene>(oldSceneName)
             let newScene = model.Game.Content.Load<Scene>(newSceneName)
-
+            
+            
             model.Game.SceneSystem.SceneInstance.RootScene.Children.Remove(oldScene) |> ignore
             model.Game.Content.Unload(oldScene)
+            oldScene.Dispose()
             model.Game.SceneSystem.SceneInstance.RootScene.Children.Add(newScene)
+
             match s with
             | Title ->
-                ()
+                GameJam.Events.MusicEventKey.Broadcast("Title");
             | Gameplay ->         
                 GameJam.Events.MusicEventKey.Broadcast("Gameplay");
                 model.Game.Input.LockMousePosition()

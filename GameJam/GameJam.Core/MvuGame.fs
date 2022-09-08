@@ -24,7 +24,7 @@ type MvuGame() =
             
         Messages <- Messages @ Game.mapAllEvent ()
 
-        this.DebugTextSystem.Print(sprintf "%A" Messages, new Int2(50,50))
+        this.DebugTextSystem.Print(sprintf "%A" Messages, new Int2(50,200))
 
         let model, messages = Game.update State Messages gameTime this
         State <- model

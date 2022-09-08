@@ -19,12 +19,10 @@ module ScoreScene =
         }
     
     type ScoreSceneMsg =
-        | Start
         | Restart
     
     let map message = 
         match message with
-        | "Start" -> [Start]
         | "Restart" -> [Restart]
         | _ -> []
 
@@ -37,18 +35,9 @@ module ScoreScene =
     
     let update cmd state (deltaTime : float32) (game : Game) =
         match cmd with
-        | Start -> 
-            game.Input.UnlockMousePosition()
-            game.IsMouseVisible <- true
-                    
-            let gameplayScene = game.Content.Load<Scene>("GameplayScene")
-            game.SceneSystem.SceneInstance.RootScene.Children.Remove(gameplayScene) |> ignore
-            game.Content.Unload(gameplayScene)
-            let scoreScene = game.Content.Load<Scene>("ScoreScene")
-            game.SceneSystem.SceneInstance.RootScene.Children.Add(scoreScene)
-            GameJam.Events.MusicEventKey.Broadcast("Score");
-            state, []  
-        | Restart -> state, []
+        | Restart -> 
+            GameJam.Events.SceneManagerEventKey.Broadcast("Gameplay")
+            state, []
 
     let view (state : Model) (gameTime : GameTime) =
         ScoreUI.view state.ScoreUiModel (float32 gameTime.Elapsed.TotalSeconds)
