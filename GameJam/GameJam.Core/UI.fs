@@ -20,11 +20,6 @@ module GameplayUI =
     type GameplayUiMsg = 
         | Increment
     
-    let map message = 
-        match message with
-        | "Increment" -> [Increment]
-        | _ -> []
-    
     let empty =
         { Counter = 0; Page = new UIPage() }
         
@@ -41,3 +36,11 @@ module GameplayUI =
         let bonusCounter = model.Page.RootElement.FindVisualChildOfType<TextBlock>("CollectionCounter");
         bonusCounter.Text <- sprintf "%i/14" model.Counter
         ()
+    
+    let map message = 
+        match message with
+        | "Increment" -> [Increment]
+        | _ -> []
+    
+    let getMsg () = 
+        EventHelper.recieveEvent GameJam.Events.uiEvent map

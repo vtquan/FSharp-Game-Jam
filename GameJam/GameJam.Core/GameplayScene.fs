@@ -21,8 +21,8 @@ module GameplayScene =
             PlatformModel : Platform.Model
             CollectibleModel : Collectible.Model
             ScoreModel : Score.Model
-            GoalModel : Goal.Model
             GameplayUiModel : GameplayUI.Model
+            GoalModel : Goal.Model
         }
 
     type GameplaySceneMsg =
@@ -37,26 +37,20 @@ module GameplayScene =
         { PlayerModel = Player.empty; PlatformModel = Platform.empty; CollectibleModel = Collectible.empty; ScoreModel = Score.empty; GoalModel = Goal.empty; GameplayUiModel = GameplayUI.empty }
 
     let init (scene : Scene) (input : InputManager) : Model * GameplaySceneMsg list =
-        let (newPlayerModel,playerMessages) = Player.init scene input
-        let (newPlatformodel,platformMessages) = Platform.init scene
-        let (newCollectibleModel,collectibleMessages) = Collectible.init scene
-        let (newScoreModel,scoreMessages) = Score.init ()
-        let (newGameplayUiModel,gameplayUiMessages) = GameplayUI.init scene
-        let (newGoalmodel,goalMessages) = Goal.init scene
-        let initMessages = (List.map PlayerMsg playerMessages) @ (List.map PlatformMsg platformMessages) @ (List.map CollectibleMsg collectibleMessages) @ (List.map ScoreMsg scoreMessages) @ (List.map GameplayUiMsg gameplayUiMessages) @ (List.map GoalMsg goalMessages)
-        { empty with PlayerModel = newPlayerModel; PlatformModel = newPlatformodel; CollectibleModel = newCollectibleModel; ScoreModel = newScoreModel; GoalModel = newGoalmodel; GameplayUiModel = newGameplayUiModel }, initMessages
-
-    let mapAllEvent () : GameplaySceneMsg list =
-        let messages =
-            [
-                yield! parseEventMap GameJam.Events.platformEvent Platform.map (List.map PlatformMsg)
-                yield! parseEventMap GameJam.Events.playerEvent Player.map (List.map PlayerMsg)
-                yield! parseEventMap GameJam.Events.collectibleEvent Collectible.map (List.map CollectibleMsg)
-                yield! parseEventMap GameJam.Events.uiEvent GameplayUI.map (List.map GameplayUiMsg)
-                yield! parseEventMap GameJam.Events.scoreEvent Score.map (List.map ScoreMsg)
-                yield! parseEventMap GameJam.Events.goalEvent Goal.map (List.map GoalMsg)
-            ] |> List.distinct
-        messages
+        let playerModel,playerMessages = Player.init scene input
+        let platformodel,platformMessages = Platform.init scene
+        let collectibleModel,collectibleMessages = Collectible.init scene
+        let scoreModel,scoreMessages = Score.init ()
+        let gameplayUiModel,gameplayUiMessages = GameplayUI.init scene
+        let goalmodel,goalMessages = Goal.init scene
+        let initMessages = 
+            (List.map PlayerMsg playerMessages) @ 
+            (List.map PlatformMsg platformMessages) @ 
+            (List.map CollectibleMsg collectibleMessages) @ 
+            (List.map ScoreMsg scoreMessages) @ 
+            (List.map GameplayUiMsg gameplayUiMessages) @ 
+            (List.map GoalMsg goalMessages)
+        { empty with PlayerModel = playerModel; PlatformModel = platformodel; CollectibleModel = collectibleModel; ScoreModel = scoreModel; GameplayUiModel = gameplayUiModel; GoalModel = goalmodel }, initMessages
 
     let update cmd state (gameTime : GameTime) =
         let deltaTime = float32 gameTime.Elapsed.TotalSeconds
@@ -88,4 +82,14 @@ module GameplayScene =
         Collectible.view state.CollectibleModel deltaTime
         Goal.view state.GoalModel deltaTime
         GameplayUI.view state.GameplayUiModel deltaTime
+
+    let getMsg () : GameplaySceneMsg list =
+        [
+            yield! List.map PlatformMsg (Platform.getMsg ())
+            yield! List.map PlayerMsg (Player.getMsg ())
+            yield! List.map CollectibleMsg (Collectible.getMsg ())
+            yield! List.map GameplayUiMsg (GameplayUI.getMsg ())
+            yield! List.map ScoreMsg (Score.getMsg ())
+            yield! List.map GoalMsg (Goal.getMsg ())
+        ]
 

@@ -8,11 +8,6 @@ module TitleScene =
 
     type TitleSceneMsg =
         | Start    
-    
-    let map message = 
-        match message with
-        | "Start" -> [Start]
-        | _ -> []
 
     let empty = {Game = new Game()}
 
@@ -24,3 +19,11 @@ module TitleScene =
         | Start -> 
             GameJam.Events.SceneManagerEventKey.Broadcast("Gameplay")
             model, []
+    
+    let map message = 
+        match message with
+        | "Start" -> [Start]
+        | _ -> []    
+    
+    let getMsg () = 
+        EventHelper.recieveEvent GameJam.Events.titleSceneEvent map

@@ -30,21 +30,6 @@ module Player =
         | Airborne
         | Collision of Entity
 
-    let map ((message, entity) : string * Entity) : PlayerMsg list = 
-        match message with
-        | "Collect" -> 
-            GameJam.Events.UiEventKey.Broadcast("Increment");
-            [Collision(entity)]
-        | "Left" -> [MoveLeft]
-        | "Right" -> [MoveRight]
-        | "Up" -> [MoveUp]
-        | "Down" -> [MoveDown]
-        | "Jump" -> [Jump]
-        | "Grounded" -> [Grounded]
-        | "Airborne" -> [Airborne]
-        | "NoMovement" -> [NoMovement]
-        | _ -> []
-
     let empty =
         { Velocity = new Vector3(0f, 0.f, 0f); MoveDirection = Vector3.Zero; NewMoveDirection = Vector3.Zero; Jumped = false; JumpReactionRemaining = 0f; Counter = 0; Entity = new Entity(); AppearanceModel = new Entity(); AttachedPlatform = new Entity(); Input = new InputManager(); Camera = new CameraComponent() }
     
@@ -128,3 +113,21 @@ module Player =
             model.AppearanceModel.Transform.Rotation <- Quaternion.RotationYawPitchRoll(MathUtil.DegreesToRadians(yawOrientation), 0f, 0f)
         else
             ()
+
+    let map ((message, entity) : string * Entity) : PlayerMsg list = 
+        match message with
+        | "Collect" -> 
+            GameJam.Events.UiEventKey.Broadcast("Increment");
+            [Collision(entity)]
+        | "Left" -> [MoveLeft]
+        | "Right" -> [MoveRight]
+        | "Up" -> [MoveUp]
+        | "Down" -> [MoveDown]
+        | "Jump" -> [Jump]
+        | "Grounded" -> [Grounded]
+        | "Airborne" -> [Airborne]
+        | "NoMovement" -> [NoMovement]
+        | _ -> []
+    
+    let getMsg () = 
+        EventHelper.recieveEvent GameJam.Events.playerEvent map

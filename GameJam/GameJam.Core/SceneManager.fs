@@ -38,29 +38,12 @@ module SceneManager =
         | TitleSceneMsg of TitleScene.TitleSceneMsg
         | GameplaySceneMsg of GameplayScene.GameplaySceneMsg
         | ScoreSceneMsg of ScoreScene.ScoreSceneMsg
-    
-    let map message = 
-        match message with
-        | "Title" -> [SwitchScene(Title)]
-        | "Gameplay" -> [SwitchScene(Gameplay)]
-        | "Score" -> [SwitchScene(Score)]
-        | "Load" -> [SwitchScene(Load)]
-        | _ -> []
 
     let empty = 
         { Game = new Game(); CurrentScene = Title; NewScene = None; TitleSceneModel = TitleScene.empty; GameplaySceneModel = GameplayScene.empty; ScoreSceneModel = ScoreScene.empty; }
 
     let init game = 
         { empty with Game = game }
-
-    let mapAllEvent () : SceneManagerMsg list =
-        let messages =
-            [
-                yield! parseEventMap GameJam.Events.titleSceneEvent TitleScene.map (List.map TitleSceneMsg)
-                yield! parseEvent GameJam.Events.sceneManagerEvent map
-                yield! List.map GameplaySceneMsg (GameplayScene.mapAllEvent ())
-            ] |> List.distinct
-        messages
 
     let update cmd model (gameTime: GameTime) =
         let deltaTime = float32 gameTime.Elapsed.TotalSeconds
@@ -134,4 +117,19 @@ module SceneManager =
                 ScoreScene.view model.ScoreSceneModel gameTime
             | Load -> 
                 ()
+    
+    let map message = 
+        match message with
+        | "Title" -> [SwitchScene(Title)]
+        | "Gameplay" -> [SwitchScene(Gameplay)]
+        | "Score" -> [SwitchScene(Score)]
+        | "Load" -> [SwitchScene(Load)]
+        | _ -> []
+
+    let getMsg () : SceneManagerMsg list =
+        [
+            yield! recieveEvent GameJam.Events.sceneManagerEvent map
+            yield! List.map TitleSceneMsg (TitleScene.getMsg ())
+            yield! List.map GameplaySceneMsg  <| GameplayScene.getMsg ()
+        ]
             

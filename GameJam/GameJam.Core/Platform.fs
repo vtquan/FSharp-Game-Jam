@@ -13,8 +13,6 @@ open System
 module Platform =
     let private speed = 3f
     let private duration = 5f
-    let private deadZone = 0.25f
-    let private jumpReactionThreshold = 0.3f
 
     type Direction =
         | Forward
@@ -31,12 +29,6 @@ module Platform =
         | Countup
         | AttachPlayer of Entity
         | DetachPlayer of Entity
-    
-    let map ((message, entity) : string * Entity) : PlatformMsg list = 
-        match message with
-        | "AttachPlayer" -> [AttachPlayer(entity)]
-        | "DetachPlayer" -> [DetachPlayer(entity)]
-        | _ -> []
 
     let empty =
         { Timer = 0f; Direction = Forward; Platforms = []; Player = new Entity() }
@@ -119,3 +111,12 @@ module Platform =
 
 
         List.iter movingPlatformIter model.Platforms
+    
+    let map ((message, entity) : string * Entity) : PlatformMsg list = 
+        match message with
+        | "AttachPlayer" -> [AttachPlayer(entity)]
+        | "DetachPlayer" -> [DetachPlayer(entity)]
+        | _ -> []
+    
+    let getMsg () = 
+        EventHelper.recieveEvent GameJam.Events.platformEvent map

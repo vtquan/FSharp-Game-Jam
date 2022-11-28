@@ -23,13 +23,6 @@ module Score =
         | Start
         | Collect
         | Goal
-    
-    let map message = 
-        match message with
-        | "Start" -> [Start]
-        | "Collect" -> [Collect]
-        | "Goal" -> [Goal]
-        | _ -> []
 
     let empty =
         { StartTime = new TimeSpan(); Records = [] }
@@ -52,4 +45,14 @@ module Score =
             { model with Records = records }, []
         | Goal ->            
             model, []
+    
+    let map message = 
+        match message with
+        | "Start" -> [Start]
+        | "Collect" -> [Collect]
+        | "Goal" -> [Goal]
+        | _ -> []
+    
+    let getMsg () = 
+        EventHelper.recieveEvent GameJam.Events.scoreEvent map
 

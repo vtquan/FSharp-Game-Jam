@@ -20,11 +20,6 @@ module ScoreScene =
     
     type ScoreSceneMsg =
         | Restart
-    
-    let map message = 
-        match message with
-        | "Restart" -> [Restart]
-        | _ -> []
 
     let empty =
         { ScoreUiModel = ScoreUI.empty }
@@ -41,4 +36,12 @@ module ScoreScene =
 
     let view (state : Model) (gameTime : GameTime) =
         ScoreUI.view state.ScoreUiModel (float32 gameTime.Elapsed.TotalSeconds)
+    
+    let map message = 
+        match message with
+        | "Restart" -> [Restart]
+        | _ -> []
+    
+    let getMsg () = 
+        EventHelper.recieveEvent GameJam.Events.scoreSceneEvent map
 

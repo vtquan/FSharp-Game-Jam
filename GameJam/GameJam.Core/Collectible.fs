@@ -18,31 +18,30 @@ module Collectible =
 
     type CollectibleMsg = 
         | Rotate
-    
-    let map message = 
-        match message with
-        | "Rotate" -> [Rotate]
-        | _ -> []
 
     let empty =
         { Rotation = 0f; Collectibles = [] }
         
     let init (scene : Scene) =
         let collectibles = scene.Entities.Where(fun x -> x.Name.Contains("Collectible"))
-        { empty with Collectibles = List.ofSeq collectibles }, [CollectibleMsg.Rotate]
+        { empty with Collectibles = List.ofSeq collectibles }, [Rotate]
 
     let update (msg : CollectibleMsg) (model : Model) (deltaTime : float32) =
         match msg with
-        | CollectibleMsg.Rotate when model.Rotation > 720f ->
-            { model with Rotation = model.Rotation + rotationSpeed * deltaTime - 720f }, [CollectibleMsg.Rotate]
-        | CollectibleMsg.Rotate ->
-            { model with Rotation = model.Rotation + rotationSpeed * deltaTime }, [CollectibleMsg.Rotate]
-
+        | Rotate ->
+            { model with Rotation = (model.Rotation + rotationSpeed * deltaTime) % 720f }, [Rotate]
     
     let view (model : Model) (deltaTime : float32) =
         let collectibleIter (collectible : Entity) =
             collectible.Transform.Scale <- new Vector3(2f, 2f, 2f)
             collectible.Transform.Rotation <- Quaternion.RotationYawPitchRoll(MathUtil.DegreesToRadians(model.Rotation), 0f, 0f)
 
-
         List.iter collectibleIter model.Collectibles
+    
+    let map message = 
+        match message with
+        | "Rotate" -> [Rotate]
+        | _ -> []
+    
+    let getMsg () = 
+        EventHelper.recieveEvent GameJam.Events.collectibleEvent map

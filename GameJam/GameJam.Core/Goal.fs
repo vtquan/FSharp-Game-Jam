@@ -22,11 +22,6 @@ module Goal =
     type GoalMsg = 
         | Activate
         | Rotate
-    
-    let map message = 
-        match message with
-        | "Activate" -> [Activate]
-        | _ -> []
 
     let empty =
         { Activated = false; Rotation = 0f; Entity = new Entity() }
@@ -51,4 +46,12 @@ module Goal =
             model.Entity.Transform.Rotation <- Quaternion.RotationYawPitchRoll(MathUtil.DegreesToRadians(model.Rotation), 0f, 0f)
         | false ->             
             model.Entity.Transform.Scale <- new Vector3(0f, 0f, 0f)
+    
+    let map message = 
+        match message with
+        | "Activate" -> [Activate]
+        | _ -> []
+    
+    let getMsg () = 
+        EventHelper.recieveEvent GameJam.Events.goalEvent map
 
